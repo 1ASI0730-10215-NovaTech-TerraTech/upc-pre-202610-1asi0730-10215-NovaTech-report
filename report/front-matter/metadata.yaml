@@ -2,83 +2,71 @@
 toc: true
 toc-depth: 3
 number-sections: true
-header-includes:
-  - \usepackage{graphicx}
 include-before: |
-  \begin{titlepage}
-  \centering
-  \includegraphics[width=0.4\textwidth]{./report/assets/upc-logo.png}
-  \vspace{2cm}
-  
-  {\small Carerra: Ingeniería de Software}
-  
-  {\small Periodo: 2026-10}
-  
-  {\small Curso: Aplicaciones Web}
-  
-  {\small NRC: 10215}
-  
-  {\small Profesor: Velasquez Nuñez, Angel Augusto}
-  
-  {\small Informe de Trabajo Final}
-  
-  {\small Startup: NovaTech}
-  
-  {\small Producto: TerraTech}
-  
-  \vspace{1cm}
-  
-  {\small Miembros de grupo:}
-  
-  {\small Acuña de la Cruz, Luis Alfredo - U202417228}
-  
-  {\small Aguilar Untiveros, Rodrigo Fabrizio - U202318309}
-  
-  {\small Howard Robles, Guillermo Arturo - U202222275}
-  
-  {\small Perez Encarnacion, Breithner Rodolfo - U202418577}
-  
-  {\small Retuerto Rodríguez, Jorge Manuel - U202318612}
-  
-  \vspace{1cm}
-  
-  {\large abril de 2026}
-  \end{titlepage}
-  
-  \newpage
+  <div style="text-align:center; page-break-after: always;">
+    <img src="./report/assets/upc-logo.png" style="width: 150px;"/>
+    <br/><br/>
+    <p>Carrera: Ingeniería de Software</p>
+    <p>Periodo: 2026-10</p>
+    <p>Curso: Aplicaciones Web</p>
+    <p>NRC: 10215</p>
+    <p>Profesor: Velasquez Nuñez, Angel Augusto</p>
+    <p>Informe de Trabajo Final</p>
+    <p>Startup: NovaTech</p>
+    <p>Producto: TerraTech</p>
+    <br/>
+    <p>Miembros de grupo:</p>
+    <p>Acuña de la Cruz, Luis Alfredo - U202417228</p>
+    <p>Aguilar Untiveros, Rodrigo Fabrizio - U202318309</p>
+    <p>Howard Robles, Guillermo Arturo - U202222275</p>
+    <p>Perez Encarnacion, Breithner Rodolfo - U202418577</p>
+    <p>Retuerto Rodríguez, Jorge Manuel - U202318612</p>
+    <br/>
+    <p>abril de 2026</p>
+  </div>
 
-    \section*{Registro de Versiones}
+  <div style="page-break-before: always;"></div>
 
-    \begin{tabular}{|c|p{4cm}|p{8cm}|}
-      \hline
-      Version & Autores & Descripcion\\
-      \hline
-      TB1 &
-      Acuña de la Cruz, Luis Alfredo \par
-      Aguilar Untiveros, Rodrigo Fabrizio \par
-      Howard Robles, Guillermo Arturo \par
-      Perez Encarnacion, Breithner Rodolfo \par
-      Retuerto Rodríguez, Jorge Manuel &
-      - Capítulo I: Introducción \par
-      - Capítulo II: Requirements Elicitation \par
-      - Capítulo III: Requirements Specification \par
-      - Capítulo IV: Product Design \par
-      - Capítulo V: Implementation sprint 1 \par
-      - Conclusiones
-      - Recomendaciones
-      \\
-      \hline
-    \end{tabular}
+  <h2>Registro de Versiones</h2>
 
-  \newpage
-  
-  \newpage
-  
-    \section*{Project Report Collaboration Insights}
-  
-    \large A continuación, capturas del procesos, commits y elaboración de nuestro proyecto en cada entrega.
+  <table border="1" style="width: 100%; border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th style="padding: 8px;">Version</th>
+        <th style="padding: 8px;">Autores</th>
+        <th style="padding: 8px;">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px; vertical-align: top;"><strong>TB1</strong></td>
+        <td style="padding: 8px; vertical-align: top;">
+          Acuña de la Cruz, Luis Alfredo<br/>
+          Aguilar Untiveros, Rodrigo Fabrizio<br/>
+          Howard Robles, Guillermo Arturo<br/>
+          Perez Encarnacion, Breithner Rodolfo<br/>
+          Retuerto Rodríguez, Jorge Manuel
+        </td>
+        <td style="padding: 8px; vertical-align: top;">
+          Capítulo I: Introducción<br/>
+          Capítulo II: Requirements Elicitation<br/>
+          Capítulo III: Requirements Specification<br/>
+          Capítulo IV: Product Design<br/>
+          Capítulo V: Implementation sprint 1<br/>
+          Conclusiones<br/>
+          Recomendaciones
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-    \large Entrega Nº1: TB1
-  
-  \newpage
+  <div style="page-break-before: always;"></div>
+
+  <h2>Project Report Collaboration Insights</h2>
+
+  <p>A continuación, capturas del procesos, commits y elaboración de nuestro proyecto en cada entrega.</p>
+
+  <p>Entrega Nº1: TB1</p>
+
+  <h1 style="page-break-before: always;">Tabla de contenido</h1>
 ---
