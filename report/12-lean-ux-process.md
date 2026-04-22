@@ -91,4 +91,8 @@ Por un lado, respecto a la aplicación, debe verse con una interfaz limpia y pro
 
 #### 1.2.2.4. Lean UX Canvas
 
-![lean-ux-canvas](assets/Lean_UX_Canvas.png)
+**Figura 1:**
+
+*Lean ux canvas*
+
+<img src="./report/assets/lean-ux-canvas.png" style="width: 90%; max-width: 800px; height: 650px;">
