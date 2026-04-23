@@ -1,19 +1,4 @@
 ## 5.2. Landing Page, Services & Applications Implementation
-> [!NOTE]
-> 5.2.x. Sprints
-
- ~~~md
- <!--- Estructura de los srpints --->
-  ### 5.2.x. Sprint n
-   #### 5.2.x.1. Sprint Planning n
-   #### 5.2.x.2. Aspect Leaders and Collaborators
-   #### 5.2.x.3. Sprint Backlog  n
-   #### 5.2.x.4. Sprint Development Evidence for Srpint Review
-   #### 5.2.x.5. Execution Evidence for Srpint Review
-   #### 5.2.x.6. Services Documentation Evidence for Sprint Review
-   #### 5.2.x.7. Software Deployment Evidence for Sprint Review
-   #### 5.2.x.8. Team Collaboration Insights during Sprint
- ~~~
 
 ### 5.2.1. Sprint 1
 
@@ -64,9 +49,13 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
       </tr>
       <tr>
         <td>Sprint 1 Goal</td>
-        <td> <b>Desarrollar la Landing Page de TerraTech:</b><br>Nuestro enfoque es crear una página de aterrizaje clara, responsive y funcional que comunique eficazmente los beneficios de nuestra solución de monitoreo agrícola (IoT). 
+        <td> 
+          <b>Desarrollar la Landing Page de TerraTech:</b><br>Nuestro enfoque es crear una página de aterrizaje clara, responsive y funcional que comunique eficazmente los beneficios de nuestra solución de monitoreo agrícola (IoT). 
           Creemos que esto proporcionará una primera impresión profesional y generará confianza con los agricultores y proveedores, facilitando la captación de leads mediante el formulario de demo. 
-          El éxito se confirmará cuando la página esté desplegada correctamente en GitHub Pages y sea accesible para los usuarios. </td>
+          El éxito se confirmará cuando la página esté desplegada correctamente en GitHub Pages y sea accesible para los usuarios.<br><br>
+          <b>Desarrollo del informe de TerraTech:</b><br>Nuestro enfoque el desarrollo de la documentación del proyecto TerraTech. Buscamos la realización de las definiciones del proyecto,
+          investigación sobre del segmento de estudio, generación de historias de usuario, diseño UX y lógica de negocio. Finalmente, el orden de sprint del producto. 
+        </td>
       </tr>
       <tr>
         <td>Sprint 1 velocity</td>
@@ -98,9 +87,9 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
     <tr>
       <td>Retuerto Rodriguez, Jorge Manuel</td>
       <td>Calin1407</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
       <td align="center">C</td>
       <td align="center"><b>L</b></td>
     </tr>
@@ -108,8 +97,8 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
       <td>Howard Robles, Guillermo Arturo</td>
       <td>GuillermoPromac</td>
       <td align="center"><b>L</b></td>
-      <td align="center">C</td>
-      <td align="center">C</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
       <td align="center">C</td>
       <td align="center">C</td>
     </tr>
@@ -117,28 +106,28 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
       <td>Acuña de la Cruz, Luis Alfredo</td>
       <td>L2006delacruz</td>
       <td align="center">C</td>
-      <td align="center"><b>L</b></td>
+      <td align="center"><b>-</b></td>
+      <td align="center">-</td>
       <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
+      <td align="center">L</td>
     </tr>
     <tr>
       <td>Perez Encarnacion, Breithner Rodolfo</td>
       <td>Breithner1</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center"><b>L</b></td>
-      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">-</td>
+      <td align="center"><b>-</b></td>
+      <td align="center">L</td>
       <td align="center">C</td>
     </tr>
     <tr>
       <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
       <td>Rodri2712</td>
       <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center"><b>L</b></td>
-      <td align="center">C</td>
+      <td align="center">-</td>
+      <td align="center">-</td>
+      <td align="center"><b>C</b></td>
+      <td align="center">L</td>
     </tr>
   </tbody>
 </table>
@@ -169,155 +158,57 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
     <td>US01</td>
     <td>Visualización de Hero Section</td>
     <td>Task 1</td>
-    <td>Redacción de propuesta de valor</td>
-    <td>Escribir el título y subtítulo impactante sobre la tecnología de TerraTech.</td>
-    <td>2</td>
-    <td>Guillermo Howard</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US01</td>
-    <td>Visualización de Hero Section</td>
-    <td>Task 2</td>
     <td>Diseño de Hero y Botón CTA</td>
     <td>Diseñar visualmente la sección principal con el botón "Solicitar Demo".</td>
-    <td>3</td>
-    <td>Rodrigo Aguilar</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US02</td>
-    <td>Visualización de Características</td>
-    <td>Task 3</td>
-    <td>Selección de iconografía IoT</td>
-    <td>Elegir o diseñar íconos para Humedad, Nutrientes y Alertas.</td>
-    <td>2</td>
-    <td>Luis Acuña</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US02</td>
-    <td>Visualización de Características</td>
-    <td>Task 4</td>
-    <td>Maquetación de la sección</td>
-    <td>Implementar la cuadrícula con las 3 características principales de TerraTech.</td>
     <td>3</td>
     <td>Breithner Perez</td>
     <td>Done</td>
   </tr>
   <tr>
-    <td>US03</td>
-    <td>Envío de Formulario de Demo</td>
-    <td>Task 5</td>
-    <td>Desarrollo de campos de entrada</td>
-    <td>Crear los inputs para Nombre, Email, Teléfono y Hectáreas.</td>
-    <td>2</td>
+    <td>US02</td>
+    <td>Visualización de Características</td>
+    <td>Task 2</td>
+    <td>Maquetación de la sección</td>
+    <td>Implementar la cuadrícula con las 3 características principales de TerraTech.</td>
+    <td>3</td>
     <td>Guillermo Howard</td>
     <td>Done</td>
   </tr>
   <tr>
     <td>US03</td>
     <td>Envío de Formulario de Demo</td>
-    <td>Task 6</td>
+    <td>Task 3</td>
     <td>Lógica de validación</td>
     <td>Programar las alertas para correos inválidos y campos vacíos.</td>
     <td>2</td>
+    <td>Jorge Retuerto</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US04</td>
+    <td>Enlace a Términos y Condiciones</td>
+    <td>Task 4</td>
+    <td>Implementación en el Footer</td>
+    <td>Agregar los enlaces funcionales en la parte inferior de la página.</td>
+    <td>1</td>
     <td>Luis Acuña</td>
     <td>Done</td>
   </tr>
   <tr>
     <td>US04</td>
-    <td>Enlace a Términos y Condiciones</td>
-    <td>Task 7</td>
-    <td>Redacción legal básica</td>
-    <td>Preparar el documento de términos y condiciones del servicio agrícola.</td>
-    <td>2</td>
-    <td>Jorge Retuerto</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US04</td>
-    <td>Enlace a Términos y Condiciones</td>
-    <td>Task 8</td>
-    <td>Implementación en el Footer</td>
-    <td>Agregar los enlaces funcionales en la parte inferior de la página.</td>
+    <td>Visualizacion de caracteristicas</td>
+    <td>Task 5</td>
+    <td>Implementación en el tabla de miembros</td>
+    <td>Agregar los miembros del equipo junto a su descripcion.</td>
     <td>1</td>
-    <td>Jorge Retuerto</td>
+    <td>Rodrigo Aguilar</td>
     <td>Done</td>
   </tr>
 </table>
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-#### 5.2.1.4. Testing Suite Evidence for Sprint Review
 
-<table>
-  <thead>
-    <tr>
-      <th>Repository</th>
-      <th>Branch</th>
-      <th>Commit ID</th>
-      <th>Commit Message</th>
-      <th>Committed On (Date)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Calin1407/TerraTech-Landing</td>
-      <td>main</td>
-      <td>a1b2c3d</td>
-      <td>feat: TS02 setup deployment and documentation</td>
-      <td>12/04/2026</td>
-    </tr>
-    <tr>
-      <td>GuillermoPromac/TerraTech-Landing</td>
-      <td>main</td>
-      <td>e5f6g7h</td>
-      <td>feat: US01 added Hero Section and CTA button</td>
-      <td>11/04/2026</td>
-    </tr>
-    <tr>
-      <td>L2006delacruz/TerraTech-Landing</td>
-      <td>main</td>
-      <td>i9j0k1l</td>
-      <td>feat: US03 implemented Demo Request Form</td>
-      <td>11/04/2026</td>
-    </tr>
-    <tr>
-      <td>Breithner1/TerraTech-Landing</td>
-      <td>main</td>
-      <td>m2n3o4p</td>
-      <td>feat: US02 added IoT sensors feature section</td>
-      <td>12/04/2026</td>
-    </tr>
-    <tr>
-      <td>Rodri2712/TerraTech-Landing</td>
-      <td>main</td>
-      <td>q5r6s7t</td>
-      <td>fix: US01/US02 responsive design mobile issues</td>
-      <td>13/04/2026</td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<p>En el proceso de desarrollo de la landing page de <b>TerraTech</b>, se aplicaron diversas estrategias de prueba para garantizar su correcto funcionamiento y adaptabilidad en entornos rurales y urbanos. A continuación se detallan las herramientas utilizadas:</p>
-
-<h5>1. Uso de Live Server de Microsoft Visual Studio Code</h5>
-<ul>
-    <li><b>Propósito:</b> Facilitar el desarrollo ágil y la visualización instantánea de los cambios en la interfaz de TerraTech.</li>
-    <li><b>Descripción:</b> Esta herramienta permitió que el equipo visualizara dinámicamente los ajustes en tiempo real, agilizando la corrección de errores en la maquetación del Hero Section y las secciones de sensores sin recargar manualmente el navegador.</li>
-</ul>
-
-
-<h5>2. Validación de Formularios y Responsive con CSS Grid/Flexbox</h5>
-<ul>
-    <li><b>Propósito:</b> Asegurar que la captura de datos (US03) sea robusta y el diseño sea adaptable.</li>
-    <li><b>Descripción:</b> Se aprovecharon las capacidades de inspección de elementos para optimizar el diseño basado en CSS Grid. Se realizaron pruebas de validación en el formulario de solicitud de demo para confirmar que los mensajes de error aparezcan correctamente ante datos inválidos.</li>
-</ul>
-
-<p>Estas estrategias de prueba garantizaron la funcionalidad, la estética y la adaptabilidad de la landing page de TerraTech en diversos dispositivos, contribuyendo a una experiencia de usuario sólida y profesional.</p>
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
