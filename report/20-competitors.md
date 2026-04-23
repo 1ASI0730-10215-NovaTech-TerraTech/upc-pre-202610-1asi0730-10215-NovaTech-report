@@ -12,7 +12,7 @@
 
 ### 2.1.1. Análisis competitivo
 
-  <table>
+  <table border="1" cellspacing="0" cellpadding="2">
   <tr>
     <th colspan="6" valign="top">Competitive Analysis Landscape</th>
   </tr>
@@ -28,10 +28,10 @@
     <td valign="top">Phytech</td>
   </tr>
   <tr>
-    <td valign="top"><img src="assets/LogoStartup.png" alt="Logo Mi Startup" height="100px"></td>
-    <td valign="top"><img src="assets/LogoAgroTech.png" alt="Logo AgroTech" height="100px"></td>
-    <td valign="top"><img src="assets/LogoVistaDelValle.png" alt="Logo Vista Del Valle" height="140px"></td>
-    <td valign="top"><img src="assets/LogoPhytech.png" alt="Logo Phytech" height="100px"></td>
+    <td valign="top"><img src="./report/assets/terratech-logo.png" alt="Logo Mi Startup" height="100px"></td>
+    <td valign="top"><img src="./report/assets/logo-agrotech.png" alt="Logo AgroTech" height="100px"></td>
+    <td valign="top"><img src="./report/assets/logo-vista-del-valle.png" alt="Logo Vista Del Valle" height="140px"></td>
+    <td valign="top"><img src="./report/assets/logo-phytech.png" alt="Logo Phytech" height="100px"></td>
    </tr>
   <tr>
     <td rowspan="2" valign="top">Perfil</td>
@@ -118,20 +118,19 @@
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-**Estrategias**
+- **Estrategias**
 
-- Diferenciación mediante una solución accesible adaptada al agricultor peruano.
-- Competencia basada en costos frente a plataformas tecnológicas premium.
-- Enfoque en monitoreo en tiempo real como propuesta de valor principal.
-- Desarrollo de alianzas estratégicas con proveedores e instituciones agrícolas.
-- Posicionamiento como herramienta de sostenibilidad y optimización de recursos.
--
----
+  - Diferenciación mediante una solución accesible adaptada al agricultor peruano.
+  - Competencia basada en costos frente a plataformas tecnológicas premium.
+  - Enfoque en monitoreo en tiempo real como propuesta de valor principal.
+  - Desarrollo de alianzas estratégicas con proveedores e instituciones agrícolas.
+  - Posicionamiento como herramienta de sostenibilidad y optimización de recursos.
 
-**Tácticas**
 
-- Ofrecer paquetes iniciales de sensores IoT a bajo costo.
-- Implementar dashboards simples con alertas visuales fáciles de entender.
-- Realizar pruebas piloto y demostraciones en campo con agricultores locales.
-- Utilizar tecnología de conectividad rural (LoRaWAN) para garantizar funcionamiento.
-- Aplicar modelo de suscripción flexible según el tamaño del cultivo.
+- **Tácticas**
+
+  - Ofrecer paquetes iniciales de sensores IoT a bajo costo.
+  - Implementar dashboards simples con alertas visuales fáciles de entender.
+  - Realizar pruebas piloto y demostraciones en campo con agricultores locales.
+  - Utilizar tecnología de conectividad rural (LoRaWAN) para garantizar funcionamiento.
+  - Aplicar modelo de suscripción flexible según el tamaño del cultivo.
