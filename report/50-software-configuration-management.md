@@ -81,7 +81,6 @@ Usuarios de github:
 </table>
 
 [![Repositorio Informe](https://img.shields.io/badge/Repositorio-Informe-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/1ASI0730-10215-NovaTech-AgroTech/upc-pre-202610-1asi0730-10215-NovaTech-report)
-[![Repositorio Landing Page](https://img.shields.io/badge/Repositorio-Landing_Page-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/1ASI0730-10215-NovaTech-TerraTech/upc-pre-202610-1asi0730-10215-NovaTech-LandingPage)
 
 Para el desarrollo de los repositorios de TerraTech, se ha implementado Git como estrategia de versionado. Esta metodología permite un desarrollo paralelo y organizado, facilitando la gestión de nuevas funcionalidades y correcciones críticas sin comprometer la estabilidad del producto final.
 
