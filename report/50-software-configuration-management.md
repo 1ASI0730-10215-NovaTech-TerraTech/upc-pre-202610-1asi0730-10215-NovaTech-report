@@ -130,6 +130,4 @@ Landing Page:
 
 - Seguridad y Disponibilidad: GitHub Pages proporciona hosting gratuito y altamente confiable, incluyendo certificados SSL automáticos, lo que garantiza una conexión segura mediante el protocolo HTTPS para todos los visitantes.
 
-- Acceso Público: Se ha generado una URL pública (file:///C:/Users/acer/Desktop/LADING%20PAGE%20APP%20WEB/landing%20page/index.html) siguiendo el estándar de la plataforma, facilitando el acceso a potenciales clientes (agricultores y proveedores) y permitiendo la vinculación futura a un dominio personalizado
-
 <img src="./report/assets/portada-landingpage.jpg" style="width: 90%; max-width: 1200px; height: 600px;">
