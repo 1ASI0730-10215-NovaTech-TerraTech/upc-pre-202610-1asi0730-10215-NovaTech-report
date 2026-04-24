@@ -5,68 +5,66 @@
 #### 5.2.1.1. Sprint Planning 1
 A través de una reunión en la plataforma Meet, se planteó el inicio del Sprint 1. Durante la sesión se discutieron los objetivos principales, el cronograma de trabajo y la distribución de tareas para el desarrollo de la presencia digital de la startup.
 
-   <div>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>#️⃣ Número</th>
-          <th>Sprint 1</th>
-        </tr>
-        <tr>
-          <th colspan=2>Sprint Planning Background</th>
-        </tr>
-      </thead>
-      <tr align='center'>
-        <td> Date </td>
-        <td> 2026-04-10 </td>
-      </tr>
-      <tr>
-        <td>Time</td>
-        <td> 09:00PM - 10:30PM </td>
-      </tr>
-      <tr>
-        <td>Location</td>
-        <td> Meet </td>
-      </tr>
-      <tr>
-        <td>Prepared by</td>
-        <td> Retuerto Rodriguez, Jorge Manuel </td>
-      </tr>
-      <tr>
-        <td>Attendees</td>
-        <td> Retuerto Rodriguez, Jorge Manuel <br> Howard Robles, Guillermo Arturo <br> Acuña de la Cruz, Luis Alfredo <br> Perez Encarnacion, Breithner Rodolfo <br> Aguilar Untiveros, Rodrigo Fabrizio </td>
-      </tr>
-      <tr>
-        <td>Sprint n-1 Review Summary</td>
-        <td>No hubo sprint anterior</td>
-      </tr>
-      <tr>
-        <td>Sprint n-1 Retrospective Summary</td>
-        <td>No hubo sprint anterior</td>
-      </tr>
-      <tr>
-        <td colspan="2"><b>Sprint Goal & User Stories</b></td>
-      </tr>
-      <tr>
-        <td>Sprint 1 Goal</td>
-        <td> 
-          <b>Desarrollar la Landing Page de TerraTech:</b><br>Nuestro enfoque es crear una página de aterrizaje clara, responsive y funcional que comunique eficazmente los beneficios de nuestra solución de monitoreo agrícola (IoT). 
-          Creemos que esto proporcionará una primera impresión profesional y generará confianza con los agricultores y proveedores, facilitando la captación de leads mediante el formulario de demo. 
-          El éxito se confirmará cuando la página esté desplegada correctamente en GitHub Pages y sea accesible para los usuarios.<br><br>
-          <b>Desarrollo del informe de TerraTech:</b><br>Nuestro enfoque el desarrollo de la documentación del proyecto TerraTech. Buscamos la realización de las definiciones del proyecto,
-          investigación sobre del segmento de estudio, generación de historias de usuario, diseño UX y lógica de negocio. Finalmente, el orden de sprint del producto. 
-        </td>
-      </tr>
-      <tr>
-        <td>Sprint 1 velocity</td>
-        <td> 15 </td>
-      </tr>
-      <tr>
-        <td>Sum of Story Points</td>
-        <td> 15 </td>
-      </tr>
-    </table>
-   </div>
+<table border="1">
+<thead>
+<tr>
+<th>Número</th>
+<th>Sprint 1</th>
+</tr>
+<tr>
+<th colspan=2>Sprint Planning Background</th>
+</tr>
+</thead>
+<tr align='center'>
+<td> Date </td>
+<td> 2026-04-10 </td>
+</tr>
+<tr>
+<td>Time</td>
+<td> 09:00PM - 10:30PM </td>
+</tr>
+<tr>
+<td>Location</td>
+<td> Meet </td>
+</tr>
+<tr>
+<td>Prepared by</td>
+<td> Retuerto Rodriguez, Jorge Manuel </td>
+</tr>
+<tr>
+<td>Attendees</td>
+<td> Retuerto Rodriguez, Jorge Manuel <br> Howard Robles, Guillermo Arturo <br> Acuña de la Cruz, Luis Alfredo <br> Perez Encarnacion, Breithner Rodolfo <br> Aguilar Untiveros, Rodrigo Fabrizio </td>
+</tr>
+<tr>
+<td>Sprint n-1 Review Summary</td>
+<td>No hubo sprint anterior</td>
+</tr>
+<tr>
+<td>Sprint n-1 Retrospective Summary</td>
+<td>No hubo sprint anterior</td>
+</tr>
+<tr>
+<td colspan="2"><b>Sprint Goal & User Stories</b></td>
+</tr>
+<tr>
+<td>Sprint 1 Goal</td>
+<td> 
+<b>Desarrollar la Landing Page de TerraTech:</b><br>Nuestro enfoque es crear una página de aterrizaje clara, responsive y funcional que comunique eficazmente los beneficios de nuestra solución de monitoreo agrícola (IoT). 
+Creemos que esto proporcionará una primera impresión profesional y generará confianza con los agricultores y proveedores, facilitando la captación de leads mediante el formulario de demo. 
+El éxito se confirmará cuando la página esté desplegada correctamente en GitHub Pages y sea accesible para los usuarios.<br><br>
+<b>Desarrollo del informe de TerraTech:</b><br>Nuestro enfoque el desarrollo de la documentación del proyecto TerraTech. Buscamos la realización de las definiciones del proyecto,
+investigación sobre del segmento de estudio, generación de historias de usuario, diseño UX y lógica de negocio. Finalmente, el orden de sprint del producto. 
+</td>
+</tr>
+<tr>
+<td>Sprint 1 velocity</td>
+<td> 15 </td>
+</tr>
+<tr>
+<td>Sum of Story Points</td>
+<td> 15 </td>
+</tr>
+</table>
 
 
 #### 5.2.1.2 Aspect Leaders and Collaborators
