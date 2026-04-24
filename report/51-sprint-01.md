@@ -302,13 +302,13 @@ Se realizó el despliegue exitoso de la plataforma mediante GitHub Pages. Esta v
 
 <img src="./report/assets/deploy-evidence-01.PNG">
 
-<img src="./report/assets/deploy-evidence-02.PNG">
+<img src="./report/assets/deploy-evidence-02.PNG" style="height: 400px; width: 600px;">
 
-<img src="./report/assets/deploy-evidence-03.PNG">
+<img src="./report/assets/deploy-evidence-03.PNG" style="height: 400px; width: 600px;">
 
-<img src="./report/assets/deploy-evidence-04.PNG">
+<img src="./report/assets/deploy-evidence-04.PNG" style="height: 400px; width: 600px;">
 
-<img src="./report/assets/deploy-evidence-05.PNG">
+<img src="./report/assets/deploy-evidence-05.PNG" style="height: 400px; width: 600px;">
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
