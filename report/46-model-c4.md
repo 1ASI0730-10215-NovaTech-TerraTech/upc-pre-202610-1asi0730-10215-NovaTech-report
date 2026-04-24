@@ -66,6 +66,44 @@ Rel(iot_device, api, "Sends telemetry", "MQTT/HTTP")
 
 ```plantuml
 @startuml
+!theme plain
+scale 3/8
+
+!theme plain
+
+' ==================== DARK THEME CONFIGURATION ====================
+skinparam backgroundColor #1A1B26
+skinparam defaultFontColor #A9B1D6
+skinparam classFontColor #C0CAF5
+skinparam classAttributeFontColor #9AA5CE
+skinparam class {
+    BackgroundColor #24283B
+    BorderColor #414868
+    HeaderBackgroundColor #1F2335
+    HeaderFontColor #7DCFFF
+    FontColor #C0CAF5
+}
+
+skinparam stereotype {
+    BackgroundColor #1A1B26
+    BorderColor #565F89
+    FontColor #7DCFFF
+}
+
+skinparam arrow {
+    Color #565F89
+    FontColor #787C99
+    Thickness 1
+}
+
+skinparam note {
+    BackgroundColor #24283B
+    BorderColor #414868
+    FontColor #A9B1D6
+}
+
+title <color:#7DCFFF><size:16>AgroTech - Class Diagram</size></color>
+
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
 title AgroTech - Component Diagram

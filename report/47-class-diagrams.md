@@ -5,6 +5,9 @@
 ```plantuml
 @startuml
 !theme plain
+scale 2/3
+
+!theme plain
 
 ' ==================== DARK THEME CONFIGURATION ====================
 skinparam backgroundColor #1A1B26
@@ -180,3 +183,56 @@ Alert ||--o{ Notification : generates
 
 @enduml
 ```
+
+### 4.7.2. Class Dictionary
+
+<table border="1">
+<thead>
+<tr>
+<th>Class</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Client</code></td>
+<td>Entidad que representa un cliente del sistema, con información como nombre, email, contraseña, rol y fecha de creación. Permite inicio de sesión y actualización de perfil.</td>
+</tr>
+<tr>
+<td><code>SubscriptionPlan</code></td>
+<td>Entidad que define un plan de suscripción, incluyendo nombre, precio, límite de dispositivos IoT y características incluidas.</td>
+</tr>
+<tr>
+<td><code>UserSubscription</code></td>
+<td>Entidad que vincula un cliente con un plan de suscripción, gestionando fechas de inicio y fin, estado de pago, y permitiendo verificar si está activa o renovarla.</td>
+</tr>
+<tr>
+<td><code>Parcel</code></td>
+<td>Entidad que representa una parcela agrícola, con datos de ubicación (latitud, longitud, altitud), nombre, categoría y relación con el cliente propietario.</td>
+</tr>
+<tr>
+<td><code>Device</code></td>
+<td>Entidad que representa un dispositivo IoT instalado en una parcela, con estado, nivel de batería, versión de software y última conexión. Puede enviar datos y verificar batería.</td>
+</tr>
+<tr>
+<td><code>SensorRecord</code></td>
+<td>Entidad que almacena las lecturas de sensores de un dispositivo, incluyendo humedad, temperatura, nivel de pH, nitrógeno, fósforo y potasio.</td>
+</tr>
+<tr>
+<td><code>PlotSnapshot</code></td>
+<td>Entidad que representa un resumen analítico de una parcela en un momento dado, con valores promedio de humedad, temperatura y pH.</td>
+</tr>
+<tr>
+<td><code>Harvest</code></td>
+<td>Entidad que registra una cosecha, con cantidad producida, fecha y puntuación de sostenibilidad calculada en base a parámetros definidos.</td>
+</tr>
+<tr>
+<td><code>Alert</code></td>
+<td>Entidad que representa una alerta generada por condiciones anormales en una parcela, con tipo, severidad, mensaje y estado de resolución.</td>
+</tr>
+<tr>
+<td><code>Notification</code></td>
+<td>Entidad que gestiona el envío de notificaciones a clientes basadas en alertas, con canal de envío, estado de lectura y seguimiento de entrega.</td>
+</tr>
+</tbody>
+</table>
