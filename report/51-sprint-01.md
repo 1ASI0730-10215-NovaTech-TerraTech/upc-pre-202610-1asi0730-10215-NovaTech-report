@@ -6,7 +6,7 @@
 A través de una reunión en la plataforma Meet, se planteó el inicio del Sprint 1. Durante la sesión se discutieron los objetivos principales, el cronograma de trabajo y la distribución de tareas para el desarrollo de la presencia digital de la startup.
 
    <div>
-    <table>
+    <table border="1">
       <thead>
         <tr>
           <th>#️⃣ Número</th>
@@ -71,7 +71,7 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
 
 #### 5.2.1.2 Aspect Leaders and Collaborators
 
-<table>
+<table border="1">
   <thead>
     <tr>
       <th>Team member</th>
@@ -286,9 +286,29 @@ Durante el Sprint 1, el equipo completó satisfactoriamente todas las tareas enf
 
 La documentación de este primer ciclo se centró en la estructura del sitio y la definición de requerimientos para el sector agrícola. Se utilizaron archivos Markdown dentro del repositorio para detallar el flujo de datos del agricultor y los criterios de aceptación de las primeras cuatro historias de usuario. Esta base documental asegura que el equipo tenga claridad sobre los componentes visuales antes de iniciar la fase de conexión con los sensores IoT en los siguientes sprints.
 
+<img src="./report/assets/sprint-01-evidence-05.PNG">
+
+<img src="./report/assets/sprint-01-evidence-04.PNG">
+
+<img src="./report/assets/sprint-01-evidence-03.PNG">
+
+<img src="./report/assets/sprint-01-evidence-02.PNG">
+
+<img src="./report/assets/sprint-01-evidence-01.PNG">
+
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
 Se realizó el despliegue exitoso de la plataforma mediante GitHub Pages. Esta versión pública de la Landing Page de TerraTech incluye el diseño responsive validado para dispositivos móviles, permitiendo que la interfaz sea accesible desde zonas rurales. El enlace desplegado fue utilizado durante la revisión del sprint para verificar la funcionalidad del formulario de contacto y la correcta visualización de las propuestas tecnológicas de la startup.
+
+<img src="./report/assets/deploy-evidence-01.PNG">
+
+<img src="./report/assets/deploy-evidence-02.PNG">
+
+<img src="./report/assets/deploy-evidence-03.PNG">
+
+<img src="./report/assets/deploy-evidence-04.PNG">
+
+<img src="./report/assets/deploy-evidence-05.PNG">
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
