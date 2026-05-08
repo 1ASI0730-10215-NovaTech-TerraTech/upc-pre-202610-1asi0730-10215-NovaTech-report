@@ -35,6 +35,9 @@ Rel(agrotech, iot, "Receives sensor data", "MQTT/HTTP")
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
+' Esta línea aplica los iconos y el estilo visual completo de C4
+LAYOUT_WITH_LEGEND()
+
 title AgroTech - Container Diagram
 
 Person(user, "User", "Farmer / Supplier / Admin / Customer")
@@ -66,55 +69,9 @@ Rel(iot_device, api, "Sends telemetry", "MQTT/HTTP")
 
 ```plantuml
 @startuml
-!theme plain
-scale 3/8
-
-!theme plain
-
-' ==================== DARK THEME CONFIGURATION ====================
-skinparam backgroundColor #1A1B26
-skinparam defaultFontColor #A9B1D6
-skinparam classFontColor #C0CAF5
-skinparam classAttributeFontColor #9AA5CE
-skinparam class {
-    BackgroundColor #24283B
-    BorderColor #414868
-    HeaderBackgroundColor #1F2335
-    HeaderFontColor #7DCFFF
-    FontColor #C0CAF5
-}
-
-skinparam stereotype {
-    BackgroundColor #1A1B26
-    BorderColor #565F89
-    FontColor #7DCFFF
-}
-
-skinparam arrow {
-    Color #565F89
-    FontColor #787C99
-    Thickness 1
-}
-
-skinparam note {
-    BackgroundColor #24283B
-    BorderColor #414868
-    FontColor #A9B1D6
-}
-
-title <color:#7DCFFF><size:16>AgroTech - Class Diagram</size></color>
-
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
 title AgroTech - Component Diagram
-
-skinparam rectangle {
-  FontColor white
-}
-skinparam arrow {
-  Color white
-  FontColor white
-}
 
 Container(api, "Backend API", "Java / Spring Boot", "Handles business logic, IoT data, and analytics") {
     
@@ -127,6 +84,9 @@ Container(api, "Backend API", "Java / Spring Boot", "Handles business logic, IoT
     Component(harvestService, "Harvest Service", "Spring Service", "Calculates sustainability scores and harvest outcomes")
     Component(alertService, "Alert Service", "Spring Service", "Generates alerts based on sensor data")
     Component(notificationService, "Notification Service", "Spring Service", "Sends notifications to clients")
+    Component(alertRuleService, "Alert Rule Service", "Spring Service", "Manages alert rules and thresholds")
+    Component(recommendationService, "Recommendation Service", "Spring Service", "Generates crop recommendations")
+    Component(sensorDataRawService, "Sensor Data Raw Service", "Spring Service", "Ingests raw sensor data from devices")
 }
 
 ContainerDb(db, "PostgreSQL Database", "PostgreSQL", "Stores clients, parcels, devices, sensor records, alerts, harvests")
@@ -144,21 +104,26 @@ Rel(webapp, alertService, "Checks alerts", "REST/JSON")
 Rel(webapp, notificationService, "Receives notifications", "REST/JSON")
 
 Rel(iot_device, deviceService, "Sends telemetry", "MQTT/HTTP")
-Rel(deviceService, sensorService, "Stores sensor data", "REST/JSON")
-
-Rel(sensorService, analytics, "Sends raw data", "REST")
+Rel(deviceService, sensorDataRawService, "Stores raw sensor data", "REST/JSON")
+Rel(sensorDataRawService, analytics, "Sends raw data", "REST")
 Rel(analytics, snapshotService, "Returns averages", "REST")
 Rel(analytics, harvestService, "Returns sustainability scores", "REST")
+Rel(alertRuleService, alertService, "Provides rules", "REST")
+Rel(alertService, notificationService, "Triggers notifications", "REST")
+Rel(recommendationService, analytics, "Requests predictions", "REST")
 
 Rel(clientService, db, "Reads/Writes", "JDBC")
 Rel(subscriptionService, db, "Reads/Writes", "JDBC")
 Rel(parcelService, db, "Reads/Writes", "JDBC")
 Rel(deviceService, db, "Reads/Writes", "JDBC")
+Rel(sensorDataRawService, db, "Reads/Writes", "JDBC")
 Rel(sensorService, db, "Reads/Writes", "JDBC")
 Rel(snapshotService, db, "Reads/Writes", "JDBC")
 Rel(harvestService, db, "Reads/Writes", "JDBC")
+Rel(alertRuleService, db, "Reads/Writes", "JDBC")
 Rel(alertService, db, "Reads/Writes", "JDBC")
 Rel(notificationService, db, "Reads/Writes", "JDBC")
+Rel(recommendationService, db, "Reads/Writes", "JDBC")
 
 @enduml
 ```
