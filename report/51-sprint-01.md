@@ -16,30 +16,30 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
 </tr>
 </thead>
 <tr align='center'>
-<td> Date </td>
-<td> 2026-04-10 </td>
+<td>Date</td>
+<td>2026-04-10</td>
 </tr>
-<tr>
+<tr align='center'>
 <td>Time</td>
-<td> 09:00PM - 10:30PM </td>
+<td>09:00PM - 10:30PM</td>
 </tr>
-<tr>
+<tr align='center'>
 <td>Location</td>
-<td> Meet </td>
+<td>Meet</td>
 </tr>
-<tr>
+<tr align='center'>
 <td>Prepared by</td>
-<td> Retuerto Rodriguez, Jorge Manuel </td>
+<td>Retuerto Rodriguez, Jorge Manuel</td>
 </tr>
-<tr>
+<tr align='center'>
 <td>Attendees</td>
-<td> Retuerto Rodriguez, Jorge Manuel <br> Howard Robles, Guillermo Arturo <br> Acuña de la Cruz, Luis Alfredo <br> Perez Encarnacion, Breithner Rodolfo <br> Aguilar Untiveros, Rodrigo Fabrizio </td>
+<td>Retuerto Rodriguez, Jorge Manuel <br> Howard Robles, Guillermo Arturo <br> Acuña de la Cruz, Luis Alfredo <br> Perez Encarnacion, Breithner Rodolfo <br> Aguilar Untiveros, Rodrigo Fabrizio</td>
 </tr>
-<tr>
+<tr align='center'>
 <td>Sprint n-1 Review Summary</td>
 <td>No hubo sprint anterior</td>
 </tr>
-<tr>
+<tr align='center'>
 <td>Sprint n-1 Retrospective Summary</td>
 <td>No hubo sprint anterior</td>
 </tr>
@@ -48,21 +48,21 @@ A través de una reunión en la plataforma Meet, se planteó el inicio del Sprin
 </tr>
 <tr>
 <td>Sprint 1 Goal</td>
-<td> 
+<td>
 <b>Desarrollar la Landing Page de TerraTech:</b><br>Nuestro enfoque es crear una página de aterrizaje clara, responsive y funcional que comunique eficazmente los beneficios de nuestra solución de monitoreo agrícola (IoT). 
 Creemos que esto proporcionará una primera impresión profesional y generará confianza con los agricultores y proveedores, facilitando la captación de leads mediante el formulario de demo. 
 El éxito se confirmará cuando la página esté desplegada correctamente en GitHub Pages y sea accesible para los usuarios.<br><br>
 <b>Desarrollo del informe de TerraTech:</b><br>Nuestro enfoque el desarrollo de la documentación del proyecto TerraTech. Buscamos la realización de las definiciones del proyecto,
-investigación sobre del segmento de estudio, generación de historias de usuario, diseño UX y lógica de negocio. Finalmente, el orden de sprint del producto. 
+investigación sobre del segmento de estudio, generación de historias de usuario, diseño UX y lógica de negocio. Finalmente, el orden de sprint del producto.
 </td>
 </tr>
 <tr>
 <td>Sprint 1 velocity</td>
-<td> 15 </td>
+<td>15</td>
 </tr>
 <tr>
 <td>Sum of Story Points</td>
-<td> 15 </td>
+<td>15</td>
 </tr>
 </table>
 
@@ -71,7 +71,7 @@ investigación sobre del segmento de estudio, generación de historias de usuari
 
 <table border="1">
   <thead>
-    <tr>
+    <table>
       <th>Team member</th>
       <th>Github username</th>
       <th>Landing Page</th>
@@ -133,79 +133,89 @@ investigación sobre del segmento de estudio, generación de historias de usuari
 
 #### 5.2.1.3 Sprint 1 Backlog
 
-<table>
-  <tr>
-    <td><strong>Sprint #</strong></td>
-    <td colspan="7"><strong>Sprint 1</strong></td>
-  </tr>
-  <tr>
-    <td colspan="2"><strong>User Story</strong></td>
-    <td colspan="6"><strong>Work-item / Task</strong></td>
-  </tr>
-  <tr>
-    <td><strong>ID</strong></td>
-    <td><strong>Title</strong></td>
-    <td><strong>ID</strong></td>
-    <td><strong>Title</strong></td>
-    <td><strong>Description</strong></td>
-    <td><strong>Estimation (Hours)</strong></td>
-    <td><strong>Assigned to</strong></td>
-    <td><strong>Status</strong></td>
-  </tr>
-  <tr>
-    <td>US01</td>
-    <td>Visualización de Hero Section</td>
-    <td>Task 1</td>
-    <td>Diseño de Hero y Botón CTA</td>
-    <td>Diseñar visualmente la sección principal con el botón "Solicitar Demo".</td>
-    <td>3</td>
-    <td>Breithner Perez</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US02</td>
-    <td>Visualización de Características</td>
-    <td>Task 2</td>
-    <td>Maquetación de la sección</td>
-    <td>Implementar la cuadrícula con las 3 características principales de TerraTech.</td>
-    <td>3</td>
-    <td>Guillermo Howard</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US03</td>
-    <td>Envío de Formulario de Demo</td>
-    <td>Task 3</td>
-    <td>Lógica de validación</td>
-    <td>Programar las alertas para correos inválidos y campos vacíos.</td>
-    <td>2</td>
-    <td>Jorge Retuerto</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US04</td>
-    <td>Enlace a Términos y Condiciones</td>
-    <td>Task 4</td>
-    <td>Implementación en el Footer</td>
-    <td>Agregar los enlaces funcionales en la parte inferior de la página.</td>
-    <td>1</td>
-    <td>Luis Acuña</td>
-    <td>Done</td>
-  </tr>
-  <tr>
-    <td>US04</td>
-    <td>Visualizacion de caracteristicas</td>
-    <td>Task 5</td>
-    <td>Implementación en el tabla de miembros</td>
-    <td>Agregar los miembros del equipo junto a su descripcion.</td>
-    <td>1</td>
-    <td>Rodrigo Aguilar</td>
-    <td>Done</td>
-  </tr>
+<table border="1">
+  <thead>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">Work-item / Task</th>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Hours)</th>
+      <th>Assigned to</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01</td>
+      <td>Visualización de Hero Section</td>
+      <td>Task 1</td>
+      <td>Diseño de Hero y Botón CTA</td>
+      <td>Diseñar visualmente la sección principal con el botón "Solicitar Demo".</td>
+      <td>3</td>
+      <td>Breithner Perez</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Visualización de Características</td>
+      <td>Task 2</td>
+      <td>Maquetación de la sección</td>
+      <td>Implementar la cuadrícula con las 3 características principales de TerraTech.</td>
+      <td>3</td>
+      <td>Guillermo Howard</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td rowspan="2">US03</td>
+      <td rowspan="2">Envío de Formulario de Demo</td>
+      <td>Task 3.1</td>
+      <td>Validar email con regex</td>
+      <td>Implementar validación del campo email utilizando expresión regular (regex) para asegurar formato correcto (ej: usuario@dominio.com).</td>
+      <td>1</td>
+      <td>Jorge Retuerto</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>Task 3.2</td>
+      <td>Mostrar mensajes de error en UI</td>
+      <td>Implementar visualización de mensajes de error dinámicos en la interfaz de usuario para campos vacíos y formato de email incorrecto. Los mensajes deben mostrarse en rojo junto al campo correspondiente.</td>
+      <td>1</td>
+      <td>Jorge Retuerto</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Enlace a Términos y Condiciones</td>
+      <td>Task 4</td>
+      <td>Implementación en el Footer</td>
+      <td>Agregar los enlaces funcionales en la parte inferior de la página.</td>
+      <td>1</td>
+      <td>Luis Acuña</td>
+      <td>Done</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Visualización de características</td>
+      <td>Task 5</td>
+      <td>Implementación en la tabla de miembros</td>
+      <td>Agregar los miembros del equipo junto a su descripción.</td>
+      <td>1</td>
+      <td>Rodrigo Aguilar</td>
+      <td>Done</td>
+    </tr>
+  </tbody>
 </table>
 
-#### 5.2.1.4. Development Evidence for Sprint Review
+**Nota:** La tarea Task 3 original (Lógica de validación) fue desglosada en dos tareas más pequeñas (Task 3.1 y Task 3.2) con una estimación de 1 hora cada una, cumpliendo con el rango recomendado de 4 a 8 horas máximo por tarea. La estimación máxima en este Sprint Backlog es de 3 horas (Task 1 y Task 2), la cual está documentada y no excede el límite permitido.
 
+
+#### 5.2.1.4. Development Evidence for Sprint Review
 
 <table>
   <thead>
@@ -265,7 +275,6 @@ investigación sobre del segmento de estudio, generación de historias de usuari
     <li><b>Propósito:</b> Facilitar el desarrollo ágil y la visualización instantánea de los cambios en la interfaz de TerraTech.</li>
     <li><b>Descripción:</b> Esta herramienta permitió que el equipo visualizara dinámicamente los ajustes en tiempo real, agilizando la corrección de errores en la maquetación del Hero Section y las secciones de sensores sin recargar manualmente el navegador.</li>
 </ul>
-
 
 <h5>2. Validación de Formularios y Responsive con CSS Grid/Flexbox</h5>
 <ul>
