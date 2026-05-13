@@ -32,7 +32,7 @@ Los agricultores peruanos en zonas rurales de Huánuco, Cusco y Cajamarca no pue
 
 11. ***Resolveremos esto a través de*** ... interfaces sencillas basadas en íconos y alertas sonoras, considerando siempre el UX y feedback de próximos lanzamientos, que muestren resultados económicos inmediatos en los primeros 30 días de uso y uso de dispositivos IoT con tecnología LoRaWAN adaptados a los desafíos de las zonas rurales sin cobertura.
 
-12. ***¿Qué suposiciones que tenemos?***
+12. ***¿Qué suposiciones tenemos?***
 
 a. El Proveedor le interesan los datos anonimizados de al menos 100 agricultores, para mejorar la venta de insumos con recomendaciones basadas en datos reales.
 
