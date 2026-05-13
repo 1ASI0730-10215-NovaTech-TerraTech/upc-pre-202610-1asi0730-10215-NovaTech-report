@@ -4,234 +4,177 @@
 
 ```plantuml
 @startuml
-!theme plain
-
-' ==================== DARK THEME CONFIGURATION ====================
-skinparam backgroundColor #1A1B26
-skinparam defaultFontColor #A9B1D6
-skinparam classFontColor #C0CAF5
-skinparam classAttributeFontColor #9AA5CE
+' ==================== LIGHT THEME CONFIGURATION ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam classAttributeFontColor #555555
 skinparam class {
-    BackgroundColor #24283B
-    BorderColor #414868
-    HeaderBackgroundColor #1F2335
-    HeaderFontColor #7DCFFF
-    FontColor #C0CAF5
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
 }
 
 skinparam stereotype {
-    BackgroundColor #1A1B26
-    BorderColor #565F89
-    FontColor #7DCFFF
+    BackgroundColor #FFFFFF
+    BorderColor #ADB5BD
+    FontColor #0066CC
 }
 
 skinparam arrow {
-    Color #565F89
-    FontColor #787C99
+    Color #6C757D
+    FontColor #495057
     Thickness 1
 }
 
 skinparam note {
-    BackgroundColor #24283B
-    BorderColor #414868
-    FontColor #A9B1D6
+    BackgroundColor #FFF3CD
+    BorderColor #FFEEBA
+    FontColor #856404
 }
 
+title <color:#0066CC><size:18>AgroTech IoT - Database Diagram</size></color>
 
-title <color:#7DCFFF><size:16>AgroTech - Database Diagram</size></color>
 
-'||-- Business layer --||
-entity client {
-+id_client: VARCHAR(36) <<PK>>
----
-name: VARCHAR(255)
-email: VARCHAR(255)
-password: VARCHAR(255)
-role: VARCHAR(50)
-created_at: TIMESTAMP
+entity User {
+    * user_id : String
+    --
+    * email : String
+    * password_hash : String
 }
 
-entity subscription_plan {
-+id_plan: VARCHAR(36) <<PK>>
----
-name: VARCHAR(100)
-price: DECIMAL(10,2)
-iot_limit: INT
-features: TEXT
+entity Profile {
+    * profile_id : String
+    --
+    * user_id : String <<FK>>
+    * fundo_name : String
+    * contact_phone : String
+    * moisture_threshold : Number
+    * temp_threshold : Number
 }
 
-entity user_subscription {
-+id_user_subscription: VARCHAR(36) <<PK>>
----
-start_date: TIMESTAMP
-end_date: TIMESTAMP
-payment_status: VARCHAR(50)
-id_plan: VARCHAR(36) <<FK>>
-id_user: VARCHAR(36) <<FK>>
+entity Community_profile {
+    * community_profile_id : String
+    --
+    * profile_id : String <<FK>>
+    * nickname : String
+    * reputation_score : Number
+    * public_bio : String
+    * visibility_status : Boolean
 }
 
-'||-- Physical layer --||
-entity parcel {
-+id_parcel: VARCHAR(36) <<PK>>
----
-name: VARCHAR(255)
-latitude: DECIMAL(10,8)
-longitude: DECIMAL(11,8)
-altitude: DECIMAL(10,2)
-category: VARCHAR(100)
-id_client: VARCHAR(36) <<FK>>
+entity Comment {
+    * comment_id : String
+    --
+    * author_profile_id : String <<FK>>
+    * target_profile_id : String <<FK>>
+    * content : String
+    * created_at : Date
 }
 
-entity device {
-+id_device: VARCHAR(36) <<PK>>
----
-status: VARCHAR(50)
-battery: DECIMAL(5,2)
-version: VARCHAR(50)
-last_connection: TIMESTAMP
-id_parcel: VARCHAR(36) <<FK>>
+entity Subscription {
+    * subscription_id : String
+    --
+    * profile_id : String <<FK>>
+    * product_id : String <<FK>>
+    * order_id : String <<FK>>
+    * start_date : Date
+    * end_date : Date
+    * status : String
+    * auto_renew : Boolean
 }
 
-'||-- Raw data --||
-entity sensor_data_raw {
-+id_sensor_data_raw: VARCHAR(36) <<PK>>
----
-raw_humidity: DECIMAL(10,2)
-raw_temperature: DECIMAL(10,2)
-raw_ph_level: DECIMAL(10,2)
-raw_nitrogen: DECIMAL(10,2)
-raw_phosphorus: DECIMAL(10,2)
-raw_potassium: DECIMAL(10,2)
-received_at: TIMESTAMP
-id_device: VARCHAR(36) <<FK>>
+entity Order {
+    * order_id : String
+    --
+    * profile_id : String <<FK>>
+    * product_id : String <<FK>>
+    * status : String
+    * total_amount : Number
+    * created_at : Date
 }
 
-'||-- Analytics data --||
-entity sensor_record {
-+id_sensor_record: VARCHAR(36) <<PK>>
----
-humidity: DECIMAL(10,2)
-temperature: DECIMAL(10,2)
-ph_level: DECIMAL(10,2)
-nitrogen: DECIMAL(10,2)
-phosphorus: DECIMAL(10,2)
-potassium: DECIMAL(10,2)
-recorded_at: TIMESTAMP
-id_device: VARCHAR(36) <<FK>>
+entity Product {
+    * product_id : String
+    --
+    * name : String
+    * description : String
+    * price : Number
+    * type : String
 }
 
-entity plot_snapshot {
-+id_snapshot: VARCHAR(36) <<PK>>
----
-avg_humidity: DECIMAL(10,2)
-avg_temperature: DECIMAL(10,2)
-avg_ph: DECIMAL(10,2)
-recorded_at: TIMESTAMP
-id_parcel: VARCHAR(36) <<FK>>
+entity Field {
+    * field_id : String
+    --
+    * profile_id : String <<FK>>
+    * name : String
+    * size_m2 : Number
+    * soil_type : String
+    * location_lat_long : String
 }
 
-'||-- Outcomes --||
-entity harvest {
-+id_harvest: VARCHAR(36) <<PK>>
----
-quantity: DECIMAL(10,2)
-harvest_date: DATE
-sustainability_score: DECIMAL(5,2)
-id_parcel: VARCHAR(36) <<FK>>
+entity Device {
+    * device_id : String
+    --
+    * field_id : String <<FK>>
+    * mac_address : String
+    * status : String
+    * last_sync : Date
 }
 
-'||-- Alerts & rules --||
-entity alert_rule {
-+id_alert_rule: VARCHAR(36) <<PK>>
----
-name: VARCHAR(255)
-condition: TEXT
-threshold_min: DECIMAL(10,2)
-threshold_max: DECIMAL(10,2)
-severity: VARCHAR(50)
-is_active: BOOLEAN
+entity Report {
+    * report_id : String
+    --
+    * device_id : String <<FK>>
+    * generated_at : Date
+    * mean_value : Number
+    * variance : Number
+    * standard_deviation : Number
+    * technical_interpretation : String
 }
 
-entity alert {
-+id_alert: VARCHAR(36) <<PK>>
----
-type: VARCHAR(100)
-severity: VARCHAR(50)
-message: TEXT
-is_resolved: BOOLEAN
-created_at: TIMESTAMP
-id_parcel: VARCHAR(36) <<FK>>
-id_alert_rule: VARCHAR(36) <<FK>>
+entity Inventory {
+    * inventory_id : String
+    --
+    * product_id : String <<FK>>
+    * stock_quantity : Number
+    * warehouse_location : String
 }
 
-entity notification {
-+id_notification: VARCHAR(36) <<PK>>
----
-channel: VARCHAR(50)
-sent_at: TIMESTAMP
-read_at: TIMESTAMP
-status: VARCHAR(50)
-id_alert: VARCHAR(36) <<FK>>
-id_client: VARCHAR(36) <<FK>>
+entity Notification {
+    * notification_id : String
+    --
+    * profile_id : String <<FK>>
+    * title : String
+    * message : String
+    * is_alert : Boolean
+    * is_read : Boolean
 }
 
-'||-- Recommendations --||
-entity recommendation {
-+id_recommendation: VARCHAR(36) <<PK>>
----
-title: VARCHAR(255)
-description: TEXT
-recommended_action: TEXT
-created_at: TIMESTAMP
-expires_at: TIMESTAMP
-is_applied: BOOLEAN
-id_parcel: VARCHAR(36) <<FK>>
-}
+' Relationships
+User ||--|| Profile
 
-'||-- Subscription payments log --||
-entity subscription_payments {
-+id_payment: VARCHAR(36) <<PK>>
----
-amount: DECIMAL(10,2)
-payment_date: TIMESTAMP
-payment_method: VARCHAR(50)
-transaction_id: VARCHAR(255)
-status: VARCHAR(50)
-id_user_subscription: VARCHAR(36) <<FK>>
-}
+' Operational Hub (Profile)
+Profile ||--|| Community_profile
+Profile ||--o{ Order
+Profile ||--o{ Subscription
+Profile ||--o{ Notification
+Profile ||--o{ Field
 
-'||-- Notifications log --||
-entity notifications_log {
-+id_log: VARCHAR(36) <<PK>>
----
-sent_at: TIMESTAMP
-delivery_status: VARCHAR(50)
-retry_count: INT
-error_message: TEXT
-id_notification: VARCHAR(36) <<FK>>
-}
+' Social Interaction
+Community_profile ||--o{ Comment
+Community_profile ||--o{ Comment
 
-'||-- Relations --||
-client ||--o{ parcel
-client ||--|| user_subscription
-client ||--o{ notification
+' Logic Connections
+Order }o--|| Product
+Subscription }o--|| Product
+Subscription ||--|| Order
 
-subscription_plan ||--o{ user_subscription
-
-parcel ||--o{ device
-parcel ||--o{ plot_snapshot
-parcel ||--o{ harvest
-parcel ||--o{ alert
-parcel ||--o{ recommendation
-
-device ||--o{ sensor_data_raw
-sensor_data_raw ||--|| sensor_record
-
-alert_rule ||--o{ alert
-alert ||--o{ notification
-
-user_subscription ||--o{ subscription_payments
-notification ||--o{ notifications_log
+Field ||--o{ Device
+Device ||--o{ Report
+Product ||--|| Inventory
 
 @enduml
 ```
@@ -246,64 +189,63 @@ notification ||--o{ notifications_log
 </thead>
 <tbody>
 <tr>
-<td><code>client</code></td>
-<td>Almacena la información de los clientes del sistema, incluyendo nombre, email, contraseña cifrada, rol y fecha de registro.</td>
+<td><code>user</code></td>
+<td>Almacena las credenciales principales de acceso al sistema, incluyendo correo electrónico y contraseña cifrada de cada usuario registrado.</td>
 </tr>
+
 <tr>
-<td><code>subscription_plan</code></td>
-<td>Define los planes de suscripción disponibles, con nombre, precio, límite de dispositivos IoT y características incluidas.</td>
+<td><code>profile</code></td>
+<td>Contiene la información del perfil agrícola asociado a cada usuario, como nombre del fundo, teléfono de contacto y los umbrales configurados de humedad y temperatura.</td>
 </tr>
+
 <tr>
-<td><code>user_subscription</code></td>
-<td>Registra la suscripción activa o histórica de cada cliente a un plan, incluyendo fechas de inicio/fin y estado de pago.</td>
+<td><code>community_profile</code></td>
+<td>Representa el perfil público del agricultor dentro de la comunidad, incluyendo apodo, biografía, puntuación de reputación y configuración de visibilidad.</td>
 </tr>
+
 <tr>
-<td><code>subscription_payments</code></td>
-<td>Registra el historial de pagos realizados por cada suscripción, incluyendo monto, método de pago, ID de transacción y estado.</td>
+<td><code>comment</code></td>
+<td>Registra los comentarios realizados entre perfiles de la comunidad, almacenando autor, destinatario, contenido y fecha de creación.</td>
 </tr>
+
 <tr>
-<td><code>parcel</code></td>
-<td>Almacena las parcelas agrícolas de los clientes, con datos de ubicación geográfica (latitud, longitud, altitud), nombre y categoría.</td>
+<td><code>product</code></td>
+<td>Define los productos y servicios ofrecidos por la plataforma, incluyendo nombre, descripción, precio y tipo de producto.</td>
 </tr>
+
+<tr>
+<td><code>order</code></td>
+<td>Registra las órdenes de compra realizadas por los perfiles, incluyendo producto adquirido, estado del pedido, monto total y fecha de creación.</td>
+</tr>
+
+<tr>
+<td><code>subscription</code></td>
+<td>Gestiona las suscripciones de los perfiles a productos o servicios, incluyendo fechas de inicio y fin, estado y configuración de renovación automática.</td>
+</tr>
+
+<tr>
+<td><code>field</code></td>
+<td>Almacena los terrenos o parcelas agrícolas administradas por cada perfil, incluyendo nombre, tamaño en metros cuadrados, tipo de suelo y ubicación geográfica.</td>
+</tr>
+
 <tr>
 <td><code>device</code></td>
-<td>Registra los dispositivos IoT instalados en parcelas, con estado operativo, nivel de batería, versión de firmware y última conexión.</td>
+<td>Registra los dispositivos IoT instalados en cada parcela, con dirección MAC, estado operativo y fecha de última sincronización.</td>
 </tr>
+
 <tr>
-<td><code>sensor_data_raw</code></td>
-<td>Almacena los datos crudos recibidos directamente de los sensores IoT antes de cualquier limpieza o procesamiento.</td>
+<td><code>report</code></td>
+<td>Almacena los reportes estadísticos generados a partir de los datos de los dispositivos IoT, incluyendo promedio, varianza, desviación estándar e interpretación técnica.</td>
 </tr>
+
 <tr>
-<td><code>sensor_record</code></td>
-<td>Almacena las lecturas de sensores ya procesadas y validadas, incluyendo humedad, temperatura, pH, nitrógeno, fósforo y potasio.</td>
+<td><code>inventory</code></td>
+<td>Gestiona el inventario disponible de cada producto, incluyendo cantidad en stock y ubicación del almacén.</td>
 </tr>
-<tr>
-<td><code>plot_snapshot</code></td>
-<td>Guarda resúmenes analíticos periódicos de cada parcela, con valores promedio de humedad, temperatura y pH en un momento dado.</td>
-</tr>
-<tr>
-<td><code>harvest</code></td>
-<td>Registra las cosechas obtenidas de cada parcela, con cantidad producida, fecha y puntuación de sostenibilidad calculada.</td>
-</tr>
-<tr>
-<td><code>alert_rule</code></td>
-<td>Define las reglas de negocio para generar alertas, incluyendo condiciones, umbrales mínimo/máximo, severidad y estado activo.</td>
-</tr>
-<tr>
-<td><code>alert</code></td>
-<td>Registra las alertas generadas cuando se detectan condiciones anormales en una parcela, con tipo, severidad, mensaje y estado de resolución.</td>
-</tr>
+
 <tr>
 <td><code>notification</code></td>
-<td>Gestiona el envío de notificaciones a clientes basadas en alertas, incluyendo canal, fechas de envío/lectura y estado de entrega.</td>
-</tr>
-<tr>
-<td><code>notifications_log</code></td>
-<td>Registra el historial detallado de envío de notificaciones, incluyendo estado de entrega, reintentos y mensajes de error.</td>
-</tr>
-<tr>
-<td><code>recommendation</code></td>
-<td>Almacena las recomendaciones generadas automáticamente para parcelas, incluyendo título, descripción, acción sugerida y estado de aplicación.</td>
+<td>Registra las notificaciones y alertas enviadas a los perfiles, incluyendo título, mensaje, indicador de alerta y estado de lectura.</td>
 </tr>
 </tbody>
 </table>
