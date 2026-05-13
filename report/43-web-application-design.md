@@ -72,11 +72,9 @@ Esta imagen ilustra el boceto de baja fidelidad (wireframe) del panel de Gestió
 
 Esta imagen ilustra el boceto de baja fidelidad (wireframe) de la vista detallada de monitoreo para la versión de escritorio de TerraTech. La interfaz organiza los datos ambientales y del suelo en un diseño modular: en la parte superior izquierda se reserva el espacio para el pronóstico del clima (US23), mientras que a la derecha se disponen las tarjetas con los indicadores en tiempo real de humedad, temperatura y nutrientes (US09). En la sección inferior, la arquitectura prioriza el análisis de tendencias mediante un contenedor para el gráfico de histórico de 7 días (US11), acompañado de botones de acceso directo para consultar recomendaciones agronómicas y registrar nuevos sensores. Este diseño estructural centraliza todas las variables críticas en una sola pantalla, garantizando que el agricultor cuente con una base informativa sólida para la toma de decisiones antes de la implementación final.
 
-
 <p align="center">
 <img src="./report/assets/application-wireframes-12.jpg" width="350" height="250">
 </p>
-
 
 Esta imagen presenta el boceto de baja fidelidad (wireframe) para la pantalla de Perfil y Configuración de Alertas en la versión de escritorio de TerraTech. La arquitectura de información destaca en el panel principal la sección de Gestión de Perfil (US08) con un área para la fotografía y datos del usuario, seguida de un módulo interactivo para establecer los Umbrales de Alerta (US17). En este apartado, el diseño estructural incorpora sliders para el ajuste de humedad y nutrientes mínimos, junto con interruptores (toggles) para habilitar notificaciones personalizadas por zonas. A la derecha, se sitúa un botón de gran formato para guardar la configuración, asegurando una jerarquía visual clara que facilita al agricultor la personalización del sistema IoT antes de su implementación final en alta fidelidad.
 
@@ -101,7 +99,6 @@ Esta imagen representa el Web Application Wireflow Diagram de TerraTech, una her
 <p align="center">
 <img src="./report/assets/wireflow-diagrams-2.jpg" width="350" height="650">
 </p>
-
 
 ### 4.4.3. Web Applications Mock-ups
 
@@ -189,11 +186,42 @@ Esta imagen ilustra la versión de escritorio del panel integrado de configuraci
 <img src="./report/assets/aplicacion-mock-ups-14.jpg" width="350" height="250">
 </p>
 
-
 ### 4.4.4. Web Applications User Flow Diagrams
 
-El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que un agricultor realiza al interactuar con el ecosistema digital de TerraTech. En este esquema se detalla la secuencia de pasos lógicos necesarios para completar tareas críticas —desde la autenticación y el registro de sensores IoT hasta la interpretación de mapas de fertilidad y la gestión de alertas de humedad— lo que permite identificar cuellos de botella operativos, optimizar la navegación y garantizar una experiencia de usuario (UX) fluida y eficiente en el entorno agrícola.
+El diagrama de flujo de usuario es una representación visual de las acciones secuenciales que un agricultor realiza al interactuar con el ecosistema digital de TerraTech. A continuación se presentan tres diagramas específicos para los User Goals más críticos de la plataforma, cada uno incluyendo el **Happy Path** (camino exitoso) y **flujos alternativos** (errores, cancelaciones, casos borde como email inválido, contraseña débil, código de sensor inválido, sensor sin batería, y falta de datos del sensor).
+
+---
+
+#### User Flow 1: Registro y Activación de Cuenta
+
+**User Stories relacionadas:** US05, US06
+
+**Flujos incluidos:** Happy Path, email inválido, contraseña débil, email ya registrado, contraseñas no coinciden, cancelación, enlace expirado.
 
 <p align="center">
-<img src="./report/assets/diagrama-de-flujo.png" width="800" height="500">
+<img src="./report/assets/user-flow-registro-activacion.png" width="800" height="500">
+</p>
+
+---
+
+#### User Flow 2: Configuración de un Nuevo Sensor IoT
+
+**User Stories relacionadas:** US16
+
+**Flujos incluidos:** Happy Path, código de sensor inválido, código ya registrado, sensor sin batería o sin conexión, cancelación, campos incompletos.
+
+<p align="center">
+<img src="./report/assets/user-flow-registro-sensor.png" width="800" height="500">
+</p>
+
+---
+
+#### User Flow 3: Consulta de Recomendación de Riego
+
+**User Stories relacionadas:** US14
+
+**Flujos incluidos:** Happy Path, no hay datos del sensor (sensor sin conexión), humedad óptima, humedad excesiva, usuario descarta recomendación, usuario modifica umbrales, usuario consulta historial.
+
+<p align="center">
+<img src="./report/assets/user-flow-recomendacion-riego.png" width="800" height="500">
 </p>
