@@ -49,7 +49,7 @@ class Client {
     - email: String
     - password: String
     - role: String
-    - createAt: LocalDateTime
+    - createdAt: LocalDateTime
     --
     + login()
     + updateProfile()
@@ -91,7 +91,7 @@ class Parcel {
 }
 
 class Device {
-    - idDevide: String <<PK>>
+    - idDevice: String <<PK>>
     - status: String
     - battery: Double
     - version: String
@@ -100,6 +100,22 @@ class Device {
     --
     + sendData()
     + checkBattery()
+}
+
+' ==================== RAW SENSOR DATA ====================
+class SensorDataRaw {
+    - idSensorDataRaw: String <<PK>>
+    - rawHumidity: Double
+    - rawTemperature: Double
+    - rawPhLevel: Double
+    - rawNitrogen: Double
+    - rawPhosphorus: Double
+    - rawPotassium: Double
+    - receivedAt: LocalDateTime
+    - idDevice: String <<FK>>
+    --
+    + validate()
+    + cleanData()
 }
 
 ' ==================== ANALYTICS LAYER ====================
@@ -140,6 +156,18 @@ class Harvest {
 }
 
 ' ==================== ALERTS ====================
+class AlertRule {
+    - idAlertRule: String <<PK>>
+    - name: String
+    - condition: String
+    - thresholdMin: Double
+    - thresholdMax: Double
+    - severity: String
+    - isActive: Boolean
+    --
+    + evaluate()
+}
+
 class Alert {
     - idAlert: String <<PK>>
     - type: String
@@ -148,6 +176,7 @@ class Alert {
     - isResolved: Boolean
     - createdAt: LocalDateTime
     - idParcel: String <<FK>>
+    - idAlertRule: String <<FK>>
     --
     + resolve()
 }
@@ -165,6 +194,21 @@ class Notification {
     + markAsRead()
 }
 
+' ==================== RECOMMENDATIONS ====================
+class Recommendation {
+    - idRecommendation: String <<PK>>
+    - title: String
+    - description: String
+    - recommendedAction: String
+    - createdAt: LocalDateTime
+    - expiresAt: LocalDateTime
+    - isApplied: Boolean
+    - idParcel: String <<FK>>
+    --
+    + apply()
+    + discard()
+}
+
 ' ==================== RELATIONSHIPS ====================
 Client ||--o{ Parcel : owns
 Client ||--|| UserSubscription : has
@@ -176,9 +220,12 @@ Parcel ||--o{ Device : contains
 Parcel ||--o{ PlotSnapshot : generates
 Parcel ||--o{ Harvest : produces
 Parcel ||--o{ Alert : triggers
+Parcel ||--o{ Recommendation : receives
 
-Device ||--o{ SensorRecord : collects
+Device ||--o{ SensorDataRaw : produces
+SensorDataRaw ||--|| SensorRecord : cleanedInto
 
+AlertRule ||--o{ Alert : defines
 Alert ||--o{ Notification : generates
 
 @enduml
@@ -215,8 +262,12 @@ Alert ||--o{ Notification : generates
 <td>Entidad que representa un dispositivo IoT instalado en una parcela, con estado, nivel de batería, versión de software y última conexión. Puede enviar datos y verificar batería.</td>
 </tr>
 <tr>
+<td><code>SensorDataRaw</code></td>
+<td>Entidad que almacena los datos crudos recibidos de los sensores antes de su limpieza y procesamiento. Permite validación y limpieza de datos.</td>
+</tr>
+<tr>
 <td><code>SensorRecord</code></td>
-<td>Entidad que almacena las lecturas de sensores de un dispositivo, incluyendo humedad, temperatura, nivel de pH, nitrógeno, fósforo y potasio.</td>
+<td>Entidad que almacena las lecturas procesadas de sensores de un dispositivo, incluyendo humedad, temperatura, nivel de pH, nitrógeno, fósforo y potasio.</td>
 </tr>
 <tr>
 <td><code>PlotSnapshot</code></td>
@@ -227,12 +278,20 @@ Alert ||--o{ Notification : generates
 <td>Entidad que registra una cosecha, con cantidad producida, fecha y puntuación de sostenibilidad calculada en base a parámetros definidos.</td>
 </tr>
 <tr>
+<td><code>AlertRule</code></td>
+<td>Entidad que define las reglas y umbrales para generar alertas, incluyendo condiciones, umbrales mínimo y máximo, gravedad y estado de actividad.</td>
+</tr>
+<tr>
 <td><code>Alert</code></td>
 <td>Entidad que representa una alerta generada por condiciones anormales en una parcela, con tipo, severidad, mensaje y estado de resolución.</td>
 </tr>
 <tr>
 <td><code>Notification</code></td>
 <td>Entidad que gestiona el envío de notificaciones a clientes basadas en alertas, con canal de envío, estado de lectura y seguimiento de entrega.</td>
+</tr>
+<tr>
+<td><code>Recommendation</code></td>
+<td>Entidad que representa una recomendación generada para una parcela basada en análisis de datos, incluyendo título, descripción, acción recomendada y estado de aplicación.</td>
 </tr>
 </tbody>
 </table>
