@@ -40,7 +40,7 @@ Acerca de
 
 <tr>
 <th>
-<img src="./report/assets/foto-luis.jpeg" alt="Foto" height="200px" width="100px">
+<img src="assets/foto-luis.jpeg" alt="Foto" style="height: 140px !important; width: 115px !important;">
 </th>
 <th>
 Acuña de la Cruz, Luis Alfredo
@@ -55,7 +55,7 @@ Mi nombre es Luis Alfredo Acuña de la Cruz (u202417228), tengo 19 años y estoy
 
 <tr>
 <th>
-<img src="./report/assets/foto-rodrigo.jpeg" alt="Foto" height="200px" width="100px">
+<img src="assets/foto-rodrigo.jpeg" alt="Foto" style="height: 140px !important; width: 115px !important;">
 </th>
 <th>
 Aguilar Untiveros, Rodrigo Fabrizio
@@ -70,7 +70,7 @@ Mi nombre es Rodrigo, estudiante de Ingeniería de Software comprometido con el 
 
 <tr>
 <th>
-<img src="./report/assets/foto-guillermo.jpeg" alt="Foto" height="200px" width="100px">
+<img src="assets/foto-guillermo.jpeg" alt="Foto" style="height: 140px !important; width: 115px !important;">
 </th>
 <th>
 Howard Robles, Guillermo Arturo
@@ -85,7 +85,7 @@ Mi nombre es Guillermo Arturo Howard Robles (u202222275) tengo 20 años, Soy est
 
 <tr>
 <th>
-<img src="./report/assets/foto-breithner.jpeg" alt="Foto" height="200px" width="100px">
+<img src="assets/foto-breithner.jpeg" alt="Foto" style="height: 140px !important; width: 115px !important;">
 </th>
 <th>
 Perez Encarnacion, Breithner Rodolfo
@@ -100,7 +100,7 @@ Mi nombre es Breithner Rodolfo Perez Encarnacion, tengo 19 años y soy estudiant
 
 <tr>
 <th>
-<img src="./report/assets/foto-jorge.jpg" alt="Foto" height="200px" width="100px">
+<img src="assets/foto-jorge.jpg" alt="Foto" style="height: 140px !important; width: 115px !important;">
 </th>
 <th>
 Retuerto Rodríguez, Jorge Manuel
