@@ -28,10 +28,10 @@ Para este análisis competitivo se realizó un benchmark parcial enfocado en ide
 <td valign="top">Phytech</td>
 </tr>
 <tr>
-<td valign="top"><img src="./report/assets/terratech-logo.png" alt="Logo Mi Startup" height="100px"></td>
-<td valign="top"><img src="./report/assets/logo-agrotech.png" alt="Logo AgroTech" height="100px"></td>
-<td valign="top"><img src="./report/assets/logo-vista-del-valle.png" alt="Logo Vista Del Valle" height="140px"></td>
-<td valign="top"><img src="./report/assets/logo-phytech.png" alt="Logo Phytech" height="100px"></td>
+<td valign="top"><img src="assets/terratech-logo.png" alt="Logo Mi Startup" style="height: 50px !important; width: 50px !important;"></td>
+<td valign="top"><img src="assets/logo-agrotech.png" alt="Logo AgroTech" style="height: 50px !important; width: 50px !important;"></td>
+<td valign="top"><img src="assets/logo-vista-del-valle.png" alt="Logo Vista Del Valle" style="height: 50px !important; width: 50px !important;"></td>
+<td valign="top"><img src="assets/logo-phytech.png" alt="Logo Phytech" style="height: 50px !important; width: 50px !important;"></td>
 </tr>
 <tr>
 <td rowspan="2" valign="top">Perfil</td>
