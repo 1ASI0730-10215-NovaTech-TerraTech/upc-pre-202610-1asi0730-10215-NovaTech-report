@@ -114,7 +114,8 @@
         * **Edad:** 67
         * **Distrito:** Huánuco
         * **Screenshot:**
-          <img src="./report/assets/entrevista-11.png" alt="cap2" width="200">
+
+          <img src="assets/entrevista-11.png" alt="cap2" style="height: 150px !important; width: 150px !important;">
         * **Video URL:** https://tinyurl.com/y5au5a7p
         * **Timing:** 00:00 / 12:25
         * **Resumen:**
@@ -126,7 +127,8 @@
         * **Edad:** 52
         * **Distrito:** Cusco
         * **Screenshot:**
-          <img src="./report/assets/entrevista-12.png" alt="cap2" width="200">
+
+          <img src="assets/entrevista-12.png" alt="cap2" style="height: 150px !important; width: 150px !important;">
         * **Video URL:** https://tinyurl.com/57by2psn
         * **Timing:** 12:30 / 23:53
         * **Resumen:**
@@ -143,7 +145,8 @@
         * **Edad:** 35
         * **Distrito:** Lima
         * **Screenshot:**
-          <img src="./report/assets/entrevista-21.png" alt="cap2" width="200">
+
+          <img src="assets/entrevista-21.png" alt="cap2" style="height: 150px !important; width: 150px !important;">
         * **Video URL:** https://tinyurl.com/5t57arwh
         * **Timing:** 23:58 / 30:32
         * **Resumen:**
@@ -156,7 +159,8 @@
         * **Edad:** 26
         * **Distrito:** Lima
         * **Screenshot:**
-          <img src="./report/assets/entrevista-22.png" alt="cap2" width="200">
+
+          <img src="assets/entrevista-22.png" alt="cap2" style="height: 150px !important; width: 150px !important;">
         * **Video URL:** https://tinyurl.com/bdh47w25
         * **Timing:** 30:37 / 36:30
         * **Resumen:**
@@ -171,7 +175,8 @@
         * **Edad:** 25
         * **Distrito:** Lima
         * **Screenshot:**
-          <img src="./report/assets/entrevista-31.png" alt="cap2" width="200">
+
+          <img src="assets/entrevista-31.png" alt="cap2" style="height: 150px !important; width: 150px !important;">
         * **Video URL:** https://tinyurl.com/yfjw3t7u
         * **Timing:** 36:35 / 43:45
         * **Resumen:**
@@ -185,7 +190,8 @@
         * **Edad:** 17
         * **Distrito:** La Molina
         * **Screenshot:**
-          <img src="./report/assets/entrevista-32.png" alt="cap2" width="200">
+      
+          <img src="assets/entrevista-32.png" alt="cap2" style="height: 150px !important; width: 150px !important;">
         * **Video URL:** https://tinyurl.com/4tkbkmy6 
         * **Timing:** 43:50 / 50:56
         * **Resumen:**
@@ -197,7 +203,8 @@
         * **Edad:** 29
         * **Distrito:** Cañete
         * **Screenshot:**
-          <img src="./report/assets/entrevista-33.png" alt="cap2" width="200">
+
+          <img src="assets/entrevista-33.png" alt="cap2" style="height: 150px !important; width: 150px !important;">
         * **Video URL:** https://tinyurl.com/jsr645uj
         * **Timing:** 51:01 / 58:04
         * **Resumen:**
@@ -209,23 +216,23 @@
 
 En las entrevistas, la mayoría de los agricultores (alrededor del 70%) se centran en la experencia que tienen con la trata del suelo, lo que aveces puede generar errores sobretodo con agricultor nuevos o no poder brindar informacion precisa a usuarios externos.
 
-<img src="./report/assets/pregunta-1-3.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-1-3.png" alt="graf-1" style="width: 600px; height: 350px;">
 
 ---
 
-<img src="./report/assets/pregunta-1-4.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-1-4.png" alt="graf-2" style="width: 600px; height: 350px;">
 
 El 50% de los agricultores dependen en gran mayoria de las lluvias para ayudar en el riego de sus cultivos lo que los hace vulnerables a cambios climaticos, como tambien genera mas costos el uso de mas agua o en un mal clima el de fertilizantes por no contar con informacion mas precisa de los climas.
 
-<img src="./report/assets/pregunta-1-5.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-1-5.png" alt="graf-3" style="width: 600px; height: 350px;">
 
 El 100% de los agricultores no utiliza tecnología para el monitoreo de sus cultivos, mientras que un 25% utiliza app unicamente para uso de banca movil o billetera digital.
 
-<img src="./report/assets/pregunta-1-7.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-1-7.png" alt="graf-4" style="width: 600px; height: 350px;">
 
 ---
 
-<img src="./report/assets/pregunta-1-10.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-1-10.png" alt="graf-5" style="width: 600px; height: 350px;">
 
 En resumen, los agricultores entrevistados muestran una fuerte dependencia de métodos tradicionales para el manejo de sus cultivos, con un enfoque particular en la experiencia. La falta de acceso a información precisa sobre el clima y el estado del suelo los hace vulnerables a cambios climáticos y puede generar costos adicionales. Además, la adopción de tecnología para el monitoreo agrícola es prácticamente inexistente, lo que resalta la necesidad de una solución que sea accesible, fácil de usar y que brinde información valiosa para mejorar sus prácticas agrícolas.
 
@@ -233,17 +240,17 @@ En resumen, los agricultores entrevistados muestran una fuerte dependencia de m�
 
 En las entrevistas, el 50% de los proveedores acuden a los campos a informarse de manera directa de las necesidades de los agricultores, mientras que el otro 50% se basa en su experiencia y conocimiento para hacer recomendaciones y en eñ 100% al hacer un seguimiento de calidad de sus productos preguntan directamente a los agricultores sobre los resultados.
 
-<img src="./report/assets/pregunta-2-2.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-2-2.png" alt="graf-6" style="width: 600px; height: 350px;">
 
-<img src="./report/assets/pregunta-2-5.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-2-5.png" alt="graf-7" style="width: 600px; height: 350px;">
 
 La gran parte de los proveedores utiliza con una frecuencia del 75% Whatsapp para comunicarse con los agricultores, mientras que el 25% utiliza herrmientas gráficas como Excel para llevar un control de sus ventas y clientes.
 
-<img src="./report/assets/pregunta-2.11.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-2.11.png" alt="graf-8" style="width: 600px; height: 350px;">
 
 El 75% de los proveedores consideran que una aplicación móvil deberia ayudarles en la reducción de tiempos a la hora de buscar recomendaciones o llegar a comunicarse con los agrilcutores, mientras que el 25% restante considera que lo mas importante es que la aplicación les permita tener informacion actualizada de los cultivos de sus clientes para poder brindar recomendaciones más precisas.
 
-<img src="./report/assets/pregunta-2.12.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-2.12.png" alt="graf-9" style="width: 600px; height: 350px;">
 
 En resumen, los proveedores entrevistados muestran una fuerte dependencia de la comunicación directa con los agricultores para obtener información sobre sus necesidades y resultados. La mayoría utiliza herramientas de mensajería como Whatsapp para mantenerse en contacto, y algunos emplean herramientas gráficas para gestionar sus ventas. La adopción de una aplicación móvil que les permita reducir tiempos y acceder a información actualizada sobre los cultivos de sus clientes sería altamente valorada, ya que les permitiría brindar recomendaciones más precisas y mejorar su eficiencia en el negocio.
 
@@ -251,14 +258,14 @@ En resumen, los proveedores entrevistados muestran una fuerte dependencia de la 
 
 El 50% de los clientes finales toma en cuenta el precio de los productos, mientras que el 25% se busca la calidad como un buen estado del producto y el 25% restante se fija en el origen y el trato que se le dio al producto. 
 
-<img src="./report/assets/pregunta-3-2.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-3-2.png" alt="graf-10" style="width: 600px; height: 350px;">
 
 El 50% de los clientes finales han visualizado información moderada de los productos que compran como el origen del producto, el otro 25% solo información básica viendo las etiquetas del producto y el 25% restante no ha visto información con relación al proceso de cultivo de los productos que compra.
 
-<img src="./report/assets/pregunta-3-6.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-3-6.png" alt="graf-11" style="width: 600px; height: 350px;">
 
 El 100% de los clientes finales utiliza su teléfono para buscar información desde las redes sociales de los productos que van a comprar.
 
-<img src="./report/assets/pregunta-3-11.png" style="width: 600px; height: 350px;">
+<img src="assets/pregunta-3-11.png" alt="graf-12" style="width: 600px; height: 350px;">
 
 En resumen, los clientes finales entrevistados muestran una diversidad de factores que influyen en su decisión de compra, con un enfoque significativo en el precio, la calidad y el origen de los productos. La información disponible sobre los productos varía, con algunos clientes teniendo acceso a detalles moderados mientras que otros solo ven información básica o no tienen acceso a información sobre el proceso de cultivo. La búsqueda de información a través de teléfonos móviles es común entre los clientes finales, lo que destaca la importancia de contar con canales digitales efectivos para proporcionar información relevante sobre los productos agrícolas.
