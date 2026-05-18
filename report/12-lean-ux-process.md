@@ -94,4 +94,4 @@ Por un lado, respecto a la aplicación, debe verse con una interfaz limpia y pro
 
 *Lean ux canvas*
 
-<img src="./report/assets/lean-ux-canvas.png" style="width: 90%; max-width: 800px; height: 650px;">
+<img src="assets/lean-ux-canvas.png" alt="Canvas" style="width: 90%; max-width: 800px; height: 650px;">
