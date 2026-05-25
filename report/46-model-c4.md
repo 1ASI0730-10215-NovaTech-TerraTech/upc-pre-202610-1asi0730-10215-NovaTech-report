@@ -4,6 +4,8 @@
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
+scale 1/2
+
 title AgroTech - System Context Diagram
 
 Person(farmer, "Farmer", "Monitors crops and soil conditions")
@@ -34,6 +36,8 @@ Rel(agrotech, iot, "Receives sensor data", "MQTT/HTTP")
 ```plantuml
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+scale 1/2
 
 ' Esta línea aplica los iconos y el estilo visual completo de C4
 LAYOUT_WITH_LEGEND()
@@ -70,6 +74,8 @@ Rel(iot_device, api, "Sends telemetry", "MQTT/HTTP")
 ```plantuml
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+scale 1/5
 
 title AgroTech - Component Diagram
 

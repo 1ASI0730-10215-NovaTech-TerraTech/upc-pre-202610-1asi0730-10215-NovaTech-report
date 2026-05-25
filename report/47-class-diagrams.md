@@ -5,7 +5,7 @@
 ```plantuml
 @startuml
 !theme plain
-scale 2/3
+scale 1/4
 
 !theme plain
 

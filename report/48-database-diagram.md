@@ -5,6 +5,7 @@
 ```plantuml
 @startuml
 ' ==================== LIGHT THEME CONFIGURATION ====================
+scale 1/4
 skinparam backgroundColor #FFFFFF
 skinparam defaultFontColor #333333
 skinparam classFontColor #1A1A1A

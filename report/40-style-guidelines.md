@@ -10,7 +10,7 @@ Un "Style Guideline" es un conjunto de directrices y normas que establecen los e
 
 Para el desarrollo del logo de TerraTech, hemos elegido un diseño que encapsula la esencia de la aplicación y sus funcionalidades en el campo. El logotipo presenta una tipografía sólida y clara, que aporta modernidad y máxima legibilidad. El ícono fusiona la naturaleza con la tecnología, simbolizando una hoja integrada con las conexiones de un circuito digital para representar la eficiencia y el monitoreo inteligente. La elección de colores, en una combinación de azul marino profundo, verdes vibrantes y tonos tierra, transmite una sensación de crecimiento orgánico respaldado por precisión analítica y estabilidad técnica. La integración de estos elementos busca comunicar visualmente el compromiso de TerraTech con la innovación, la sostenibilidad y la excelencia en la gestión agrícola.
 
-<img src="./report/assets/terratech_logo.png" style="width: 50%; max-width: 700px; height: 700px;">
+<img src="assets/terratech_logo.png" alt="style guidelines" style="width: 300px; height: 300px;">
 
 **Typography**
 
@@ -18,7 +18,7 @@ Para el diseño tipográfico de TerraTech, se ha seleccionado una combinación d
 
 A continuación, se detallan las tipografías adoptadas para TerraTech:
 
-<img src="./report/assets/typography.png" style="width: 80%; max-width: 1200px; height: 500px;">
+<img src="assets/typography.png" alt="style guidelines" style="width: 300px; height: 150px;">
 
 **Colors**
 
@@ -26,13 +26,13 @@ La paleta de colores de TerraTech fue seleccionada para reflejar los valores de 
 
 A continuación, se detallan los colores seleccionados para TerraTech:
 
-<img src="./report/assets/colors.png" style="width: 80%; max-width: 1200px; height: 500px;">
+<img src="assets/colors.png" alt="style guidelines" style="width: 300px; height: 150px;">
 
 **Spacing**
 
 El espaciado en TerraTech está cuidadosamente definido para garantizar una interfaz limpia, organizada y altamente táctil. Se emplea una separación uniforme y amplia entre elementos, lo que mejora la legibilidad de las métricas, evita errores de navegación en dispositivos móviles durante el trabajo de campo y aporta equilibrio visual al diseño.
 
-<img src="./report/assets/spacing.png" style="width: 80%; max-width: 1200px; height: 500px;">
+<img src="assets/spacing.png" alt="style guidelines" style="width: 300px; height: 150px;">
 
 ### 4.1.2. Web Style Guidelines
 
