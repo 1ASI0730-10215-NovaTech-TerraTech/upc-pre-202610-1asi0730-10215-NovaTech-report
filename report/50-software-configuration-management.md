@@ -130,4 +130,4 @@ Landing Page:
 
 - Seguridad y Disponibilidad: GitHub Pages proporciona hosting gratuito y altamente confiable, incluyendo certificados SSL automáticos, lo que garantiza una conexión segura mediante el protocolo HTTPS para todos los visitantes.
 
-<img src="./report/assets/portada-landingpage.jpg" style="width: 90%; max-width: 1200px; height: 600px;">
+<img src="assets/portada-landingpage.jpg" alt="landingpage" style="width: 500px; height: 350px;">
