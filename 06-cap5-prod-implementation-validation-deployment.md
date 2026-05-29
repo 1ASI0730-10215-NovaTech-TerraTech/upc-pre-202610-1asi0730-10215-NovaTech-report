@@ -675,3 +675,187 @@ El equipo mantuvo una comunicación activa a través de Discord, con reuniones d
 
   *[Aquí iría una captura del tablero de GitHub Projects mostrando las tareas completadas]*
 
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3\.
+
+<table border="1">
+<thead>
+<tr>
+<th>Número</th>
+<th>Sprint 3</th>
+</tr>
+<tr>
+<th colspan=2>Sprint Planning Background</th>
+</tr>
+</thead>
+<tr align='center'>
+<td> Date  </td>
+<td> 26/05/2026  </td>
+</tr>
+<tr>
+<td>Time</td>
+<td> 08:00 PM - 09:30 PM  </td>
+</tr>
+<tr>
+<td>Location</td>
+<td> plataforma Discord  </td>
+</tr>
+<tr>
+<td>Prepared by</td>
+<td> Howard Robles, Guillermo Arturo   </td>
+</tr>
+<tr>
+<td>Attendees</td>
+<td> Acuña de la Cruz, Luis Alfredo <br/> Aguilar Untiveros, Rodrigo Fabrizio<br/> Howard Robles, Guillermo Arturo<br/> Perez Encarnación, Breithner Rodolfo<br/> Retuerto Rodríguez, Jorge Manuel  </td>
+</tr>
+<tr>
+<td>Sprint n-2 Review Summary</td>
+<td>Se completó con éxito el FrontEnd (sprint2), con su despliegue en render junto al faki api online. Se validaron los bounded context principales de negocio y se estableció la base del avance de backend. No se detectaron bloqueos críticos.  </td>
+</tr>
+<tr>
+<td>Sprint n-2 Retrospective Summary</td>
+<td>El equipo identificó la necesidad de mejorar la toma de tiempo y la organización en equipo para fomentar buenas prácticas en la elaboración del proyecto. </td>
+</tr>
+<tr>
+<td colspan="2"><b>Sprint Goal & User Stories</b></td>
+</tr>
+<tr>
+<td>Sprint 3 Goal</td>
+<td> 
+Nuestro enfoque está en entregar la primera versión funcional del backend de la aplicación web, permitiendo gestionar sensores, inventarios, comunidad y notificaciones, así como exponer APIs seguras para el consumo del frontend. Creemos que esto habilita la operación centralizada y confiable de la plataforma, facilitando la integración y el flujo de información entre todos los actores de la cadena logística. Esto se confirmará cuando el frontend pueda consumir los servicios principales, los datos se almacenen y consulten correctamente, y los usuarios reporten que las funcionalidades clave están disponibles y operativas.
+</td>
+</tr>
+<tr>
+<td>Sprint 3 velocity</td>
+<td> 18  </td>
+</tr>
+<tr>
+<td>Sum of Story Points</td>
+<td> 21  </td>
+</tr>
+</table>
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En este sprint, se definieron roles de liderazgo para la elaboración de los bounded context.
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Team member</th>
+      <th>Github username</th>
+      <th>Identity & Access Management</th>
+      <th>Monitoring Management</th>
+      <th>Notification Management</th>
+      <th>Profile Management</th>
+      <th>Stock Management</th>
+      <th>Community Management</th>
+      <th>Analytics Management</th>
+      <th>Commercial Management</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Retuerto Rodriguez, Jorge Manuel</td>
+      <td>Calin1407</td>
+      <td align="center">L</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+    </tr>
+    <tr>
+      <td>Howard Robles, Guillermo Arturo</td>
+      <td>GuillermoPromac</td>
+      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+    </tr>
+    <tr>
+      <td>Acuña de la Cruz, Luis Alfredo</td>
+      <td>L2006delacruz</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">L</td>
+    </tr>
+    <tr>
+      <td>Perez Encarnacion, Breithner Rodolfo</td>
+      <td>Breithner1</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+    </tr>
+    <tr>
+      <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
+      <td>Rodri2712</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">C</td>
+      <td align="center">L</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+      <td align="center">C</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Sprint Backlog 3
+
+Tabla con el detalle de las tareas asignadas para cumplir con las historias de usuario del Sprint 3.
+
+| <strong>Sprint #</strong> | <strong>Sprint 3</strong>         |
+| --- |-----------------------------------|
+| <strong>User Story</strong> | <strong>Work-item / Task</strong> |
+| <strong>ID</strong> | <strong>Title</strong>            | <strong>ID</strong> | <strong>Title</strong> | <strong>Description</strong> | <strong>Estimation (Hours)</strong> | <strong>Assigned to</strong> | <strong>Status</strong> |
+| US05 | Registro de Nuevo Usuario         | Task 6 | Formulario y validación de registro | Crear formulario de registro con validación de email único y coincidencia de contraseñas. | 4 | Breithner Perez | Done |
+| US05 | Registro de Nuevo Usuario         | Task 7 | Integración con API de usuarios | Conectar el frontend con el endpoint POST /api/auth/register. | 3 | Guillermo Howard | Done |
+| US06 | Inicio de Sesión                  | Task 8 | Pantalla de login y JWT | Implementar pantalla de login y almacenamiento de token JWT en localStorage. | 3 | Luis Acuña | Done |
+| US07 | Recuperación de Contraseña        | Task 9 | Flujo de recuperación | Crear flujo "Olvidé mi contraseña" con envío de correo simulado o real. | 2 | Jorge Retuerto | Done |
+| US09 | Indicadores Clave (Dashboard)     | Task 10 | Maquetación de tarjetas de KPIs | Diseñar las tarjetas de Humedad, Nutrientes y Temperatura con datos mock. | 3 | Rodrigo Aguilar | Done |
+| US10 | Selección de Zona                 | Task 11 | Selector de zonas dinámico | Implementar un desplegable que permita cambiar entre zonas predefinidas. | 2 | Breithner Perez | Done |
+| TS03 | Configuración de BD en la Nube    | Task 12 | Creación de esquema en PostgreSQL | Ejecutar scripts de creación de tablas (Client, Parcel, Device) en la nube. | 2 | Luis Acuña | Done |
+| TS01 | GitFlow y Conventional Commits    | Task 13 | Revisión y estandarización | Verificar que todas las ramas feature sigan la convención y el flujo establecido. | 2 | Guillermo Howard | Done |
+
+### 5.2.2.4. Development Evidence for Sprint Review
+
+Registro de commits representativos del trabajo realizado durante el Sprint 3 en los repositorios de la organización.
+
+### 5.2.2.5. Execution Evidence for Sprint Review
+
+
+### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+
+### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+
+### 5.2.2.8. Team Collaboration Insights during Sprint
+
+## 5.3. Validation Interviews.
+
+### 5.3.1. Diseño de Entrevistas.
+
+### 5.3.2. Registro de Entrevistas.
+
+### 5.3.3. Evaluación según heurísticas.
+
+## 5.4. Video About-the-Product.
