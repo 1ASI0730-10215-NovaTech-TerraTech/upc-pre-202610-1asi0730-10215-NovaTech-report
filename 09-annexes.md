@@ -12,14 +12,21 @@
 
 ***Anexo B. Trello***
 
+- Link de Trello para la gestión del proyecto: https://trello.com/b/sLQ8KGVG 
+
+<img src="assets/images/annexes/AnexoB.png" alt=“Descargar” >
+
+<div class="page"></div>
 
 ***Anexo C. Organización y repositorios de GitHub***
 
 El proyecto NovaTech y su producto TerraTech se encuentra alojado bajo la organización de GitHub 1ASI0730-10215-NovaTech-TerraTech. A continuación se detallará la URL de los repositorios utilizados:
 
-- Repositorio de organización: https://github.com/1ASI0730-10215-NovaTech-TerraTech
-- Repositorio de informe: https://github.com/1ASI0730-10215-NovaTech-TerraTech/upc-pre-202610-1asi0730-10215-NovaTech-report
-- Repositorio de Landing Page: https://github.com/1ASI0730-10215-NovaTech-TerraTech/upc-pre-202610-1asi0730-10215-NovaTech-LandingPage
+- Repositorio de organización: https://tinyurl.com/3bu5ebv4
+- Repositorio de informe: https://tinyurl.com/r77hmcwn
+- Repositorio de Landing Page: https://tinyurl.com/yjyufpvz
+- Repositorio de FrontEnd: https://tinyurl.com/3dm2avv8
+- Repositorio de BackEnd: https://tinyurl.com/ted7m4cu
 
 <img src="assets/images/annexes/AnexoC.png" alt=“Descargar” >
 
@@ -29,7 +36,11 @@ El proyecto NovaTech y su producto TerraTech se encuentra alojado bajo la organi
 
 Para las entrevistas las subimos en la nube para facilitar el acceso:
 
-URL de entrevistas: https://upcedupe-my.sharepoint.com/personal/u202222275_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202222275%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%2DGrupo02%2DNovaTech%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6NC40OX19&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb9b26aa8%2D47c5%2D4f35%2Da54a%2D3ae9c4b440dd
+URL de entrevistas: https://tinyurl.com/5cphvez4
+
+<img src="assets/images/annexes/AnexoD.png" alt=“Descargar” >
+
+<div class="page"></div>
 
 ***Anexo E. Deployment del proyecto***
 
@@ -37,9 +48,17 @@ Para el despliegue de nuestra aplicación hemos usado diversos proveedores:
 
 - GitHubPage para el deploy de Landing Page: https://1asi0730-10215-novatech-terratech.github.io/upc-pre-202610-1asi0730-10215-NovaTech-LandingPage/
 
+<img src="assets/images/annexes/AnexoD.png" alt=“Descargar” >
+
+<div class="page"></div>
+
 ***Anexo F. About The Team***
 
+<div class="page"></div>
+
 ***Anexo G. About The Product***
+
+<div class="page"></div>
 
 ***Video de Exposiciones***
 
