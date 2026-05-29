@@ -53,8 +53,11 @@
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ## Project Report Collaboration Insights
 
+  <div style="text-align:center"> 
   <p>Para el desarrollo del Project Report, se utilizó un repositorio dentro de la organización del equipo en GitHub. A continuación, se presenta la evidencia de colaboración correspondiente, en coherencia con el Registro de Versiones del Informe.
 
   <p>Link Github: https://github.com/1ASI0730-10215-NovaTech-TerraTech</p>
@@ -78,6 +81,7 @@
   <p>Breithner Perez (`Breithner1`)</p>
 
   <p>Jorge Retuerto (`Calin1407`)</p>
+  </div>
 
 ---
 
@@ -207,6 +211,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Se aplicó event storming para estructurar el flujo del sistema y alinear el entendimiento entre los integrantes.
         Se diseñaron interfaces UX para la landing page y la aplicación, considerando la experiencia del usuario.
         Se documentaron reuniones y acuerdos para asegurar la comunicación y seguimiento del progreso.
+        <br><br>
+        tb1: Durante el Sprint 2, el equipo consolidó un modelo de liderazgo compartido donde la toma de decisiones técnicas se realizó de forma conjunta. La capacidad de liderazgo se manifestó en la autogestión de los Bounded Contexts, asegurando que cada módulo funcional estuviera alineado con los objetivos del negocio y las metas del Sprint, garantizando una integración fluida entre los componentes desarrollados por cada miembro.  
         </th>
     </tr>
     <tr>
@@ -227,6 +233,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         respetando los roles y promoviendo la participación equitativa. Se fomentó un entorno inclusivo donde todos los miembros 
         expresaron sus ideas durante las retrospectivas. El equipo cumplió con los objetivos del hito, entregando las funcionalidades 
         acordadas dentro del plazo establecido.
+        <br><br>
+        tb1: El equipo fomentó un entorno inclusivo mediante la rotación de responsabilidades técnicas y el apoyo mutuo en las fases de despliegue. Se establecieron metas específicas para el Sprint 2 mediante un Sprint Backlog detallado, lo que permitió una planificación rigurosa de las tareas de codificación y documentación. El cumplimiento de los objetivos se evidenció en la entrega de un producto funcional desplegado en múltiples plataformas y una documentación técnica que refleja fielmente la colaboración y el esfuerzo colectivo por alcanzar los estándares de calidad exigidos.
         </th>
     </tr>
 </tbody>
