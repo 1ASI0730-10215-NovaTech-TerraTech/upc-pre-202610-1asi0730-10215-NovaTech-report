@@ -1,0 +1,888 @@
+<div style="page-break-before: always;"></div>
+
+# Chapter III: Requirements Specification
+
+## 3.1. User Stories
+
+<h3>EPIC01: Landing Page & Marketing</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>USER ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01</td>
+      <td>Visualización de Hero Section</td>
+      <td>Como visitante, deseo ver un mensaje claro sobre el valor de AgroTech para comprender rápidamente qué ofrece la solución.</td>
+      <td>
+        Scenario 1: Carga correcta de la página<br>
+        Given el visitante accede a la URL del Landing Page<br>
+        When la página termina de cargar<br>
+        Then se visualiza el Hero Section con título, subtítulo y botón CTA "Solicitar Demo"<br>
+        And el botón "Solicitar Demo" es clicable y visible sin necesidad de scroll<br><br>
+        Scenario 2: Responsive en móvil<br>
+        Given el visitante accede desde un dispositivo móvil con ancho de 320px<br>
+        When la página se renderiza<br>
+        Then el Hero Section se adapta verticalmente sin desbordamiento horizontal<br>
+        And el tamaño de la fuente del título es mínimo de 1.5rem
+      </td>
+      <td>EPIC1</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Visualización de Sección de Características</td>
+      <td>Como visitante, deseo conocer las características principales de AgroTech para evaluar si la solución satisface mis necesidades.</td>
+      <td>
+        Scenario 1: Visualización de 3 características<br>
+        Given el visitante ha cargado el Landing Page<br>
+        When hace scroll hasta la sección de características<br>
+        Then se muestran exactamente tres características: "Sensor de Humedad", "Sensor de Nutrientes", "Alertas en Tiempo Real"<br><br>
+        Scenario 2: Cada característica tiene ícono y descripción<br>
+        Given la sección de características está visible<br>
+        When el visitante observa cada característica<br>
+        Then cada una tiene un ícono representativo (formato SVG o FontAwesome), un título H3 y una descripción de máximo 150 caracteres
+      </td>
+      <td>EPIC1</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>Envío de Formulario de Solicitud de Demo</td>
+      <td>Como visitante, deseo completar un formulario para solicitar una demostración para recibir información personalizada sobre AgroTech.</td>
+      <td>
+        Scenario 1: Envío exitoso<br>
+        Given el visitante accede al formulario de demo en el Landing Page<br>
+        When completa todos los campos (Nombre, Email, Teléfono, Tamaño de terreno en hectáreas) y presiona "Enviar"<br>
+        Then se muestra un mensaje de éxito "Gracias, nos contactaremos pronto"<br>
+        And el formulario se limpia automáticamente<br><br>
+        Scenario 2: Validación de campos obligatorios<br>
+        Given el visitante está en el formulario<br>
+        When intenta enviar sin completar el campo Email<br>
+        Then se muestra un mensaje de error "El correo electrónico es requerido"<br>
+        And el formulario no se envía al servidor<br><br>
+        Scenario 3: Validación de formato de email<br>
+        Given el visitante ingresa "correo-invalido" en el campo Email<br>
+        When presiona "Enviar"<br>
+        Then se muestra un mensaje en rojo "Ingrese un correo electrónico válido (ej: usuario@dominio.com)"<br>
+        And el campo Email tiene borde rojo
+      </td>
+      <td>EPIC1</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Enlace a Términos y Condiciones</td>
+      <td>Como visitante, deseo leer los términos y condiciones de servicio para conocer mis derechos y obligaciones al usar AgroTech.</td>
+      <td>
+        Scenario 1: Acceso desde footer del Landing Page<br>
+        Given el visitante está en el Landing Page<br>
+        When hace clic en el enlace "Términos y Condiciones" en el footer<br>
+        Then se abre una nueva pestaña con el documento completo de términos<br>
+        And el documento tiene fecha de última actualización visible<br><br>
+        Scenario 2: Access desde Web Application (logueado)<br>
+        Given el usuario ha iniciado sesión en la Web App<br>
+        When hace clic en "Términos y Condiciones" en el footer de la aplicación<br>
+        Then se abre un modal con el mismo documento<br>
+        And el modal tiene botón "Aceptar" y botón "Cerrar"
+      </td>
+      <td>EPIC1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC02: Autenticación y Gestión de Usuarios</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US05</td>
+      <td>Registro de Nuevo Usuario</td>
+      <td>Como agricultor, deseo crear una cuenta en AgroTech para acceder a la plataforma y configurar mis sembríos.</td>
+      <td>
+        Scenario 1: Registro exitoso<br>
+        Given el usuario accede a la página /register<br>
+        When ingresa Nombre (mínimo 2 caracteres), Email válido, Contraseña (mínimo 6 caracteres) y confirma contraseña correctamente<br>
+        And presiona "Registrarme"<br>
+        Then se crea la cuenta con rol "Agricultor"<br>
+        And se envía un correo de verificación con enlace válido por 24 horas<br>
+        And se redirige automáticamente a /login<br><br>
+        Scenario 2: Email ya registrado<br>
+        Given el usuario ingresa un email que ya existe en la base de datos<br>
+        When presiona "Registrarme"<br>
+        Then se muestra el mensaje "Este correo ya está registrado. Inicia sesión o recupera tu contraseña"<br>
+        And se habilita un enlace a /forgot-password<br><br>
+        Scenario 3: Contreñas no coinciden<br>
+        Given el usuario ingresa "123456" en Contraseña y "12345" en Confirmar Contraseña<br>
+        When presiona "Registrarme"<br>
+        Then se muestra el mensaje "Las contraseñas no coinciden"<br>
+        And el campo Confirmar Contraseña se marca con borde rojo
+      </td>
+      <td>EPIC2</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>Inicio de Sesión</td>
+      <td>Como usuario registrado, deseo iniciar sesión con mi email y contraseña para acceder a mi dashboard y datos.</td>
+      <td>
+        Scenario 1: Login exitoso<br>
+        Given el usuario está en la página /login<br>
+        When ingresa email y contraseña válidos (registrados previamente y verificados)<br>
+        And presiona "Iniciar Sesión"<br>
+        Then se genera un token JWT válido por 8 horas<br>
+        And se redirige al dashboard principal /dashboard<br>
+        And el nombre del usuario aparece en el header de la aplicación<br><br>
+        Scenario 2: Credenciales incorrectas<br>
+        Given el usuario ingresa email "campo@example.com" (existente) y contraseña "wrong123"<br>
+        When presiona "Iniciar Sesión"<br>
+        Then se muestra el mensaje "Credenciales inválidas. Intente nuevamente"<br>
+        And no se genera token<br>
+        And el usuario permanece en /login<br><br>
+        Scenario 3: Email no verificado<br>
+        Given el usuario se registró pero no verificó su email<br>
+        When intenta iniciar sesión con credenciales correctas<br>
+        Then se muestra "Por favor, verifica tu correo electrónico antes de iniciar sesión"<br>
+        And se ofrece opción de "Reenviar correo de verificación"
+      </td>
+      <td>EPIC2</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>Recuperación de Contraseña</td>
+      <td>Como usuario registrado, deseo recuperar mi contraseña olvidada para volver a acceder a mi cuenta.</td>
+      <td>
+        Scenario 1: Envío de enlace de recuperación<br>
+        Given el usuario está en la página /login y hace clic en "¿Olvidaste tu contraseña?"<br>
+        When ingresa su email registrado "campo@example.com" y presiona "Enviar enlace"<br>
+        Then se envía un correo con un enlace único (token) válido por 1 hora<br>
+        And se muestra mensaje "Revisa tu correo para restablecer tu contraseña"<br><br>
+        Scenario 2: Restablecimiento exitoso<br>
+        Given el usuario hace clic en el enlace del correo y accede a /reset-password?token=valid_token<br>
+        When ingresa nueva contraseña "newPass123" y la confirma correctamente<br>
+        And presiona "Restablecer Contraseña"<br>
+        Then la contraseña se actualiza en la base de datos (hasheada con bcrypt)<br>
+        And se redirige a /login con mensaje "Contraseña actualizada. Inicia sesión"<br><br>
+        Scenario 3: Token expirado o inválido<br>
+        Given el usuario hace clic en un enlace de recuperación con token inválido o expirado<br>
+        When intenta restablecer su contraseña<br>
+        Then se muestra "El enlace ha expirado o es inválido. Solicita uno nuevo"<br>
+        And se habilita un botón "Solicitar nuevo enlace"
+       </td>
+      <td>EPIC2</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>Visualización de Perfil de Usuario</td>
+      <td>Como agricultor, deseo ver y editar mi perfil para mantener actualizada mi información personal y de mi finca.</td>
+      <td>
+        Scenario 1: Visualización de perfil<br>
+        Given el usuario ha iniciado sesión y navega a "Mi Perfil"<br>
+        When la página carga<br>
+        Then se muestran los campos precargados: Nombre, Email (no editable), Teléfono, Ubicación (ciudad/departamento), Tamaño de terreno (hectáreas)<br>
+        And se muestra la fecha de registro de la cuenta<br><br>
+        Scenario 2: Edición exitosa del perfil<br>
+        Given el usuario está en su perfil<br>
+        When modifica el campo Teléfono de "999888777" a "999111222" y presiona "Guardar Cambios"<br>
+        Then se muestra mensaje verde "Perfil actualizado correctamente"<br>
+        And la base de datos refleja el nuevo número de teléfono<br><br>
+        Scenario 3: Validación de campos<br>
+        Given el usuario ingresa un tamaño de terreno negativo "-5" en hectáreas<br>
+        When presiona "Guardar Cambios"<br>
+        Then se muestra error "El tamaño del terreno debe ser mayor a 0"<br>
+        And no se actualiza el perfil
+       </td>
+      <td>EPIC2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC03: Dashboard de Monitoreo en Tiempo Real</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US09</td>
+      <td>Visualización de Indicadores Clave</td>
+      <td>Como agricultor, deseo ver en tiempo real los valores de humedad, nutrientes y temperatura del suelo para tomar decisiones informadas sobre riego y fertilización.</td>
+      <td>
+        Scenario 1: Carga inicial del dashboard<br>
+        Given el agricultor inicia sesión con rol "Agricultor" y tiene al menos un sensor asociado<br>
+        When accede a /dashboard<br>
+        Then se muestran tres tarjetas con valores actuales: Humedad (%, con barra de progreso), Nutrientes (N-P-K en ppm), Temperatura del suelo (°C)<br>
+        And cada tarjeta muestra la última fecha y hora de actualización (formato DD/MM/YYYY HH:MM:SS)<br><br>
+        Scenario 2: Actualización automática por WebSocket<br>
+        Given el dashboard está visible y hay conexión WebSocket activa<br>
+        When el backend recibe un nuevo dato del sensor (cada 5 minutos)<br>
+        Then los valores en las tarjetas se actualizan sin recargar la página<br>
+        And se muestra una animación de "actualizado" durante 1 segundo en la tarjeta modificada<br><br>
+        Scenario 3: Pérdida de conexión con el sensor<br>
+        Given un sensor no envía datos durante más de 30 minutos<br>
+        When el dashboard intenta actualizar<br>
+        Then se muestra un ícono de advertencia amarillo ⚠️ y el mensaje "Datos desactualizados - Sensor sin conexión"
+       </td>
+      <td>EPIC3</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>Selección de Zona o Sensor Específico</td>
+      <td>Como agricultor, deseo seleccionar una zona específica de mi sembrío para ver los datos de sensores individuales.</td>
+      <td>
+        Scenario 1: Desplegable de zonas<br>
+        Given el agricultor tiene configuradas 3 zonas con nombres "Norte", "Centro", "Sur"<br>
+        When hace clic en el selector de zona (combobox) en la parte superior del dashboard<br>
+        Then se despliegan las 3 opciones disponibles<br>
+        And se muestra la zona activa actualmente ("Norte" por defecto)<br><br>
+        Scenario 2: Cambio de zona actualiza todos los indicadores<br>
+        Given el dashboard muestra datos de la zona Norte (humedad 45%)<br>
+        When el agricultor selecciona "Sur" en el selector<br>
+        Then los indicadores (humedad, nutrientes, temperatura) se actualizan con los datos de los sensores en la zona Sur<br>
+        And el gráfico histórico también se actualiza para mostrar datos de la zona Sur<br>
+        And se registra en un log interno el cambio de zona
+       </td>
+      <td>EPIC3</td>
+    </tr>
+    <tr>
+      <td>US11</td>
+      <td>Visualización de Histórico de Datos (Gráfico)</td>
+      <td>Como agricultor, deseo ver un gráfico con el histórico de humedad de los últimos 7 días para identificar tendencias y patrones.</td>
+      <td>
+        Scenario 1: Carga del gráfico por defecto (7 días)<br>
+        Given el agricultor está en el dashboard y hace clic en la pestaña "Histórico"<br>
+        When la pestaña se activa<br>
+        Then se muestra un gráfico de líneas o área con los valores de humedad de los últimos 7 días<br>
+        And el eje X muestra fechas (formato "DD/MM") y el eje Y muestra porcentaje de humedad (0-100%)<br>
+        And se dibuja una línea horizontal punteada en el umbral mínimo configurado (ej: 30%)<br><br>
+        Scenario 2: Cambio de rango de fechas a 30 días<br>
+        Given el gráfico histórico está visible con rango "7 días"<br>
+        When el agricultor selecciona "30 días" en el selector de rango de fechas<br>
+        Then el gráfico se actualiza mostrando los últimos 30 días de datos<br>
+        And la carga de datos toma menos de 2 segundos (con paginación o lazy loading)<br><br>
+        Scenario 3: Tooltip al pasar el mouse<br>
+        Given el gráfico histórico está visible<br>
+        When el agricultor pasa el mouse sobre un punto del gráfico<br>
+        Then se muestra un tooltip con: fecha exacta, valor de humedad, y si ese día hubo alerta (ícono rojo si aplica)
+       </td>
+      <td>EPIC3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC04: Mapa de Fertilidad</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US12</td>
+      <td>Visualización de Mapa de Calor de Fertilidad</td>
+      <td>Como agricultor, deseo ver un mapa de calor de mi sembrío que indique las zonas más fértiles para planificar la rotación de cultivos y optimizar la siembra.</td>
+      <td>
+        Scenario 1: Carga del mapa interactivo<br>
+        Given el agricultor accede a la sección "Mapa de Fertilidad" desde el menú principal<br>
+        When la página carga y existe al menos una zona con datos de sensores<br>
+        Then se muestra un mapa interactivo (basado en Leaflet o Google Maps) con superposición de colores:<br>
+        - Verde (#2ecc71) para niveles óptimos (humedad >60% y nutrientes óptimos)<br>
+        - Amarillo (#f1c40f) para niveles moderados (humedad 30-60% o nutrientes medios)<br>
+        - Rojo (#e74c3c) para niveles críticos (humedad <30% o nutrientes bajos)<br>
+        And cada zona del mapa es clicable<br><br>
+        Scenario 2: Leyenda explicativa y acciones sugeridas<br>
+        Given el mapa de calor está visible<br>
+        When el agricultor hace clic en el ícono de información (i) en la esquina superior derecha del mapa<br>
+        Then se muestra un modal con leyenda de colores y para cada color una acción sugerida:<br>
+        - "Verde: Mantener plan actual"<br>
+        - "Amarillo: Monitorear cada 12 horas"<br>
+        - "Rojo: Regar/fertilizar en las próximas 2 horas"<br>
+        And el modal tiene botón "Entendido" para cerrar
+       </td>
+      <td>EPIC4</td>
+    </tr>
+    <tr>
+      <td>US13</td>
+      <td>Zoom y Navegación en el Mapa</td>
+      <td>Como agricultor, deseo hacer zoom y desplazarme por el mapa para examinar zonas específicas con mayor detalle.</td>
+      <td>
+        Scenario 1: Zoom con mouse y controles táctiles<br>
+        Given el mapa de fertilidad está visible en el navegador<br>
+        When el agricultor usa la rueda del mouse hacia arriba (o pellizca hacia afuera en móvil)<br>
+        Then el mapa hace zoom in, centrado en la posición del cursor/punto de contacto<br>
+        And se muestran las calles o parcelas con mayor nivel de detalle (nombres de zonas visibles)<br><br>
+        Scenario 2: Desplazamiento (pan) del mapa<br>
+        Given el mapa está con zoom nivel 15 (alta resolución)<br>
+        When el agricultor arrastra el mapa con el mouse (click sostenido + mover) o con el dedo en móvil<br>
+        Then la vista se desplaza suavemente para explorar otras áreas<br>
+        And el nivel de zoom se mantiene constante durante el desplazamiento<br><br>
+        Scenario 3: Botones de zoom incluidos<br>
+        Given el mapa está visible<br>
+        When el agricultor hace clic en el botón "+" en la interfaz del mapa<br>
+        Then el mapa hace zoom in sin necesidad de mouse<br>
+        And el botón "-" hace zoom out
+       </td>
+      <td>EPIC4</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC05: Motor de Recomendaciones</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US14</td>
+      <td>Recepción de Recomendación de Riego</td>
+      <td>Como agricultor, deseo recibir una recomendación automática sobre si debo regar o no para optimizar el uso del agua y evitar estrés hídrico.</td>
+      <td>
+        Scenario 1: Recomendación de riego cuando humedad es críticamente baja<br>
+        Given el agricultor ha iniciado sesión y está en el Dashboard<br>
+        And el sensor de la zona "Norte" reporta una humedad del 25%<br>
+        And el umbral mínimo configurado para esa zona es del 30%<br>
+        When el sistema procesa la última lectura (cada 5 minutos)<br>
+        Then el Dashboard debe mostrar una tarjeta de alerta con fondo rojo<br>
+        And la alerta debe decir: "【RIEGO URGENTE】Zona Norte: Humedad al 25%. Se recomienda regar por 25 minutos."<br>
+        And debe enviarse una notificación push al móvil del agricultor (si está habilitado)<br><br>
+        Scenario 2: Recomendación "No regar" cuando humedad adecuada<br>
+        Given el sensor de humedad de la zona "Sur" muestra un valor del 65%<br>
+        And los umbrales configurados son min 30% y max 80%<br>
+        When el sistema procesa la lectura<br>
+        Then se muestra un mensaje informativo con fondo verde: "✅ Zona Sur: Suelo con humedad adecuada (65%). No es necesario regar."<br>
+        And NO se envía notificación push (para no saturar)<br><br>
+        Scenario 3: Alerta por humedad excesiva<br>
+        Given el sensor de humedad reporta 85% y umbral máximo es 80%<br>
+        When el sistema evalúa la condición<br>
+        Then se muestra alerta naranja: "⚠️ Zona Centro: Humedad excesiva (85%). Suspender riego. Riesgo de pudrición de raíces."
+       </td>
+      <td>EPIC5</td>
+    </tr>
+    <tr>
+      <td>US15</td>
+      <td>Recepción de Recomendación de Fertilización</td>
+      <td>Como agricultor, deseo recibir una recomendación sobre qué nutriente aplicar y en qué cantidad para evitar sobrefertilización y reducir costos.</td>
+      <td>
+        Scenario 1: Recomendación específica de Nitrógeno<br>
+        Given el sensor de nutrientes de la zona "Este" reporta: N=15 ppm, P=25 ppm, K=40 ppm<br>
+        And los rangos óptimos son: N (20-40 ppm), P (15-30 ppm), K (30-50 ppm)<br>
+        When el sistema de recomendaciones evalúa los datos (cada 15 minutos)<br>
+        Then se muestra una tarjeta violeta: "🌱 RECOMENDACIÓN FERTILIZACIÓN - Zona Este: Aplicar 8 kg/ha de Nitrógeno (Urea 46-0-0). Nivel bajo: 15 ppm (óptimo: 20-40)."<br>
+        And se guarda la recomendación en la tabla Recommendations con tipo "fertilizer"<br><br>
+        Scenario 2: Todos los nutrientes en niveles óptimos<br>
+        Given la zona "Oeste" reporta N=35 ppm, P=22 ppm, K=45 ppm<br>
+        When el usuario consulta la sección "Recomendaciones"<br>
+        Then se muestra mensaje informativo: "✅ Zona Oeste: Los niveles de nutrientes son adecuados. Mantener plan actual de fertilización."<br>
+        And No se generan alertas ni tareas pendientes<br><br>
+        Scenario 3: Múltiples deficiencias<br>
+        Given la zona "Norte" reporta N=10 ppm, P=8 ppm, K=20 ppm<br>
+        When el sistema procesa los datos<br>
+        Then se muestra una tarjeta roja prioritaria: "⚠️ DEFICIENCIAS MÚLTIPLES - Zona Norte: Aplicar 12 kg/ha de NPK 20-20-20. N(10), P(8), K(20) están por debajo de rangos óptimos."
+       </td>
+      <td>EPIC5</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC06: Gestión de Sensores</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US16</td>
+      <td>Registro de Nuevo Sensor</td>
+      <td>Como agricultor, deseo registrar un nuevo sensor en mi cuenta para empezar a monitorear una nueva zona o sembrío.</td>
+      <td>
+        Scenario 1: Registro exitoso con código único<br>
+        Given el agricultor está en la sección "Mis Sensores" (/sensors)<br>
+        When hace clic en "Agregar Sensor" y completa:<br>
+        - Código único del dispositivo (formato AGRO-XXXXXX, ej: AGRO-3F7D22)<br>
+        - Nombre de la zona (ej: "Parcela 5 - Tomates")<br>
+        - Cultivo actual (selector: Tomate, Maíz, Papa, etc.)<br>
+        And presiona "Registrar Sensor"<br>
+        Then el sensor aparece en la lista con estado "Activo"<br>
+        And comienza a recibir datos en los próximos 5 minutos<br>
+        And se muestra mensaje verde: "Sensor AGRO-3F7D22 registrado exitosamente"<br><br>
+        Scenario 2: Código de sensor inválido o inexistente<br>
+        Given el agricultor ingresa un código "XYZ123" que no existe en el inventario global de sensores<br>
+        When presiona "Registrar Sensor"<br>
+        Then se muestra error en rojo: "❌ Código de sensor inválido. Verifica que el código sea correcto o contacta a soporte."<br>
+        And el sensor no se agrega a la lista<br><br>
+        Scenario 3: Código ya registrado por otro usuario<br>
+        Given el código AGRO-3F7D22 ya está asociado a la cuenta de "campo@example.com"<br>
+        When otro agricultor intenta registrar el mismo código<br>
+        Then se muestra error: "Este sensor ya está registrado por otro usuario. Si es tuyo, contacta a soporte."
+       </td>
+      <td>EPIC6</td>
+    </tr>
+    <tr>
+      <td>US17</td>
+      <td>Configuración de Umbrales de Alerta</td>
+      <td>Como agricultor, deseo configurar umbrales personalizados para humedad y nutrientes para recibir alertas cuando los valores salgan del rango deseado.</td>
+      <td>
+        Scenario 1: Configuración de umbrales de humedad por zona<br>
+        Given el agricultor está en "Configuración de Alertas" y ha seleccionado la zona "Norte"<br>
+        When establece:<br>
+        - Humedad mínima: 25% (por defecto 30%)<br>
+        - Humedad máxima: 75% (por defecto 80%)<br>
+        And presiona "Guardar configuración"<br>
+        Then se guarda la configuración en la base de datos para esa zona específica<br>
+        And se muestra mensaje: "Umbrales actualizados para zona Norte"<br><br>
+        Scenario 2: Alerta por superación de umbral personalizado<br>
+        Given el umbral máximo personalizado para zona "Centro" es 70% (más estricto que el default 80%)<br>
+        And el sensor reporta 72% de humedad<br>
+        When el sistema evalúa la condición<br>
+        Then se genera una alerta: "💧 Zona Centro: Humedad excesiva (72% - supera umbral configurado del 70%). Suspender riego por 12 horas."<br>
+        And la alerta se guarda en el historial<br><br>
+        Scenario 3: Restablecer umbrales a valores por defecto<br>
+        Given el agricultor ha modificado los umbrales previamente<br>
+        When hace clic en "Restablecer valores por defecto"<br>
+        Then los umbrales vuelven a: Humedad min 30%, Humedad max 80%, N min 20 ppm, N max 40 ppm, etc.<br>
+        And se muestra mensaje de confirmación
+       </td>
+      <td>EPIC6</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC07: Reportes y Analytics</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US18</td>
+      <td>Exportación de Reporte en PDF</td>
+      <td>Como administrador de cooperativa, deseo exportar un reporte mensual de rendimiento en formato PDF para compartirlo con los socios de la cooperativa.</td>
+      <td>
+        Scenario 1: Generación de PDF con parámetros específicos<br>
+        Given el administrador con rol "AdminCooperativa" está en la sección "Reportes" (/reports)<br>
+        When selecciona el mes "Mayo 2026", el tipo de reporte "Rendimiento por zona" y hace clic en "Exportar PDF"<br>
+        Then se descarga un archivo PDF con nombre "Reporte_AgroTech_Mayo2026.pdf"<br>
+        And el PDF tiene menos de 5 MB y se genera en menos de 10 segundos<br><br>
+        Scenario 2: Contenido completo del reporte PDF<br>
+        Given el PDF se genera correctamente<br>
+        When el administrador lo abre con Acrobat Reader o navegador<br>
+        Then contiene obligatoriamente:<br>
+        - Encabezado con logo de AgroTech y fecha de generación<br>
+        - Tabla resumen de riego (total de litros por zona)<br>
+        - Gráfico de consumo de agua por semana<br>
+        - Tendencias de nutrientes (evolución N-P-K a lo largo del mes)<br>
+        - Lista de alertas generadas (mínimo fecha, zona, tipo)<br>
+        - Recomendaciones para el próximo mes<br><br>
+        Scenario 3: Filtros combinados<br>
+        Given el administrador selecciona un rango de fechas personalizado "01/04/2026 al 15/04/2026"<br>
+        When genera el PDF<br>
+        Then el reporte solo incluye datos dentro de ese rango<br>
+        And en el PDF se indica "Período: 01/04/2026 - 15/04/2026"
+       </td>
+      <td>EPIC7</td>
+    </tr>
+    <tr>
+      <td>US19</td>
+      <td>Dashboard Agregado por Socio/Lote</td>
+      <td>Como administrador de cooperativa, deseo ver un dashboard consolidado de todos los socios o lotes para comparar el rendimiento y detectar oportunidades de mejora colectiva.</td>
+      <td>
+        Scenario 1: Vista de lista de socios con métricas clave<br>
+        Given el administrador inicia sesión con rol "AdminCooperativa" y hay al menos 5 socios registrados<br>
+        When accede al dashboard principal de la cooperativa (/cooperative-dashboard)<br>
+        Then se muestra una tabla con columnas:<br>
+        - Nombre del socio / email<br>
+        - Hectáreas totales<br>
+        - Humedad promedio (últimos 7 días)<br>
+        - Rendimiento estimado (toneladas/hectárea)<br>
+        - Número de alertas activas<br>
+        And la tabla se puede ordenar por cualquiera de las columnas<br><br>
+        Scenario 2: Detalle individual por socio<br>
+        Given el administrador está en la tabla de socios<br>
+        When hace clic en el nombre "Juan Pérez"<br>
+        Then se abre una vista detallada con todos los indicadores de Juan Pérez:<br>
+        - Lista de zonas/sensores que posee<br>
+        - Gráficos individuales de humedad, nutrientes, temperatura<br>
+        - Historial de recomendaciones personalizadas<br>
+        - Botón para enviar mensaje directo al socio<br><br>
+        Scenario 3: Comparativa rápida entre socios<br>
+        Given el administrador está en la vista consolidada<br>
+        When selecciona checkboxes de "Juan Pérez" y "María López" y hace clic en "Comparar"<br>
+        Then se muestra un gráfico de barras comparativo de rendimiento y consumo de agua<br>
+        And se genera una tabla lado a lado
+      </td>
+      <td>EPIC7</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC08: API RESTful</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US20</td>
+      <td>Documentación de Endpoints con Swagger</td>
+      <td>Como developer, deseo acceder a documentación interactiva de la API (Swagger/OpenAPI) para comprender cómo consumir los endpoints correctamente.</td>
+      <td>
+        Scenario 1: Acceso a Swagger UI en entorno de desarrollo<br>
+        Given la API (backend .NET Core) está desplegada en entorno de desarrollo<br>
+        When el developer accede a https://api-dev.agrotech.com/swagger/index.html<br>
+        Then se muestra la interfaz de Swagger UI con todos los endpoints agrupados por controlador<br>
+        And cada endpoint muestra método HTTP, ruta, parámetros y ejemplos de request/response<br><br>
+        Scenario 2: Prueba de endpoint desde Swagger<br>
+        Given Swagger UI está abierto y el developer tiene un token JWT válido<br>
+        When selecciona GET /api/sensors/{id} ingresa sens-001 como id y hace clic en "Try it out" y luego "Execute"<br>
+        Then se ejecuta la petición real al servidor y se muestra la respuesta HTTP con código 200 y el JSON correspondiente<br>
+        And se muestra el tiempo de respuesta en milisegundos<br><br>
+        Scenario 3: Documentación actualizada<br>
+        Given se agrega un nuevo endpoint POST /api/irrigation/schedule<br>
+        When se genera el build del proyecto<br>
+        Then Swagger se actualiza automáticamente con el nuevo endpoint y sus modelos de datos<br>
+        And no se requieren cambios manuales en archivos de documentación
+      </td>
+      <td>EPIC8</td>
+    </tr>
+    <tr>
+      <td>US21</td>
+      <td>Endpoint de Obtención de Datos de Sensor</td>
+      <td>Como frontend developer, deseo consumir un endpoint GET /api/sensors/{id}/data para obtener los últimos valores de un sensor específico.</td>
+      <td>
+        Scenario 1: Respuesta exitosa con datos completos<br>
+        Given existe un sensor con ID sens-001 asociado a una zona y con al menos una lectura en las últimas 24 horas<br>
+        When se realiza una petición GET /api/sensors/sens-001/data con header Authorization: Bearer token<br>
+        Then la respuesta debe tener:<br>
+        - HTTP 200 OK<br>
+        - Content-Type: application/json<br>
+        - Body con estructura exacta:<br>
+        {<br>
+          "sensorId": "sens-001",<br>
+          "zoneName": "Norte",<br>
+          "humidity": 65.5,<br>
+          "nutrients": { "n": 30, "p": 15, "k": 45 },<br>
+          "temperature": 22.3,<br>
+          "timestamp": "2026-05-08T10:00:00Z",<br>
+          "batteryLevel": 92<br>
+        }<br><br>
+        Scenario 2: Sensor no encontrado (404)<br>
+        Given no existe sensor con ID sens-999 en la base de datos<br>
+        When se realiza GET /api/sensors/sens-999/data<br>
+        Then la respuesta es HTTP 404 Not Found con body:<br>
+        { "error": "Sensor not found", "details": "The sensor with ID sens-999 does not exist" }<br><br>
+        Scenario 3: Sensor sin datos recientes<br>
+        Given el sensor sens-002 existe pero su última lectura fue hace más de 48 horas<br>
+        When se consulta GET /api/sensors/sens-002/data<br>
+        Then la respuesta es HTTP 200 pero incluye un flag "dataStale": true y "message": "Last reading was 52 hours ago"
+      </td>
+      <td>EPIC8</td>
+    </tr>
+    <tr>
+      <td>US22</td>
+      <td>Endpoint de Envío de Recomendación (Webhook)</td>
+      <td>Como backend developer, deseo implementar un endpoint POST /api/recommendations/webhook para recibir datos del motor de recomendaciones y almacenarlos en la base de datos.</td>
+      <td>
+        Scenario 1: Recepción válida de recomendación desde motor externo<br>
+        Given un motor de IA externo envía un payload válido a https://api.agrotech.com/api/recommendations/webhook<br>
+        And el header contiene X-API-Key: secret-key-12345<br>
+        When el payload es:<br>
+        { "zoneId": "Z01", "action": "water", "durationMinutes": 20, "priority": "high", "reason": "Soil moisture below threshold" }<br>
+        Then el sistema almacena la recomendación en la tabla Recommendations<br>
+        And responde HTTP 201 Created con Location header apuntando a /api/recommendations/{id}<br>
+        And la recomendación aparece inmediatamente en el dashboard del agricultor<br><br>
+        Scenario 2: Payload inválido - falta campo requerido<br>
+        Given el webhook recibe un payload sin el campo obligatorio zoneId<br>
+        When el payload es { "action": "fertilize", "durationMinutes": 10 }<br>
+        Then la respuesta es HTTP 400 Bad Request con body:<br>
+        { "error": "Validation failed", "details": "zoneId is required" }<br>
+        And no se almacena ninguna recomendación<br><br>
+        Scenario 3: API Key inválida o faltante<br>
+        Given la petición no incluye el header X-API-Key o incluye una incorrecta<br>
+        When se intenta consumir el webhook<br>
+        Then la respuesta es HTTP 401 Unauthorized con mensaje "Invalid or missing API Key"<br>
+        And no se procesa la recomendación
+      </td>
+      <td>EPIC8</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC09: Integración con Servicios Externos</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US23</td>
+      <td>Integración con API de Clima</td>
+      <td>Como agricultor, deseo ver el pronóstico del clima junto a mis datos de suelo para coordinar el riego con las lluvias previstas.</td>
+      <td>
+        Scenario 1: Visualización del pronóstico en el dashboard<br>
+        Given el agricultor ha iniciado sesión y su perfil tiene configurada una ubicación (latitud/longitud)<br>
+        When accede al dashboard principal (/dashboard)<br>
+        Then se muestra un widget climático en la esquina superior derecha con:<br>
+        - Pronóstico de lluvia para las próximas 24 horas (probabilidad % y mm estimados)<br>
+        - Temperatura actual y pronóstico min/max<br>
+        - Humedad ambiental %<br>
+        - Velocidad del viento<br>
+        And los datos provienen de la API de OpenWeatherMap o similar<br><br>
+        Scenario 2: Actualización automática del clima<br>
+        Given el widget climático está visible y la última actualización fue hace más de 3 horas<br>
+        When pasa el tiempo configurado (background job o polling cada 3 horas)<br>
+        Then los datos climáticos se actualizan automáticamente sin necesidad de recargar la página<br>
+        And se muestra un tooltip "Actualizado hace X minutos"<br><br>
+        Scenario 3: Recomendación combinada (clima + suelo)<br>
+        Given el pronóstico indica lluvia del 80% en las próximas 6 horas (10 mm)<br>
+        And el sensor de humedad del suelo reporta 35% (moderadamente bajo)<br>
+        When el motor de recomendaciones evalúa ambos factores<br>
+        Then se muestra una alerta amarilla: "⛈️ Pronóstico de lluvia alta en 6 horas. Suspender riego planificado para hoy. Ahorrarás aproximadamente 500 litros."
+      </td>
+      <td>EPIC9</td>
+    </tr>
+    <tr>
+      <td>US24</td>
+      <td>Integración con Imágenes Satelitales</td>
+      <td>Como agricultor, deseo ver una imagen satelital reciente de mi sembrío para identificar visualmente áreas con problemas de crecimiento.</td>
+      <td>
+        Scenario 1: Carga de imagen satelital más reciente<br>
+        Given el agricultor accede a la sección "Mapa Satelital" desde el menú<br>
+        When la página carga y el backend obtiene la imagen de Sentinel Hub o Google Earth Engine<br>
+        Then se muestra una imagen satelital con fecha de captura visible (ej: "10/05/2026 - Sentinel-2 L2A")<br>
+        And el mapa permite cambiar entre vista satelital y vista de mapa base<br>
+        And se puede hacer zoom hasta nivel 18 (máximo detalle)<br><br>
+        Scenario 2: Selección de fecha histórica<br>
+        Given el mapa satelital está visible con la imagen más reciente<br>
+        When el agricultor selecciona una fecha diferente en el calendario (ej: "01/04/2026")<br>
+        Then la imagen se actualiza con la imagen satelital disponible más cercana a esa fecha<br>
+        And se muestra mensaje: "Mostrando imagen del 01/04/2026 (nubosidad: 12%)"<br>
+        If no hay imagen disponible para esa fecha, se muestra error: "No hay imágenes disponibles para la fecha seleccionada"<br><br>
+        Scenario 3: Comparación antes/después<br>
+        Given el agricultor está viendo una imagen satelital del mes actual<br>
+        When activa el modo "Comparación" y selecciona fecha anterior "01/03/2026"<br>
+        Then se muestra un control deslizante que permite comparar ambas imágenes lado a lado<br>
+        And se resaltan automáticamente las áreas con diferencia de vegetación (NDVI)
+      </td>
+      <td>EPIC9</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>EPIC10: Configuración y Despliegue (Technical Stories)</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>EPIC ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TS01</td>
+      <td>Configuración de Repositorios con GitFlow</td>
+      <td>Como developer, deseo tener los repositorios configurados con GitFlow y Conventional Commits para mantener un historial limpio y facilitar el trabajo colaborativo.</td>
+      <td>
+        Scenario 1: Estructura de branches según GitFlow<br>
+        Given se accede al repositorio en GitHub/GitLab<br>
+        When se listan las branches en el repositorio agrotech-app<br>
+        Then deben existir las ramas permanentes: main (producción) y develop (integración)<br>
+        And debe existir al menos una rama feature/autenticacion activa para desarrollo nuevo<br>
+        And no debe permitirse push directo a main (protegida, solo vía Pull Request con al menos 1 aprobación)<br><br>
+        Scenario 2: Mensajes de commit con Conventional Commits<br>
+        Given se revisa el historial de commits del repositorio<br>
+        When se observan los últimos 10 mensajes de commit<br>
+        Then el 100% sigue el formato type(scope): subject<br>
+        And los tipos permitidos incluyen: feat, fix, docs, style, refactor, test, chore<br>
+        And ejemplos válidos: feat(sensors): add endpoint for humidity data, fix(auth): resolve token expiration bug<br><br>
+        Scenario 3: Pull Request template configurado<br>
+        Given un developer crea una Pull Request de feature/nueva-funcion hacia develop<br>
+        When se abre la PR<br>
+        Then se carga automáticamente un template con checklists de:<br>
+        - Descripción de cambios<br>
+        - Tipo de cambio (feature, fix, breaking change)<br>
+        - Tests ejecutados<br>
+        - Screenshots (si aplica UI)
+      </td>
+      <td>EPIC10</td>
+    </tr>
+    <tr>
+      <td>TS02</td>
+      <td>Despliegue Automático con Netlify / GitHub Actions</td>
+      <td>Como developer, deseo tener configurado despliegue automático (CI/CD) para que los cambios en la rama main se publiquen automáticamente en producción.</td>
+      <td>
+        Scenario 1: Despliegue automático del frontend (Landing Page + Web App)<br>
+        Given se hace push a la rama main del repositorio agrotech-frontend<br>
+        When Netlify detecta el cambio (webhook configurado)<br>
+        Then ejecuta el build (npm run build) y despliega en https://agrotech.netlify.app<br>
+        And el despliegue completo toma menos de 2 minutos<br>
+        And se envía notificación al canal #deployments de Slack/Discord<br><br>
+        Scenario 2: CI/CD para backend API con GitHub Actions<br>
+        Given se hace push a main del repositorio agrotech-api<br>
+        When GitHub Actions ejecuta el workflow definido en .github/workflows/deploy.yml<br>
+        Then primero corre los tests unitarios (dotnet test)<br>
+        And si los tests pasan, compila la API (dotnet publish)<br>
+        And luego despliega a Azure App Service o Railway<br>
+        And si algún test falla, el despliegue se cancela y se envía alerta<br><br>
+        Scenario 3: Variables de entorno en Netlify<br>
+        Given la aplicación requiere variables como VITE_API_URL<br>
+        When se configura en Netlify UI (o netlify.toml)<br>
+        Then el build las inyecta automáticamente<br>
+        And no están hardcodeadas en el repositorio
+      </td>
+      <td>EPIC10</td>
+    </tr>
+    <tr>
+      <td>TS03</td>
+      <td>Configuración de Base de Datos en la Nube</td>
+      <td>Como developer, deseo tener una base de datos PostgreSQL alojada en la nube para persistir los datos de usuarios, sensores y recomendaciones.</td>
+      <td>
+        Scenario 1: Conexión exitosa desde la API<br>
+        Given la API está configurada con la cadena de conexión de Supabase (o Neon.tech o Azure PostgreSQL)<br>
+        When se ejecuta dotnet run en entorno local apuntando a la nube<br>
+        Then la API se conecta a la base de datos remota sin errores de timeout o SSL<br>
+        And los logs muestran "Database connection established successfully"<br><br>
+        Scenario 2: Aplicación de migraciones automáticas al inicio<br>
+        Given existen migraciones pendientes en el proyecto EF Core<br>
+        When la API se inicia en entorno de staging/producción<br>
+        Then se ejecuta context.Database.Migrate() automáticamente<br>
+        And las tablas Users, Sensors, Recommendations, Zones se crean o actualizan sin errores<br>
+        And se registra en logs qué migraciones se aplicaron<br><br>
+        Scenario 3: Backup automático diario<br>
+        Given la base de datos está en producción<br>
+        When el servicio de nube configurado<br>
+        Then debe realizar backups automáticos diarios con retención mínima de 7 días<br>
+        And debe ser posible restaurar desde la UI del proveedor
+      </td>
+      <td>EPIC10</td>
+    </tr>
+    <tr>
+      <td>TS04</td>
+      <td>Configuración de Variables de Entorno</td>
+      <td>Como developer, deseo utilizar variables de entorno para configuraciones sensibles para evitar hardcodear credenciales en el repositorio.</td>
+      <td>
+        Scenario 1: Frontend con Vite - uso de .env<br>
+        Given el frontend requiere una API key de Google Maps y la URL del backend<br>
+        When se revisa el repositorio en GitHub<br>
+        Then no debe haber ninguna API key hardcodeada en archivos .js, .ts o .jsx<br>
+        And debe existir un archivo .env.example con variables como VITE_MAP_API_KEY=, VITE_API_URL=<br>
+        And .env está incluido en .gitignore<br><br>
+        Scenario 2: Backend .NET con User Secrets (desarrollo) y variables de entorno (producción)<br>
+        Given el backend requiere connection string, API key de clima y JWT Secret<br>
+        When se revisa appsettings.json en el repositorio<br>
+        Then contiene placeholders: "ConnectionString": "${DB_CONNECTION}", "JwtSecret": "${JWT_SECRET}"<br>
+        And en entorno de desarrollo se usa dotnet user-secrets set "DB_CONNECTION" "valor_local"<br>
+        And en producción se inyecta mediante variables de entorno del sistema o servicio de nube (Azure App Settings, Railway env vars)<br><br>
+        Scenario 3: Validación al arrancar<br>
+        Given la API intenta iniciar sin la variable JWT_SECRET configurada<br>
+        When se ejecuta dotnet run<br>
+        Then la API falla intencionalmente con mensaje: "FATAL: Missing required environment variable: JWT_SECRET"<br>
+        And no expone información sensible
+      </td>
+      <td>EPIC10</td>
+    </tr>
+  </tbody>
+</table>
+
+## 3.2. Impact Mapping
+
+<img src="assets/images/cap3/impact-mapping.png" alt="impact mapping" style="width: 60%; max-width: 800px; height: 700px;">
+
+## 3.3. Product Backlog
+
+<table border="1" cellpadding="6"cellspacing="0">
+    <thead>
+        <tr>
+            <th><strong># Orden</strong></th>
+            <th><strong>User Story Id</strong></th>
+            <th><strong>Título</strong></th>
+            <th><strong>Descripción</strong></th>
+            <th><strong>Story Points (1/2/3/5/8)</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>US01</td><td>Visualización de Hero Section</td><td>Como visitante, deseo ver un mensaje claro sobre el valor de AgroTech para comprender rápidamente qué ofrece la solución.</td><td>2</td></tr>
+        <tr><td>2</td><td>US02</td><td>Visualización de Sección de Características</td><td>Como visitante, deseo conocer las características principales de AgroTech para evaluar si la solución satisface mis necesidades.</td><td>3</td></tr>
+        <tr><td>3</td><td>US03</td><td>Envío de Formulario de Solicitud de Demo</td><td>Como visitante, deseo completar un formulario para solicitar una demostración para recibir información personalizada sobre AgroTech.</td><td>5</td></tr>
+        <tr><td>4</td><td>US04</td><td>Enlace a Términos y Condiciones</td><td>Como visitante, deseo leer los términos y condiciones de servicio para conocer mis derechos y obligaciones al usar AgroTech.</td><td>1</td></tr>
+        <tr><td>5</td><td>US05</td><td>Registro de Nuevo Usuario</td><td>Como agricultor, deseo crear una cuenta en AgroTech para acceder a la plataforma y configurar mis sembríos.</td><td>5</td></tr>
+        <tr><td>6</td><td>US06</td><td>Inicio de Sesión</td><td>Como usuario registrado, deseo iniciar sesión con mi email y contraseña para acceder a mi dashboard y datos.</td><td>3</td></tr>
+        <tr><td>7</td><td>US07</td><td>Recuperación de Contraseña</td><td>Como usuario registrado, deseo recuperar mi contraseña olvidada para volver a acceder a mi cuenta.</td><td>3</td></tr>
+        <tr><td>8</td><td>US08</td><td>Visualización de Perfil de Usuario</td><td>Como agricultor, deseo ver y editar mi perfil para mantener actualizada mi información personal y de mi finca.</td><td>2</td></tr>
+        <tr><td>9</td><td>US09</td><td>Visualización de Indicadores Clave</td><td>Como agricultor, deseo ver en tiempo real los valores de humedad, nutrientes y temperatura del suelo para tomar decisiones informadas sobre riego y fertilización.</td><td>5</td></tr>
+        <tr><td>10</td><td>US10</td><td>Selección de Zona o Sensor Específico</td><td>Como agricultor, deseo seleccionar una zona específica de mi sembrío para ver los datos de sensores individuales.</td><td>3</td></tr>
+        <tr><td>11</td><td>US11</td><td>Visualización de Histórico de Datos (Gráfico)</td><td>Como agricultor, deseo ver un gráfico con el histórico de humedad de los últimos 7 días para identificar tendencias y patrones.</td><td>5</td></tr>
+        <tr><td>12</td><td>US12</td><td>Visualización de Mapa de Calor de Fertilidad</td><td>Como agricultor, deseo ver un mapa de calor de mi sembrío que indique las zonas más fértiles para planificar la rotación de cultivos y optimizar la siembra.</td><td>8</td></tr>
+        <tr><td>13</td><td>US13</td><td>Zoom y Navegación en el Mapa</td><td>Como agricultor, deseo hacer zoom y desplazarme por el mapa para examinar zonas específicas con mayor detalle.</td><td>3</td></tr>
+        <tr><td>14</td><td>US14</td><td>Recepción de Recomendación de Riego</td><td>Como agricultor, deseo recibir una recomendación automática sobre si debo regar o no para optimizar el uso del agua y evitar estrés hídrico.</td><td>5</td></tr>
+        <tr><td>15</td><td>US15</td><td>Recepción de Recomendación de Fertilización</td><td>Como agricultor, deseo recibir una recomendación sobre qué nutriente aplicar y en qué cantidad para evitar sobrefertilización y reducir costos.</td><td>5</td></tr>
+        <tr><td>16</td><td>US16</td><td>Registro de Nuevo Sensor</td><td>Como agricultor, deseo registrar un nuevo sensor en mi cuenta para empezar a monitorear una nueva zona o sembrío.</td><td>3</td></tr>
+        <tr><td>17</td><td>US17</td><td>Configuración de Umbrales de Alerta</td><td>Como agricultor, deseo configurar umbrales personalizados para humedad y nutrientes para recibir alertas cuando los valores salgan del rango deseado.</td><td>3</td></tr>
+        <tr><td>18</td><td>US18</td><td>Exportación de Reporte en PDF</td><td>Como administrador de cooperativa, deseo exportar un reporte mensual de rendimiento en formato PDF para compartirlo con los socios de la cooperativa.</td><td>5</td></tr>
+        <tr><td>19</td><td>US19</td><td>Dashboard Agregado por Socio/Lote</td><td>Como administrador de cooperativa, deseo ver un dashboard consolidado de todos los socios o lotes para comparar el rendimiento y detectar oportunidades de mejora colectiva.</td><td>8</td></tr>
+        <tr><td>20</td><td>US20</td><td>Documentación de Endpoints con Swagger</td><td>Como developer, deseo acceder a documentación interactiva de la API (Swagger/OpenAPI) para comprender cómo consumir los endpoints correctamente.</td><td>2</td></tr>
+        <tr><td>21</td><td>US21</td><td>Endpoint de Obtención de Datos de Sensor</td><td>Como frontend developer, deseo consumir un endpoint GET /api/sensors/{id}/data para obtener los últimos valores de un sensor específico.</td><td>3</td></tr>
+        <tr><td>22</td><td>US22</td><td>Endpoint de Envío de Recomendación (Webhook)</td><td>Como backend developer, deseo implementar un endpoint POST /api/recommendations/webhook para recibir datos del motor de recomendaciones y almacenarlos en la base de datos.</td><td>5</td></tr>
+        <tr><td>23</td><td>US23</td><td>Integración con API de Clima</td><td>Como agricultor, deseo ver el pronóstico del clima junto a mis datos de suelo para coordinar el riego con las lluvias previstas.</td><td>5</td></tr>
+        <tr><td>24</td><td>US24</td><td>Integración con Imágenes Satelitales</td><td>Como agricultor, deseo ver una imagen satelital reciente de mi sembrío para identificar visualmente áreas con problemas de crecimiento.</td><td>8</td></tr>
+        <tr><td>25</td><td>TS01</td><td>Configuración de Repositorios con GitFlow</td><td>Como developer, deseo tener los repositorios configurados con GitFlow y Conventional Commits para mantener un historial limpio y facilitar el trabajo colaborativo.</td><td>2</td></tr>
+        <tr><td>26</td><td>TS02</td><td>Despliegue Automático con Netlify / GitHub Actions</td><td>Como developer, deseo tener configurado despliegue automático (CI/CD) para que los cambios en la rama main se publiquen automáticamente en producción.</td><td>3</td></tr>
+        <tr><td>27</td><td>TS03</td><td>Configuración de Base de Datos en la Nube</td><td>Como developer, deseo tener una base de datos PostgreSQL alojada en la nube (Azure/AWS) para persistir los datos de usuarios, sensores y recomendaciones.</td><td>3</td></tr>
+        <tr><td>28</td><td>TS04</td><td>Configuración de Variables de Entorno</td><td>Como developer, deseo utilizar variables de entorno para configuraciones sensibles (API keys, connection strings) para evitar hardcodear credenciales en el repositorio.</td><td>2</td></tr>
+    </tbody>
+</table>
+
