@@ -23,51 +23,67 @@
     <p>abril de 2026</p>
   </div>
 
+---
+
 <div style="page-break-after: always;"></div>
 
-## Registro de Versiones del informe
+## Registro de Versiones del Informe
 
-  <table border="1" style="width: 100%; border-collapse: collapse;">
-    <thead>
-      <tr>
-        <th style="padding: 8px;">Versión</th>
-        <th style="padding: 8px;">Fecha</th>
-        <th style="padding: 8px;">Autor</th>
-        <th style="padding: 8px;">Descripción de modificación</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding: 8px; vertical-align: top;"><strong>TB1</strong></td>
-        <td style="padding: 8px; vertical-align: top;">
-          Acuña de la Cruz, Luis Alfredo<br/>
-          Aguilar Untiveros, Rodrigo Fabrizio<br/>
-          Howard Robles, Guillermo Arturo<br/>
-          Perez Encarnacion, Breithner Rodolfo<br/>
-          Retuerto Rodríguez, Jorge Manuel
-        </td>
-        <td style="padding: 8px; vertical-align: top;">
-          Capítulo I: Introducción<br/>
-          Capítulo II: Requirements Elicitation<br/>
-          Capítulo III: Requirements Specification<br/>
-          Capítulo IV: Product Design<br/>
-          Capítulo V: Implementation sprint 1<br/>
-          Conclusiones<br/>
-          Recomendaciones
-        </td>
-      </tr>
-    </tbody>
-  </table>
+| Versión | Fecha      | Autor                                 | Descripción de modificación                                                |
+|:-------:|------------|---------------------------------------|----------------------------------------------------------------------------|
+|   1.1   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de la organización en github de 1ASI0730-10215-NovaTech-TerraTech |
+|   1.2   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación del repositorio  upc-pre-202610-1asi0730-10215-NovaTech-report    |
+|   1.3   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de ramas para la división de los capítulos del report             |   
+|   1.4   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del startup-profile                                             |
+|   1.5   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del solution-profile                                            |
+|   1.6   | 09/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo de los user stories y el product backlog                        |
+|   1.7   | 10/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del lean ux process                                             |
+|   1.8   | 10/04/2026 | Perez Encarnacion, Breithner Rodolfo  | Desarrollo del style guidelines and web style guidelines                   |
+|   1.9   | 10/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del análisis de competidores y needfinding                      |
+|  1.10   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los segmentos objetivos                                      |
+|  1.11   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los user persona y los task matrix                           |
+|  1.12   | 11/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del impact mapping                                              |
+|  1.13   | 12/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del empathy mapping                                             |
+|  1.14   | 16/04/2026 | Acuña de la Cruz, Luis Alfredo        | Desarrollo del Sprint 1                                                    |
+|   2.1   | 24/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del Sprint 2                                                    |
+|   2.2   | 28/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección del Event Storming                                              |
+|   3.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                           |
+|   3.2   | 24/05/2026 | Howard Robles, Guillermo Arturo       | Corrección en el diseño del reporte                                        |
+|   3.3   | 25/05/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint 3                                                    |
+
+---
 
 <div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
+  <div style="text-align:center"> 
   <p>Para el desarrollo del Project Report, se utilizó un repositorio dentro de la organización del equipo en GitHub. A continuación, se presenta la evidencia de colaboración correspondiente, en coherencia con el Registro de Versiones del Informe.
 
   <p>Link Github: https://github.com/1ASI0730-10215-NovaTech-TerraTech</p>
 
-  <p>Entrega Nº1: AV1</p>
+  <p>Entrega Nº3: AV2</p>
+
+  <p>Para la elaboración del informe, se crearon ramas específicas para cada sección del documento, permitiendo a los integrantes trabajar de manera simultánea y organizada, facilitando la integración de los contenidos.</p>
+
+  <img src="assets/images/readme/Report-Ins.png" style="width: 450px;"/>
+
+  <p>Total de commits: 76</p>
+
+  <p>Autores contribuyentes:</p>
+
+  <p>Luis Acuña (`L2006delacruz`)</p>
+
+  <p>Rodrigo Aguilar (`Rodri2712`)</p>
+
+  <p>Guillermo Howard (`GuillermoPromac`)</p>
+
+  <p>Breithner Perez (`Breithner1`)</p>
+
+  <p>Jorge Retuerto (`Calin1407`)</p>
+  </div>
+
+---
 
 <div style="page-break-after: always;"></div>
 
@@ -195,6 +211,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Se aplicó event storming para estructurar el flujo del sistema y alinear el entendimiento entre los integrantes.
         Se diseñaron interfaces UX para la landing page y la aplicación, considerando la experiencia del usuario.
         Se documentaron reuniones y acuerdos para asegurar la comunicación y seguimiento del progreso.
+        <br><br>
+        tb1: Durante el Sprint 2, el equipo consolidó un modelo de liderazgo compartido donde la toma de decisiones técnicas se realizó de forma conjunta. La capacidad de liderazgo se manifestó en la autogestión de los Bounded Contexts, asegurando que cada módulo funcional estuviera alineado con los objetivos del negocio y las metas del Sprint, garantizando una integración fluida entre los componentes desarrollados por cada miembro.  
         </th>
     </tr>
     <tr>
@@ -215,6 +233,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         respetando los roles y promoviendo la participación equitativa. Se fomentó un entorno inclusivo donde todos los miembros 
         expresaron sus ideas durante las retrospectivas. El equipo cumplió con los objetivos del hito, entregando las funcionalidades 
         acordadas dentro del plazo establecido.
+        <br><br>
+        tb1: El equipo fomentó un entorno inclusivo mediante la rotación de responsabilidades técnicas y el apoyo mutuo en las fases de despliegue. Se establecieron metas específicas para el Sprint 2 mediante un Sprint Backlog detallado, lo que permitió una planificación rigurosa de las tareas de codificación y documentación. El cumplimiento de los objetivos se evidenció en la entrega de un producto funcional desplegado en múltiples plataformas y una documentación técnica que refleja fielmente la colaboración y el esfuerzo colectivo por alcanzar los estándares de calidad exigidos.
         </th>
     </tr>
 </tbody>

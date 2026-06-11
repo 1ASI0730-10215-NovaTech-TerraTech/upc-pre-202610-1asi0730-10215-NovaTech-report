@@ -2,7 +2,7 @@
 
 # Conclusiones y Recomendaciones
 
-**Conclusiones**
+***Conclusiones***
 
 Durante el desarrollo del proyecto, hemos logrado identificar y comprender las necesidades de los usuarios, lo que nos ha permitido diseñar una solución efectiva y adaptada a sus requerimientos.
 
@@ -16,7 +16,7 @@ A su vez el proyecto ha sido una oportunidad para aplicar y fortalecer nuestras 
 
 Por el momento del desarrollo del sprint1, se ha logrado establecer las bases de la aplicación, definiendo su estructura y funcionalidades principales, como una página inicial estática. También empezando a utilizar herramientas importantes como GitHub para el contro de versiones y Figma para el modelado de prototipos, además de definir detalles ténicos como el diagrama de clases y prepara el entorno de desarrollo.
 
-**Recomendaciones**
+***Recomendaciones***
 
 - Se recomienda continuar con el desarrollo del sprint2, enfocándose en la implementación de las funcionalidades restantes y realizando pruebas continuas para asegurar la calidad del producto.
 
@@ -28,7 +28,7 @@ Por el momento del desarrollo del sprint1, se ha logrado establecer las bases de
 
 - Se recomienda incorporar un sistema básico de trazabilidad mediante códigos QR para los clientes finales, respondiendo a la demanda de transparencia y sostenibilidad identificada en el segmento de consumidores.
 
-**Video About-the-Team**
+***Video About-the-Team***
 
 A continuación, encontrará una captura de pantalla del vídeo, junto con enlaces a la versión publicada en Microsoft Stream y YouTube.
 
