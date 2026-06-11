@@ -50,6 +50,8 @@
 |   3.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                           |
 |   3.2   | 24/05/2026 | Howard Robles, Guillermo Arturo       | Corrección en el diseño del reporte                                        |
 |   3.3   | 25/05/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint 3                                                    |
+|   3.4   | 25/05/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint blacklog                                             |
+
 
 ---
 
