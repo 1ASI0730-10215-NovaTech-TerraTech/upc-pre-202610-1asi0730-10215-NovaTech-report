@@ -31,24 +31,25 @@
 
 | Versión | Fecha      | Autor                                 | Descripción de modificación                                                |
 |:-------:|------------|---------------------------------------|----------------------------------------------------------------------------|
-|   1.1   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de la organización en github de 1ASI0730-10215-NovaTech-TerraTech |
-|   1.2   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación del repositorio  upc-pre-202610-1asi0730-10215-NovaTech-report    |
-|   1.3   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de ramas para la división de los capítulos del report             |   
-|   1.4   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del startup-profile                                             |
-|   1.5   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del solution-profile                                            |
-|   1.6   | 09/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo de los user stories y el product backlog                        |
-|   1.7   | 10/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del lean ux process                                             |
-|   1.8   | 10/04/2026 | Perez Encarnacion, Breithner Rodolfo  | Desarrollo del style guidelines and web style guidelines                   |
-|   1.9   | 10/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del análisis de competidores y needfinding                      |
-|  1.10   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los segmentos objetivos                                      |
-|  1.11   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los user persona y los task matrix                           |
-|  1.12   | 11/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del impact mapping                                              |
-|  1.13   | 12/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del empathy mapping                                             |
-|  1.14   | 16/04/2026 | Acuña de la Cruz, Luis Alfredo        | Desarrollo del Sprint 1                                                    |
-|   2.1   | 24/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del Sprint 2                                                    |
-|   2.2   | 28/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección del Event Storming                                              |
-|   3.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                           |
-|   3.2   | 11/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint blacklog                                             |
+|   0.1   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de la organización en github de 1ASI0730-10215-NovaTech-TerraTech |
+|   0.2   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación del repositorio  upc-pre-202610-1asi0730-10215-NovaTech-report    |
+|   0.3   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de ramas para la división de los capítulos del report             |   
+|   0.4   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del startup-profile                                             |
+|   0.5   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del solution-profile                                            |
+|   0.6   | 09/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo de los user stories y el product backlog                        |
+|   0.7   | 10/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del lean ux process                                             |
+|   0.8   | 10/04/2026 | Perez Encarnacion, Breithner Rodolfo  | Desarrollo del style guidelines and web style guidelines                   |
+|   0.9   | 10/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del análisis de competidores y needfinding                      |
+|  0.10   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los segmentos objetivos                                      |
+|  0.11   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los user persona y los task matrix                           |
+|  0.12   | 11/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del impact mapping                                              |
+|  0.13   | 12/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del empathy mapping                                             |
+|   1.0   | 16/04/2026 | Acuña de la Cruz, Luis Alfredo        | Desarrollo del Sprint 1                                                    |
+|   1.1   | 24/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del Sprint 2                                                    |
+|   2.0   | 28/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección del Event Storming                                              |
+|   2.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                           |
+|   2.2   | 11/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint blacklog                                             |
+|   2.3   | 14/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de diseño de entrevistas de validación                          |
 
 
 ---
