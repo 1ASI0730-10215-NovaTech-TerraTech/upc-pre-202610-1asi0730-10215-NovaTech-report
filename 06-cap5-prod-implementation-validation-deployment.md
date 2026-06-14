@@ -854,6 +854,80 @@ Registro de commits representativos del trabajo realizado durante el Sprint 3 en
 
 ### 5.3.1. Diseño de Entrevistas.
 
+En esta sección el equipo establece, por cada segmento objetivo, los elementos incluidos en la sesión de validación, incluyendo el Landing Page y las aplicaciones. Se especifican también los user flows de las aplicaciones que formaron parte del proceso de validación.
+
+### Segmento 1: Agricultores (dueños de cultivo)
+
+**Elementos a validar:**
+
+- Registro de cuenta e inicio de sesión.
+- Visualización del dashboard de monitoreo en tiempo real (humedad, nutrientes, temperatura).
+- Selección y cambio de zona o sensor específico.
+- Visualización de mapa de calor de fertilidad (zoom y navegación).
+- Recepción y comprensión de recomendaciones de riego y fertilización.
+- Configuración de umbrales de alerta personalizados.
+- Registro de un nuevo sensor IoT en la parcela.
+
+**Flujos de Usuario evaluados (Desktop & Mobile):**
+
+| Código | Flujo |
+|--------|-------|
+| UF-A1 | Registro y activación de cuenta |
+| UF-A2 | Configuración de perfil y umbrales de alerta |
+| UF-A3 | Visualización de indicadores clave y gráfico histórico |
+| UF-A4 | Navegación en el mapa de calor de fertilidad |
+| UF-A5 | Consulta de recomendación de riego |
+| UF-A6 | Registro de nuevo sensor IoT |
+
+**Actividades durante la sesión:**
+
+1. Explorar el Landing Page y describir su comprensión del producto.
+2. Simular el proceso de registro de cuenta.
+3. Ingresar al sistema y configurar perfil (nombre, teléfono, tamaño de terreno).
+4. Registrar un nuevo sensor en una zona (ingresar código único y asignar nombre).
+5. Visualizar el dashboard principal e identificar los valores de humedad, nutrientes y temperatura.
+6. Cambiar de zona y comprobar que los datos se actualizan.
+7. Abrir el mapa de calor, hacer zoom y desplazarse para identificar zonas rojas.
+8. Leer una recomendación de riego generada por el sistema (alerta por humedad baja).
+9. Comentar sobre la utilidad de la interfaz y la claridad de las recomendaciones.
+
+---
+
+### Segmento 2: Administradores de cooperativas
+
+**Elementos a validar:**
+
+- Visualización de dashboard consolidado de todos los socios/lotes.
+- Filtrado y ordenamiento de socios por rendimiento o alertas.
+- Exportación de reporte mensual en PDF (con gráficos y tablas).
+- Visualización de pronóstico del clima integrado.
+- Acceso a imágenes satelitales recientes de parcelas.
+
+**Flujos de Usuario evaluados (Desktop & Mobile):**
+
+| Código | Flujo |
+|--------|-------|
+| UF-C1 | Acceso al dashboard agregado de la cooperativa |
+| UF-C2 | Filtrado y comparación de socios |
+| UF-C3 | Generación y descarga de reporte PDF |
+| UF-C4 | Consulta del widget climático |
+| UF-C5 | Visualización de imagen satelital y comparación histórica |
+
+**Actividades durante la sesión:**
+
+1. Explorar el Landing Page y describir la propuesta de valor para cooperativas.
+2. Iniciar sesión con rol de administrador.
+3. Visualizar la tabla de socios con métricas clave (humedad promedio, rendimiento estimado, alertas activas).
+4. Ordenar la tabla por número de alertas activas (de mayor a menor).
+5. Hacer clic en un socio para ver su detalle individual.
+6. Generar un reporte mensual (seleccionando rango de fechas) y exportarlo en PDF.
+7. Verificar que el PDF contiene encabezado, gráficos, tablas y recomendaciones.
+8. Consultar el pronóstico del clima para los próximos 3 días.
+9. Acceder a la vista satelital de una parcela y cambiar a una fecha anterior para comparar.
+10. Comentar sobre la utilidad de los reportes y el dashboard consolidado para la gestión de la cooperativa.
+
+---
+
 ### 5.3.2. Registro de Entrevistas.
 
 ### 5.3.3. Evaluación según heurísticas.
