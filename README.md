@@ -53,6 +53,7 @@
 |   2.4   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Aspect Leaders and Collaborators                            |
 |   2.5   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Backlog 3                                            |
 |   2.6   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Development Evidence for Sprint Review                      |
+|   2.7   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Diseño de Entrevistas del Validation Interviews.            |
 
 ---
 

@@ -988,77 +988,109 @@ Se actualizó el archivo README.md con una descripción general del proyecto, te
 
 ### 5.3.1. Diseño de Entrevistas.
 
-En esta sección el equipo establece, por cada segmento objetivo, los elementos incluidos en la sesión de validación, incluyendo el Landing Page y las aplicaciones. Se especifican también los user flows de las aplicaciones que formaron parte del proceso de validación.
+Para garantizar que la aplicación cumpla con las necesidades reales de los usuarios finales, se diseñó un proceso de entrevistas de validación centrado en tres segmentos objetivos clave: **Agricultores**, **Proveedores de insumos agrícolas** y **Clientes Finales (compradores)**. Cada sesión de validación incluirá interacción con el **Landing Page** y la **aplicación web** (desktop y mobile), siguiendo flujos de usuario específicos que cubren funcionalidades críticas del sistema.
 
-### Segmento 1: Agricultores (dueños de cultivo)
+***Objetivo General***
 
-**Elementos a validar:**
-
-- Registro de cuenta e inicio de sesión.
-- Visualización del dashboard de monitoreo en tiempo real (humedad, nutrientes, temperatura).
-- Selección y cambio de zona o sensor específico.
-- Visualización de mapa de calor de fertilidad (zoom y navegación).
-- Recepción y comprensión de recomendaciones de riego y fertilización.
-- Configuración de umbrales de alerta personalizados.
-- Registro de un nuevo sensor IoT en la parcela.
-
-**Flujos de Usuario evaluados (Desktop & Mobile):**
-
-| Código | Flujo |
-|--------|-------|
-| UF-A1 | Registro y activación de cuenta |
-| UF-A2 | Configuración de perfil y umbrales de alerta |
-| UF-A3 | Visualización de indicadores clave y gráfico histórico |
-| UF-A4 | Navegación en el mapa de calor de fertilidad |
-| UF-A5 | Consulta de recomendación de riego |
-| UF-A6 | Registro de nuevo sensor IoT |
-
-**Actividades durante la sesión:**
-
-1. Explorar el Landing Page y describir su comprensión del producto.
-2. Simular el proceso de registro de cuenta.
-3. Ingresar al sistema y configurar perfil (nombre, teléfono, tamaño de terreno).
-4. Registrar un nuevo sensor en una zona (ingresar código único y asignar nombre).
-5. Visualizar el dashboard principal e identificar los valores de humedad, nutrientes y temperatura.
-6. Cambiar de zona y comprobar que los datos se actualizan.
-7. Abrir el mapa de calor, hacer zoom y desplazarse para identificar zonas rojas.
-8. Leer una recomendación de riego generada por el sistema (alerta por humedad baja).
-9. Comentar sobre la utilidad de la interfaz y la claridad de las recomendaciones.
+Validar la usabilidad, comprensión y utilidad de las funcionalidades del sistema a través de sesiones controladas de interacción, aplicando principios de evaluación heurística y recogiendo observaciones cualitativas.
 
 ---
 
-### Segmento 2: Administradores de cooperativas
+***Segmento 1: Agricultores (dueños de cultivo)***
 
 **Elementos a validar:**
+- Claridad del valor ofrecido en el Landing Page.
+- Flujo de registro y acceso a la plataforma.
+- Registro y gestión de zonas de cultivo (Fields).
+- Asociación de sensores IoT a zonas de cultivo.
+- Visualización de indicadores en tiempo real (humedad, nutrientes, temperatura) en el dashboard de monitoreo.
+- Recepción y comprensión de alertas y notificaciones (umbrales, riego, fertilización).
+- Gestión de inventario de insumos (registro, edición, filtrado).
+- Configuración de preferencias de notificaciones.
 
-- Visualización de dashboard consolidado de todos los socios/lotes.
-- Filtrado y ordenamiento de socios por rendimiento o alertas.
-- Exportación de reporte mensual en PDF (con gráficos y tablas).
-- Visualización de pronóstico del clima integrado.
-- Acceso a imágenes satelitales recientes de parcelas.
-
-**Flujos de Usuario evaluados (Desktop & Mobile):**
-
-| Código | Flujo |
-|--------|-------|
-| UF-C1 | Acceso al dashboard agregado de la cooperativa |
-| UF-C2 | Filtrado y comparación de socios |
-| UF-C3 | Generación y descarga de reporte PDF |
-| UF-C4 | Consulta del widget climático |
-| UF-C5 | Visualización de imagen satelital y comparación histórica |
+**Flujos de Usuario a evaluar (Desktop & Mobile):**
+- **UF-A1:** Registro de cuenta y configuración inicial de perfil.
+- **UF-A2:** Registro de zona de cultivo con ubicación y tipo de suelo.
+- **UF-A3:** Registro de un sensor IoT y asignación a una zona.
+- **UF-A4:** Visualización del dashboard de monitoreo (indicadores clave, gráficos históricos, mapa de fertilidad).
+- **UF-A5:** Configuración de umbrales de alerta (humedad, nutrientes) y recepción de notificaciones.
+- **UF-A6:** Gestión de inventario de insumos (crear, editar, eliminar, filtrar por categoría).
+- **UF-A7:** Visualización y respuesta a notificaciones (alertas de riego, fertilización, stock bajo).
 
 **Actividades durante la sesión:**
+1. Explorar el Landing Page y describir su comprensión de la pagina y sus beneficios.
+2. Simular el proceso de registro de cuenta y configuración de perfil (nombre, teléfono, tamaño de terreno).
+3. Registrar una nueva zona de cultivo (nombre, tamaño, tipo de suelo, ubicación).
+4. Asignar un sensor IoT a esa zona (ingresar código único).
+5. Ingresar al dashboard de monitoreo y explicar lo que ven en los indicadores (humedad, nutrientes, temperatura).
+6. Navegar por el mapa de fertilidad y describir la utilidad de la información visual.
+7. Configurar un umbral de alerta personalizado (ej. humedad mínima) y recibir una notificación simulada.
+8. Acceder al módulo de inventario, registrar un insumo (nombre, cantidad, unidad), editarlo y filtrarlo.
+9. Comentar sobre la utilidad de las notificaciones y la facilidad para gestionar el inventario.
 
-1. Explorar el Landing Page y describir la propuesta de valor para cooperativas.
-2. Iniciar sesión con rol de administrador.
-3. Visualizar la tabla de socios con métricas clave (humedad promedio, rendimiento estimado, alertas activas).
-4. Ordenar la tabla por número de alertas activas (de mayor a menor).
-5. Hacer clic en un socio para ver su detalle individual.
-6. Generar un reporte mensual (seleccionando rango de fechas) y exportarlo en PDF.
-7. Verificar que el PDF contiene encabezado, gráficos, tablas y recomendaciones.
-8. Consultar el pronóstico del clima para los próximos 3 días.
-9. Acceder a la vista satelital de una parcela y cambiar a una fecha anterior para comparar.
-10. Comentar sobre la utilidad de los reportes y el dashboard consolidado para la gestión de la cooperativa.
+---
+
+***Segmento 2: Proveedores de insumos agrícolas***
+
+**Elementos a validar:**
+- Claridad del valor ofrecido en el Landing Page desde la perspectiva del proveedor.
+- Flujo de registro y acceso a la plataforma.
+- Visualización de tablas analíticas (datos agregados de demanda de nutrientes, zonas con mayor actividad, tendencias de compra).
+- Navegación en la comunidad: visualización de comentarios y calificaciones sobre productos.
+- Gestión de notificaciones relevantes para su negocio (alertas de demanda, cambios en patrones de compra).
+- (Opcional) Gestión de su catálogo de productos (si aplica).
+
+**Flujos de Usuario a evaluar (Desktop & Mobile):**
+- **UF-P1:** Registro y configuración de perfil de proveedor.
+- **UF-P2:** Visualización del dashboard de analytics (tablas y gráficos de demanda y tendencias).
+- **UF-P3:** Exploración de la comunidad: visualizar comentarios y calificaciones de productos específicos.
+- **UF-P4:** Configuración de notificaciones personalizadas (alertas por zona, tipo de insumo, variaciones de demanda).
+- **UF-P5:** (Opcional) Registro y gestión de productos en su catálogo (si se implementa).
+
+**Actividades durante la sesión:**
+1. Explorar el Landing Page y describir su comprensión de la pagina como proveedor.
+2. Simular el proceso de registro y configuración de perfil de proveedor.
+3. Acceder al módulo de analytics y explicar qué información visualizan (tablas de demanda, zonas con mayor actividad, insumos más solicitados).
+4. Identificar una oportunidad de negocio a partir de los datos mostrados (ej. qué producto vender en qué zona).
+5. Navegar por la comunidad y leer comentarios de agricultores sobre productos de la competencia.
+6. Configurar una alerta de notificación para ser informado cuando la demanda de un insumo supere cierto umbral.
+7. Comentar sobre la utilidad de la información analítica y las notificaciones para su negocio.
+
+---
+
+***Segmento 3: Clientes Finales (compradores mayoristas y minoristas)***
+
+**Elementos a validar:**
+- Claridad del valor ofrecido en el Landing Page desde la perspectiva del comprador.
+- Flujo de navegación del catálogo de productos agrícolas.
+- Visualización de detalles del producto (origen, trazabilidad, prácticas de cultivo, certificaciones).
+- Interacción con la comunidad: lectura de opiniones y calificaciones de otros compradores.
+- Configuración de preferencias de notificaciones (nuevos productos, ofertas, cambios de stock).
+- (Opcional) Proceso de compra o cotización.
+
+**Flujos de Usuario a evaluar (Desktop & Mobile):**
+- **UF-C1:** Registro y configuración de perfil de cliente final.
+- **UF-C2:** Navegación y búsqueda en el catálogo de productos (por categoría, región, tipo).
+- **UF-C3:** Visualización detallada de un producto (información de origen, trazabilidad, fotos, certificaciones).
+- **UF-C4:** Lectura de comentarios y calificaciones de otros compradores.
+- **UF-C5:** Configuración de notificaciones preferidas (productos de interés, rebajas, disponibilidad).
+
+**Actividades durante la sesión:**
+1. Explorar el Landing Page y describir su comprensión de la pagina como comprador.
+2. Simular el proceso de registro y configuración de perfil (intereses, región).
+3. Navegar por el catálogo y buscar productos por categoría (ej. "hortalizas", "frutas").
+4. Seleccionar un producto y revisar su ficha detallada (origen, prácticas de cultivo, trazabilidad).
+5. Leer comentarios de otros compradores sobre ese producto y calificaciones.
+6. Configurar notificaciones para recibir alertas cuando haya nuevos productos de una región específica.
+7. Comentar sobre la utilidad de la información de trazabilidad y la comunidad para tomar decisiones de compra.
+
+---
+
+***Herramientas y Recursos para Validación***
+
+- **Formato de Evaluación Heurística:** Se aplicarán los 10 principios heurísticos de Nielsen en cada sesión (visibilidad del estado del sistema, relación con el mundo real, control y libertad del usuario, consistencia y estándares, prevención de errores, reconocimiento antes que recuerdo, flexibilidad y eficiencia, diseño estético y minimalista, ayuda a reconocer y recuperarse de errores, ayuda y documentación). Cada principio se puntuará de 1 a 5 y se registrarán observaciones.
+- **Instrumento de observación:** Lista de verificación de tareas completadas (sin ayuda / con ayuda / no completadas) + sección de notas abiertas para incidentes, comentarios literales y sugerencias.
+- **Grabación de pantalla y voz:** previa autorización de los participantes, para análisis posterior de interacciones, tiempos y patrones de navegación.
 
 ---
 
