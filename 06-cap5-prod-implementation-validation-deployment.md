@@ -710,20 +710,72 @@ Con el fin de mantener una coordinación efectiva y una comunicación fluida ent
 
 #### Sprint Backlog 3
 
-Tabla con el detalle de las tareas asignadas para cumplir con las historias de usuario del Sprint 3.
+El objetivo principal de este Sprint es consolidar una experiencia funcional completa para los distintos perfiles de usuario dentro de la plataforma TerraTech. Se prioriza la mejora de la landing page para comunicar eficazmente la propuesta de valor a nuevos visitantes, así como la habilitación de la gestión de zonas de cultivo y sensores para los agricultores, la mejora de la sección de catálogos para los clientes finales, y la incorporación de la gestión de inventarios tanto para agricultores como para proveedores, permitiendo a ambos segmentos administrar sus recursos de forma integrada. Asimismo, se trabajará en la provisión de una API REST documentada que ofrezca puntos de acceso para que los desarrolladores frontend implementen funcionalidades esenciales de manera eficiente, abarcando la gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. Este enfoque integral busca generar mayor confianza en los visitantes y transmitir con claridad la propuesta de valor, al tiempo que mejora los flujos de usuario: los agricultores podrán monitorear sus cultivos y gestionar su inventario de productos, los proveedores contarán con datos organizados para potenciar sus ventas, y los clientes finales dispondrán de catálogos completos que reflejen la oferta de los agricultores.
 
-| <strong>Sprint #</strong> | <strong>Sprint 3</strong>         |
-| --- |-----------------------------------|
-| <strong>User Story</strong> | <strong>Work-item / Task</strong> |
-| <strong>ID</strong> | <strong>Title</strong>            | <strong>ID</strong> | <strong>Title</strong> | <strong>Description</strong> | <strong>Estimation (Hours)</strong> | <strong>Assigned to</strong> | <strong>Status</strong> |
-| US05 | Registro de Nuevo Usuario         | Task 6 | Formulario y validación de registro | Crear formulario de registro con validación de email único y coincidencia de contraseñas. | 4 | Breithner Perez | Done |
-| US05 | Registro de Nuevo Usuario         | Task 7 | Integración con API de usuarios | Conectar el frontend con el endpoint POST /api/auth/register. | 3 | Guillermo Howard | Done |
-| US06 | Inicio de Sesión                  | Task 8 | Pantalla de login y JWT | Implementar pantalla de login y almacenamiento de token JWT en localStorage. | 3 | Luis Acuña | Done |
-| US07 | Recuperación de Contraseña        | Task 9 | Flujo de recuperación | Crear flujo "Olvidé mi contraseña" con envío de correo simulado o real. | 2 | Jorge Retuerto | Done |
-| US09 | Indicadores Clave (Dashboard)     | Task 10 | Maquetación de tarjetas de KPIs | Diseñar las tarjetas de Humedad, Nutrientes y Temperatura con datos mock. | 3 | Rodrigo Aguilar | Done |
-| US10 | Selección de Zona                 | Task 11 | Selector de zonas dinámico | Implementar un desplegable que permita cambiar entre zonas predefinidas. | 2 | Breithner Perez | Done |
-| TS03 | Configuración de BD en la Nube    | Task 12 | Creación de esquema en PostgreSQL | Ejecutar scripts de creación de tablas (Client, Parcel, Device) en la nube. | 2 | Luis Acuña | Done |
-| TS01 | GitFlow y Conventional Commits    | Task 13 | Revisión y estandarización | Verificar que todas las ramas feature sigan la convención y el flujo establecido. | 2 | Guillermo Howard | Done |
+Además, se facilita al equipo frontend la construcción de las vistas requeridas, promoviendo la cohesión entre frontend y backend. Esto se confirmará cuando aumente la cantidad de usuarios registrados en la plataforma, se incremente el número de zonas de cultivo y productos registrados por los agricultores, crezca el volumen de datos útiles para los proveedores, se amplíe la cantidad de catálogos accesibles para los clientes finales, y los desarrolladores frontend eleven la cantidad de funcionalidades implementadas en torno a sensores, inventarios, comunidad, notificaciones, catálogos y análisis, facilitando así la validación funcional de la plataforma y avanzando hacia su adopción por parte de los usuarios finales.
+
+![Sprint backlog 3](assets/images/cap5/sprint-backlog-3.png)
+
+| Work-item / Task | Description | Estimation (hours) | Assigned To | Status |
+|------------------|-------------|-------------------|-------------|--------|
+| TS04-001 - Update package versions in project dependencies | Actualizar versiones de paquetes en el proyecto | 1 | GH (Howard Robles, Guillermo Arturo) | Done |
+| TS04-002 - Add cancellation token support to base repository and unit of work | Agregar soporte de tokens de cancelación a repositorio base y unidad de trabajo | 1 | GH | Done |
+| TS06-01 - Diseño aggregate de usuario | Diseñar la raíz agregada User para el contexto IAM | 1 | JM (Retuerto Rodríguez, Jorge Manuel) | Done |
+| TS06-02 - Implementación de repositorios, commands y queries | Implementar repositorios, comandos y consultas para IAM | 1 | JM | Done |
+| TS06-03 - Definición de excepciones del negocio | Definir excepciones y errores de negocio para IAM | 1 | JM | Done |
+| TS06-04 - Desarrollo del manejo de registro y autenticación | Desarrollar lógica de registro y autenticación de usuarios | 1 | JM | Done |
+| TS06-05 - Implementación del repositorio de datos del usuario | Implementar repositorio concreto de usuarios (UserRepository) | 1 | JM | Done |
+| TS06-06 - Implementación de Resources | Crear recursos REST (SignUpResource, SignInResource, etc.) | 1 | JM | Done |
+| TS06-07 - Desarrollo de transformadores de datos del usuario | Crear assemblers para transformar entidades a recursos y viceversa | 1 | JM | Done |
+| TS06-08 - Crear controlador del bounded IAM | Implementar AuthenticationController y UsersController | 1 | JM | Done |
+| TS07-001 - Implement Aggregates Field | Implementar agregado Field (entidad, value objects, constructores) | 1 | GH | Done |
+| TS07-002 - Implement CreateDeviceCommand | Implementar comando para crear dispositivos (CreateDeviceCommand) | 1 | GH | Done |
+| TS07-003 - Implement Create Field Command | Implementar comando para crear campos (CreateFieldCommand) | 1 | GH | Done |
+| TS07-005 - Implement Get All Field REST Endpoint Query | Implementar endpoint GET para obtener todos los campos | 1 | GH | Done |
+| TS07-006 - Implement Fields Repositories | Implementar repositorios de Field y sus interfaces | 1 | GH | Done |
+| TS07-007 - Implement Configuration Field | Configurar mapeo de Field en EF Core (ModelBuilderExtensions) | 1 | GH | Done |
+| TS07-008 - Implement Services and Internal Field Commands | Implementar servicios de comandos y lógica interna de Field | 1 | GH | Done |
+| TS07-009 - Implement Services and Internal Field Queries | Implementar servicios de consultas de Field | 1 | GH | Done |
+| TS07-010 - Implement UpdateFieldCommand | Implementar comando para actualizar campos | 1 | GH | Done |
+| TS07-011 - Implement DeleteDeviceCommand | Implementar comando para eliminar dispositivos | 1 | GH | Done |
+| TS07-012 - Implement DeleteFieldCommand | Implementar comando para eliminar campos | 1 | GH | Done |
+| TS07-013 - Implement GetDeviceByStatusQuery | Implementar consulta para obtener dispositivos por estado | 1 | GH | Done |
+| TS07-014 - Implement GetFieldBySoilTypeQuery | Implementar consulta para obtener campos por tipo de suelo | 1 | GH | Done |
+| TS08-01 - Implement NotificationError enum | Implementar enumeración de errores para NotificationManagement | 1 | FF (Aguilar Untiveros, Rodrigo Fabrizio) | Done |
+| TS08-02 - Add INotificationService interface | Crear interfaz INotificationService | 1 | FF | Done |
+| TS08-03 - Add NotificationService implementation | Implementar NotificationService | 1 | FF | Done |
+| TS08-04 - Add Notification aggregate | Crear agregado Notification con sus value objects y comandos | 1 | FF | Done |
+| TS08-05 - Add CreateNotificationCommand and MarkAsReadCommand | Agregar comandos para crear y marcar notificaciones como leídas | 1 | FF | Done |
+| TS08-06 - Add queries GetNotificationsByProfile and GetById | Agregar consultas para obtener notificaciones por perfil y por ID | 1 | FF | Done |
+| TS08-07 - Add INotificationRepository | Crear interfaz INotificationRepository | 1 | FF | Done |
+| TS08-08 - Add NotificationRepository implementation | Implementar NotificationRepository con EF Core | 1 | FF | Done |
+| TS08-09 - Add NotificationsController and REST resources | Crear controlador NotificationsController y recursos REST | 1 | FF | Done |
+| TS08-10 - Register NotificationManagement services in DI container | Registrar servicios de NotificationManagement en el contenedor DI | 1 | FF | Done |
+| TS08-11 - Fix NotificationAudit as partial class implementing IAuditableEntity | Corregir NotificationAudit como clase parcial implementando IAuditableEntity | 1 | FF | Done |
+| TS09-001 - Implement Create Profile | Implementar comando CreateProfileCommand | 1 | BP (Perez Encarnación, Breithner Rodolfo) | Done |
+| TS09-002 - Implement Create Profile Update Profile | Implementar comando UpdateProfileCommand | 1 | BP | Done |
+| TS09-003 - Implement GetAllProfilesQuery | Implementar consulta para obtener todos los perfiles | 1 | BP | Done |
+| TS09-004 - Implement GetProfileByIdQuery | Implementar consulta para obtener perfil por ID | 1 | BP | Done |
+| TS09-005 - Implement DeleteProfile | Implementar comando DeleteProfileCommand | 1 | BP | Done |
+| TS09-02 - Implementar la raíz agregada de perfiles con propiedades de auditoría | Crear agregado Profile con propiedades de auditoría (IAuditableEntity) | 1 | BP | Done |
+| TS09-03 - Añadir el comando createprofilecommand para la creación de perfiles | Agregar comando CreateProfileCommand | 1 | BP | Done |
+| TS09-04 - Añadir objetos de valor para el teléfono de contacto, el nombre del fondo y los umbrales del perfil | Crear value objects: ContactPhone, FundoName, ProfileThresholds | 1 | BP | Done |
+| TS11-001 - Implement GetReportByIdQuery | Implementar consulta para obtener reporte por ID (AnalyticsManagement) | 1 | GH | Done |
+| TS11-002 - Implement CreateReportCommand | Implementar comando para crear reportes (CreateReportCommand) | 1 | GH | Done |
+| TS11-003 - Implement UpdateReportCommand | Implementar comando para actualizar reportes (UpdateReportCommand) | 1 | GH | Done |
+| TS12-001 - Implement Create Comment | Implementar comando CreateCommentCommand | 1 | BP | Done |
+| TS12-002 - Implement CreateCommunityProfile | Implementar comando CreateCommunityProfileCommand | 1 | BP | Done |
+| TS12-003 - Implement UpdateComment | Implementar comando UpdateCommentCommand | 1 | BP | Done |
+| TS12-004 - Implement UpdateCommunityProfile | Implementar comando UpdateCommunityProfileCommand | 1 | BP | Done |
+| TS12-005 - Implement GetAllCommunityProfilesQuery | Implementar consulta para obtener todos los perfiles de comunidad | 1 | BP | Done |
+| TS12-006 - Implement GetCommentByIdQuery | Implementar consulta para obtener comentario por ID | 1 | BP | Done |
+| TS12-007 - Implement GetCommentsByTargetProfileIdQuery | Implementar consulta para obtener comentarios por perfil destino | 1 | BP | Done |
+| TS12-008 - Implement GetCommunityProfileByIdQuery | Implementar consulta para obtener perfil de comunidad por ID | 1 | BP | Done |
+| TS12-009 - Implement GetCommunityProfileByProfileIdQuery | Implementar consulta para obtener perfil de comunidad por ID de perfil | 1 | BP | Done |
+| TS12-010 - Implement DeleteCommunityProfile | Implementar comando DeleteCommunityProfileCommand | 1 | BP | Done |
+| TS12-011 - Implement DeleteComment | Implementar comando DeleteCommentCommand | 1 | BP | Done |
+
+Trello: [Trello Board](https://trello.com/b/sLQ8KGVG/aplicaciones-web)
 
 ### 5.2.2.4. Development Evidence for Sprint Review
 

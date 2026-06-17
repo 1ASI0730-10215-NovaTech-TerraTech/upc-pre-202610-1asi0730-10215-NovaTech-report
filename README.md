@@ -51,6 +51,7 @@
 |   2.2   | 11/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint blacklog                                             |
 |   2.3   | 14/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo deL Sprint Planning 3                                           |
 |   2.4   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Aspect Leaders and Collaborators                            |
+|   2.5   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Backlog 3                                            |
 
 ---
 
