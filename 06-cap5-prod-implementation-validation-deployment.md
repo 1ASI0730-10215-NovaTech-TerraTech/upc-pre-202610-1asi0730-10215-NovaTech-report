@@ -696,85 +696,17 @@ El equipo mantuvo una comunicación activa a través de Discord, con reuniones d
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
-En este sprint, se definieron roles de liderazgo para la elaboración de los bounded context.
+Durante el Sprint 3, se ha definido el desarrollo e integración de los módulos principales del frontend de la aplicación web interna TerraTech y del backend, abarcando funcionalidades clave como la con gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. Estas implementaciones buscan optimizar los procesos internos y mejorar la trazabilidad del flujo de análisis, brindando mayor eficiencia a los proveedores y clientes finales.
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Team member</th>
-      <th>Github username</th>
-      <th>Identity & Access Management</th>
-      <th>Monitoring Management</th>
-      <th>Notification Management</th>
-      <th>Profile Management</th>
-      <th>Stock Management</th>
-      <th>Community Management</th>
-      <th>Analytics Management</th>
-      <th>Commercial Management</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Retuerto Rodriguez, Jorge Manuel</td>
-      <td>Calin1407</td>
-      <td align="center">L</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-    </tr>
-    <tr>
-      <td>Howard Robles, Guillermo Arturo</td>
-      <td>GuillermoPromac</td>
-      <td align="center">C</td>
-      <td align="center">L</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-    </tr>
-    <tr>
-      <td>Acuña de la Cruz, Luis Alfredo</td>
-      <td>L2006delacruz</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">L</td>
-      <td align="center">L</td>
-    </tr>
-    <tr>
-      <td>Perez Encarnacion, Breithner Rodolfo</td>
-      <td>Breithner1</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">L</td>
-      <td align="center">C</td>
-      <td align="center">L</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-    </tr>
-    <tr>
-      <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
-      <td>Rodri2712</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">L</td>
-      <td align="center">C</td>
-      <td align="center">L</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-      <td align="center">C</td>
-    </tr>
-  </tbody>
-</table>
+Con el fin de mantener una coordinación efectiva y una comunicación fluida entre los integrantes del equipo, se estructuró la matriz de liderazgo y colaboración (LACX), donde se asignó un líder (L) encargado de cada funcionalidad y colaboradores (C) que brindan apoyo en su implementación.
+
+| Team Member (Last Name, First Name)  | GitHub Username    | IAM | Monitoring | Notification | Profile | Stock | Community | Analytics | Commercial |
+|:-------------------------------------|:-------------------|:----|:-----------|:-------------|:--------|:------|:----------|:----------|:-----------|
+| Retuerto Rodriguez, Jorge Manuel     | Calin1407          | L   | C          | C            | C       | C     | C         | C         | L          |
+| Howard Robles, Guillermo Arturo      | GuillermoPromac    | C   | L          | C            | C       | C     | C         | L         | C          |
+| Perez Encarnacion, Breithner Rodolfo | Breithner1         | C   | C          | C            | L       | C     | L         | C         | C          |
+| Aguilar Untiveros, Rodrigo Fabrizio  | Rodri2712          | C   | C          | L            | C       | L     | C         | C         | C          |
+
 
 #### Sprint Backlog 3
 
