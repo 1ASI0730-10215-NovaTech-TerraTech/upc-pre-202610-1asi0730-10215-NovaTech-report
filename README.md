@@ -50,6 +50,7 @@
 |   2.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                           |
 |   2.2   | 11/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint blacklog                                             |
 |   2.3   | 14/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo deL Sprint Planning 3                                           |
+|   2.4   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Aspect Leaders and Collaborators                            |
 
 ---
 
