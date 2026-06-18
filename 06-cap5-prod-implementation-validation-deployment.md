@@ -707,7 +707,6 @@ Con el fin de mantener una coordinación efectiva y una comunicación fluida ent
 | Perez Encarnacion, Breithner Rodolfo | Breithner1         | C   | C          | C            | L       | C     | L         | C         | C          |
 | Aguilar Untiveros, Rodrigo Fabrizio  | Rodri2712          | C   | C          | L            | C       | L     | C         | C         | C          |
 
-
 #### Sprint Backlog 3
 
 El objetivo principal de este Sprint es consolidar una experiencia funcional completa para los distintos perfiles de usuario dentro de la plataforma TerraTech. Se prioriza la mejora de la landing page para comunicar eficazmente la propuesta de valor a nuevos visitantes, así como la habilitación de la gestión de zonas de cultivo y sensores para los agricultores, la mejora de la sección de catálogos para los clientes finales, y la incorporación de la gestión de inventarios tanto para agricultores como para proveedores, permitiendo a ambos segmentos administrar sus recursos de forma integrada. Asimismo, se trabajará en la provisión de una API REST documentada que ofrezca puntos de acceso para que los desarrolladores frontend implementen funcionalidades esenciales de manera eficiente, abarcando la gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. Este enfoque integral busca generar mayor confianza en los visitantes y transmitir con claridad la propuesta de valor, al tiempo que mejora los flujos de usuario: los agricultores podrán monitorear sus cultivos y gestionar su inventario de productos, los proveedores contarán con datos organizados para potenciar sus ventas, y los clientes finales dispondrán de catálogos completos que reflejen la oferta de los agricultores.
@@ -1113,6 +1112,13 @@ Se actualizó el archivo README.md con una descripción general del proyecto, te
 
 ### 5.2.2.5. Execution Evidence for Sprint Review
 
+A continuación, se muestra un video con los avances realizados durante el Sprint 3, asi como el deployment del backend en render.
+
+Video del sprint3:
+
+![Execution Evidence](assets/images/cap5/Video-Sprtin3.png)
+
+Enlace del video: https://tinyurl.com/mrxyzszz
 
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
