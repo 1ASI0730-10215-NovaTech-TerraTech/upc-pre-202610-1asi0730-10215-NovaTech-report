@@ -56,15 +56,21 @@ Para el despliegue de nuestra aplicación hemos usado diversos proveedores:
 
 <div class="page"></div>
 
+url: 
+
 ***Anexo G. About The Product***
 
 <div class="page"></div>
 
-***Video de Exposiciones***
+Url: https://tinyurl.com/m88tcphe
 
-**Av01**
+***Video de Exposiciones***
 
 **TB01**
 
+url: https://tinyurl.com/3wwzdc2w
+
 **Av02**
+
+url: https://tinyurl.com/mrxyzszz
 

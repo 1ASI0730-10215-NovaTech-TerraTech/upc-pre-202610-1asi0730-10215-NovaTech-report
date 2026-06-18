@@ -1,26 +1,33 @@
 <div style="text-align:center">
     <img src="assets/images/readme/upc-logo.png" style="width: 150px;"/>
-    <br/><br/>
+    <br/>
     <p>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</p>
-    <p>Facultad de Ingeniería</p>
-    <p>Carrera: Ingeniería de Software</p>
-    <p>Periodo: 2026-10</p>
-    <p>Curso: Aplicaciones Web</p>
-    <p>Código del curso: 1ASI0730</p>
-    <p>NRC: 10215</p>
-    <p>Profesor: Velásquez Nuñez, Ángel Augusto</p>
-    <p>Informe de Trabajo Final</p>
-    <p>Startup: NovaTech</p>
-    <p>Producto: TerraTech</p>
+    <p>Carrera de Ingeniería de Software</p>
     <br/>
-    <p>Miembros de grupo:</p>
-    <p>Acuña de la Cruz, Luis Alfredo - U202417228</p>
-    <p>Aguilar Untiveros, Rodrigo Fabrizio - U202318309</p>
-    <p>Howard Robles, Guillermo Arturo - U202222275</p>
-    <p>Perez Encarnación, Breithner Rodolfo - U202418577</p>
-    <p>Retuerto Rodríguez, Jorge Manuel - U202318612</p>
+    <p><strong>1ASI030</strong></p>
+    <p><strong>Aplicaciones Web</strong></p>
+    <p>NRC</p>
+    <p><strong>10215</strong></p>
+    <p><strong>Informe del Trabajo Final</strong></p>
+    <p>Docente</p>
+    <p><strong>Velásquez Núnez, Ángel Augusto</strong></p>
+    <p>Equipo</p>
+    <p><strong>NovaTech</strong></p>
     <br/>
-    <p>abril de 2026</p>
+    <p>Proyecto</p>
+    <p><strong>TerraTech</strong></p>
+    <br/>
+    <p><strong>Integrantes</strong></p>
+    <p><strong>Código - Apellidos y Nombres</strong></p>
+    <p>U202417228 - Acuña de la Cruz, Luis Alfredo</p>
+    <p>U202318309 - Aguilar Untiveros, Rodrigo Fabrizio</p>
+    <p>U202222275 - Howard Robles, Guillermo Arturo</p>
+    <p>U202418577 - Pérez Encarnación, Breithner Rodolfo</p>
+    <p>U202318612 - Retuerto Rodríguez, Jorge Manuel</p>
+    <br/>
+    <p><strong>Período 202610</strong></p>
+    <br/>
+    <p><strong>Junio 2026</strong></p>
   </div>
 
 ---
@@ -54,6 +61,7 @@
 |   2.5   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Backlog 3                                            |
 |   2.6   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Development Evidence for Sprint Review                      |
 |   2.7   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Diseño de Entrevistas del Validation Interviews.            |
+|   2.8   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Execution Evidence for Sprint Review.                       |
 
 ---
 
