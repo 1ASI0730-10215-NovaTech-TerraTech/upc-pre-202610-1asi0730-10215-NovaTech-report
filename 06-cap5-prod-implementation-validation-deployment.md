@@ -1122,6 +1122,83 @@ Enlace del video: https://tinyurl.com/mrxyzszz
 
 ### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
+Durante este sprint se completó al 100% el desarrollo del Landing Page del sistema, consolidando su estructura visual, diseño responsivo, traducción multilenguaje y funcionalidades de navegación. Asimismo, se avanzó de forma significativa en la construcción del frontend del sistema, incluyendo componentes claves como el menú resumen del sistema, el dashboard inicial, el módulo de gestión de parcelas(zonas). El equipo logró implementar y probar múltiples servicios que fortalecen la experiencia del usuario y la arquitectura de backend bajo principios DDD.
+
+***Descripción del Logro:***
+
+ - Finalización del Landing Page (100%).
+ - Implementación completa de diseño responsivo, i18n, y redirecciones funcionales.
+ - Estructura de frontend modular iniciada (menu sidebar, dashboard y componentes base).
+ - Aplicación de buenas prácticas de organización por bounded contexts.
+ - Integración visual basada en Vue con VuePrime y Primeflex.
+ - Lógica de negocio para registro de parcelas y de sensores.
+ - Registro de inventario.
+
+***Recursos del Sprint:***
+
+# TerraTech API Endpoints
+
+La siguiente tabla detalla todos los recursos expuestos por la API de TerraTech, organizados por bounded context. Cada fila indica el recurso, la acción implementada, el método HTTP, el endpoint correspondiente y un enlace a la documentación interactiva (Swagger).
+
+| Recurso            | Acción implementada                                                         | Método HTTP | Endpoint                                  | Repositorio Backend                                                                         |
+|--------------------|-----------------------------------------------------------------------------|-------------|-------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Autenticación**  | Registrar un nuevo usuario (email y contraseña)                             | POST        | `/api/v1/authentication/sign-up`          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Iniciar sesión y obtener token JWT                                          | POST        | `/api/v1/authentication/sign-in`          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Usuarios**       | Obtener un usuario por su ID                                                | GET         | `/api/v1/users/{id}`                      | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un usuario por su email                                             | GET         | `/api/v1/users/email/{email}`             | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Perfiles**       | Crear un perfil agrícola                                                    | POST        | `/api/v1/profiles`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los perfiles                                                  | GET         | `/api/v1/profiles`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un perfil por ID                                                    | GET         | `/api/v1/profiles/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un perfil                                                        | PUT         | `/api/v1/profiles/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un perfil                                                          | DELETE      | `/api/v1/profiles/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Monitoreo**      | Crear un campo (zona de cultivo)                                            | POST        | `/api/v1/fields`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los campos                                                    | GET         | `/api/v1/fields`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un campo por ID                                                     | GET         | `/api/v1/fields/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un campo                                                         | PUT         | `/api/v1/fields/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un campo                                                           | DELETE      | `/api/v1/fields/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener campos por tipo de suelo                                            | GET         | `/api/v1/fields/soiltype/{type}`          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Crear un dispositivo IoT                                                    | POST        | `/api/v1/devices`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los dispositivos                                              | GET         | `/api/v1/devices`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un dispositivo por ID                                               | GET         | `/api/v1/devices/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un dispositivo                                                   | PUT         | `/api/v1/devices/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un dispositivo                                                     | DELETE      | `/api/v1/devices/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener dispositivos por campo                                              | GET         | `/api/v1/devices/field/{fieldId}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener dispositivos por estado (`ONLINE`, `OFFLINE`, `LOW_BATTERY`)        | GET         | `/api/v1/devices/status/{status}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Analytics**      | Crear un reporte estadístico                                                | POST        | `/api/v1/reports`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los reportes                                                  | GET         | `/api/v1/reports`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un reporte por ID                                                   | GET         | `/api/v1/reports/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un reporte                                                       | PUT         | `/api/v1/reports/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Comercial**      | Crear un pedido                                                             | POST        | `/api/v1/orders`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los pedidos                                                   | GET         | `/api/v1/orders`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un pedido por ID                                                    | GET         | `/api/v1/orders/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener pedidos por perfil                                                  | GET         | `/api/v1/orders/profile/{id}`             | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Validar un pedido                                                           | PUT         | `/api/v1/orders/{id}/validate`            | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar estado de un pedido                                              | PUT         | `/api/v1/orders/{id}/status`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Crear un producto                                                           | POST        | `/api/v1/products`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los productos                                                 | GET         | `/api/v1/products`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un producto por ID                                                  | GET         | `/api/v1/products/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Inventarios**    | Crear un ítem de inventario                                                 | POST        | `/api/v1/inventories`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los ítems de inventario                                       | GET         | `/api/v1/inventories`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un ítem de inventario por ID                                        | GET         | `/api/v1/inventories/{id}`                | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un ítem de inventario                                            | PUT         | `/api/v1/inventories/{id}`                | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Notificaciones** | Crear una notificación                                                      | POST        | `/api/v1/notifications`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener notificaciones por perfil                                           | GET         | `/api/v1/notifications`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener una notificación por ID                                             | GET         | `/api/v1/notifications/{id}`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Marcar una notificación como leída                                          | PUT         | `/api/v1/notifications/{id}/read`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Comunidad**      | Crear un perfil de comunidad                                                | POST        | `/api/v1/community-profiles`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los perfiles de comunidad                                     | GET         | `/api/v1/community-profiles`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un perfil de comunidad por ID                                       | GET         | `/api/v1/community-profiles/{id}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un perfil de comunidad por ID de perfil asociado                    | GET         | `/api/v1/community-profiles/profile/{id}` | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un perfil de comunidad                                           | PUT         | `/api/v1/community-profiles/{id}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un perfil de comunidad                                             | DELETE      | `/api/v1/community-profiles/{id}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Crear un comentario                                                         | POST        | `/api/v1/comments`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener comentarios por perfil destino                                      | GET         | `/api/v1/comments/target/{id}`            | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un comentario por ID                                                | GET         | `/api/v1/comments/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un comentario                                                    | PUT         | `/api/v1/comments/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un comentario                                                      | DELETE      | `/api/v1/comments/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+
+---
+*Todos los endpoints requieren autenticación mediante token JWT, excepto los de registro e inicio de sesión. La documentación interactiva completa está disponible en el repositorio backend.*
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
