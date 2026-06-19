@@ -236,7 +236,7 @@ Por un lado, respecto a la aplicación, debe verse con una interfaz limpia y pro
     - Problema: Incertidumbre sobre el estado de la tierra de cultivo, altos costos de inversión y riesgo de pérdida.
     - Beneficio: Monitoreo real del estado del suelo, alertas respecto a valores variables de la tierra y análizis predictivo para próximas siembras: reducción del riesgo de pérdida.
 
-- Proveedores:
+- Proveedores de insumos agrícolas:
 
     - Perfil: distribuidores de productos agrícolas y asesores locales.
     - Problema: falta de datos reales para hacer recomendaciones correctas para solucionar problemas de sus clientes (agricultores). Teniendo como consecuencia de errores la pérdida de clientes y confianza.
