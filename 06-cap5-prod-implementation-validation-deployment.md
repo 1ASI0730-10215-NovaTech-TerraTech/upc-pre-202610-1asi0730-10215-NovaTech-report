@@ -457,9 +457,9 @@ Se realizó el despliegue exitoso de la plataforma mediante GitHub Pages. Esta v
 
 El equipo, bajo el liderazgo de Jorge Retuerto, demostró una alta cohesión utilizando GitHub Projects para la gestión de tareas y el seguimiento del backlog. La comunicación fue fluida a través de Meet y Discord, canales donde se resolvieron bloqueos técnicos relacionados con el diseño visual y las validaciones de datos. Se fomentó un ambiente de apoyo mutuo, donde cada integrante contribuyó a la revisión del código de sus compañeros, asegurando que el entregable final cumpla con los estándares de calidad del proyecto.
 
-## 5.2.2. Sprint 2
+### 5.2.2. Sprint 2
 
-### 5.2.2.1. Sprint Planning 2
+#### 5.2.2.1. Sprint Planning 2
 
 A través de una reunión en la plataforma Google Meet, se llevó a cabo la planificación del Sprint 2. Durante la sesión se definieron los objetivos orientados al desarrollo del núcleo funcional de la plataforma, la integración de servicios backend y el avance de la documentación técnica del proyecto.
 
@@ -525,7 +525,7 @@ Se iniciará la implementación de la capa de servicios (API REST) y la conexió
 </tr>
 </table>
 
-### 5.2.2.2. Aspect Leaders and Collaborators
+#### 5.2.2.2. Aspect Leaders and Collaborators
 
 En este sprint, se definieron roles de liderazgo y colaboración para las diferentes áreas del proyecto.
 
@@ -590,7 +590,7 @@ En este sprint, se definieron roles de liderazgo y colaboración para las difere
   </tbody>
 </table>
 
-### 5.2.2.3. Sprint Backlog 2
+#### 5.2.2.3. Sprint Backlog 2
 
 Tabla con el detalle de las tareas asignadas para cumplir con las historias de usuario del Sprint 2.
 
@@ -607,7 +607,7 @@ Tabla con el detalle de las tareas asignadas para cumplir con las historias de u
 | TS03 | Configuración de BD en la Nube | Task 12 | Creación de esquema en PostgreSQL | Ejecutar scripts de creación de tablas (Client, Parcel, Device) en la nube. | 2 | Luis Acuña | Done |
 | TS01 | GitFlow y Conventional Commits | Task 13 | Revisión y estandarización | Verificar que todas las ramas feature sigan la convención y el flujo establecido. | 2 | Guillermo Howard | Done |
 
-### 5.2.2.4. Development Evidence for Sprint Review
+#### 5.2.2.4. Development Evidence for Sprint Review
 
 Registro de commits representativos del trabajo realizado durante el Sprint 2 en los repositorios de la organización.
 
@@ -619,7 +619,7 @@ Registro de commits representativos del trabajo realizado durante el Sprint 2 en
 | Breithner1/TerraTech-WebApp | feature/US10-zones | n6o7p8q9 | feat(US10): dynamic zone selector | 29/04/2026 |
 | Rodri2712/TerraTech-WebApp | feature/US09-dashboard | r1s2t3u4 | feat(US09): KPI cards dashboard mock | 28/04/2026 |
 
-### 5.2.2.5. Execution Evidence for Sprint Review
+#### 5.2.2.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 2, el equipo completó las funcionalidades clave de autenticación y la base del dashboard de monitoreo. Se implementaron los formularios de registro y login, validando la interacción con la API backend. El dashboard muestra los indicadores simulados de humedad, nutrientes y temperatura, permitiendo al agricultor familiarizarse con la interfaz. A continuación, se presentan capturas de pantalla de los elementos ejecutados:
 
@@ -635,7 +635,7 @@ Durante el Sprint 2, el equipo completó las funcionalidades clave de autenticac
 
   *[Aquí iría la imagen del dashboard con datos mock]*
 
-### 5.2.2.6. Services Documentation Evidence for Sprint Review
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
 La documentación de servicios se enfocó en la especificación de los endpoints de la API REST necesarios para la autenticación y la gestión de usuarios. Se utilizó Swagger/OpenAPI para generar documentación interactiva. Además, se actualizó el archivo `README.md` del repositorio backend con instrucciones para levantar el entorno local y ejecutar las migraciones de la base de datos.
 
@@ -647,7 +647,7 @@ La documentación de servicios se enfocó en la especificación de los endpoints
 
   *[Aquí iría un ejemplo del script de migración o su confirmación en el repositorio]*
 
-### 5.2.2.7. Software Deployment Evidence for Sprint Review
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
 Durante este sprint, se realizaron actividades de despliegue y pruebas de los servicios desarrollados, asegurando que las funcionalidades del sistema estén operativas y accesibles para los usuarios finales. A continuación, se detallan los pasos realizados:
 
@@ -727,7 +727,7 @@ Durante este sprint, se realizaron actividades de despliegue y pruebas de los se
 
 <img src="assets/images/cap5/Backend_Deploy_15.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-### 5.2.2.8. Team Collaboration Insights during Sprint
+#### 5.2.2.8. Team Collaboration Insights during Sprint
 
 Se crearon ramas específicas para cada actions (feature/[actions-entite-command/query]), permitiendo un trabajo paralelo organizado.
 
@@ -807,7 +807,7 @@ Con el fin de mantener una coordinación efectiva y una comunicación fluida ent
 | Perez Encarnacion, Breithner Rodolfo | Breithner1         | C   | C          | C            | L       | C     | L         | C         | C          |
 | Aguilar Untiveros, Rodrigo Fabrizio  | Rodri2712          | C   | C          | L            | C       | L     | C         | C         | C          |
 
-#### Sprint Backlog 3
+#### 5.2.3.3. Sprint Backlog 3
 
 El objetivo principal de este Sprint es consolidar una experiencia funcional completa para los distintos perfiles de usuario dentro de la plataforma TerraTech. Se prioriza la mejora de la landing page para comunicar eficazmente la propuesta de valor a nuevos visitantes, así como la habilitación de la gestión de zonas de cultivo y sensores para los agricultores, la mejora de la sección de catálogos para los clientes finales, y la incorporación de la gestión de inventarios tanto para agricultores como para proveedores, permitiendo a ambos segmentos administrar sus recursos de forma integrada. Asimismo, se trabajará en la provisión de una API REST documentada que ofrezca puntos de acceso para que los desarrolladores frontend implementen funcionalidades esenciales de manera eficiente, abarcando la gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. Este enfoque integral busca generar mayor confianza en los visitantes y transmitir con claridad la propuesta de valor, al tiempo que mejora los flujos de usuario: los agricultores podrán monitorear sus cultivos y gestionar su inventario de productos, los proveedores contarán con datos organizados para potenciar sus ventas, y los clientes finales dispondrán de catálogos completos que reflejen la oferta de los agricultores.
 
@@ -876,7 +876,7 @@ Además, se facilita al equipo frontend la construcción de las vistas requerida
 
 Trello: https://trello.com/b/sLQ8KGVG/aplicaciones-web
 
-### 5.2.2.4. Development Evidence for Sprint Review
+#### 5.2.3.4. Development Evidence for Sprint Review
 
 **Landing page:**
 
@@ -1210,7 +1210,7 @@ Se actualizó el archivo README.md con una descripción general del proyecto, te
 | Rodri2712/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | develop | 6955f9e | refactor(shared): update AppDbContext to include Commercial configuration | Updates AppDbContext to include Commercial configuration. | 11/06 |
 | Rodri2712/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | develop | 44376d5 | feat(commercial): register Commercial services in DI container | Registers Commercial services in Program.cs DI container. | 11/06 |
 
-### 5.2.2.5. Execution Evidence for Sprint Review
+#### 5.2.3.5. Execution Evidence for Sprint Review
 
 A continuación, se muestra un video con los avances realizados durante el Sprint 3, asi como el deployment del backend en render.
 
@@ -1220,7 +1220,7 @@ Video del sprint3:
 
 Enlace del video: https://tinyurl.com/mrxyzszz
 
-### 5.2.2.6. Services Documentation Evidence for Sprint Review
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante este sprint se completó al 100% el desarrollo del Landing Page del sistema, consolidando su estructura visual, diseño responsivo, traducción multilenguaje y funcionalidades de navegación. Asimismo, se avanzó de forma significativa en la construcción del frontend del sistema, incluyendo componentes claves como el menú resumen del sistema, el dashboard inicial, el módulo de gestión de parcelas(zonas). El equipo logró implementar y probar múltiples servicios que fortalecen la experiencia del usuario y la arquitectura de backend bajo principios DDD.
 
@@ -1300,7 +1300,7 @@ La siguiente tabla detalla todos los recursos expuestos por la API de TerraTech,
 ---
 *Todos los endpoints requieren autenticación mediante token JWT, excepto los de registro e inicio de sesión. La documentación interactiva completa está disponible en el repositorio backend.*
 
-### 5.2.2.7. Software Deployment Evidence for Sprint Review
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 Durante este sprint, se realizaron actividades de despliegue y pruebas de los servicios desarrollados, asegurando que las funcionalidades del sistema estén operativas y accesibles para los usuarios finales. A continuación, se detallan los pasos realizados:
 
@@ -1380,7 +1380,7 @@ Durante este sprint, se realizaron actividades de despliegue y pruebas de los se
 
 <img src="assets/images/cap5/Backend_Deploy_15.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-### 5.2.2.8. Team Collaboration Insights during Sprint
+#### 5.2.3.8. Team Collaboration Insights during Sprint
 
 Se crearon ramas específicas para cada actions (feature/[actions-entite-command/query]), permitiendo un trabajo paralelo organizado.
 
