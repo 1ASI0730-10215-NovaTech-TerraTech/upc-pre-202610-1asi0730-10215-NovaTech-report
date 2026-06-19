@@ -691,8 +691,8 @@ El equipo mantuvo una comunicación activa a través de Discord, con reuniones d
 | Sprint 2 Retrospective Summary  | Durante el Sprint 2, el equipo mantuvo una comunicación fluida y una coordinación efectiva, lo cual permitió avanzar de forma sólida en varios módulos clave del frontend. La integración continua, las revisiones cruzadas de código y la claridad en las responsabilidades asignadas fueron aspectos destacados que facilitaron un buen ritmo de trabajo. <br />Como oportunidad de mejora, se identificó la necesidad de reforzar el seguimiento y cumplimiento de los objetivos priorizados, así como de mejorar la estimación de tiempos en algunos flujos más complejos. <br />También se mencionó la importancia de alinear aún más los esfuerzos individuales con los objetivos de entrega colectivos.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Sprint Goal & User Stories**  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Sprint 3 Goal                   | Nuestro enfoque está en presentar de forma efectiva nuestra propuesta de valor a los nuevos visitantes. También, habilitar la gestión de zona de cultivo y sensores, así como mejorar la sección de catálogos, para los usuarios finales; incorporar la gestión de inventarios para los agricultores y proveedores; y, en general, permitir a ambos segmentos realizar la gestión de sus recursos. Asimismo, proporcionar, mediante el API de la plataforma, puntos de accesos a los desarrolladores FrontEnd para que implementen funcionalidades relacionadas con gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. <br /> Creemos que esto ofrece a los visitantes mayor confianza hacia el equipo de trabajo y les permite conocer mejor la propuesta de valor. Del mismo modo, mejora los flujos de usuario, al permitir el monitoreo de las zonas de cultivos para los agricultores del mismo modo el poder gestionar su inventario de productos disponibles para el manejo de sus cultivos, a su vez, se podrá tener un gesto de análisis que ayude a los proveedores a tener información directa y organizada de los agricultores para ayudar en sus ventas de productos, por ultimo, se permite a los clientes finales el tener un catalogo que brinde toda la información necesaria para conocer el producto que el agricultor brinda. Además, permite a los desarrolladores FrontEnd implementar funcionalidades esenciales de forma más eficiente, la gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. <br /> Esto se confirmará cuando aumente la cantidad de usuarios que se registren en la plataforma. Del mismo modo, cuando se incremente la cantidad de zonas de cultivo registradas e productos registrados de los agricultores en la plataforma; aumente la cantidad de datos para los proveedores; y se incremente la cantidad de catálogos que puedan acceder los clientes finales. Además, cuando los desarrolladores FrontEnd aumenten la cantidad de funcionalidades relacionadas con la gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. |
-| Sprint 3 Velocity               | 45                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Sum of Story Points             | 49                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Sprint 3 Velocity               | 35                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Sum of Story Points             | 39                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -1202,6 +1202,83 @@ La siguiente tabla detalla todos los recursos expuestos por la API de TerraTech,
 
 ### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
+Durante este sprint, se realizaron actividades de despliegue y pruebas de los servicios desarrollados, asegurando que las funcionalidades del sistema estén operativas y accesibles para los usuarios finales. A continuación, se detallan los pasos realizados:
+
+***FrontEnd***
+
+1. Al usar la plataforma vercel para el despliegue de la página estatica, se debe usar el link del repositorio del frontend.
+
+![Deployment](assets/images/cap5/FrontEnd_Deployment_1.png)
+
+2. Comienza el proceso de despliegue.
+
+![Deployment](assets/images/cap5/FrontEnd_Deployment_2.png)
+
+3. Se termina el despliegue y se obtiene la URL pública para acceder al frontend.
+
+![Deployment](assets/images/cap5/FrontEnd_Deployment_3.png)
+
+***BackEnd***
+
+1. Se creó un Dockerfile para el backend del sistema, permitiendo la creación de una imagen que encapsula todas las dependencias y configuraciones necesarias para ejecutar el servicio.
+
+![Deployment](assets/images/cap5/Backend_Deploy_1.png)
+
+2. Al usar panel.filess.io para la creación de la base de datos se usa la opción de shared al ser la opción diposnible para el proyecto.
+
+![Deployment](assets/images/cap5/Backend_Deploy_2.png)
+
+3. Al acceder se debe crear una nueva base datos, dedica a la pagina web.
+
+![Deployment](assets/images/cap5/Backend_Deploy_3.png)
+
+4. Se selecciona MySQL como el motor de base de datos al ser el utilizado en el proyecto.
+
+![Deployment](assets/images/cap5/Backend_Deploy_4.png)
+
+5. Se coloca el nombre de la base datos, el cual ya está establecido desde la creación de la pagina estatica.
+
+![Deployment](assets/images/cap5/Backend_Deploy_5.png)
+
+6. Al finalizar la creación se obtiene una base de datos desplegada en la nube, con acceso remoto para conectar el backend del sistema.
+
+![Deployment](assets/images/cap5/Backend_Deploy_6.png)
+
+7. Se optiene la información de conexión a la base de datos, incluyendo host, puerto, usuario y contraseña, para configurar el backend y permitir la comunicación con la base de datos.
+
+![Deployment](assets/images/cap5/Backend_Deploy_7.png)
+
+8. Se crea un .env donde se pondran las variables de entorno, el cual no entra en las versiones del proyecto, solo de manera local.
+
+![Deployment](assets/images/cap5/Backend_Deploy_8.png)
+
+9. Se utilizará la plataforma Render para el despliegue de la página web del proyecto TerraTech.
+
+![Deployment](assets/images/cap5/Backend_Deploy_9.png)
+
+10. Para la creación se utiliza el enlace del repositorio del backend.
+
+![Deployment](assets/images/cap5/Backend_Deploy_10.png)
+
+11. Se asegura que las opciones sean las correctas según el proyecto.
+
+![Deployment](assets/images/cap5/Backend_Deploy_11.png)
+
+12. Ahora se debe utilizar las variables de entorno que se obtenieron de la base de datos.
+
+![Deployment](assets/images/cap5/Backend_Deploy_12.png)
+
+13. Se busca el archivo .env y se copian las variables de entorno necesarias para la conexión a la base de datos.
+
+![Deployment](assets/images/cap5/Backend_Deploy_13.png)
+
+14. Se colocan en las opciones de variables de entorno en Render, para asegurar que el backend pueda acceder a la base de datos desplegada.
+
+![Deployment](assets/images/cap5/Backend_Deploy_14.png)
+
+15. Se inicia el proceso de despliegue en Render.
+
+![Deployment](assets/images/cap5/Backend_Deploy_15.png)
 
 ### 5.2.2.8. Team Collaboration Insights during Sprint
 
