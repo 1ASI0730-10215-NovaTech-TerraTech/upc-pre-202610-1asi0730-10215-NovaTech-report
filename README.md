@@ -65,6 +65,7 @@
 |   2.9   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Execution Evidence for Sprint Review.                       |
 |  2.10   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Services Documentation Evidence for Sprint Review.          |
 |  2.11   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del video about the product.                                       |
+|  2.12   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición de contenido adicional en la bibliografía.                         |
 
 ---
 
