@@ -23,7 +23,7 @@
 
 ## Desarrollo de Software Full-Stack (C#, ASP.NET Core y Vue.js)
 
- - Microsoft Learn. (2026). Creación de una aplicación ASP.NET Core con Vue. Recuperado de https://learn.microsoft.com/es-es/aspnet/core/client-side/spa/vue[reference:6]
+ - Microsoft Learn. (2026). Creación de una aplicación ASP.NET Core con Vue. Recuperado de https://learn.microsoft.com/es-es/visualstudio/javascript/tutorial-asp-net-core-with-vue?view=visualstudio
  - Microsoft Learn. (2026). Entity Framework Core. Recuperado de https://learn.microsoft.com/es-es/ef/core/
  - Vue.js. (2026). Guía oficial de Vue.js. Recuperado de https://vuejs.org/guide/introduction
  - Pinia. (2026). Guía oficial de Pinia. Recuperado de https://pinia.vuejs.org/
