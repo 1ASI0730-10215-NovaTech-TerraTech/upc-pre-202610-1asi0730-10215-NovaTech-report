@@ -457,9 +457,9 @@ Se realizó el despliegue exitoso de la plataforma mediante GitHub Pages. Esta v
 
 El equipo, bajo el liderazgo de Jorge Retuerto, demostró una alta cohesión utilizando GitHub Projects para la gestión de tareas y el seguimiento del backlog. La comunicación fue fluida a través de Meet y Discord, canales donde se resolvieron bloqueos técnicos relacionados con el diseño visual y las validaciones de datos. Se fomentó un ambiente de apoyo mutuo, donde cada integrante contribuyó a la revisión del código de sus compañeros, asegurando que el entregable final cumpla con los estándares de calidad del proyecto.
 
-## 5.2.2. Sprint 2
+### 5.2.2. Sprint 2
 
-### 5.2.2.1. Sprint Planning 2
+#### 5.2.2.1. Sprint Planning 2
 
 A través de una reunión en la plataforma Google Meet, se llevó a cabo la planificación del Sprint 2. Durante la sesión se definieron los objetivos orientados al desarrollo del núcleo funcional de la plataforma, la integración de servicios backend y el avance de la documentación técnica del proyecto.
 
@@ -525,7 +525,7 @@ Se iniciará la implementación de la capa de servicios (API REST) y la conexió
 </tr>
 </table>
 
-### 5.2.2.2. Aspect Leaders and Collaborators
+#### 5.2.2.2. Aspect Leaders and Collaborators
 
 En este sprint, se definieron roles de liderazgo y colaboración para las diferentes áreas del proyecto.
 
@@ -590,11 +590,9 @@ En este sprint, se definieron roles de liderazgo y colaboración para las difere
   </tbody>
 </table>
 
-### 5.2.2.3. Sprint Backlog 2
+#### 5.2.2.3. Sprint Backlog 2
 
 Tabla con el detalle de las tareas asignadas para cumplir con las historias de usuario del Sprint 2.
-
-
 
 | <strong>Sprint #</strong> | <strong>Sprint 2</strong> |
 | --- | --- |
@@ -609,11 +607,9 @@ Tabla con el detalle de las tareas asignadas para cumplir con las historias de u
 | TS03 | Configuración de BD en la Nube | Task 12 | Creación de esquema en PostgreSQL | Ejecutar scripts de creación de tablas (Client, Parcel, Device) en la nube. | 2 | Luis Acuña | Done |
 | TS01 | GitFlow y Conventional Commits | Task 13 | Revisión y estandarización | Verificar que todas las ramas feature sigan la convención y el flujo establecido. | 2 | Guillermo Howard | Done |
 
-### 5.2.2.4. Development Evidence for Sprint Review
+#### 5.2.2.4. Development Evidence for Sprint Review
 
 Registro de commits representativos del trabajo realizado durante el Sprint 2 en los repositorios de la organización.
-
-
 
 | Repository | Branch | Commit ID | Commit Message | Committed On (Date) |
 | --- | --- | --- | --- | --- |
@@ -623,7 +619,7 @@ Registro de commits representativos del trabajo realizado durante el Sprint 2 en
 | Breithner1/TerraTech-WebApp | feature/US10-zones | n6o7p8q9 | feat(US10): dynamic zone selector | 29/04/2026 |
 | Rodri2712/TerraTech-WebApp | feature/US09-dashboard | r1s2t3u4 | feat(US09): KPI cards dashboard mock | 28/04/2026 |
 
-### 5.2.2.5. Execution Evidence for Sprint Review
+#### 5.2.2.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 2, el equipo completó las funcionalidades clave de autenticación y la base del dashboard de monitoreo. Se implementaron los formularios de registro y login, validando la interacción con la API backend. El dashboard muestra los indicadores simulados de humedad, nutrientes y temperatura, permitiendo al agricultor familiarizarse con la interfaz. A continuación, se presentan capturas de pantalla de los elementos ejecutados:
 
@@ -639,7 +635,7 @@ Durante el Sprint 2, el equipo completó las funcionalidades clave de autenticac
 
   *[Aquí iría la imagen del dashboard con datos mock]*
 
-### 5.2.2.6. Services Documentation Evidence for Sprint Review
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
 La documentación de servicios se enfocó en la especificación de los endpoints de la API REST necesarios para la autenticación y la gestión de usuarios. Se utilizó Swagger/OpenAPI para generar documentación interactiva. Además, se actualizó el archivo `README.md` del repositorio backend con instrucciones para levantar el entorno local y ejecutar las migraciones de la base de datos.
 
@@ -651,29 +647,133 @@ La documentación de servicios se enfocó en la especificación de los endpoints
 
   *[Aquí iría un ejemplo del script de migración o su confirmación en el repositorio]*
 
-### 5.2.2.7. Software Deployment Evidence for Sprint Review
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-El despliegue del backend y la base de datos se realizó en un entorno de pruebas en la nube (usando servicios como Railway o Render para la API, y Supabase/Neon para PostgreSQL). La aplicación web (frontend) se desplegó de forma automática en Netlify para la rama `develop`, permitiendo validar la integración continua.
+Durante este sprint, se realizaron actividades de despliegue y pruebas de los servicios desarrollados, asegurando que las funcionalidades del sistema estén operativas y accesibles para los usuarios finales. A continuación, se detallan los pasos realizados:
 
-- **URL de despliegue (Frontend - desarrollo):** `https://terratech-dev.netlify.app`
-- **URL de API Base (Backend):** `https://terratech-api.onrender.com`
-- **Colección de Postman:** Se compartió una colección con los endpoints probados (Register, Login, Get Profile).
+***FrontEnd***
 
-  *[Aquí iría una captura de pantalla del despliegue activo o de la consola de Netlify]*
+1. Al usar la plataforma vercel para el despliegue de la página estatica, se debe usar el link del repositorio del frontend.
 
-  *[Aquí iría otra captura de pantalla de la API respondiendo desde el entorno de pruebas]*
+<img src="assets/images/cap5/FrontEnd_Deployment_1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-### 5.2.2.8. Team Collaboration Insights during Sprint
+2. Comienza el proceso de despliegue.
 
-El equipo mantuvo una comunicación activa a través de Discord, con reuniones diarias de 15 minutos (daily) para reportar avances y bloqueos. Se utilizó **GitHub Projects** para gestionar el tablero Kanban del Sprint 2, moviendo las tareas desde "To Do" → "In Progress" → "Done". La integración de código se gestionó mediante Pull Requests (PRs) que requerían al menos una aprobación de otro miembro del equipo, garantizando la calidad y el cumplimiento de la guía de estilos.
+<img src="assets/images/cap5/FrontEnd_Deployment_2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-- **Gráfico de contribuciones (Insights):** Se evidencia actividad equilibrada en los diferentes repositorios durante el periodo del sprint.
+3. Se termina el despliegue y se obtiene la URL pública para acceder al frontend.
 
-  *[Aquí iría una imagen del gráfico de contribuciones de GitHub]*
+<img src="assets/images/cap5/FrontEnd_Deployment_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-- **Tablero de GitHub Projects:** Se completaron todas las tareas planificadas dentro del tiempo estimado, cerrando el Sprint 2 con éxito.
+***BackEnd***
 
-  *[Aquí iría una captura del tablero de GitHub Projects mostrando las tareas completadas]*
+1. Se creó un Dockerfile para el backend del sistema, permitiendo la creación de una imagen que encapsula todas las dependencias y configuraciones necesarias para ejecutar el servicio.
+
+<img src="assets/images/cap5/Backend_Deploy_1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+2. Al usar panel.filess.io para la creación de la base de datos se usa la opción de shared al ser la opción diposnible para el proyecto.
+
+<img src="assets/images/cap5/Backend_Deploy_2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+3. Al acceder se debe crear una nueva base datos, dedica a la pagina web.
+
+<img src="assets/images/cap5/Backend_Deploy_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+4. Se selecciona MySQL como el motor de base de datos al ser el utilizado en el proyecto.
+
+<img src="assets/images/cap5/Backend_Deploy_4.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+5. Se coloca el nombre de la base datos, el cual ya está establecido desde la creación de la pagina estatica.
+
+<img src="assets/images/cap5/Backend_Deploy_5.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+6. Al finalizar la creación se obtiene una base de datos desplegada en la nube, con acceso remoto para conectar el backend del sistema.
+
+<img src="assets/images/cap5/Backend_Deploy_6.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+7. Se optiene la información de conexión a la base de datos, incluyendo host, puerto, usuario y contraseña, para configurar el backend y permitir la comunicación con la base de datos.
+
+<img src="assets/images/cap5/Backend_Deploy_7.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+8. Se crea un .env donde se pondran las variables de entorno, el cual no entra en las versiones del proyecto, solo de manera local.
+
+<img src="assets/images/cap5/Backend_Deploy_8.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+9. Se utilizará la plataforma Render para el despliegue de la página web del proyecto TerraTech.
+
+<img src="assets/images/cap5/Backend_Deploy_9.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+10. Para la creación se utiliza el enlace del repositorio del backend.
+
+<img src="assets/images/cap5/Backend_Deploy_10.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+11. Se asegura que las opciones sean las correctas según el proyecto.
+
+<img src="assets/images/cap5/Backend_Deploy_11.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+12. Ahora se debe utilizar las variables de entorno que se obtenieron de la base de datos.
+
+<img src="assets/images/cap5/Backend_Deploy_12.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+13. Se busca el archivo .env y se copian las variables de entorno necesarias para la conexión a la base de datos.
+
+<img src="assets/images/cap5/Backend_Deploy_13.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+14. Se colocan en las opciones de variables de entorno en Render, para asegurar que el backend pueda acceder a la base de datos desplegada.
+
+<img src="assets/images/cap5/Backend_Deploy_14.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+15. Se inicia el proceso de despliegue en Render.
+
+<img src="assets/images/cap5/Backend_Deploy_15.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Se crearon ramas específicas para cada actions (feature/[actions-entite-command/query]), permitiendo un trabajo paralelo organizado.
+
+Cada miembro del equipo asumió la responsabilidad de desarrollar una o más secciones del Landing page, Frontend y Backend. Se realizaron commits frecuentes, registrando avances de manera continua y detallada. Las funcionalidades desarrolladas se integraron mediante Pull Requests hacia la rama develop con ayuda de la herramienta GitFlowHelper. Se mantuvo una comunicación constante mediante la plataforma Discord para coordinar avances y resolver dudas en tiempo real. Se aplicaron buenas prácticas de programación, control de versiones y colaboración en equipo.
+
+***Landing Page***
+
+**Analíticos de colaboración**
+
+Permite visualizar y analizar la participación del equipo en tareas colaborativas, identificando el nivel de actividad y compromiso de cada miembro para optimizar la coordinación y la productividad.
+
+<img src="assets/images/cap5/Analytics_Colaborations_Landing_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+**Analíticos de commits de GitHub**
+
+Muestra el historial y frecuencia de commits realizados en GitHub, ayudando a evaluar el ritmo de desarrollo, la contribución individual y detectar posibles cuellos de botella en el flujo de trabajo.
+
+<img src="assets/images/cap5/Analytics_Commitss_Landing_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+***Frontend***
+
+**Analíticos de colaboración**
+
+Permite monitorear de manera detallada la interacción y el aporte de cada miembro en las actividades conjuntas, facilitando la identificación de patrones de trabajo y fomentando una gestión más eficiente del equipo.
+
+<img src="assets/images/cap5/Analytics_Colaborations_Frontend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+**Analíticos de commits de GitHub**
+
+Presenta un análisis claro del flujo de commits en GitHub, mostrando la frecuencia y volumen de contribuciones para evaluar el progreso del proyecto y detectar áreas que requieren mayor atención o soporte.
+
+<img src="assets/images/cap5/Analytics_Commitss_Frontend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+***Backend***
+
+**Analíticos de colaboración**
+
+Ofrece una vista detallada sobre la participación de cada integrante en las actividades grupales, permitiendo identificar su nivel de implicación y colaboración para mejorar la organización y el rendimiento general del equipo.
+
+<img src="assets/images/cap5/Analytics_Colaborations_Backend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+**Analíticos de commits de GitHub**
+
+Refleja el registro y la periodicidad de los commits realizados en el repositorio, facilitando el seguimiento del avance del desarrollo, la distribución de las contribuciones y la detección de posibles bloqueos o retrasos.
+
+<img src="assets/images/cap5/Analytics_Commitss_Backend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 ### 5.2.3. Sprint 3
 
@@ -707,13 +807,13 @@ Con el fin de mantener una coordinación efectiva y una comunicación fluida ent
 | Perez Encarnacion, Breithner Rodolfo | Breithner1         | C   | C          | C            | L       | C     | L         | C         | C          |
 | Aguilar Untiveros, Rodrigo Fabrizio  | Rodri2712          | C   | C          | L            | C       | L     | C         | C         | C          |
 
-#### Sprint Backlog 3
+#### 5.2.3.3. Sprint Backlog 3
 
 El objetivo principal de este Sprint es consolidar una experiencia funcional completa para los distintos perfiles de usuario dentro de la plataforma TerraTech. Se prioriza la mejora de la landing page para comunicar eficazmente la propuesta de valor a nuevos visitantes, así como la habilitación de la gestión de zonas de cultivo y sensores para los agricultores, la mejora de la sección de catálogos para los clientes finales, y la incorporación de la gestión de inventarios tanto para agricultores como para proveedores, permitiendo a ambos segmentos administrar sus recursos de forma integrada. Asimismo, se trabajará en la provisión de una API REST documentada que ofrezca puntos de acceso para que los desarrolladores frontend implementen funcionalidades esenciales de manera eficiente, abarcando la gestión de sensores, inventarios, comunidad, notificaciones, catálogos y análisis. Este enfoque integral busca generar mayor confianza en los visitantes y transmitir con claridad la propuesta de valor, al tiempo que mejora los flujos de usuario: los agricultores podrán monitorear sus cultivos y gestionar su inventario de productos, los proveedores contarán con datos organizados para potenciar sus ventas, y los clientes finales dispondrán de catálogos completos que reflejen la oferta de los agricultores.
 
 Además, se facilita al equipo frontend la construcción de las vistas requeridas, promoviendo la cohesión entre frontend y backend. Esto se confirmará cuando aumente la cantidad de usuarios registrados en la plataforma, se incremente el número de zonas de cultivo y productos registrados por los agricultores, crezca el volumen de datos útiles para los proveedores, se amplíe la cantidad de catálogos accesibles para los clientes finales, y los desarrolladores frontend eleven la cantidad de funcionalidades implementadas en torno a sensores, inventarios, comunidad, notificaciones, catálogos y análisis, facilitando así la validación funcional de la plataforma y avanzando hacia su adopción por parte de los usuarios finales.
 
-![Sprint backlog 3](assets/images/cap5/sprint-backlog-3.png)
+<img src="assets/images/cap5/sprint-backlog-3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 | Work-item / Task | Description | Estimation (hours) | Assigned To | Status |
 |------------------|-------------|-------------------|-------------|--------|
@@ -774,9 +874,9 @@ Además, se facilita al equipo frontend la construcción de las vistas requerida
 | TS12-010 - Implement DeleteCommunityProfile | Implementar comando DeleteCommunityProfileCommand | 1 | BP | Done |
 | TS12-011 - Implement DeleteComment | Implementar comando DeleteCommentCommand | 1 | BP | Done |
 
-Trello: [Trello Board](https://trello.com/b/sLQ8KGVG/aplicaciones-web)
+Trello: https://trello.com/b/sLQ8KGVG/aplicaciones-web
 
-### 5.2.2.4. Development Evidence for Sprint Review
+#### 5.2.3.4. Development Evidence for Sprint Review
 
 **Landing page:**
 
@@ -1110,17 +1210,17 @@ Se actualizó el archivo README.md con una descripción general del proyecto, te
 | Rodri2712/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | develop | 6955f9e | refactor(shared): update AppDbContext to include Commercial configuration | Updates AppDbContext to include Commercial configuration. | 11/06 |
 | Rodri2712/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | develop | 44376d5 | feat(commercial): register Commercial services in DI container | Registers Commercial services in Program.cs DI container. | 11/06 |
 
-### 5.2.2.5. Execution Evidence for Sprint Review
+#### 5.2.3.5. Execution Evidence for Sprint Review
 
 A continuación, se muestra un video con los avances realizados durante el Sprint 3, asi como el deployment del backend en render.
 
 Video del sprint3:
 
-![Execution Evidence](assets/images/cap5/Video-Sprtin3.png)
+<img src="assets/images/cap5/Video-Sprtin3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 Enlace del video: https://tinyurl.com/mrxyzszz
 
-### 5.2.2.6. Services Documentation Evidence for Sprint Review
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante este sprint se completó al 100% el desarrollo del Landing Page del sistema, consolidando su estructura visual, diseño responsivo, traducción multilenguaje y funcionalidades de navegación. Asimismo, se avanzó de forma significativa en la construcción del frontend del sistema, incluyendo componentes claves como el menú resumen del sistema, el dashboard inicial, el módulo de gestión de parcelas(zonas). El equipo logró implementar y probar múltiples servicios que fortalecen la experiencia del usuario y la arquitectura de backend bajo principios DDD.
 
@@ -1200,7 +1300,7 @@ La siguiente tabla detalla todos los recursos expuestos por la API de TerraTech,
 ---
 *Todos los endpoints requieren autenticación mediante token JWT, excepto los de registro e inicio de sesión. La documentación interactiva completa está disponible en el repositorio backend.*
 
-### 5.2.2.7. Software Deployment Evidence for Sprint Review
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 Durante este sprint, se realizaron actividades de despliegue y pruebas de los servicios desarrollados, asegurando que las funcionalidades del sistema estén operativas y accesibles para los usuarios finales. A continuación, se detallan los pasos realizados:
 
@@ -1208,79 +1308,125 @@ Durante este sprint, se realizaron actividades de despliegue y pruebas de los se
 
 1. Al usar la plataforma vercel para el despliegue de la página estatica, se debe usar el link del repositorio del frontend.
 
-![Deployment](assets/images/cap5/FrontEnd_Deployment_1.png)
+<img src="assets/images/cap5/FrontEnd_Deployment_1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 2. Comienza el proceso de despliegue.
 
-![Deployment](assets/images/cap5/FrontEnd_Deployment_2.png)
+<img src="assets/images/cap5/FrontEnd_Deployment_2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 3. Se termina el despliegue y se obtiene la URL pública para acceder al frontend.
 
-![Deployment](assets/images/cap5/FrontEnd_Deployment_3.png)
+<img src="assets/images/cap5/FrontEnd_Deployment_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 ***BackEnd***
 
 1. Se creó un Dockerfile para el backend del sistema, permitiendo la creación de una imagen que encapsula todas las dependencias y configuraciones necesarias para ejecutar el servicio.
 
-![Deployment](assets/images/cap5/Backend_Deploy_1.png)
+<img src="assets/images/cap5/Backend_Deploy_1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 2. Al usar panel.filess.io para la creación de la base de datos se usa la opción de shared al ser la opción diposnible para el proyecto.
 
-![Deployment](assets/images/cap5/Backend_Deploy_2.png)
+<img src="assets/images/cap5/Backend_Deploy_2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 3. Al acceder se debe crear una nueva base datos, dedica a la pagina web.
 
-![Deployment](assets/images/cap5/Backend_Deploy_3.png)
+<img src="assets/images/cap5/Backend_Deploy_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 4. Se selecciona MySQL como el motor de base de datos al ser el utilizado en el proyecto.
 
-![Deployment](assets/images/cap5/Backend_Deploy_4.png)
+<img src="assets/images/cap5/Backend_Deploy_4.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 5. Se coloca el nombre de la base datos, el cual ya está establecido desde la creación de la pagina estatica.
 
-![Deployment](assets/images/cap5/Backend_Deploy_5.png)
+<img src="assets/images/cap5/Backend_Deploy_5.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 6. Al finalizar la creación se obtiene una base de datos desplegada en la nube, con acceso remoto para conectar el backend del sistema.
 
-![Deployment](assets/images/cap5/Backend_Deploy_6.png)
+<img src="assets/images/cap5/Backend_Deploy_6.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 7. Se optiene la información de conexión a la base de datos, incluyendo host, puerto, usuario y contraseña, para configurar el backend y permitir la comunicación con la base de datos.
 
-![Deployment](assets/images/cap5/Backend_Deploy_7.png)
+<img src="assets/images/cap5/Backend_Deploy_7.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 8. Se crea un .env donde se pondran las variables de entorno, el cual no entra en las versiones del proyecto, solo de manera local.
 
-![Deployment](assets/images/cap5/Backend_Deploy_8.png)
+<img src="assets/images/cap5/Backend_Deploy_8.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 9. Se utilizará la plataforma Render para el despliegue de la página web del proyecto TerraTech.
 
-![Deployment](assets/images/cap5/Backend_Deploy_9.png)
+<img src="assets/images/cap5/Backend_Deploy_9.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 10. Para la creación se utiliza el enlace del repositorio del backend.
 
-![Deployment](assets/images/cap5/Backend_Deploy_10.png)
+<img src="assets/images/cap5/Backend_Deploy_10.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 11. Se asegura que las opciones sean las correctas según el proyecto.
 
-![Deployment](assets/images/cap5/Backend_Deploy_11.png)
+<img src="assets/images/cap5/Backend_Deploy_11.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 12. Ahora se debe utilizar las variables de entorno que se obtenieron de la base de datos.
 
-![Deployment](assets/images/cap5/Backend_Deploy_12.png)
+<img src="assets/images/cap5/Backend_Deploy_12.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 13. Se busca el archivo .env y se copian las variables de entorno necesarias para la conexión a la base de datos.
 
-![Deployment](assets/images/cap5/Backend_Deploy_13.png)
+<img src="assets/images/cap5/Backend_Deploy_13.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 14. Se colocan en las opciones de variables de entorno en Render, para asegurar que el backend pueda acceder a la base de datos desplegada.
 
-![Deployment](assets/images/cap5/Backend_Deploy_14.png)
+<img src="assets/images/cap5/Backend_Deploy_14.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 15. Se inicia el proceso de despliegue en Render.
 
-![Deployment](assets/images/cap5/Backend_Deploy_15.png)
+<img src="assets/images/cap5/Backend_Deploy_15.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-### 5.2.2.8. Team Collaboration Insights during Sprint
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Se crearon ramas específicas para cada actions (feature/[actions-entite-command/query]), permitiendo un trabajo paralelo organizado.
+
+Cada miembro del equipo asumió la responsabilidad de desarrollar una o más secciones del Landing page, Frontend y Backend. Se realizaron commits frecuentes, registrando avances de manera continua y detallada. Las funcionalidades desarrolladas se integraron mediante Pull Requests hacia la rama develop con ayuda de la herramienta GitFlowHelper. Se mantuvo una comunicación constante mediante la plataforma Discord para coordinar avances y resolver dudas en tiempo real. Se aplicaron buenas prácticas de programación, control de versiones y colaboración en equipo.
+
+***Landing Page***
+
+**Analíticos de colaboración**
+
+Permite visualizar y analizar la participación del equipo en tareas colaborativas, identificando el nivel de actividad y compromiso de cada miembro para optimizar la coordinación y la productividad.
+
+<img src="assets/images/cap5/Analytics_Colaborations_Landing_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+**Analíticos de commits de GitHub**
+
+Muestra el historial y frecuencia de commits realizados en GitHub, ayudando a evaluar el ritmo de desarrollo, la contribución individual y detectar posibles cuellos de botella en el flujo de trabajo.
+
+<img src="assets/images/cap5/Analytics_Commitss_Landing_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+***Frontend***
+
+**Analíticos de colaboración**
+
+Permite monitorear de manera detallada la interacción y el aporte de cada miembro en las actividades conjuntas, facilitando la identificación de patrones de trabajo y fomentando una gestión más eficiente del equipo.
+
+<img src="assets/images/cap5/Analytics_Colaborations_Frontend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+**Analíticos de commits de GitHub**
+
+Presenta un análisis claro del flujo de commits en GitHub, mostrando la frecuencia y volumen de contribuciones para evaluar el progreso del proyecto y detectar áreas que requieren mayor atención o soporte.
+
+<img src="assets/images/cap5/Analytics_Commitss_Frontend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+***Backend***
+
+**Analíticos de colaboración**
+
+Ofrece una vista detallada sobre la participación de cada integrante en las actividades grupales, permitiendo identificar su nivel de implicación y colaboración para mejorar la organización y el rendimiento general del equipo.
+
+<img src="assets/images/cap5/Analytics_Colaborations_Backend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+**Analíticos de commits de GitHub**
+
+Refleja el registro y la periodicidad de los commits realizados en el repositorio, facilitando el seguimiento del avance del desarrollo, la distribución de las contribuciones y la detección de posibles bloqueos o retrasos.
+
+<img src="assets/images/cap5/Analytics_Commitss_Backend_3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 ## 5.3. Validation Interviews.
 
@@ -1394,7 +1540,21 @@ Validar la usabilidad, comprensión y utilidad de las funcionalidades del sistem
 
 ### 5.3.2. Registro de Entrevistas.
 
+***Segmento 2: Proveedores de insumos agrícolas***
+
+**ENTREVISTA 1:**
+
+**Nombre:** Anita Monago Cachay **Edad:** 35 años **Distrito:** Ica **Timing:** (00:00 - 4:48)
+
+<img src="assets/images/cap5/Entrevista_Validacion_Segmento2-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: https://tinyurl.com/may4652j
+
+**Resumen:** Anita Monago Cachay dice que le gustó la plataforma porque el Landing Page transmite con total claridad el valor que ofrece a los proveedores, el proceso de registro y configuración de perfil es sumamente intuitivo tanto en computadoras como en celulares, y el módulo de analítica junto al sistema de notificaciones personalizadas se presentan como herramientas comerciales muy potentes para identificar oportunidades de negocio en tiempo real (como los insumos más solicitados y las zonas con mayor demanda de nutrientes). Asimismo, valora positivamente el poder monitorear los comentarios y calificaciones de la comunidad para conocer las opiniones de los agricultores y analizar a la competencia; sin embargo, sugiere que le agregues una sección que pueda poner el precio de sus productos dentro de la gestión del catálogo, para que la visualización y cotización de los insumos sea mucho más directa y efectiva para los clientes. 
+
 ### 5.3.3. Evaluación según heurísticas.
+
+
 
 ## 5.4. Video About-the-Product.
 
@@ -1404,7 +1564,7 @@ El video comunica de forma clara y dinámica el propósito del producto, mostran
 
 A continuación, se incluye un screenshot del video, junto con los enlaces de la versión publicada en Microsoft Stream y YouTube.
 
-![About-The-Product](assets/images/cap5/about-the-product.png)
+<img src="assets/images/cap5/about-the-product.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 Video en Stream: https://tinyurl.com/m88tcphe 
 
