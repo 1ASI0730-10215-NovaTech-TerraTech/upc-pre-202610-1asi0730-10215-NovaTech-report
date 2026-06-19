@@ -85,7 +85,7 @@
 
   <img src="assets/images/readme/Report-Ins.png" style="width: 450px;"/>
 
-  <p>Total de commits: 76</p>
+  <p>Total de commits: 136</p>
 
   <p>Autores contribuyentes:</p>
 
@@ -200,8 +200,7 @@
 
 ## Student Outcome 5
 
-<p>Criterio: La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.</p>
+**Criterio:** Criterio: La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos. En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
 
 <table border="1" style="width: 100%; border-collapse: collapse;">
 <thead>
@@ -213,47 +212,48 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 </thead>
 <tbody>
     <tr>
-        <th style="padding: 30px;">Trabaja en equipo para proporcionar liderazgo enforma conjunta</th>
+        <th style="padding: 30px;">Trabaja en equipo para proporcionar liderazgo en forma conjunta</th>
         <th style="padding: 60px;">
-        Acuña de la Cruz, Luis Alfredo<br>Rol de developer, documentación de reuniones y configuraciones del software<br><br>
-        Aguilar Untiveros, Rodrigo Fabrizio<br>Rol de developer, colaboración en generación de stories y escenarios de usuarios<br><br>
-        Howard Robles, Guillermo Arturo<br>Rol de developer, análisis de competidores, needfinding y big picture event storming<br><br>
-        Perez Encarnacion, Breithner Rodolfo<br>Rol de developer, diseño UX de landing page y página web<br><br>
-        Retuerto Rodriguez, Jorge Manuel<br>Rol de product owner, descripción de producto y startup<br><br>
+            <strong>Retuerto Rodriguez, Jorge Manuel</strong><br>
+            <strong>TB1:</strong> Lideró el desarrollo de los módulos de IAM y Commercial Management en el frontend, implementando las vistas de autenticación (login, registro, recuperación de contraseña), la gestión de productos y pedidos, y la integración con los endpoints del backend. Coordinó la estructura de rutas y la lógica de estado global para estos módulos, asegurando la consistencia de la navegación y la experiencia de usuario.<br>
+            <strong>AV2:</strong> Lideró la implementación de la capa de infraestructura para IAM y Commercial en el backend, desarrollando los agregados <code>User</code>, <code>Product</code> y <code>Order</code>, los comandos y consultas correspondientes, y los controladores REST. Configuró la autenticación JWT y la autorización basada en roles, y aseguró la correcta integración con la base de datos mediante Entity Framework Core. Además, supervisó la implementación de los endpoints de pedidos y productos, validando la lógica de negocio y las reglas de integridad.<br><br>
+            <strong>Howard Robles, Guillermo Arturo</strong><br>
+            <strong>TB1:</strong> Lideró el desarrollo de los módulos de Monitoring y Analytics en el frontend, implementando el dashboard de monitoreo con indicadores en tiempo real, gráficos históricos, mapa de fertilidad y visualización de reportes analíticos. Integró las vistas de gestión de dispositivos y campos, y desarrolló los componentes para la selección de zonas y sensores, asegurando una experiencia fluida y responsiva.<br>
+            <strong>AV2:</strong> Lideró la implementación de los bounded contexts de Monitoring y Analytics en el backend, desarrollando los agregados <code>Field</code>, <code>Device</code> y <code>Report</code>, junto con sus value objects y comandos. Implementó los endpoints para la gestión de campos y dispositivos, y los filtros por tipo de suelo y estado. Además, desarrolló la lógica de generación de reportes estadísticos y aseguró la correcta persistencia de los datos en la base de datos, optimizando las consultas para el rendimiento.<br><br>
+            <strong>Perez Encarnacion, Breithner Rodolfo</strong><br>
+            <strong>TB1:</strong> Lideró el desarrollo de los módulos de Profile Management y Community Management en el frontend, implementando las vistas de gestión de perfiles agrícolas, la configuración de umbrales y la interacción con la comunidad (perfiles públicos, mural de comentarios y reseñas). Diseñó los componentes para la creación y edición de perfiles, y la visualización de calificaciones y comentarios de otros agricultores.<br>
+            <strong>AV2:</strong> Lideró la implementación de los bounded contexts de Profile y Community en el backend, desarrollando los agregados <code>Profile</code>, <code>CommunityProfile</code> y <code>Comment</code>, junto con sus value objects y comandos. Implementó los endpoints para la gestión de perfiles, comunidades y comentarios, incluyendo la lógica de reputación y visibilidad. Aseguró la integridad referencial entre los perfiles de usuario y los perfiles de comunidad, y validó las reglas de negocio para la publicación y moderación de comentarios.<br><br>
+            <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong><br>
+            <strong>TB1:</strong> Lideró el desarrollo de los módulos de Notification Management y Stock Management en el frontend, implementando el sistema de notificaciones (lista de notificaciones, creación de alertas, marcado como leído) y la gestión de inventario de insumos (registro, edición, filtrado y descuento de productos). Desarrolló los componentes para la visualización de notificaciones en tiempo real y la integración con el panel de control.<br>
+            <strong>AV2:</strong> Lideró la implementación de los bounded contexts de Notification y Stock en el backend, desarrollando los agregados <code>Notification</code> e <code>Inventory</code>, junto con sus comandos y consultas. Implementó los endpoints para la creación, lectura y actualización de notificaciones, así como el marcado de leídas. También desarrolló la lógica de gestión de inventario, incluyendo la actualización de stock y la validación de cantidades. Aseguró la correcta persistencia de los datos y la integración con los módulos de perfil y monitoreo.<br><br>
         </th>
         <th style="padding: 30px;">
-        av1: Se definió la visión del producto y sus objetivos mediante la participación del Product Owner y el equipo de desarrollo.
-        Se elaboraron historias de usuario y escenarios, permitiendo establecer metas claras para el desarrollo.
-        Se realizó análisis de competidores y actividades de needfinding para comprender el problema y orientar las decisiones del equipo.
-        Se aplicó event storming para estructurar el flujo del sistema y alinear el entendimiento entre los integrantes.
-        Se diseñaron interfaces UX para la landing page y la aplicación, considerando la experiencia del usuario.
-        Se documentaron reuniones y acuerdos para asegurar la comunicación y seguimiento del progreso.
-        <br><br>
-        tb1: Durante el Sprint 2, el equipo consolidó un modelo de liderazgo compartido donde la toma de decisiones técnicas se realizó de forma conjunta. La capacidad de liderazgo se manifestó en la autogestión de los Bounded Contexts, asegurando que cada módulo funcional estuviera alineado con los objetivos del negocio y las metas del Sprint, garantizando una integración fluida entre los componentes desarrollados por cada miembro.  
+            <strong>av1:</strong> Se definió la visión del producto y sus objetivos mediante la participación del Product Owner y el equipo de desarrollo. Se elaboraron historias de usuario y escenarios, permitiendo establecer metas claras para el desarrollo. Se realizó análisis de competidores y actividades de needfinding para comprender el problema y orientar las decisiones del equipo. Se aplicó event storming para estructurar el flujo del sistema y alinear el entendimiento entre los integrantes. Se diseñaron interfaces UX para la landing page y la aplicación, considerando la experiencia del usuario. Se documentaron reuniones y acuerdos para asegurar la comunicación y seguimiento del progreso.<br><br>
+            <strong>tb1:</strong> Durante el Sprint 2, el equipo consolidó un modelo de liderazgo compartido donde la toma de decisiones técnicas se realizó de forma conjunta. La capacidad de liderazgo se manifestó en la autogestión de los Bounded Contexts, asegurando que cada módulo funcional estuviera alineado con los objetivos del negocio y las metas del Sprint, garantizando una integración fluida entre los componentes.<br><br>
+            <strong>AV2:</strong> El equipo consolidó un modelo de liderazgo distribuido donde cada líder de Bounded Context asumió la responsabilidad de coordinar tanto el frontend como el backend de su módulo, asegurando la coherencia técnica y funcional de la solución. La capacidad de liderazgo se manifestó en la organización de sprints internos, la asignación de tareas específicas y la resolución de conflictos técnicos, garantizando que cada módulo funcional estuviera alineado con los objetivos del negocio y las metas del hito AV2. Además, se promovió la colaboración entre líderes de diferentes módulos para resolver dependencias cruzadas, lo que permitió una integración fluida entre los componentes desarrollados por cada miembro.
         </th>
     </tr>
     <tr>
-        <th style="padding: 30px;">
-        Crea un entorno colaborativo e inclusivo, establece metas,planifica tareas y cumple objetivos
-        </th>
+        <th style="padding: 30px;">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</th>
         <th style="padding: 60px;">
-        Acuña de la Cruz, Luis Alfredo<br>Trabajo siguiendo los 'conventional commits' y gitflow<br><br>
-        Aguilar Untiveros, Rodrigo Fabrizio<br>Cumplió de manera regular el uso de los 'conventional commits' y gitflow<br><br>
-        Howard Robles, Guillermo Arturo<br>Trabajo siguiendo los 'conventional commits' y gitflow<br><br>
-        Perez Encarnacion, Breithner Rodolfo<br>Trabajo siguiendo los 'conventional commits' y gitflow<br><br>
-        Retuerto Rodriguez, Jorge Manuel<br>Trabajo siguiendo los 'conventional commits' y gitflow<br><br>
+            <strong>Retuerto Rodriguez, Jorge Manuel</strong><br>
+            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, participando activamente en las revisiones de código y asegurando la calidad del software. Actuó como enlace entre el equipo de frontend y backend para garantizar la correcta integración de los módulos de IAM y Comercial.<br>
+            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de IAM y Comercial con el frontend, asegurando la coherencia de los datos y la seguridad de la autenticación.<br><br>
+            <strong>Howard Robles, Guillermo Arturo</strong><br>
+            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, y colaboró en la documentación técnica y la integración continua. Fue responsable de la correcta conexión entre el dashboard de monitoreo y los endpoints de sensores y reportes, asegurando la coherencia de los datos mostrados en el frontend.<br>
+            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de monitoreo y analíticas con el frontend, asegurando la precisión de los datos mostrados en el dashboard.<br><br>
+            <strong>Perez Encarnacion, Breithner Rodolfo</strong><br>
+            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, y colaboró en la creación de los recursos y transformadores para la API. Garantizó que la información de perfiles y comunidad se reflejara correctamente en el frontend, facilitando la interacción de los agricultores.<br>
+            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de perfiles y comunidad con el frontend, asegurando la consistencia de los datos de los agricultores.<br><br>
+            <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong><br>
+            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, y se encargó de la correcta integración de las notificaciones y el inventario en ambos lados, asegurando que los datos se sincronicen adecuadamente entre frontend y backend.<br>
+            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de notificaciones e inventario con el frontend, asegurando la sincronización de datos en tiempo real.<br><br>
         </th>
         <th style="padding: 30px;">
-        av1: Se estableció un flujo de trabajo dentro de GitHub: una organización, para la creación de las ramas nos hemos basado en Gitflow, 
-        lo que permitió integrar cambios de forma ordenada y sin conflictos mayores. El uso de 'conventional commits' facilitó la trazabilidad 
-        de funcionalidades y la generación automática de changelogs. Se definieron metas semanales alcanzables mediante reuniones de planificación, 
-        respetando los roles y promoviendo la participación equitativa. Se fomentó un entorno inclusivo donde todos los miembros 
-        expresaron sus ideas durante las retrospectivas. El equipo cumplió con los objetivos del hito, entregando las funcionalidades 
-        acordadas dentro del plazo establecido.
-        <br><br>
-        tb1: El equipo fomentó un entorno inclusivo mediante la rotación de responsabilidades técnicas y el apoyo mutuo en las fases de despliegue. Se establecieron metas específicas para el Sprint 2 mediante un Sprint Backlog detallado, lo que permitió una planificación rigurosa de las tareas de codificación y documentación. El cumplimiento de los objetivos se evidenció en la entrega de un producto funcional desplegado en múltiples plataformas y una documentación técnica que refleja fielmente la colaboración y el esfuerzo colectivo por alcanzar los estándares de calidad exigidos.
+            <strong>AV1:</strong> Se estableció un flujo de trabajo dentro de GitHub: una organización, para la creación de las ramas nos hemos basado en Gitflow, lo que permitió integrar cambios de forma ordenada y sin conflictos mayores. El uso de 'conventional commits' facilitó la trazabilidad de funcionalidades y la generación automática de changelogs. Se definieron metas semanales alcanzables mediante reuniones de planificación, respetando los roles y promoviendo la participación equitativa. Se fomentó un entorno inclusivo donde todos los miembros expresaron sus ideas durante las retrospectivas. El equipo cumplió con los objetivos del hito, entregando las funcionalidades acordadas dentro del plazo establecido.<br><br>
+            <strong>TB1:</strong> El equipo fomentó un entorno inclusivo mediante la rotación de responsabilidades técnicas y el apoyo mutuo en las fases de despliegue. Se establecieron metas específicas para el Sprint 2 mediante un Sprint Backlog detallado, lo que permitió una planificación rigurosa de las tareas de codificación y documentación. El cumplimiento de los objetivos se evidenció en la entrega de un producto funcional desplegado en múltiples plataformas y una documentación técnica que refleja fielmente la colaboración y el esfuerzo colectivo por alcanzar los estándares de calidad exigidos.<br><br>
+            <strong>AV2:</strong> El equipo fomentó un entorno colaborativo e inclusivo mediante la organización de reuniones diarias de sincronización y la rotación de responsabilidades en las revisiones de código. Se establecieron metas específicas para el hito AV2 mediante un Sprint Backlog detallado que priorizó las funcionalidades críticas del sistema (monitoreo, autenticación, comunidad, notificaciones, perfiles, inventario, analíticas y comercio). Se utilizaron herramientas como GitHub Projects para el seguimiento de tareas y se aplicaron prácticas de integración continua (CI) para validar los cambios de forma automática. El cumplimiento de los objetivos se evidenció en la entrega de un producto funcional con todos los bounded contexts implementados y desplegados en entornos de prueba, junto con una documentación técnica que refleja fielmente la colaboración y el esfuerzo colectivo por alcanzar los estándares de calidad exigidos.
         </th>
     </tr>
 </tbody>
 </table>
-
