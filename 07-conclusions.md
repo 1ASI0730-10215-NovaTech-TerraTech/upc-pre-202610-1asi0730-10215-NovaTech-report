@@ -28,7 +28,14 @@ Por el momento del desarrollo del sprint1, se ha logrado establecer las bases de
 
 - Se recomienda incorporar un sistema básico de trazabilidad mediante códigos QR para los clientes finales, respondiendo a la demanda de transparencia y sostenibilidad identificada en el segmento de consumidores.
 
+<div class="page"></div>
+
 ***Video About-the-Team***
 
 A continuación, encontrará una captura de pantalla del vídeo, junto con enlaces a la versión publicada en Microsoft Stream y YouTube.
 
+![About-The-Team](assets/images/annexes/about-the-team.png)
+
+Video en Stream: https://tinyurl.com/5e4k6vas
+
+Video en YouTube: https://youtu.be/YjfLNpPMLpg
