@@ -64,6 +64,7 @@
 |   2.8   | 17/06/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Adición de Commits en el Development Evidence for Sprint Review.           |
 |   2.9   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Execution Evidence for Sprint Review.                       |
 |  2.10   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Services Documentation Evidence for Sprint Review.          |
+|  2.11   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del video about the product.                                       |
 
 ---
 
