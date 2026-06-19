@@ -36,41 +36,49 @@ El proyecto NovaTech y su producto TerraTech se encuentra alojado bajo la organi
 
 Para las entrevistas las subimos en la nube para facilitar el acceso:
 
-URL de entrevistas: https://tinyurl.com/5cphvez4
+Link de las entrevistas: https://tinyurl.com/5cphvez4
 
 <img src="assets/images/annexes/AnexoD.png" alt=“Descargar” >
 
 <div class="page"></div>
 
-***Anexo E. Deployment del proyecto***
+***Anexo E. Event Storming***
 
-Para el despliegue de nuestra aplicación hemos usado diversos proveedores:
+Link del Event Storming: https://miro.com/app/board/uXjVHdevNWI=/
 
-- GitHubPage para el deploy de Landing Page: https://1asi0730-10215-novatech-terratech.github.io/upc-pre-202610-1asi0730-10215-NovaTech-LandingPage/
-
-<img src="assets/images/annexes/AnexoD.png" alt=“Descargar” >
+<img src="assets/images/annexes/Event-Storming-Bounded-Context.jpg" alt=“Descargar” >
 
 <div class="page"></div>
 
 ***Anexo F. About The Team***
 
-<div class="page"></div>
+Link del video About the Team: https://tinyurl.com/5e4k6vas
 
-url: 
+<img src="assets/images/annexes/about-the-team.png" alt=“Descargar” >
+
+<div class="page"></div>
 
 ***Anexo G. About The Product***
 
+Link del video About the Product: https://tinyurl.com/m88tcphe
+
+<img src="assets/images/cap5/about-the-product.png" alt=“Descargar” >
+
 <div class="page"></div>
 
-Url: https://tinyurl.com/m88tcphe
+## Videos de Exposición
 
-***Video de Exposiciones***
+***TB01***
 
-**TB01**
+Link del video del TB01: https://tinyurl.com/3wwzdc2w
 
-url: https://tinyurl.com/3wwzdc2w
+<img src="assets/images/annexes/expo-tb1.png" alt=“Descargar” >
 
-**Av02**
+<div class="page"></div>
 
-url: https://tinyurl.com/mrxyzszz
+***Av02***
+
+Link del video del AV02: https://tinyurl.com/mrxyzszz
+
+<img src="assets/images/annexes/expo-av2.png" alt=“Descargar” >
 
