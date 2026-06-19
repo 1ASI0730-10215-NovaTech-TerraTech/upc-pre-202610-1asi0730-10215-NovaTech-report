@@ -1320,3 +1320,15 @@ Validar la usabilidad, comprensión y utilidad de las funcionalidades del sistem
 ### 5.3.3. Evaluación según heurísticas.
 
 ## 5.4. Video About-the-Product.
+
+A continuación, se presenta el video **"About the Product"** del sistema **TerraTech**, una plataforma tecnológica desarrollada para digitalizar y optimizar la gestión agrícola mediante sensores IoT, análisis predictivo, comunidad colaborativa y comercialización transparente. Este video está dirigido principalmente a los visitantes del Landing Page, quienes desean conocer el modelo de negocio y las principales funcionalidades de la plataforma, así como a los usuarios potenciales de las aplicaciones (agricultores, proveedores de insumos y clientes finales), interesados en realizar tareas relacionadas con los procesos soportados por la solución.
+
+El video comunica de forma clara y dinámica el propósito del producto, mostrando cómo TerraTech ayuda a reducir la incertidumbre en la agricultura, optimizar el uso de recursos hídricos y fertilizantes, mejorar la eficiencia operativa mediante el monitoreo en tiempo real, y fortalecer la relación entre agricultores, proveedores y compradores a través de una comunidad transparente y un catálogo trazable. Se utiliza un tono consistente con la propuesta visual y comunicacional del producto, combinando narración, demostraciones de uso en campo y escenarios reales de cultivo.
+
+A continuación, se incluye un screenshot del video, junto con los enlaces de la versión publicada en Microsoft Stream y YouTube.
+
+![About-The-Product](assets/images/cap5/about-the-product.png)
+
+Video en Stream: https://tinyurl.com/m88tcphe 
+
+Video en YouTube: https://youtu.be/g50PX1_6f_M 
