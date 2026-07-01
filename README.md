@@ -23,30 +23,30 @@ Proyecto
 <table style="margin: 0 auto; border-collapse: collapse; text-align: left;">
   <thead>
     <tr>
-      <th style="padding: 8px 16px; border: 1px solid #ddd; background-color: #f2f2f2;">Código</th>
-      <th style="padding: 8px 16px; border: 1px solid #ddd; background-color: #f2f2f2;">Apellidos y Nombres</th>
+      <th style="padding: 8px 16px;">Código</th>
+      <th style="padding: 8px 16px;">Apellidos y Nombres</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">U202417228</td>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">Acuña de la Cruz, Luis Alfredo</td>
+      <td style="padding: 8px 16px;">U202417228</td>
+      <td style="padding: 8px 16px;">Acuña de la Cruz, Luis Alfredo</td>
     </tr>
     <tr>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">U202318309</td>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">Aguilar Untiveros, Rodrigo Fabrizio</td>
+      <td style="padding: 8px 16px;">U202318309</td>
+      <td style="padding: 8px 16px;;">Aguilar Untiveros, Rodrigo Fabrizio</td>
     </tr>
     <tr>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">U202222275</td>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">Howard Robles, Guillermo Arturo</td>
+      <td style="padding: 8px 16px;">U202222275</td>
+      <td style="padding: 8px 16px;">Howard Robles, Guillermo Arturo</td>
     </tr>
     <tr>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">U202418577</td>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">Pérez Encarnación, Breithner Rodolfo</td>
+      <td style="padding: 8px 16px;">U202418577</td>
+      <td style="padding: 8px 16px;">Pérez Encarnación, Breithner Rodolfo</td>
     </tr>
     <tr>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">U202318612</td>
-      <td style="padding: 8px 16px; border: 1px solid #ddd;">Retuerto Rodríguez, Jorge Manuel</td>
+      <td style="padding: 8px 16px;">U202318612</td>
+      <td style="padding: 8px 16px;">Retuerto Rodríguez, Jorge Manuel</td>
     </tr>
   </tbody>
 </table>
