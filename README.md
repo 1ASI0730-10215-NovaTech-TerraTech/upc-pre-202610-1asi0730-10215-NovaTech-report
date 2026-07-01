@@ -63,39 +63,40 @@ Proyecto
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                                | Descripción de modificación                                                |
-|:-------:|------------|--------------------------------------|----------------------------------------------------------------------------|
-|   0.1   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel     | Creación de la organización en github de 1ASI0730-10215-NovaTech-TerraTech |
-|   0.2   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel     | Creación del repositorio  upc-pre-202610-1asi0730-10215-NovaTech-report    |
-|   0.3   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel     | Creación de ramas para la división de los capítulos del report             |   
-|   0.4   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel     | Desarrollo del startup-profile                                             |
-|   0.5   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel     | Desarrollo del solution-profile                                            |
-|   0.6   | 09/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio  | Desarrollo de los user stories y el product backlog                        |
-|   0.7   | 10/04/2026 | Retuerto Rodríguez, Jorge Manuel     | Desarrollo del lean ux process                                             |
-|   0.8   | 10/04/2026 | Perez Encarnacion, Breithner Rodolfo | Desarrollo del style guidelines and web style guidelines                   |
-|   0.9   | 10/04/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del análisis de competidores y needfinding                      |
-|  0.10   | 11/04/2026 | Howard Robles, Guillermo Arturo      | Desarrollo de los segmentos objetivos                                      |
-|  0.11   | 11/04/2026 | Howard Robles, Guillermo Arturo      | Desarrollo de los user persona y los task matrix                           |
-|  0.12   | 11/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio  | Desarrollo del impact mapping                                              |
-|  0.13   | 12/04/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del empathy mapping                                             |
-|   1.0   | 16/04/2026 | Acuña de la Cruz, Luis Alfredo       | Desarrollo del Sprint 1                                                    |
-|   1.1   | 24/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio  | Desarrollo del Sprint 2                                                    |
-|   2.0   | 28/04/2026 | Retuerto Rodríguez, Jorge Manuel     | Corrección del Event Storming                                              |
-|   2.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel     | Corrección en la estructura de orden del reporte                           |
-|   2.2   | 11/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del Sprint blacklog                                             |
-|   2.3   | 14/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo deL Sprint Planning 3                                           |
-|   2.4   | 17/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del Aspect Leaders and Collaborators                            |
-|   2.5   | 17/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del Sprint Backlog 3                                            |
-|   2.6   | 17/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del Development Evidence for Sprint Review                      |
-|   2.7   | 17/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del Diseño de Entrevistas del Validation Interviews.            |
-|   2.8   | 17/06/2026 | Aguilar Untiveros, Rodrigo Fabrizio  | Adición de Commits en el Development Evidence for Sprint Review.           |
-|   2.9   | 18/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del Execution Evidence for Sprint Review.                       |
-|  2.10   | 18/06/2026 | Howard Robles, Guillermo Arturo      | Desarrollo del Services Documentation Evidence for Sprint Review.          |
-|  2.11   | 18/06/2026 | Howard Robles, Guillermo Arturo      | Adición del video about the product.                                       |
-|  2.12   | 18/06/2026 | Howard Robles, Guillermo Arturo      | Adición de contenido adicional en la bibliografía.                         |
-|  2.13   | 18/06/2026 | Howard Robles, Guillermo Arturo      | Adición del Software Deployment Evidence for Sprint Review                 |
-|   3.0   | 19/06/2026 | Howard Robles, Guillermo Arturo      | Adición del outcome del av2.                                               |
-|   3.1   | 30/06/2026 | Howard Robles, Guillermo Arturo      | Correción del outcome y recuperación del contenido del av1.                |
+| Versión | Fecha      | Autor                                 | Descripción de modificación                                                |
+|:-------:|------------|---------------------------------------|----------------------------------------------------------------------------|
+|   0.1   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de la organización en github de 1ASI0730-10215-NovaTech-TerraTech |
+|   0.2   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación del repositorio  upc-pre-202610-1asi0730-10215-NovaTech-report    |
+|   0.3   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de ramas para la división de los capítulos del report             |   
+|   0.4   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del startup-profile                                             |
+|   0.5   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del solution-profile                                            |
+|   0.6   | 09/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo de los user stories y el product backlog                        |
+|   0.7   | 10/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del lean ux process                                             |
+|   0.8   | 10/04/2026 | Perez Encarnacion, Breithner Rodolfo  | Desarrollo del style guidelines and web style guidelines                   |
+|   0.9   | 10/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del análisis de competidores y needfinding                      |
+|  0.10   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los segmentos objetivos                                      |
+|  0.11   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los user persona y los task matrix                           |
+|  0.12   | 11/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del impact mapping                                              |
+|  0.13   | 12/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del empathy mapping                                             |
+|   1.0   | 16/04/2026 | Acuña de la Cruz, Luis Alfredo        | Desarrollo del Sprint 1                                                    |
+|   1.1   | 24/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del Sprint 2                                                    |
+|   2.0   | 28/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección del Event Storming                                              |
+|   2.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                           |
+|   2.2   | 11/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint blacklog                                             |
+|   2.3   | 14/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo deL Sprint Planning 3                                           |
+|   2.4   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Aspect Leaders and Collaborators                            |
+|   2.5   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Backlog 3                                            |
+|   2.6   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Development Evidence for Sprint Review                      |
+|   2.7   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Diseño de Entrevistas del Validation Interviews.            |
+|   2.8   | 17/06/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Adición de Commits en el Development Evidence for Sprint Review.           |
+|   2.9   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Execution Evidence for Sprint Review.                       |
+|  2.10   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Services Documentation Evidence for Sprint Review.          |
+|  2.11   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del video about the product.                                       |
+|  2.12   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición de contenido adicional en la bibliografía.                         |
+|  2.13   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del Software Deployment Evidence for Sprint Review                 |
+|   3.0   | 19/06/2026 | Howard Robles, Guillermo Arturo       | Adición del outcome del av2.                                               |
+|   3.1   | 30/06/2026 | Howard Robles, Guillermo Arturo       | Correción del outcome y recuperación del contenido del av1.                |
+|   3.2   | 30/06/2026 | Howard Robles, Guillermo Arturo       | Adición del Project Report Collaboration Insights del av2.                 |
 
 ---
 
@@ -115,13 +116,31 @@ https://github.com/1ASI0730-10215-NovaTech-TerraTech
     - Luis Acuña (`L2006delacruz`)
     - Rodrigo Aguilar (`Rodri2712`)
     - Guillermo Howard (`GuillermoPromac`)
-    - Breithner Perez (`Breithner1`)
+    - Breithner Pérez (`Breithner1`)
     - Jorge Retuerto (`Calin1407`)
 - Actividad distribuida por ramas correspondientes a cada sección del informe.
 - Todos los miembros participaron activamente en la redacción y revisión del contenido.
 
 ## AV2 – Backend, mejoras e integración
+*Periodo:* 15 de mayo – 19 de junio de 2026
 
+En el informe se documentó el trabajo realizado durante el **Sprint 3**, incluyendo el avance del *Product Backlog*, la implementación y despliegue de los primeros servicios del sistema.
+
+<img src="assets/images/readme/Report-Ins-AV2.png" alt=“Descargar” >
+
+- **Contribuciones destacadas del informe:**
+    - Correcciones de la carátula del informe.
+    - Descripción actualizada de la organización por boundeds del backend.
+    - Registro del trabajo realizado en el Sprint 3, incluyendo backlog, implementación de servicios y despliegue.
+
+- **Guillermo Howard (`GuillermoPromac`)**: 28 commits, 1,339 adiciones, 1,444 eliminaciones
+- **Rodrigo Aguilar (`Rodri2712`)**: 2 commits, 152 adiciones
+- **Total de commits en AV2:** 
+
+La colaboración fue continua y estratégica, con aportes clave en aspectos críticos del backend y del informe final.
+
+## TB2 – Integración final, autenticación y despliegue
+*Periodo:* 21 de junio – 06 de julio de 2026
 
 ---
 
