@@ -503,31 +503,45 @@ Finalmente, se delimitaron los límites semánticos y transaccionales del domini
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include <C4/C4_Context.puml>
 
-scale 1/2
+' ==================== LIGHT THEME CONFIGURATION ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
+}
 
-title AgroTech - System Context Diagram
+title <color:#0066CC><size:18>AgroTech IoT - System Context Diagram</size></color>
 
-Person(farmer, "Farmer", "Monitors crops and soil conditions")
-Person(supplier, "Supplier", "Provides agricultural inputs and uses soil data")
-Person(admin, "Cooperative Admin", "Manages reports and analytics")
-Person(customer, "End Customer", "Consumes traceability information")
+' ==================== PERSONS ====================
+Person(farmer, "Farmer", "Main user who monitors their crops and manages their farm")
+Person(admin, "Administrator", "Manages products, orders, and oversees the system")
 
-System(agrotech, "AgroTech Platform", "Smart agriculture platform using IoT and predictive analytics")
+' ==================== MAIN SYSTEM ====================
+System(agrotech, "AgroTech IoT Platform", "Smart crop monitoring and e-commerce platform")
 
-System_Ext(weather, "Weather API", "Provides weather forecasts")
-System_Ext(satellite, "Satellite Imagery Service", "Provides crop and land imagery")
-System_Ext(iot, "IoT Sensor Network", "Collects real-time soil data")
+' ==================== EXTERNAL SYSTEMS ====================
+System_Ext(weatherApi, "Weather API", "Provides real-time weather data and forecasts")
+System_Ext(satelliteApi, "Satellite API", "Provides satellite imagery for crop health analysis")
+System_Ext(recommendationEngine, "Recommendation Engine", "Generates AI-based irrigation recommendations")
+System_Ext(paymentGateway, "Payment Gateway", "Processes payments for orders and subscriptions")
+System_Ext(emailService, "Email Service", "Sends email notifications and alerts")
 
-Rel(farmer, agrotech, "Uses", "HTTPS")
-Rel(supplier, agrotech, "Accesses soil data", "HTTPS")
-Rel(admin, agrotech, "Generates reports", "HTTPS")
-Rel(customer, agrotech, "Checks traceability", "HTTPS")
+' ==================== RELATIONSHIPS ====================
+Rel(farmer, agrotech, "Monitors crops, receives alerts, purchases products", "HTTPS/REST API")
+Rel(admin, agrotech, "Manages products, oversees orders and users", "HTTPS/REST API")
 
-Rel(agrotech, weather, "Fetches weather data", "REST API")
-Rel(agrotech, satellite, "Retrieves satellite images", "REST API")
-Rel(agrotech, iot, "Receives sensor data", "MQTT/HTTP")
+Rel(agrotech, weatherApi, "Fetches weather forecast data", "HTTPS/REST API")
+Rel(agrotech, satelliteApi, "Fetches satellite images", "HTTPS/REST API")
+Rel(agrotech, recommendationEngine, "Sends sensor data and receives recommendations", "Webhook/REST API")
+Rel(agrotech, paymentGateway, "Processes payments for orders", "HTTPS/REST API")
+Rel(agrotech, emailService, "Sends email notifications", "SMTP/HTTP")
 
 @enduml
 ```
@@ -536,101 +550,320 @@ Rel(agrotech, iot, "Receives sensor data", "MQTT/HTTP")
 
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include <C4/C4_Container.puml>
 
-scale 1/2
-
-' Esta línea aplica los iconos y el estilo visual completo de C4
-LAYOUT_WITH_LEGEND()
-
-title AgroTech - Container Diagram
-
-Person(user, "User", "Farmer / Supplier / Admin / Customer")
-
-System_Boundary(agrotech, "AgroTech Platform") {
-
-    Container(webapp, "Web Application", "React / Angular", "Provides UI for dashboards, maps, and authentication")
-
-    Container(api, "Backend API", "Java / Spring Boot", "Handles business logic, IoT data, and analytics")
-
-    ContainerDb(db, "PostgreSQL Database", "PostgreSQL", "Stores clients, parcels, devices, sensor records, alerts, harvests")
-
-    Container(analytics, "Analytics Engine", "Python / Spark", "Calculates averages and sustainability scores")
+' ==================== LIGHT THEME CONFIGURATION ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
 }
 
-System_Ext(iot_device, "IoT Device", "Hardware sensor", "Collects humidity, temperature, pH, nutrients")
+title <color:#0066CC><size:18>AgroTech IoT - Container Diagram</size></color>
 
-Rel(user, webapp, "Uses", "HTTPS")
-Rel(webapp, api, "Sends requests", "REST/JSON")
-Rel(api, db, "Reads and writes", "JDBC")
-Rel(analytics, db, "Reads data", "JDBC")
-Rel(analytics, api, "Sends results", "REST")
-Rel(iot_device, api, "Sends telemetry", "MQTT/HTTP")
+' ==================== PERSONS ====================
+Person(farmer, "Farmer", "Main user who monitors their crops")
+Person(admin, "Administrator", "Manages products and oversees the system")
+
+' ==================== CONTAINERS ====================
+Container(webApp, "Web Application", "Vue 3 / Vite", "Web interface for farmers and administrators")
+Container(mobileApp, "Mobile Application", "Flutter / Dart", "Mobile app for field monitoring")
+Container(apiGateway, "API Gateway", ".NET 10 / YARP", "Single entry point, authentication and routing")
+
+Container_Boundary(backend, "Backend Services (Microservices)") {
+    Container(iamService, "IAM Service", ".NET 10", "Authentication, authorization and user management")
+    Container(profileService, "Profile Service", ".NET 10", "Farmer profile management")
+    Container(commercialService, "Commercial Service", ".NET 10", "Product and order management")
+    Container(monitoringService, "Monitoring Service", ".NET 10", "Field and monitoring data management")
+    Container(stockService, "Stock Service", ".NET 10", "Inventory control")
+    Container(notificationService, "Notification Service", ".NET 10", "Notification delivery")
+    Container(communityService, "Community Service", ".NET 10", "Community profiles and comments management")
+    Container(analyticsService, "Analytics Service", ".NET 10", "Report generation and data analysis")
+}
+
+ContainerDb(mysqlDb, "MySQL Database", "MySQL 8.0", "Main system database")
+
+' ==================== EXTERNAL SYSTEMS ====================
+System_Ext(weatherApi, "Weather API", "Provides weather data")
+System_Ext(satelliteApi, "Satellite API", "Provides satellite imagery")
+System_Ext(paymentGateway, "Payment Gateway", "Processes payments")
+
+' ==================== RELATIONSHIPS ====================
+Rel(farmer, webApp, "Uses", "HTTPS")
+Rel(farmer, mobileApp, "Uses", "HTTPS")
+Rel(admin, webApp, "Uses", "HTTPS")
+
+Rel(webApp, apiGateway, "Consumes API", "HTTPS/REST")
+Rel(mobileApp, apiGateway, "Consumes API", "HTTPS/REST")
+
+Rel(apiGateway, iamService, "Routes to", "HTTP")
+Rel(apiGateway, profileService, "Routes to", "HTTP")
+Rel(apiGateway, commercialService, "Routes to", "HTTP")
+Rel(apiGateway, monitoringService, "Routes to", "HTTP")
+Rel(apiGateway, stockService, "Routes to", "HTTP")
+Rel(apiGateway, notificationService, "Routes to", "HTTP")
+Rel(apiGateway, communityService, "Routes to", "HTTP")
+Rel(apiGateway, analyticsService, "Routes to", "HTTP")
+
+Rel(iamService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(profileService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(commercialService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(monitoringService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(stockService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(notificationService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(communityService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+Rel(analyticsService, mysqlDb, "Reads/Writes", "EF Core/MySQL")
+
+Rel(monitoringService, weatherApi, "Queries", "REST API")
+Rel(monitoringService, satelliteApi, "Queries", "REST API")
+Rel(commercialService, paymentGateway, "Processes payment", "REST API")
 
 @enduml
 ```
 
 ### 4.6.4. Software Architecture Components Diagrams
 
+#### 4.6.4.1 Business Services
 ```plantuml
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!include <C4/C4_Component.puml>
 
-scale 1/5
-
-title AgroTech - Component Diagram
-
-Container(api, "Backend API", "Java / Spring Boot", "Handles business logic, IoT data, and analytics") {
-    
-    Component(clientService, "Client Service", "Spring Service", "Manages client accounts, authentication, and profiles")
-    Component(subscriptionService, "Subscription Service", "Spring Service", "Handles subscription plans and user subscriptions")
-    Component(parcelService, "Parcel Service", "Spring Service", "Manages parcels and their geolocation data")
-    Component(deviceService, "Device Service", "Spring Service", "Handles IoT devices, connectivity, and battery status")
-    Component(sensorService, "Sensor Service", "Spring Service", "Processes sensor records and forwards to analytics")
-    Component(snapshotService, "Snapshot Service", "Spring Service", "Generates plot snapshots with averages")
-    Component(harvestService, "Harvest Service", "Spring Service", "Calculates sustainability scores and harvest outcomes")
-    Component(alertService, "Alert Service", "Spring Service", "Generates alerts based on sensor data")
-    Component(notificationService, "Notification Service", "Spring Service", "Sends notifications to clients")
-    Component(alertRuleService, "Alert Rule Service", "Spring Service", "Manages alert rules and thresholds")
-    Component(recommendationService, "Recommendation Service", "Spring Service", "Generates crop recommendations")
-    Component(sensorDataRawService, "Sensor Data Raw Service", "Spring Service", "Ingests raw sensor data from devices")
+' ==================== CONFIGURACIÓN ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
 }
 
-ContainerDb(db, "PostgreSQL Database", "PostgreSQL", "Stores clients, parcels, devices, sensor records, alerts, harvests")
+skinparam componentStyle rectangle
+skinparam rectangle {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    FontColor #0066CC
+}
 
-Container(analytics, "Analytics Engine", "Python / Spark", "Calculates averages and sustainability scores")
+title <color:#0066CC><size:18>AgroTech IoT - Components Diagram (Part 1: Business Services)</size></color>
 
-Container(webapp, "Web Application", "React / Angular", "Provides UI for dashboards, maps, and authentication")
+' ==================== SERVICIOS DE NEGOCIO ====================
+Container_Boundary(backend, "Backend Services") {
+    
+    Container_Boundary(iam, "IAM Service") {
+        Component(iamApi, "REST API", "ASP.NET Core", "AuthenticationController, UsersController")
+        Component(userCommand, "UserCommandService", ".NET Service", "Handles SignIn and SignUp commands")
+        Component(userQuery, "UserQueryService", ".NET Service", "Handles user queries")
+        Component(facade, "IamContextFacade", ".NET Service", "ACL Facade for other contexts")
+        Component(tokenService, "TokenService", "JWT Service", "Generates and validates JWT tokens")
+        Component(hashingService, "HashingService", "BCrypt Service", "Hashes and verifies passwords")
+        Component(userRepository, "UserRepository", "EF Core", "User data access")
+    }
+    
+    Container_Boundary(profile, "Profile Service") {
+        Component(profileApi, "REST API", "ASP.NET Core", "ProfilesController")
+        Component(profileCommand, "ProfileCommandService", ".NET Service", "Handles profile commands")
+        Component(profileQuery, "ProfileQueryService", ".NET Service", "Handles profile queries")
+        Component(profileRepository, "ProfileRepository", "EF Core", "Profile data access")
+    }
+    
+    Container_Boundary(commercial, "Commercial Service") {
+        Component(commercialApi, "REST API", "ASP.NET Core", "OrdersController, ProductsController")
+        Component(orderService, "OrderService", ".NET Service", "Order management")
+        Component(productService, "ProductService", ".NET Service", "Product management")
+        Component(orderRepository, "OrderRepository", "EF Core", "Order data access")
+        Component(productRepository, "ProductRepository", "EF Core", "Product data access")
+    }
+    
+    Container_Boundary(monitoring, "Monitoring Service") {
+        Component(monitoringApi, "REST API", "ASP.NET Core", "FieldsController, DevicesController")
+        Component(fieldCommand, "FieldCommandService", ".NET Service", "Handles field commands")
+        Component(fieldQuery, "FieldQueryService", ".NET Service", "Handles field queries")
+        Component(deviceCommand, "DeviceCommandService", ".NET Service", "Handles device commands")
+        Component(deviceQuery, "DeviceQueryService", ".NET Service", "Handles device queries")
+        Component(fieldRepository, "FieldRepository", "EF Core", "Field data access")
+        Component(deviceRepository, "DeviceRepository", "EF Core", "Device data access")
+    }
+}
 
-System_Ext(iot_device, "IoT Device", "Hardware sensor", "Collects humidity, temperature, pH, nutrients")
+' ==================== BASE DE DATOS ====================
+ContainerDb(mysqlDb, "MySQL Database", "MySQL 8.0", "Main system database")
 
-Rel(webapp, clientService, "Uses", "REST/JSON")
-Rel(webapp, subscriptionService, "Manages subscriptions", "REST/JSON")
-Rel(webapp, parcelService, "Manages parcels", "REST/JSON")
-Rel(webapp, alertService, "Checks alerts", "REST/JSON")
-Rel(webapp, notificationService, "Receives notifications", "REST/JSON")
+' ==================== EXTERNOS ====================
+System_Ext(client, "Client", "Web/Mobile Frontend")
+System_Ext(weatherApi, "Weather API", "External service")
+System_Ext(satelliteApi, "Satellite API", "External service")
+System_Ext(paymentGateway, "Payment Gateway", "External service")
 
-Rel(iot_device, deviceService, "Sends telemetry", "MQTT/HTTP")
-Rel(deviceService, sensorDataRawService, "Stores raw sensor data", "REST/JSON")
-Rel(sensorDataRawService, analytics, "Sends raw data", "REST")
-Rel(analytics, snapshotService, "Returns averages", "REST")
-Rel(analytics, harvestService, "Returns sustainability scores", "REST")
-Rel(alertRuleService, alertService, "Provides rules", "REST")
-Rel(alertService, notificationService, "Triggers notifications", "REST")
-Rel(recommendationService, analytics, "Requests predictions", "REST")
+' ==================== RELACIONES - CLIENTES ====================
+Rel(client, iamApi, "Authenticates", "HTTPS/REST")
+Rel(client, profileApi, "Manages profile", "HTTPS/REST")
+Rel(client, commercialApi, "Manages orders and products", "HTTPS/REST")
+Rel(client, monitoringApi, "Manages fields and devices", "HTTPS/REST")
 
-Rel(clientService, db, "Reads/Writes", "JDBC")
-Rel(subscriptionService, db, "Reads/Writes", "JDBC")
-Rel(parcelService, db, "Reads/Writes", "JDBC")
-Rel(deviceService, db, "Reads/Writes", "JDBC")
-Rel(sensorDataRawService, db, "Reads/Writes", "JDBC")
-Rel(sensorService, db, "Reads/Writes", "JDBC")
-Rel(snapshotService, db, "Reads/Writes", "JDBC")
-Rel(harvestService, db, "Reads/Writes", "JDBC")
-Rel(alertRuleService, db, "Reads/Writes", "JDBC")
-Rel(alertService, db, "Reads/Writes", "JDBC")
-Rel(notificationService, db, "Reads/Writes", "JDBC")
-Rel(recommendationService, db, "Reads/Writes", "JDBC")
+' ==================== RELACIONES - IAM ====================
+Rel(iamApi, userCommand, "Delegates to", "Internal")
+Rel(iamApi, userQuery, "Delegates to", "Internal")
+Rel(facade, userCommand, "Uses", "Internal")
+Rel(facade, userQuery, "Uses", "Internal")
+Rel(userCommand, hashingService, "Uses", "Internal")
+Rel(userCommand, tokenService, "Uses", "Internal")
+Rel(userCommand, userRepository, "Uses", "Internal")
+Rel(userQuery, userRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - PROFILE ====================
+Rel(profileApi, profileCommand, "Delegates to", "Internal")
+Rel(profileApi, profileQuery, "Delegates to", "Internal")
+Rel(profileCommand, profileRepository, "Uses", "Internal")
+Rel(profileQuery, profileRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - COMMERCIAL ====================
+Rel(commercialApi, orderService, "Delegates to", "Internal")
+Rel(commercialApi, productService, "Delegates to", "Internal")
+Rel(orderService, orderRepository, "Uses", "Internal")
+Rel(orderService, productRepository, "Uses", "Internal")
+Rel(productService, productRepository, "Uses", "Internal")
+Rel(orderService, paymentGateway, "Processes payment", "REST API")
+
+' ==================== RELACIONES - MONITORING ====================
+Rel(monitoringApi, fieldCommand, "Delegates to", "Internal")
+Rel(monitoringApi, fieldQuery, "Delegates to", "Internal")
+Rel(monitoringApi, deviceCommand, "Delegates to", "Internal")
+Rel(monitoringApi, deviceQuery, "Delegates to", "Internal")
+Rel(fieldCommand, fieldRepository, "Uses", "Internal")
+Rel(fieldQuery, fieldRepository, "Uses", "Internal")
+Rel(deviceCommand, deviceRepository, "Uses", "Internal")
+Rel(deviceQuery, deviceRepository, "Uses", "Internal")
+Rel(fieldCommand, weatherApi, "Gets weather data", "REST API")
+Rel(fieldCommand, satelliteApi, "Gets satellite images", "REST API")
+
+' ==================== RELACIONES - BASE DE DATOS ====================
+Rel(userRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(profileRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(orderRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(productRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(fieldRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(deviceRepository, mysqlDb, "Reads/Writes", "EF Core")
+
+@enduml
+```
+
+#### 4.6.4.1 Support Services
+```plantuml
+@startuml
+!include <C4/C4_Component.puml>
+
+' ==================== CONFIGURACIÓN ====================
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam class {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
+}
+
+skinparam componentStyle rectangle
+skinparam rectangle {
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    FontColor #0066CC
+}
+
+title <color:#0066CC><size:18>AgroTech IoT - Components Diagram (Part 2: Support Services)</size></color>
+
+' ==================== SERVICIOS DE SOPORTE ====================
+Container_Boundary(backend, "Backend Services") {
+    
+    Container_Boundary(stock, "Stock Service") {
+        Component(stockApi, "REST API", "ASP.NET Core", "InventoriesController")
+        Component(stockService, "StockService", ".NET Service", "Inventory management")
+        Component(inventoryRepository, "InventoryRepository", "EF Core", "Inventory data access")
+    }
+    
+    Container_Boundary(notification, "Notification Service") {
+        Component(notificationApi, "REST API", "ASP.NET Core", "NotificationsController")
+        Component(notificationService, "NotificationService", ".NET Service", "Notification management")
+        Component(notificationRepository, "NotificationRepository", "EF Core", "Notification data access")
+    }
+    
+    Container_Boundary(community, "Community Service") {
+        Component(communityApi, "REST API", "ASP.NET Core", "CommunityProfilesController, CommentsController")
+        Component(communityProfileService, "CommunityProfileService", ".NET Service", "Community profile management")
+        Component(commentService, "CommentService", ".NET Service", "Comment management")
+        Component(communityProfileRepository, "CommunityProfileRepository", "EF Core", "Community profile data access")
+        Component(commentRepository, "CommentRepository", "EF Core", "Comment data access")
+    }
+
+    Container_Boundary(analytics, "Analytics Service") {
+        Component(analyticsApi, "REST API", "ASP.NET Core", "ReportsController")
+        Component(reportCommand, "ReportCommandService", ".NET Service", "Handles report commands")
+        Component(reportQuery, "ReportQueryService", ".NET Service", "Handles report queries")
+        Component(reportRepository, "ReportRepository", "EF Core", "Report data access")
+    }
+
+    Container_Boundary(shared, "Shared Kernel") {
+        Component(appDbContext, "AppDbContext", "EF Core", "Database context")
+        Component(unitOfWork, "UnitOfWork", ".NET Service", "Transaction management")
+        Component(baseRepository, "BaseRepository<T>", "EF Core", "Generic CRUD operations")
+        Component(auditableInterceptor, "AuditableEntityInterceptor", "EF Core", "Audit timestamp management")
+        Component(middleware, "Global Exception Middleware", "ASP.NET Core", "Global error handling")
+    }
+}
+
+' ==================== BASE DE DATOS ====================
+ContainerDb(mysqlDb, "MySQL Database", "MySQL 8.0", "Main system database")
+
+' ==================== EXTERNOS ====================
+System_Ext(client, "Client", "Web/Mobile Frontend")
+
+' ==================== RELACIONES - CLIENTES ====================
+Rel(client, stockApi, "Manages inventory", "HTTPS/REST")
+Rel(client, notificationApi, "Reads notifications", "HTTPS/REST")
+Rel(client, communityApi, "Manages community", "HTTPS/REST")
+Rel(client, analyticsApi, "Views reports", "HTTPS/REST")
+
+' ==================== RELACIONES - STOCK ====================
+Rel(stockApi, stockService, "Delegates to", "Internal")
+Rel(stockService, inventoryRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - NOTIFICATION ====================
+Rel(notificationApi, notificationService, "Delegates to", "Internal")
+Rel(notificationService, notificationRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - COMMUNITY ====================
+Rel(communityApi, communityProfileService, "Delegates to", "Internal")
+Rel(communityApi, commentService, "Delegates to", "Internal")
+Rel(communityProfileService, communityProfileRepository, "Uses", "Internal")
+Rel(commentService, commentRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - ANALYTICS ====================
+Rel(analyticsApi, reportCommand, "Delegates to", "Internal")
+Rel(analyticsApi, reportQuery, "Delegates to", "Internal")
+Rel(reportCommand, reportRepository, "Uses", "Internal")
+Rel(reportQuery, reportRepository, "Uses", "Internal")
+
+' ==================== RELACIONES - SHARED KERNEL ====================
+Rel(appDbContext, auditableInterceptor, "Uses", "Internal")
+Rel(baseRepository, appDbContext, "Uses", "Internal")
+Rel(unitOfWork, appDbContext, "Uses", "Internal")
+Rel(appDbContext, mysqlDb, "Reads/Writes", "EF Core")
+
+' ==================== RELACIONES - BASE DE DATOS ====================
+Rel(inventoryRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(notificationRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(communityProfileRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(commentRepository, mysqlDb, "Reads/Writes", "EF Core")
+Rel(reportRepository, mysqlDb, "Reads/Writes", "EF Core")
 
 @enduml
 ```
@@ -641,229 +874,221 @@ Rel(recommendationService, db, "Reads/Writes", "JDBC")
 
 ```plantuml
 @startuml
-!theme plain
-scale 1/4
-
-!theme plain
-
-' ==================== DARK THEME CONFIGURATION ====================
-skinparam backgroundColor #1A1B26
-skinparam defaultFontColor #A9B1D6
-skinparam classFontColor #C0CAF5
-skinparam classAttributeFontColor #9AA5CE
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontColor #333333
+skinparam classFontColor #1A1A1A
+skinparam classAttributeFontColor #555555
 skinparam class {
-    BackgroundColor #24283B
-    BorderColor #414868
-    HeaderBackgroundColor #1F2335
-    HeaderFontColor #7DCFFF
-    FontColor #C0CAF5
-}
-
-skinparam stereotype {
-    BackgroundColor #1A1B26
-    BorderColor #565F89
-    FontColor #7DCFFF
+    BackgroundColor #F8F9FA
+    BorderColor #DEE2E6
+    HeaderBackgroundColor #E9ECEF
+    HeaderFontColor #0066CC
+    FontColor #1A1A1A
 }
 
 skinparam arrow {
-    Color #565F89
-    FontColor #787C99
+    Color #6C757D
+    FontColor #495057
     Thickness 1
 }
 
-skinparam note {
-    BackgroundColor #24283B
-    BorderColor #414868
-    FontColor #A9B1D6
+skinparam package {
+    BackgroundColor #F8F9FA
+    BorderColor #ADB5BD
+    FontColor #0066CC
 }
 
-title <color:#7DCFFF><size:16>AgroTech - Class Diagram</size></color>
+title <color:#0066CC><size:18>AgroTech IoT - Class Diagram</size></color>
 
-' ==================== BUSINESS LAYER ====================
-class Client {
-    - idClient: String <<PK>>
-    - name: String
-    - email: String
-    - password: String
-    - role: String
-    - createdAt: LocalDateTime
-    --
-    + login()
-    + updateProfile()
+hide empty members
+
+' ==================== SHARED KERNEL ====================
+package "Shared Kernel" {
+    interface IAuditableEntity {
+        + CreatedAt : DateTimeOffset?
+        + UpdatedAt : DateTimeOffset?
+    }
+    interface IBaseRepository<T> {
+        + AddAsync(T) : Task
+        + FindByIdAsync(int) : Task<T?>
+        + Update(T) : void
+        + Remove(T) : void
+        + ListAsync() : Task<IEnumerable<T>>
+    }
+    interface IUnitOfWork {
+        + CompleteAsync() : Task
+    }
 }
 
-class SubscriptionPlan {
-    - idPlan: String <<PK>>
-    - name: String
-    - price: Double
-    - iotLimit: Int
-    - features: String
-    --
-    + getPrice()
+' ==================== IAM ====================
+package "IAM" {
+    class User {
+        + Id : int
+        + Email : Email
+        - PasswordHash : string
+    }
+    class Email <<ValueObject>> {
+        + Value : string
+    }
 }
 
-class UserSubscription {
-    - idUserSubscription: String <<PK>>
-    - startDate: LocalDateTime
-    - endDate: LocalDateTime
-    - paymentStatus: String
-    - idPlan: String <<FK>>
-    - idUser: String <<FK>>
-    --
-    + isActive()
-    + renew()
+' ==================== PROFILE ====================
+package "Profile" {
+    class Profile {
+        + Id : int
+        + UserId : int
+        + FundoName : string
+        + ContactPhone : string
+        + MoistureThreshold : double
+        + TempThreshold : double
+    }
 }
 
-' ==================== PHYSICAL LAYER ====================
-class Parcel {
-    - idParcel: String <<PK>>
-    - name: String
-    - latitude: Double
-    - longitude: Double
-    - altitude: Double
-    - category: String
-    - idClient: String <<FK>>
-    --
-    + getLocation()
+' ==================== MONITORING ====================
+package "Monitoring" {
+    class Field {
+        + Id : int
+        + ProfileId : int
+        + Name : string
+        + SizeM2 : double
+        + SoilType : string
+        + Latitude : double
+        + Longitude : double
+    }
+    class Device {
+        + Id : int
+        + FieldId : int
+        + MacAddress : string
+        + Status : string
+        + LastSync : DateTimeOffset
+    }
 }
 
-class Device {
-    - idDevice: String <<PK>>
-    - status: String
-    - battery: Double
-    - version: String
-    - lastConnection: LocalDateTime
-    - idParcel: String <<FK>>
-    --
-    + sendData()
-    + checkBattery()
+' ==================== COMMERCIAL ====================
+package "Commercial" {
+    class Order {
+        + Id : int
+        + ProfileId : string
+        + ProductId : int
+        + Quantity : int
+        + TotalAmount : decimal
+        + Status : OrderStatus
+        + PaymentMethod : PaymentMethod
+    }
+    class Product {
+        + Id : int
+        + Name : string
+        + Description : string
+        + Price : decimal
+        + Type : string
+    }
+    enum OrderStatus {
+        Pending
+        Validated
+        Paid
+        Completed
+        Cancelled
+    }
+    enum PaymentMethod {
+        CreditCard
+        DebitCard
+        PayPal
+        BankTransfer
+    }
 }
 
-' ==================== RAW SENSOR DATA ====================
-class SensorDataRaw {
-    - idSensorDataRaw: String <<PK>>
-    - rawHumidity: Double
-    - rawTemperature: Double
-    - rawPhLevel: Double
-    - rawNitrogen: Double
-    - rawPhosphorus: Double
-    - rawPotassium: Double
-    - receivedAt: LocalDateTime
-    - idDevice: String <<FK>>
-    --
-    + validate()
-    + cleanData()
+' ==================== STOCK ====================
+package "Stock" {
+    class Inventory {
+        + Id : int
+        + ProductId : int
+        + StockQuantity : int
+        + WarehouseLocation : string
+    }
 }
 
-' ==================== ANALYTICS LAYER ====================
-class SensorRecord {
-    - idSensorRecord: String <<PK>>
-    - humidity: Double
-    - temperature: Double
-    - phLevel: Double
-    - nitrogen: Double
-    - phosphorus: Double
-    - potassium: Double
-    - recordedAt: LocalDateTime
-    - idDevice: String <<FK>>
-    --
-    + getNutrients()
+' ==================== NOTIFICATION ====================
+package "Notification" {
+    class Notification {
+        + Id : int
+        + ProfileId : int
+        + Title : string
+        + Message : string
+        + IsRead : bool
+        + IsAlert : bool
+    }
 }
 
-class PlotSnapshot {
-    - idSnapshot: String <<PK>>
-    - avgHumidity: Double
-    - avgTemperature: Double
-    - avgPH: Double
-    - recordedAt: LocalDateTime
-    - idParcel: String <<FK>>
-    --
-    + calculateAverages()
+' ==================== COMMUNITY ====================
+package "Community" {
+    class CommunityProfile {
+        + Id : int
+        + ProfileId : string
+        + Nickname : string
+        + ReputationScore : int
+        + PublicBio : string
+        + VisibilityStatus : VisibilityStatus
+    }
+    class Comment {
+        + Id : int
+        + AuthorProfileId : string
+        + TargetProfileId : string
+        + Content : string
+        + Rating : int
+    }
+    enum VisibilityStatus {
+        Public
+        Private
+        Hidden
+    }
 }
 
-' ==================== OUTCOMES ====================
-class Harvest {
-    - idHarvest: String <<PK>>
-    - quantity: Double
-    - harvestDate: LocalDateTime
-    - sustainabilityScore: Double
-    - idParcel: String <<FK>>
-    --
-    + calculateScore()
+' ==================== ANALYTICS ====================
+package "Analytics" {
+    class Report {
+        + Id : int
+        + DeviceId : int
+        + GeneratedAt : DateTimeOffset
+        + MeanValue : double
+        + Variance : double
+        + StandardDeviation : double
+        + TechnicalInterpretation : string
+    }
 }
 
-' ==================== ALERTS ====================
-class AlertRule {
-    - idAlertRule: String <<PK>>
-    - name: String
-    - condition: String
-    - thresholdMin: Double
-    - thresholdMax: Double
-    - severity: String
-    - isActive: Boolean
-    --
-    + evaluate()
-}
+' ==================== RELATIONSHIPS ===================
+User --> Email
+User ..|> IAuditableEntity
+User --> Profile
 
-class Alert {
-    - idAlert: String <<PK>>
-    - type: String
-    - severity: String
-    - message: String
-    - isResolved: Boolean
-    - createdAt: LocalDateTime
-    - idParcel: String <<FK>>
-    - idAlertRule: String <<FK>>
-    --
-    + resolve()
-}
+Profile ..|> IAuditableEntity
+Profile --> Field
+Profile --> Order
+Profile --> Notification
+Profile --> CommunityProfile
 
-class Notification {
-    - idNotification: String <<PK>>
-    - channel: String
-    - sentAt: LocalDateTime
-    - readAt: LocalDateTime
-    - status: String
-    - idAlert: String <<FK>>
-    - idClient: String <<FK>>
-    --
-    + send()
-    + markAsRead()
-}
+Field ..|> IAuditableEntity
+Device ..|> IAuditableEntity
+Field --> Device
 
-' ==================== RECOMMENDATIONS ====================
-class Recommendation {
-    - idRecommendation: String <<PK>>
-    - title: String
-    - description: String
-    - recommendedAction: String
-    - createdAt: LocalDateTime
-    - expiresAt: LocalDateTime
-    - isApplied: Boolean
-    - idParcel: String <<FK>>
-    --
-    + apply()
-    + discard()
-}
+Order ..|> IAuditableEntity
+Product ..|> IAuditableEntity
+Order --> OrderStatus
+Order --> PaymentMethod
+Product --> Order
+Product --> Inventory
 
-' ==================== RELATIONSHIPS ====================
-Client ||--o{ Parcel : owns
-Client ||--|| UserSubscription : has
-Client ||--o{ Notification : receives
+Inventory ..|> IAuditableEntity
 
-SubscriptionPlan ||--o{ UserSubscription : includes
+Notification ..|> IAuditableEntity
 
-Parcel ||--o{ Device : contains
-Parcel ||--o{ PlotSnapshot : generates
-Parcel ||--o{ Harvest : produces
-Parcel ||--o{ Alert : triggers
-Parcel ||--o{ Recommendation : receives
+CommunityProfile ..|> IAuditableEntity
+Comment ..|> IAuditableEntity
+CommunityProfile --> VisibilityStatus
+CommunityProfile --> Comment
 
-Device ||--o{ SensorDataRaw : produces
-SensorDataRaw ||--|| SensorRecord : cleanedInto
-
-AlertRule ||--o{ Alert : defines
-Alert ||--o{ Notification : generates
+Report ..|> IAuditableEntity
+Device --> Report
 
 @enduml
 ```
@@ -879,56 +1104,76 @@ Alert ||--o{ Notification : generates
 </thead>
 <tbody>
 <tr>
-<td><code>Client</code></td>
-<td>Entidad que representa un cliente del sistema, con información como nombre, email, contraseña, rol y fecha de creación. Permite inicio de sesión y actualización de perfil.</td>
+<td><code>User</code></td>
+<td>Entidad que representa un usuario del sistema, con información como email, contraseña cifrada y fechas de creación/actualización. Permite autenticación y gestión de credenciales.</td>
 </tr>
 <tr>
-<td><code>SubscriptionPlan</code></td>
-<td>Entidad que define un plan de suscripción, incluyendo nombre, precio, límite de dispositivos IoT y características incluidas.</td>
+<td><code>Email</code></td>
+<td>Value Object que encapsula la dirección de correo electrónico del usuario, garantizando su formato y validez.</td>
 </tr>
 <tr>
-<td><code>UserSubscription</code></td>
-<td>Entidad que vincula un cliente con un plan de suscripción, gestionando fechas de inicio y fin, estado de pago, y permitiendo verificar si está activa o renovarla.</td>
+<td><code>Profile</code></td>
+<td>Entidad que representa el perfil agrícola de un usuario, incluyendo nombre del fundo, teléfono de contacto y umbrales configurados de humedad y temperatura para alertas.</td>
 </tr>
 <tr>
-<td><code>Parcel</code></td>
-<td>Entidad que representa una parcela agrícola, con datos de ubicación (latitud, longitud, altitud), nombre, categoría y relación con el cliente propietario.</td>
+<td><code>Field</code></td>
+<td>Entidad que representa una parcela o terreno agrícola, con datos de ubicación (latitud, longitud), nombre, tamaño en metros cuadrados y tipo de suelo.</td>
 </tr>
 <tr>
 <td><code>Device</code></td>
-<td>Entidad que representa un dispositivo IoT instalado en una parcela, con estado, nivel de batería, versión de software y última conexión. Puede enviar datos y verificar batería.</td>
+<td>Entidad que representa un dispositivo IoT instalado en una parcela, con dirección MAC, estado operativo y fecha de última sincronización.</td>
 </tr>
 <tr>
-<td><code>SensorDataRaw</code></td>
-<td>Entidad que almacena los datos crudos recibidos de los sensores antes de su limpieza y procesamiento. Permite validación y limpieza de datos.</td>
+<td><code>Report</code></td>
+<td>Entidad que almacena reportes estadísticos generados a partir de datos de dispositivos IoT, incluyendo promedio, varianza, desviación estándar e interpretación técnica.</td>
 </tr>
 <tr>
-<td><code>SensorRecord</code></td>
-<td>Entidad que almacena las lecturas procesadas de sensores de un dispositivo, incluyendo humedad, temperatura, nivel de pH, nitrógeno, fósforo y potasio.</td>
+<td><code>Product</code></td>
+<td>Entidad que define los productos y servicios ofrecidos por la plataforma, incluyendo nombre, descripción, precio y tipo de producto.</td>
 </tr>
 <tr>
-<td><code>PlotSnapshot</code></td>
-<td>Entidad que representa un resumen analítico de una parcela en un momento dado, con valores promedio de humedad, temperatura y pH.</td>
+<td><code>Order</code></td>
+<td>Entidad que registra las órdenes de compra realizadas por los perfiles, incluyendo producto adquirido, estado del pedido, método de pago y monto total.</td>
 </tr>
 <tr>
-<td><code>Harvest</code></td>
-<td>Entidad que registra una cosecha, con cantidad producida, fecha y puntuación de sostenibilidad calculada en base a parámetros definidos.</td>
+<td><code>OrderStatus</code></td>
+<td>Enumeración que define los posibles estados de una orden: Pendiente, Validado, Pagado, Completado o Cancelado.</td>
 </tr>
 <tr>
-<td><code>AlertRule</code></td>
-<td>Entidad que define las reglas y umbrales para generar alertas, incluyendo condiciones, umbrales mínimo y máximo, gravedad y estado de actividad.</td>
+<td><code>PaymentMethod</code></td>
+<td>Enumeración que define los métodos de pago disponibles: Tarjeta de Crédito, Tarjeta de Débito, PayPal o Transferencia Bancaria.</td>
 </tr>
 <tr>
-<td><code>Alert</code></td>
-<td>Entidad que representa una alerta generada por condiciones anormales en una parcela, con tipo, severidad, mensaje y estado de resolución.</td>
+<td><code>Inventory</code></td>
+<td>Entidad que gestiona el inventario disponible de cada producto, incluyendo cantidad en stock y ubicación del almacén.</td>
 </tr>
 <tr>
 <td><code>Notification</code></td>
-<td>Entidad que gestiona el envío de notificaciones a clientes basadas en alertas, con canal de envío, estado de lectura y seguimiento de entrega.</td>
+<td>Entidad que registra las notificaciones y alertas enviadas a los perfiles, incluyendo título, mensaje, indicador de alerta y estado de lectura.</td>
 </tr>
 <tr>
-<td><code>Recommendation</code></td>
-<td>Entidad que representa una recomendación generada para una parcela basada en análisis de datos, incluyendo título, descripción, acción recomendada y estado de aplicación.</td>
+<td><code>CommunityProfile</code></td>
+<td>Entidad que representa el perfil público del agricultor dentro de la comunidad, incluyendo apodo, biografía, puntuación de reputación y configuración de visibilidad.</td>
+</tr>
+<tr>
+<td><code>Comment</code></td>
+<td>Entidad que registra los comentarios realizados entre perfiles de la comunidad, almacenando autor, destinatario, contenido y calificación.</td>
+</tr>
+<tr>
+<td><code>VisibilityStatus</code></td>
+<td>Enumeración que define el estado de visibilidad de un perfil comunitario: Público, Privado u Oculto.</td>
+</tr>
+<tr>
+<td><code>IAuditableEntity</code></td>
+<td>Interfaz que define las propiedades de auditoría para las entidades, incluyendo fechas de creación y actualización.</td>
+</tr>
+<tr>
+<td><code>IBaseRepository&lt;T&gt;</code></td>
+<td>Interfaz que define las operaciones básicas de repositorio para una entidad: agregar, buscar por ID, actualizar, eliminar y listar.</td>
+</tr>
+<tr>
+<td><code>IUnitOfWork</code></td>
+<td>Interfaz que implementa el patrón Unit of Work para gestionar transacciones y persistencia de datos.</td>
 </tr>
 </tbody>
 </table>
@@ -940,7 +1185,6 @@ Alert ||--o{ Notification : generates
 ```plantuml
 @startuml
 ' ==================== LIGHT THEME CONFIGURATION ====================
-scale 1/4
 skinparam backgroundColor #FFFFFF
 skinparam defaultFontColor #333333
 skinparam classFontColor #1A1A1A
@@ -965,152 +1209,158 @@ skinparam arrow {
     Thickness 1
 }
 
-skinparam note {
-    BackgroundColor #FFF3CD
-    BorderColor #FFEEBA
-    FontColor #856404
-}
-
 title <color:#0066CC><size:18>AgroTech IoT - Database Diagram</size></color>
 
+!define table(x) class x << (T,#F8F9FA) >>
+!define primary_key(x) <b><color:#0066CC>x</color></b>
+!define foreign_key(x) <color:#28A745>x</color>
 
-entity User {
-    * user_id : String
-    --
-    * email : String
-    * password_hash : String
+hide methods
+hide stereotypes
+
+table(users) {
+  * primary_key(id) : INT
+  --
+  email_address : VARCHAR(255) UNIQUE
+  password_hash : TEXT
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Profile {
-    * profile_id : String
-    --
-    * user_id : String <<FK>>
-    * fundo_name : String
-    * contact_phone : String
-    * moisture_threshold : Number
-    * temp_threshold : Number
+table(profiles) {
+  * primary_key(id) : INT
+  --
+  foreign_key(user_id) : INT
+  fundo_name : TEXT
+  contact_phone : TEXT
+  moisture_threshold : DOUBLE
+  temp_threshold : DOUBLE
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Community_profile {
-    * community_profile_id : String
-    --
-    * profile_id : String <<FK>>
-    * nickname : String
-    * reputation_score : Number
-    * public_bio : String
-    * visibility_status : Boolean
+table(fields) {
+  * primary_key(id) : INT
+  --
+  foreign_key(profile_id) : INT
+  name : VARCHAR(100)
+  size_m2 : DOUBLE
+  soil_type : VARCHAR(50)
+  latitude : DOUBLE
+  longitude : DOUBLE
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Comment {
-    * comment_id : String
-    --
-    * author_profile_id : String <<FK>>
-    * target_profile_id : String <<FK>>
-    * content : String
-    * created_at : Date
+table(devices) {
+  * primary_key(id) : INT
+  --
+  foreign_key(field_id) : INT
+  mac_address : VARCHAR(17)
+  status : VARCHAR(20)
+  last_sync : DATETIME
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Subscription {
-    * subscription_id : String
-    --
-    * profile_id : String <<FK>>
-    * product_id : String <<FK>>
-    * order_id : String <<FK>>
-    * start_date : Date
-    * end_date : Date
-    * status : String
-    * auto_renew : Boolean
+table(reports) {
+  * primary_key(id) : INT
+  --
+  foreign_key(device_id) : INT
+  generated_at : DATETIME
+  mean_value : DOUBLE
+  variance : DOUBLE
+  standard_deviation : DOUBLE
+  technical_interpretation : VARCHAR(500)
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Order {
-    * order_id : String
-    --
-    * profile_id : String <<FK>>
-    * product_id : String <<FK>>
-    * status : String
-    * total_amount : Number
-    * created_at : Date
+table(products) {
+  * primary_key(id) : INT
+  --
+  name : VARCHAR(255)
+  description : VARCHAR(1000)
+  price : DECIMAL(18,2)
+  type : VARCHAR(50)
+  image_url : VARCHAR(500)
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Product {
-    * product_id : String
-    --
-    * name : String
-    * description : String
-    * price : Number
-    * type : String
+table(orders) {
+  * primary_key(id) : INT
+  --
+  foreign_key(profile_id) : VARCHAR(255)
+  foreign_key(product_id) : INT
+  product_name : VARCHAR(255)
+  quantity : INT
+  total_amount : DECIMAL(18,2)
+  status : INT
+  payment_method : INT
+  is_subscription : BOOLEAN
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Field {
-    * field_id : String
-    --
-    * profile_id : String <<FK>>
-    * name : String
-    * size_m2 : Number
-    * soil_type : String
-    * location_lat_long : String
+table(inventories) {
+  * primary_key(id) : INT
+  --
+  foreign_key(product_id) : INT
+  stock_quantity : INT
+  warehouse_location : VARCHAR(255)
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Device {
-    * device_id : String
-    --
-    * field_id : String <<FK>>
-    * mac_address : String
-    * status : String
-    * last_sync : Date
+table(notifications) {
+  * primary_key(id) : INT
+  --
+  foreign_key(profile_id) : INT
+  title : VARCHAR(255)
+  message : VARCHAR(1000)
+  is_read : BOOLEAN
+  is_alert : BOOLEAN
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Report {
-    * report_id : String
-    --
-    * device_id : String <<FK>>
-    * generated_at : Date
-    * mean_value : Number
-    * variance : Number
-    * standard_deviation : Number
-    * technical_interpretation : String
+table(community_profiles) {
+  * primary_key(id) : INT
+  --
+  foreign_key(profile_id) : VARCHAR(50)
+  nickname : VARCHAR(100)
+  reputation_score : INT
+  public_bio : VARCHAR(500)
+  visibility_status : INT
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Inventory {
-    * inventory_id : String
-    --
-    * product_id : String <<FK>>
-    * stock_quantity : Number
-    * warehouse_location : String
+table(comments) {
+  * primary_key(id) : INT
+  --
+  foreign_key(author_profile_id) : VARCHAR(50)
+  foreign_key(target_profile_id) : VARCHAR(50)
+  content : VARCHAR(1000)
+  rating : INT
+  created_at : DATETIME
+  updated_at : DATETIME
 }
 
-entity Notification {
-    * notification_id : String
-    --
-    * profile_id : String <<FK>>
-    * title : String
-    * message : String
-    * is_alert : Boolean
-    * is_read : Boolean
-}
+' ==================== RELATIONSHIPS ====================
+users ||--|| profiles
+profiles ||--o{ fields
+profiles ||--o{ orders
+profiles ||--o{ notifications
+profiles ||--|| community_profiles
+community_profiles ||--o{ comments
 
-' Relationships
-User ||--|| Profile
+products ||--o{ orders
+products ||--|| inventories
 
-' Operational Hub (Profile)
-Profile ||--|| Community_profile
-Profile ||--o{ Order
-Profile ||--o{ Subscription
-Profile ||--o{ Notification
-Profile ||--o{ Field
-
-' Social Interaction
-Community_profile ||--o{ Comment
-Community_profile ||--o{ Comment
-
-' Logic Connections
-Order }o--|| Product
-Subscription }o--|| Product
-Subscription ||--|| Order
-
-Field ||--o{ Device
-Device ||--o{ Report
-Product ||--|| Inventory
+fields ||--o{ devices
+devices ||--o{ reports
 
 @enduml
 ```
@@ -1125,62 +1375,57 @@ Product ||--|| Inventory
 </thead>
 <tbody>
 <tr>
-<td><code>user</code></td>
-<td>Almacena las credenciales principales de acceso al sistema, incluyendo correo electrónico y contraseña cifrada de cada usuario registrado.</td>
+<td><code>users</code></td>
+<td>Almacena las credenciales principales de acceso al sistema, incluyendo dirección de correo electrónico única y contraseña cifrada de cada usuario registrado.</td>
 </tr>
 
 <tr>
-<td><code>profile</code></td>
-<td>Contiene la información del perfil agrícola asociado a cada usuario, como nombre del fundo, teléfono de contacto y los umbrales configurados de humedad y temperatura.</td>
+<td><code>profiles</code></td>
+<td>Contiene la información del perfil agrícola asociado a cada usuario, como nombre del fundo, teléfono de contacto y los umbrales configurados de humedad y temperatura para alertas.</td>
 </tr>
 
 <tr>
-<td><code>community_profile</code></td>
+<td><code>community_profiles</code></td>
 <td>Representa el perfil público del agricultor dentro de la comunidad, incluyendo apodo, biografía, puntuación de reputación y configuración de visibilidad.</td>
 </tr>
 
 <tr>
-<td><code>comment</code></td>
-<td>Registra los comentarios realizados entre perfiles de la comunidad, almacenando autor, destinatario, contenido y fecha de creación.</td>
+<td><code>comments</code></td>
+<td>Registra los comentarios realizados entre perfiles de la comunidad, almacenando autor, destinatario, contenido, calificación y fecha de creación.</td>
 </tr>
 
 <tr>
-<td><code>product</code></td>
-<td>Define los productos y servicios ofrecidos por la plataforma, incluyendo nombre, descripción, precio y tipo de producto.</td>
+<td><code>products</code></td>
+<td>Define los productos y servicios ofrecidos por la plataforma, incluyendo nombre, descripción, precio, tipo de producto e imagen URL.</td>
 </tr>
 
 <tr>
-<td><code>order</code></td>
-<td>Registra las órdenes de compra realizadas por los perfiles, incluyendo producto adquirido, estado del pedido, monto total y fecha de creación.</td>
+<td><code>orders</code></td>
+<td>Registra las órdenes de compra realizadas por los perfiles, incluyendo producto adquirido, nombre del producto, cantidad, monto total, estado, método de pago e indicador de suscripción.</td>
 </tr>
 
 <tr>
-<td><code>subscription</code></td>
-<td>Gestiona las suscripciones de los perfiles a productos o servicios, incluyendo fechas de inicio y fin, estado y configuración de renovación automática.</td>
-</tr>
-
-<tr>
-<td><code>field</code></td>
-<td>Almacena los terrenos o parcelas agrícolas administradas por cada perfil, incluyendo nombre, tamaño en metros cuadrados, tipo de suelo y ubicación geográfica.</td>
-</tr>
-
-<tr>
-<td><code>device</code></td>
-<td>Registra los dispositivos IoT instalados en cada parcela, con dirección MAC, estado operativo y fecha de última sincronización.</td>
-</tr>
-
-<tr>
-<td><code>report</code></td>
-<td>Almacena los reportes estadísticos generados a partir de los datos de los dispositivos IoT, incluyendo promedio, varianza, desviación estándar e interpretación técnica.</td>
-</tr>
-
-<tr>
-<td><code>inventory</code></td>
+<td><code>inventories</code></td>
 <td>Gestiona el inventario disponible de cada producto, incluyendo cantidad en stock y ubicación del almacén.</td>
 </tr>
 
 <tr>
-<td><code>notification</code></td>
+<td><code>fields</code></td>
+<td>Almacena los terrenos o parcelas agrícolas administradas por cada perfil, incluyendo nombre, tamaño en metros cuadrados, tipo de suelo y ubicación geográfica (latitud y longitud).</td>
+</tr>
+
+<tr>
+<td><code>devices</code></td>
+<td>Registra los dispositivos IoT instalados en cada parcela, con dirección MAC, estado operativo y fecha de última sincronización.</td>
+</tr>
+
+<tr>
+<td><code>reports</code></td>
+<td>Almacena los reportes estadísticos generados a partir de los datos de los dispositivos IoT, incluyendo promedio, varianza, desviación estándar e interpretación técnica.</td>
+</tr>
+
+<tr>
+<td><code>notifications</code></td>
 <td>Registra las notificaciones y alertas enviadas a los perfiles, incluyendo título, mensaje, indicador de alerta y estado de lectura.</td>
 </tr>
 </tbody>
