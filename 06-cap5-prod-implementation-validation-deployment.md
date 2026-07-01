@@ -1,136 +1,481 @@
-<div style="page-break-before: always;"></div>
-
-# Capítulo V: Product Implementation, Validation & Deployment
-
-## 5.1. Software Configuration Management
-
 ### 5.1.1. Software Development Environment Configuration
 
-Para garantizar un flujo de trabajo eficiente y estandarizado en el desarrollo de las soluciones de TerraTech, el equipo ha configurado un entorno de desarrollo integrado que abarca desde el diseño de la experiencia de usuario hasta el despliegue de la plataforma. Las herramientas seleccionadas son:
+Con el objetivo de garantizar un flujo de trabajo organizado, colaborativo y eficiente durante el desarrollo de la solución de TerraTech, el equipo ha definido un entorno de desarrollo que integra herramientas para la gestión del proyecto, diseño UX/UI, desarrollo de software, control de versiones, documentación y despliegue. La selección de estas herramientas responde a las tecnologías establecidas para el curso y permite mantener la consistencia durante todo el ciclo de vida del producto.
 
-- Diseño de Interfaz (UI/UX):
+A continuación, se describen las herramientas utilizadas, su propósito dentro del proyecto y la ruta oficial de acceso o descarga correspondiente.
 
-    - Figma: Utilizado como la herramienta principal para el prototipado de alta fidelidad de la aplicación web, permitiendo la colaboración en tiempo real y la definición de los flujos de usuario (User Flows) antes de la implementación.
-    - Miro: Utilizado para el diseño del Event Storming del proyecto.
-    - UXPRESSIA: Utilizado para el desarrollo de needfinding, comprensión de nuestro User Persona.
-    - Canva: Plataforma de diseño colaborativo de funcion múltiple.
+| Categoría | Herramienta | Propósito dentro del proyecto | Ruta de referencia / descarga |
+|------------|-------------|-------------------------------|-------------------------------|
+| Diseño UX/UI | Figma | Diseño de interfaces, wireframes, mockups y prototipos interactivos de la Landing Page y la Web Application. | https://www.figma.com |
+| Diseño UX/UI | Miro | Elaboración del Big Picture Event Storming y Design-Level Event Storming. | https://miro.com |
+| Investigación UX | UXPressia | Desarrollo del Needfinding, User Personas, Empathy Maps, Journey Maps e Impact Maps. | https://uxpressia.com |
+| Diseño gráfico | Canva | Elaboración de material gráfico, diagramas y recursos visuales para la documentación del proyecto. | https://www.canva.com |
+| Editor de código | Visual Studio Code | Entorno principal para el desarrollo de la Landing Page utilizando HTML, CSS y JavaScript. | https://code.visualstudio.com |
+| Editor de código | WebStorm | IDE para el desarrollo de la aplicación Frontend basada en Vue Framework. | https://www.jetbrains.com/webstorm |
+| Editor de código | Rider | IDE utilizado para el desarrollo de los servicios RESTful implementados con ASP.NET Core y C#. | https://www.jetbrains.com/rider |
+| Control de versiones | Git | Sistema distribuido de control de versiones para el seguimiento de cambios y trabajo colaborativo. | https://git-scm.com |
+| Repositorio remoto | GitHub | Plataforma para almacenar los repositorios del proyecto, gestionar Pull Requests y facilitar la colaboración entre los integrantes del equipo. | https://github.com |
+| Framework Frontend | Vue.js | Framework JavaScript utilizado para desarrollar la interfaz de usuario de la aplicación web. | https://vuejs.org |
+| Biblioteca UI | PrimeVue | Biblioteca de componentes UI basada en Material Design utilizada junto con Vue.js. | https://primevue.org |
+| Gestión de dependencias | npm | Administrador de paquetes encargado de instalar y actualizar las dependencias del proyecto Frontend. | https://www.npmjs.com |
+| Hosting | GitHub Pages | Plataforma utilizada para el despliegue de la Landing Page mediante integración continua con GitHub. | https://pages.github.com |
 
-- Editor de Código:
+Durante el desarrollo del proyecto también se emplean herramientas de apoyo que permiten mantener la calidad del código y facilitar el trabajo colaborativo:
 
-    - Visual Studio Code (VS Code): Configurado como el entorno de desarrollo (IDE) estándar para la codificación de la Landing Page y la estructura web, debido a su versatilidad y soporte de extensiones.
-    - WebStorm: IDE para desarrollo web, soporta HTML, CSS, JavaScript y frameworks modernos, perteneciente a JetBrains.
-    - Rider: IDE para desarrollo de aplicaciones .NET y C#, perteneciente a JetBrains.
+- **ESLint:** utilizado para detectar errores de sintaxis, inconsistencias y malas prácticas durante el desarrollo del código JavaScript y Vue.
 
-- Gestión de Versiones y Repositorio:
+- **Prettier:** empleado para mantener un formato uniforme del código fuente, mejorando su legibilidad y facilitando la colaboración entre los integrantes del equipo.
 
-    - Git: Empleado para el control de versiones local, facilitando el seguimiento de cambios y el trabajo colaborativo.
-    - GitHub: Plataforma en la nube utilizada para alojar el repositorio remoto, gestionar el código fuente y asegurar el respaldo del proyecto.
+- **GitHub Pull Requests:** utilizado para realizar revisiones de código antes de integrar cambios hacia las ramas principales del repositorio.
 
-- Tecnologías de Frontend y Estilizado:
+- **GitHub Issues:** empleado para registrar incidencias, tareas pendientes y mejoras propuestas durante el desarrollo del proyecto.
 
-    - Vue: frameworks de JavaScript para crear interfaces de usuario y aplicaciones web modernas.
-    - PrimeVue: un complemento de bibliotecas de componentes de interfaz de usuario diseñada para Vue.
+Como parte de la configuración del entorno de desarrollo, todos los miembros del equipo utilizan las mismas versiones de las herramientas principales, permitiendo mantener compatibilidad entre los diferentes componentes de la solución. Asimismo, el equipo sigue las buenas prácticas recomendadas para GitFlow, Conventional Commits y Semantic Versioning, garantizando una administración organizada del código fuente y de las versiones publicadas del producto.
 
-- Gestión de Dependencias y Despliegue:
-
-    - npm (Node Package Manager): Gestor de paquetes encargado de administrar las librerías y dependencias necesarias para el funcionamiento de los componentes web.
-    - GitHub Pages: Elegido como el servicio de hosting para el despliegue continuo de la Landing Page, permitiendo una visualización rápida y accesible para los stakeholders.
-
-Nota de Configuración: Con el fin de mantener un código limpio y profesional, se han integrado extensiones en VS Code como ESLint para la detección de errores de sintaxis, Prettier para el formateo consistente del código y herramientas de previsualización para el diseño IoT. Asimismo, se siguen las recomendaciones del "Conventional Commits" y "GitFlow".
+Finalmente, todas las herramientas seleccionadas cumplen con los requerimientos tecnológicos establecidos para el desarrollo del proyecto, permitiendo cubrir las actividades de Project Management, Requirements Engineering, UX/UI Design, Software Development, Software Documentation y Software Deployment durante todo el ciclo de vida de TerraTech.
 
 ### 5.1.2. Source Code Management
-Usuarios de github:
+
+Para el desarrollo de TerraTech, el equipo ha adoptado **Git** como sistema distribuido de control de versiones y **GitHub** como plataforma centralizada para el almacenamiento del código fuente, seguimiento de cambios y colaboración entre los integrantes del equipo. Esta estrategia permite mantener un historial organizado de modificaciones, facilitar la integración continua del código y garantizar la trazabilidad durante todo el ciclo de vida del proyecto.
+
+A continuación, se presentan los usuarios de GitHub de cada integrante del equipo:
 
 <table border="1" cellspacing="0" cellpadding="2">
   <thead>
     <tr>
       <th align="left">Integrantes</th>
-      <th align="left">Usuarios de GitHub</th>
+      <th align="left">Usuario de GitHub</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Retuerto Rodriguez, Jorge Manuel</td>
-      <td>
-        <a href="https://github.com/Calin1407">Calin1407</a>
-      </td>
+      <td><a href="https://github.com/Calin1407">Calin1407</a></td>
     </tr>
     <tr>
       <td>Howard Robles, Guillermo Arturo</td>
-      <td>
-        <a href="https://github.com/GuillermoPromac">GuillermoPromac</a>
-      </td>
+      <td><a href="https://github.com/GuillermoPromac">GuillermoPromac</a></td>
     </tr>
     <tr>
       <td>Acuña de la Cruz, Luis Alfredo</td>
-      <td>
-        <a href="https://github.com/L2006delacruz">L2006delacruz</a>
-      </td>
+      <td><a href="https://github.com/L2006delacruz">L2006delacruz</a></td>
     </tr>
     <tr>
       <td>Perez Encarnacion, Breithner Rodolfo</td>
-      <td>
-        <a href="https://github.com/Breithner1">Breithner1</a>
-      </td>
+      <td><a href="https://github.com/Breithner1">Breithner1</a></td>
     </tr>
     <tr>
       <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
-      <td>
-        <a href="https://github.com/Rodri2712">Rodri2712</a>
-      </td>
+      <td><a href="https://github.com/Rodri2712">Rodri2712</a></td>
     </tr>
   </tbody>
 </table>
 
+#### Repositorios del proyecto
+
+Cada uno de los productos que conforman la solución cuenta con un repositorio independiente dentro de la organización del equipo en GitHub.
+
+> **Nota:** Reemplace los enlaces por los repositorios definitivos de su organización si aún no han sido creados.
+
+- **Repositorio del Informe**
+
 [![Repositorio Informe](https://img.shields.io/badge/Repositorio-Informe-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/1ASI0730-10215-NovaTech-AgroTech/upc-pre-202610-1asi0730-10215-NovaTech-report)
 
-Para el desarrollo de los repositorios de TerraTech, se ha implementado Git como estrategia de versionado. Esta metodología permite un desarrollo paralelo y organizado, facilitando la gestión de nuevas funcionalidades y correcciones críticas sin comprometer la estabilidad del producto final.
+- **Repositorio Landing Page**
 
-Las ramas que conforman nuestro flujo de trabajo son:
+[![Repositorio Landing Page](https://img.shields.io/badge/Repositorio-Landing%20Page-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/1ASI0730-10215-NovaTech-AgroTech/upc-pre-202610-landing-page)
 
-- main: Es la rama principal que contiene el código fuente en estado de producción. Cada actualización en esta rama representa una versión estable y funcional del producto.
+- **Repositorio Frontend Web Application**
 
-- develop: Rama de integración donde se consolidan todas las nuevas funcionalidades y correcciones de errores antes de pasar a la fase de lanzamiento. Se origina a partir de main.
+[![Repositorio Frontend](https://img.shields.io/badge/Repositorio-Frontend-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/1ASI0730-10215-NovaTech-AgroTech/upc-pre-202610-frontend)
 
-- feature: Ramas temporales creadas a partir de develop para el desarrollo de características específicas o tareas asignadas a los integrantes del equipo.
+- **Repositorio RESTful Web Services**
 
-- release: Se utilizan para preparar una nueva versión antes de su despliegue en producción (main). Permiten realizar ajustes menores y pruebas finales.
+[![Repositorio Backend](https://img.shields.io/badge/Repositorio-Web%20Services-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/1ASI0730-10215-NovaTech-AgroTech/upc-pre-202610-web-services)
 
-- hotfix: Ramas de emergencia que se originan directamente desde main para solucionar errores críticos en producción. Una vez resueltos, se integran tanto en main como en develop.
+#### GitFlow Workflow
 
-Convención: release/X.Y.Z (siguiendo el versionado semántico).
+Con el propósito de mantener un desarrollo ordenado y facilitar el trabajo colaborativo, el equipo implementa la metodología **GitFlow** como estrategia de control de versiones.
+
+El flujo de trabajo consiste en desarrollar cada nueva funcionalidad dentro de una rama independiente, evitando afectar la estabilidad de la rama principal. Posteriormente, cada cambio es revisado mediante Pull Request antes de integrarse con la rama correspondiente.
+
+Las ramas utilizadas son las siguientes:
+
+- **main**
+
+  Contiene únicamente versiones estables del producto listas para producción. Todo cambio que llega a esta rama ha sido previamente revisado y validado por el equipo.
+
+- **develop**
+
+  Es la rama principal de desarrollo donde se integran las funcionalidades implementadas durante cada Sprint. Todas las ramas de desarrollo parten de esta rama.
+
+- **feature**
+
+  Son ramas temporales utilizadas para implementar nuevas funcionalidades o mejoras específicas.
+
+  Convención utilizada:
+
+```text
+feature/<feature-name>
+```
+
+Ejemplos:
+
+```text
+feature/login-page
+feature/user-dashboard
+feature/crop-management
+feature/weather-module
+```
+
+Una vez finalizada la implementación, la rama es integrada mediante Pull Request hacia **develop**.
+
+- **release**
+
+  Cuando el equipo prepara una nueva versión del producto para su publicación, se crea una rama Release desde **develop**, donde únicamente se realizan pruebas finales, correcciones menores y ajustes de configuración.
+
+Convención:
+
+```text
+release/vX.Y.Z
+```
+
+Ejemplos:
+
+```text
+release/v1.0.0
+release/v1.1.0
+release/v2.0.0
+```
+
+El versionado sigue el estándar **Semantic Versioning (SemVer)**.
+
+- **hotfix**
+
+  En caso de detectarse errores críticos en producción, se crea una rama Hotfix directamente desde **main**.
+
+Convención:
+
+```text
+hotfix/<bug-name>
+```
+
+Ejemplos:
+
+```text
+hotfix/login-error
+hotfix/api-timeout
+hotfix/security-patch
+```
+
+Después de solucionar el problema, la rama Hotfix se fusiona tanto con **main** como con **develop**, garantizando que ambas ramas permanezcan sincronizadas.
+
+#### Conventional Commits
+
+Todos los commits realizados por el equipo siguen el estándar **Conventional Commits**, permitiendo mantener un historial claro, legible y fácil de entender.
+
+Los principales prefijos utilizados son:
+
+| Prefijo | Descripción |
+|----------|-------------|
+| feat | Implementación de una nueva funcionalidad. |
+| fix | Corrección de errores. |
+| docs | Cambios en la documentación. |
+| style | Cambios relacionados únicamente con formato del código. |
+| refactor | Reestructuración del código sin modificar su comportamiento. |
+| perf | Mejoras de rendimiento. |
+| test | Incorporación o modificación de pruebas. |
+| chore | Tareas de mantenimiento o configuración del proyecto. |
+
+Ejemplos:
+
+```text
+feat: implement user authentication
+
+fix: correct responsive navigation menu
+
+docs: update sprint documentation
+
+refactor: simplify authentication service
+
+style: format source code with prettier
+```
+
+Esta estrategia de gestión del código fuente permite mantener una estructura organizada del proyecto, facilitar la colaboración entre los integrantes del equipo y asegurar una integración controlada de nuevas funcionalidades durante el desarrollo de TerraTech.
 
 ### 5.1.3. Source Code Style Guide & Conventions
-Con el objetivo de garantizar la mantenibilidad, escalabilidad y una colaboración fluida entre los desarrolladores, el equipo ha establecido una guía de estilo y convenciones de código estandarizadas:
 
-Estándares de Codificación
-Lenguajes: El desarrollo se centra en HTML para la estructura y CSS para el estilizado, asegurando semántica y accesibilidad.
+Con el propósito de garantizar la mantenibilidad, escalabilidad y legibilidad del código fuente, el equipo ha definido una serie de estándares y convenciones de programación que serán aplicados durante todo el desarrollo de TerraTech. Estas normas permiten mantener una estructura consistente entre todos los integrantes del equipo, facilitando el trabajo colaborativo, la revisión del código y el mantenimiento futuro de la solución.
 
-- Nomenclatura: Comentarios: Se prioriza el código autodocumentado, pero se fomenta el uso de comentarios descriptivos en bloques de lógica compleja o secciones clave de la arquitectura web.
+Asimismo, se adoptan las guías de estilo recomendadas para las tecnologías utilizadas en el proyecto, siguiendo las referencias propuestas por la documentación oficial y los estándares indicados en el curso.
 
-- Estilo de Commits: Se ha adoptado la convención de Conventional Commits para mantener un historial de cambios legible y profesional. La estructura sigue el formato tipo: descripción, utilizando los siguientes prefijos:
+#### Convenciones generales
 
-    - feat: Para la implementación de nuevas características.
+Durante el desarrollo del proyecto se aplicarán las siguientes reglas generales:
 
-    - fix: Para la corrección de errores.
+- Todo el código fuente será escrito en idioma **inglés**.
+- Los nombres de variables, funciones, clases, componentes, interfaces, endpoints, tablas y archivos utilizarán nomenclatura en inglés.
+- Se utilizarán nombres descriptivos y significativos, evitando abreviaturas innecesarias.
+- El código deberá mantener una correcta indentación de 2 o 4 espacios, dependiendo del lenguaje y la configuración automática del editor.
+- Cada archivo deberá cumplir el principio de responsabilidad única, evitando implementar múltiples funcionalidades dentro de un mismo componente.
+- Se priorizará el desarrollo de código limpio, reutilizable y fácilmente mantenible.
 
-    - docs: Para cambios en la documentación.
+#### Convenciones para HTML
 
-    - refactor: Para cambios simples, estructurales o que no cambien el contenido.
+El desarrollo de la estructura de las interfaces seguirá las recomendaciones de **Google HTML Style Guide** y **HTML Style Guide and Coding Conventions**.
 
-Control de Calidad: Estas normas se validan de manera obligatoria durante los Pull Requests, donde cada miembro del equipo revisa el código de sus compañeros para asegurar el cumplimiento de la guía de estilo antes de integrar cambios a la rama develop.
+Entre las principales prácticas adoptadas se encuentran:
+
+- Uso correcto de etiquetas semánticas (`header`, `main`, `section`, `article`, `footer`, `nav`, etc.).
+- Uso adecuado de atributos `alt` para imágenes.
+- Correcta jerarquía de encabezados (`h1` a `h6`).
+- Organización clara del contenido para mejorar la accesibilidad.
+- Código HTML correctamente indentado y validado.
+
+#### Convenciones para CSS
+
+Para el desarrollo de estilos se adoptan las recomendaciones de **Google HTML/CSS Style Guide**.
+
+Las principales convenciones incluyen:
+
+- Clases escritas utilizando **kebab-case**.
+
+Ejemplo:
+
+```css
+user-profile-card
+weather-container
+navigation-menu
+```
+
+- Evitar estilos en línea.
+- Agrupar reglas relacionadas.
+- Eliminar código CSS no utilizado.
+- Mantener hojas de estilo organizadas por componentes.
+
+#### Convenciones para JavaScript
+
+El código JavaScript seguirá las recomendaciones de **Google JavaScript Style Guide**, **MDN JavaScript Guidelines** y **W3C JavaScript Style Guide**.
+
+Entre las principales reglas se encuentran:
+
+- Uso de `const` por defecto.
+- Uso de `let` únicamente cuando el valor cambie.
+- Evitar el uso de `var`.
+- Uso obligatorio de punto y coma.
+- Funciones pequeñas y con una única responsabilidad.
+- Uso de nombres descriptivos para variables y funciones.
+- Evitar código duplicado mediante reutilización de funciones.
+
+Ejemplo:
+
+```javascript
+const getWeatherForecast = async () => {
+    ...
+};
+```
+
+#### Convenciones para Vue.js
+
+Para el desarrollo del Frontend se siguen las recomendaciones establecidas en la **Vue Style Guide**.
+
+Las principales convenciones son:
+
+- Componentes escritos utilizando **PascalCase**.
+
+Ejemplo:
+
+```text
+LoginView.vue
+UserProfile.vue
+WeatherCard.vue
+CropDashboard.vue
+```
+
+- Props definidas explícitamente.
+- Separación entre lógica, plantilla y estilos.
+- Uso de Composition API cuando sea necesario.
+- Organización del proyecto por módulos y componentes reutilizables.
+- Evitar componentes excesivamente grandes.
+
+#### Convenciones para C#
+
+Los servicios RESTful desarrollados con ASP.NET Core seguirán las recomendaciones de **Microsoft C# Coding Conventions** y **ASP.NET Core Coding Guidelines**.
+
+Las principales reglas incluyen:
+
+- Clases en PascalCase.
+- Métodos en PascalCase.
+- Interfaces con prefijo **I**.
+- Variables locales en camelCase.
+- Uso adecuado de Dependency Injection.
+- Separación entre Controllers, Services, Repositories y Domain Models.
+- Métodos cortos y altamente cohesivos.
+
+Ejemplo:
+
+```csharp
+public interface IUserService
+{
+}
+
+public class UserService : IUserService
+{
+}
+```
+
+#### Convenciones de nomenclatura
+
+| Elemento | Convención | Ejemplo |
+|----------|------------|----------|
+| Clases | PascalCase | UserService |
+| Interfaces | PascalCase con prefijo I | IUserRepository |
+| Métodos | PascalCase (C#) / camelCase (JavaScript) | GetUser(), getUser() |
+| Variables | camelCase | userName |
+| Constantes | UPPER_SNAKE_CASE | MAX_USERS |
+| Componentes Vue | PascalCase | LoginView.vue |
+| Clases CSS | kebab-case | login-container |
+| Archivos JavaScript | camelCase | authService.js |
+| Endpoints REST | kebab-case | /api/weather-forecast |
+
+#### Comentarios
+
+El equipo prioriza la escritura de código autodocumentado mediante nombres descriptivos. Sin embargo, cuando una sección del código implemente lógica compleja, algoritmos específicos o reglas de negocio importantes, se incorporarán comentarios claros y concisos para facilitar su comprensión y mantenimiento.
+
+Se evitarán comentarios redundantes que describan acciones evidentes del código.
+
+#### Revisión de código
+
+Todos los cambios realizados en el proyecto serán revisados mediante **Pull Requests** antes de integrarse a la rama **develop** o **main**.
+
+Durante la revisión se verificará:
+
+- Cumplimiento de las convenciones de codificación.
+- Correcto funcionamiento de la funcionalidad implementada.
+- Ausencia de errores de sintaxis.
+- Correcto formateo automático mediante Prettier.
+- Validación de calidad utilizando ESLint.
+- Cumplimiento de Conventional Commits.
+
+Estas prácticas permiten mantener un código consistente, reducir la aparición de errores y facilitar la colaboración entre todos los integrantes del equipo durante el desarrollo de TerraTech.
+
 
 ### 5.1.4. Software Deployment Configuration
 
-Para el despliegue tanto de la Landing Page como de la aplicación web, se utilizará un flujo basado en Git, asegurando el control de versiones y una integración continua (CI/CD) eficiente. El uso de la estrategia GitFlow permitirá que las futuras actualizaciones de TerraTech se lancen de manera organizada y sin interrupciones en el servicio.
+Con el propósito de garantizar un proceso de despliegue seguro, organizado y reproducible, el equipo ha definido una estrategia de Deployment basada en GitHub, GitFlow y servicios de alojamiento en la nube. Esta configuración permite automatizar la publicación de los productos desarrollados, reducir errores durante la liberación de nuevas versiones y asegurar que únicamente el código previamente validado sea desplegado en los entornos correspondientes.
 
-Landing Page:
+El proceso de despliegue contempla los diferentes productos que conforman la solución de TerraTech: Landing Page, Frontend Web Application y RESTful Web Services.
 
-- El despliegue de la Landing Page de TerraTech se realizará mediante GitHub Pages, aprovechando su infraestructura optimizada para sitios estáticos:
+#### Flujo general de Deployment
 
-- Configuración del Repositorio: El sitio se servirá directamente desde el repositorio oficial de la organización. Se utilizará la rama main para asegurar que solo el código probado y aprobado sea visible al público.
+El proceso de despliegue inicia con el desarrollo de nuevas funcionalidades dentro de ramas **feature**, creadas a partir de la rama **develop**. Una vez finalizada una funcionalidad, se realiza un **Pull Request** para revisar el código y verificar el cumplimiento de las convenciones establecidas por el equipo.
 
-- Seguridad y Disponibilidad: GitHub Pages proporciona hosting gratuito y altamente confiable, incluyendo certificados SSL automáticos, lo que garantiza una conexión segura mediante el protocolo HTTPS para todos los visitantes.
+Después de la aprobación del Pull Request, los cambios se integran en la rama **develop**, donde continúan las pruebas funcionales y de integración. Cuando el Sprint concluye y el producto alcanza un estado estable, se crea una rama **release** para realizar las validaciones finales.
+
+Finalmente, la rama **release** es fusionada hacia **main**, permitiendo la publicación de una nueva versión del producto mediante el proceso de despliegue correspondiente.
+
+El flujo de trabajo aplicado se resume de la siguiente manera:
+
+```text
+feature/*
+      │
+      ▼
+develop
+      │
+      ▼
+release/vX.Y.Z
+      │
+      ▼
+main
+      │
+      ▼
+Deployment
+```
+
+En caso de detectarse un error crítico en producción, el equipo utilizará ramas **hotfix**, las cuales se crearán directamente desde **main** y posteriormente serán integradas tanto en **main** como en **develop**, garantizando la sincronización entre ambas ramas.
+
+---
+
+#### Landing Page Deployment
+
+La Landing Page de TerraTech será desplegada mediante **GitHub Pages**, aprovechando su integración nativa con GitHub para sitios web estáticos desarrollados con HTML, CSS y JavaScript.
+
+El proceso de despliegue consiste en los siguientes pasos:
+
+1. El desarrollador implementa una nueva funcionalidad dentro de una rama **feature**.
+2. Se crea un Pull Request hacia la rama **develop**.
+3. El equipo revisa el código y aprueba su integración.
+4. Se realizan pruebas funcionales y de integración.
+5. Se crea una rama **release** para preparar una nueva versión.
+6. La rama **release** se fusiona con **main**.
+7. GitHub Pages detecta automáticamente los cambios publicados en **main**.
+8. El sitio web es actualizado y publicado automáticamente mediante HTTPS.
+
+Gracias a este proceso, la Landing Page permanece disponible con una versión estable y validada para todos los usuarios.
+
+---
+
+#### Frontend Web Application Deployment
+
+La aplicación Frontend desarrollada con **Vue.js** seguirá un proceso similar al utilizado para la Landing Page.
+
+Después de integrar los cambios en la rama **main**, se generará una nueva versión de producción mediante el proceso de compilación del proyecto.
+
+El despliegue contempla las siguientes actividades:
+
+- Instalación de dependencias mediante **npm**.
+- Generación del proyecto optimizado para producción.
+- Publicación de los archivos generados en el servicio de alojamiento correspondiente.
+- Verificación del correcto funcionamiento de la aplicación desplegada.
+
+Este procedimiento garantiza que únicamente versiones previamente revisadas sean publicadas para los usuarios finales.
+
+---
+
+#### RESTful Web Services Deployment
+
+Los servicios RESTful desarrollados con **ASP.NET Core** seguirán un proceso de despliegue independiente del Frontend.
+
+Una vez aprobados los cambios mediante Pull Request y fusionados en la rama **main**, se publicará una nueva versión del servicio utilizando la configuración definida para el servidor o proveedor cloud correspondiente.
+
+Durante este proceso se verificará:
+
+- Correcta compilación del proyecto.
+- Disponibilidad de los endpoints.
+- Correcta conexión con la base de datos.
+- Funcionamiento de los servicios de autenticación y autorización.
+- Disponibilidad de la documentación OpenAPI (Swagger).
+
+---
+
+#### Seguridad y disponibilidad
+
+El proceso de despliegue considera diversas medidas para garantizar la estabilidad de la solución:
+
+- Uso exclusivo de la rama **main** para versiones estables.
+- Revisión obligatoria mediante Pull Requests antes de cada integración.
+- Aplicación de GitFlow como estrategia de control de versiones.
+- Versionado mediante Semantic Versioning.
+- Comunicación cifrada mediante HTTPS.
+- Certificados SSL proporcionados automáticamente por GitHub Pages para la Landing Page.
+- Respaldo permanente del código fuente mediante GitHub.
+
+Estas medidas permiten reducir riesgos durante la publicación de nuevas versiones y facilitan la recuperación ante posibles incidencias.
+
+---
+
+#### Configuración del entorno de producción
+
+La configuración del entorno de producción considera los siguientes componentes principales:
+
+| Producto | Tecnología | Plataforma de despliegue |
+|----------|------------|--------------------------|
+| Landing Page | HTML5, CSS3, JavaScript | GitHub Pages |
+| Frontend Web Application | Vue.js + PrimeVue | Hosting Web / Servicio Cloud |
+| RESTful Web Services | ASP.NET Core + C# | Servidor Web o Servicio Cloud |
+| Control de versiones | Git | GitHub |
+
+La estrategia de despliegue definida permite mantener una publicación organizada, segura y escalable de todos los componentes que conforman TerraTech, asegurando la disponibilidad de la solución durante todo su ciclo de vida y facilitando futuras actualizaciones del producto.
 
 <img src="assets/images/cap5/portada-landingpage.jpg" alt="landingpage" style="width: 500px; height: 350px;">
 

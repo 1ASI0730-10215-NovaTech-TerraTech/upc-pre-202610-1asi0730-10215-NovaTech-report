@@ -755,7 +755,7 @@ Rel(deviceRepository, mysqlDb, "Reads/Writes", "EF Core")
 @enduml
 ```
 
-#### 4.6.4.1 Support Services
+#### 4.6.4.2 Support Services
 ```plantuml
 @startuml
 !include <C4/C4_Component.puml>
