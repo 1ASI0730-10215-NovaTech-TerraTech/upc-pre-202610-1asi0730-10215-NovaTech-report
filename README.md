@@ -115,13 +115,31 @@ https://github.com/1ASI0730-10215-NovaTech-TerraTech
     - Luis Acuña (`L2006delacruz`)
     - Rodrigo Aguilar (`Rodri2712`)
     - Guillermo Howard (`GuillermoPromac`)
-    - Breithner Perez (`Breithner1`)
+    - Breithner Pérez (`Breithner1`)
     - Jorge Retuerto (`Calin1407`)
 - Actividad distribuida por ramas correspondientes a cada sección del informe.
 - Todos los miembros participaron activamente en la redacción y revisión del contenido.
 
 ## AV2 – Backend, mejoras e integración
+*Periodo:* 15 de mayo – 19 de junio de 2026
 
+En el informe se documentó el trabajo realizado durante el **Sprint 3**, incluyendo el avance del *Product Backlog*, la implementación y despliegue de los primeros servicios del sistema.
+
+<img src="assets/images/readme/Report-Ins-AV2.png" alt=“Descargar” >
+
+- **Contribuciones destacadas del informe:**
+    - Correcciones de la carátula del informe.
+    - Descripción actualizada de la organización por boundeds del backend.
+    - Registro del trabajo realizado en el Sprint 3, incluyendo backlog, implementación de servicios y despliegue.
+
+- **Guillermo Howard (`GuillermoPromac`)**: 28 commits, 1,339 adiciones, 1,444 eliminaciones
+- **Rodrigo Aguilar (`Rodri2712`)**: 2 commits, 152 adiciones
+- **Total de commits en AV2:** 
+
+La colaboración fue continua y estratégica, con aportes clave en aspectos críticos del backend y del informe final.
+
+## TB2 – Integración final, autenticación y despliegue
+*Periodo:* 21 de junio – 06 de julio de 2026
 
 ---
 
