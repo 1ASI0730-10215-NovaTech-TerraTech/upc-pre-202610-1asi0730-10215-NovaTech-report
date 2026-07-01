@@ -95,6 +95,7 @@ Proyecto
 |  2.12   | 18/06/2026 | Howard Robles, Guillermo Arturo      | Adición de contenido adicional en la bibliografía.                         |
 |  2.13   | 18/06/2026 | Howard Robles, Guillermo Arturo      | Adición del Software Deployment Evidence for Sprint Review                 |
 |   3.0   | 19/06/2026 | Howard Robles, Guillermo Arturo      | Adición del outcome del av2.                                               |
+|   3.1   | 30/06/2026 | Howard Robles, Guillermo Arturo      | Correción del outcome y recuperación del contenido del av1.                |
 
 ---
 
