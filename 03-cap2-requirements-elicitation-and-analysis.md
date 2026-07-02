@@ -119,22 +119,29 @@ Para este análisis competitivo se realizó un benchmark parcial enfocado en ide
 </table>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
+El análisis competitivo realizado ha permitido identificar las principales fortalezas, debilidades, oportunidades y amenazas del mercado, lo que nos ha llevado a definir las siguientes estrategias y tácticas para posicionar a TerraTech de manera competitiva frente a Agrotech, AgroVista del Valle y Phytech.
 
-- **Estrategias**
+#### Estrategias
 
-    - Diferenciación mediante una solución accesible adaptada al agricultor peruano.
-    - Competencia basada en costos frente a plataformas tecnológicas premium.
-    - Enfoque en monitoreo en tiempo real como propuesta de valor principal.
-    - Desarrollo de alianzas estratégicas con proveedores e instituciones agrícolas.
-    - Posicionamiento como herramienta de sostenibilidad y optimización de recursos.
+1. **Diferenciación por accesibilidad:** Posicionar a TerraTech como la solución de agricultura de precisión más accesible y adaptada al mercado peruano, en contraste con las costosas soluciones internacionales como Phytech, que superan los US$ 500 por hectárea al año.
 
-- **Tácticas**
+2. **Enfoque en monitoreo continuo del suelo en tiempo real:** Destacar el valor de los datos en tiempo real (latencia máxima de 5 minutos) para la toma de decisiones inmediatas, a diferencia de los análisis periódicos por imágenes satelitales que ofrecen competidores como AgroVista del Valle.
 
-    - Ofrecer paquetes iniciales de sensores IoT a bajo costo.
-    - Implementar dashboards simples con alertas visuales fáciles de entender.
-    - Realizar pruebas piloto y demostraciones en campo con agricultores locales.
-    - Utilizar tecnología de conectividad rural (LoRaWAN) para garantizar funcionamiento.
-    - Aplicar modelo de suscripción flexible según el tamaño del cultivo.
+3. **Alianzas estratégicas con el ecosistema local:** Crear una red de valor que incluya a proveedores de insumos, cooperativas agrarias y canales de distribución para llegar a los agricultores de manera efectiva, aprovechando las redes existentes en las zonas objetivo (Huánuco, Cusco y Cajamarca).
+
+4. **Posicionamiento como herramienta de sostenibilidad y optimización de recursos:** Destacar el impacto positivo de TerraTech en la reducción del consumo de agua (ahorro mínimo 25%) y fertilizantes (ahorro mínimo 20%), alineándose con las tendencias de sostenibilidad y agricultura responsable.
+
+#### Tácticas
+
+1. **Paquetes de lanzamiento a bajo costo:** Ofrecer kits de sensores IoT a un precio de penetración de mercado (menos de S/ 300 por dispositivo) para reducir la barrera de entrada, combinado con un modelo de suscripción flexible de S/ 30-S/ 50 mensuales para el acceso a la plataforma de análisis.
+
+2. **Demostraciones en campo y pruebas piloto:** Realizar pruebas piloto con al menos 20 agricultores en zonas clave (Huánuco, Cusco, Cajamarca) para que los usuarios potenciales vean los resultados tangibles (ahorro de agua y aumento de utilidad) en sus propios cultivos durante los primeros 30 días de uso.
+
+3. **Interfaz y soporte localizado:** Asegurar que la aplicación web, las alertas y el soporte técnico estén disponibles en español, con una interfaz basada en íconos simples, tipografía grande (mínimo 16px) y alertas visuales (colores rojo/amarillo/verde) adaptadas a usuarios con baja alfabetización digital.
+
+4. **Tecnología de conectividad rural (LoRaWAN):** Implementar tecnología de transmisión LoRaWAN (frecuencia 915 MHz, alcance de 2-5 km) en lugar de Wi-Fi o 4G, garantizando el funcionamiento en zonas rurales sin cobertura celular, donde el 90% del territorio puede carecer de señal.
+
+5. **Modelo de suscripción flexible:** Aplicar un modelo de suscripción escalable según el tamaño del cultivo (número de hectáreas) y las funcionalidades requeridas, permitiendo que pequeños agricultores accedan a planes básicos y cooperativas a planes empresariales con reportes avanzados y dashboard agregado.
 
 ## 2.2. Entrevistas
 
@@ -469,6 +476,7 @@ Finalmente, los clientes finales tienen una menor frecuencia de uso, pero otorga
 <img src="assets/images/cap2/big-picture-event-storming.png" alt="Big picture" style="width: 600px; height: 300px;">
 
 <div style="page-break-before: always;"></div>
+
 ### 2.5. Ubiquitous Language
 
 <table border="1">
