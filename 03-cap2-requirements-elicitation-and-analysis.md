@@ -512,15 +512,23 @@ Los agricultores presentan una alta frecuencia e importancia en tareas operativa
 
 ### 2.3.3. User Journey Mapping
 
+Los User Journey Maps representan el recorrido end-to-end que cada User Persona realiza actualmente (situación As-Is) para cumplir con sus objetivos, sin la existencia de la solución TerraTech. Estos mapas permiten identificar los puntos de dolor (pains) y las oportunidades de mejora (gains) que la plataforma debe abordar.
+
 * **Segmento 1: Agricultor**
+
+El siguiente Journey Map ilustra el proceso que sigue Marcelino, un agricultor de Huánuco, para monitorear el estado de su cultivo de zanahoria y decidir cuándo regar o fertilizar. El recorrido muestra cómo Marcelino depende de métodos tradicionales (inspección visual, experiencia personal) y enfrenta incertidumbre por la falta de datos precisos, especialmente ante cambios climáticos inesperados.
 
 <img src="assets/images/cap2/journey-map-1.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
-* **Segmento 2: Asesor**
+* **Segmento 2: Asesor (Proveedor)**
+
+El siguiente Journey Map muestra el proceso de Karim, un asesor técnico de Cañete, para recomendar insumos a los agricultores. El recorrido evidencia cómo Karim realiza visitas presenciales y se basa en su experiencia, pero carece de datos reales del suelo para hacer recomendaciones precisas, lo que genera errores, pérdida de confianza y reclamos de los agricultores.
 
 <img src="assets/images/cap2/journey-map-2.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
-* **Segmento 3: Usuario Final**
+* **Segmento 3: Usuario Final (Comprador)**
+
+El siguiente Journey Map describe el proceso de compra de Luciana, una consumidora de La Molina, al adquirir productos agrícolas. El recorrido muestra cómo Luciana valora la frescura, el precio y la apariencia, pero carece de información confiable sobre el origen y las prácticas de cultivo, lo que genera desconfianza y la obliga a tomar decisiones con información incompleta.
 
 <img src="assets/images/cap2/journey-map-3.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
