@@ -470,6 +470,8 @@ En resumen, los clientes finales entrevistados muestran una diversidad de factor
 
 ## 2.3. Needfinding
 
+El proceso de Needfinding permitió transformar los hallazgos de las entrevistas en herramientas de diseño centradas en el usuario. A partir del análisis estadístico de las características demográficas, comportamentales y subjetivas de cada segmento, se construyeron los siguientes artefactos que guiarán el diseño de la solución TerraTech.
+
 ### 2.3.1. User Personas
 
 * **Segmento 1: Agricultor**
