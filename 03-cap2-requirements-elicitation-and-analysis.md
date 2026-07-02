@@ -480,11 +480,11 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 <img src="assets/images/cap2/user-person-1.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
-* **Segmento 2: Asesor (Proveedor)**
+* **Segmento 2: Proveedor**
 
 <img src="assets/images/cap2/user-person-2.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
-* **Segmento 3: Usuario Final (Comprador)**
+* **Segmento 3: Cliente Final**
 
 <img src="assets/images/cap2/user-person-3.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
@@ -492,20 +492,20 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos, independientemente de la existencia de la solución tecnológica. A continuación, se presentan las tareas identificadas a partir de las entrevistas, junto con su frecuencia e importancia para cada User Persona.
 
-| Tarea | **Agricultor** (Frecuencia / Importancia) | **Asesor (Proveedor)** (Frecuencia / Importancia) | **Usuario Final (Comprador)** (Frecuencia / Importancia) |
-| :--- | :---: | :---: | :---: |
-| **Monitorear el estado del suelo (humedad, nutrientes)** | Alta / Alta | Media / Alta | Baja / Baja |
-| **Recibir alertas en tiempo real sobre condiciones críticas** | Alta / Alta | Media / Media | Baja / Media |
-| **Revisar datos históricos y tendencias del cultivo** | Media / Media | Alta / Alta | Baja / Baja |
-| **Generar reportes de rendimiento y sostenibilidad** | Baja / Media | Media / Media | Baja / Alta |
-| **Registrar y gestionar productos en inventario** | Baja / Media | Alta / Alta | Baja / Baja |
-| **Verificar trazabilidad y origen del producto** | Baja / Baja | Baja / Baja | Alta / Alta |
-| **Consultar pronóstico del clima para planificar riego** | Alta / Alta | Media / Alta | Baja / Media |
-| **Visualizar mapa de fertilidad del terreno** | Media / Alta | Media / Media | Baja / Baja |
-| **Configurar umbrales personalizados de alerta** | Media / Media | Baja / Media | Baja / Baja |
-| **Navegar en catálogo de productos y ofertas** | Baja / Baja | Alta / Alta | Alta / Alta |
-| **Leer y dejar comentarios y calificaciones** | Baja / Baja | Media / Media | Alta / Alta |
-| **Gestionar perfil público en la comunidad** | Baja / Baja | Media / Media | Media / Media |
+| Tarea | **Agricultor** (Frecuencia / Importancia) | **Proveedor** (Frecuencia / Importancia) | **Cliente Final (Comprador)** (Frecuencia / Importancia) |
+| :--- | :---: |:----------------------------------------:|:--------------------------------------------------------:|
+| **Monitorear el estado del suelo (humedad, nutrientes)** | Alta / Alta |               Media / Alta               |                       Baja / Baja                        |
+| **Recibir alertas en tiempo real sobre condiciones críticas** | Alta / Alta |              Media / Media               |                       Baja / Media                       |
+| **Revisar datos históricos y tendencias del cultivo** | Media / Media |               Alta / Alta                |                       Baja / Baja                        |
+| **Generar reportes de rendimiento y sostenibilidad** | Baja / Media |              Media / Media               |                       Baja / Alta                        |
+| **Registrar y gestionar productos en inventario** | Baja / Media |               Alta / Alta                |                       Baja / Baja                        |
+| **Verificar trazabilidad y origen del producto** | Baja / Baja |               Baja / Baja                |                       Alta / Alta                        |
+| **Consultar pronóstico del clima para planificar riego** | Alta / Alta |               Media / Alta               |                       Baja / Media                       |
+| **Visualizar mapa de fertilidad del terreno** | Media / Alta |              Media / Media               |                       Baja / Baja                        |
+| **Configurar umbrales personalizados de alerta** | Media / Media |               Baja / Media               |                       Baja / Baja                        |
+| **Navegar en catálogo de productos y ofertas** | Baja / Baja |               Alta / Alta                |                       Alta / Alta                        |
+| **Leer y dejar comentarios y calificaciones** | Baja / Baja |              Media / Media               |                       Alta / Alta                        |
+| **Gestionar perfil público en la comunidad** | Baja / Baja |              Media / Media               |                      Media / Media                       |
 
 **Análisis de la User Task Matrix:**
 Los agricultores presentan una alta frecuencia e importancia en tareas operativas como el monitoreo del suelo y la recepción de alertas en tiempo real, ya que dependen directamente de esta información para tomar decisiones inmediatas en sus cultivos. Por su parte, los proveedores o asesores destacan en tareas de análisis, como la revisión de datos históricos, generación de reportes y planificación, lo que refleja un uso más técnico y estratégico de la plataforma. Finalmente, los clientes finales tienen una menor frecuencia de uso, pero otorgan alta importancia a funcionalidades relacionadas con la trazabilidad, el origen del producto y el impacto ambiental, buscando principalmente transparencia y confianza en su consumo.
@@ -520,13 +520,13 @@ El siguiente Journey Map ilustra el proceso que sigue Marcelino, un agricultor d
 
 <img src="assets/images/cap2/journey-map-1.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
-* **Segmento 2: Asesor (Proveedor)**
+* **Segmento 2: Proveedor**
 
 El siguiente Journey Map muestra el proceso de Karim, un asesor técnico de Cañete, para recomendar insumos a los agricultores. El recorrido evidencia cómo Karim realiza visitas presenciales y se basa en su experiencia, pero carece de datos reales del suelo para hacer recomendaciones precisas, lo que genera errores, pérdida de confianza y reclamos de los agricultores.
 
 <img src="assets/images/cap2/journey-map-2.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
-* **Segmento 3: Usuario Final (Comprador)**
+* **Segmento 3: Cliente Final**
 
 El siguiente Journey Map describe el proceso de compra de Luciana, una consumidora de La Molina, al adquirir productos agrícolas. El recorrido muestra cómo Luciana valora la frescura, el precio y la apariencia, pero carece de información confiable sobre el origen y las prácticas de cultivo, lo que genera desconfianza y la obliga a tomar decisiones con información incompleta.
 
@@ -534,15 +534,23 @@ El siguiente Journey Map describe el proceso de compra de Luciana, una consumido
 
 ### 2.3.4. Empathy Mapping
 
+Los Empathy Maps permiten profundizar en la comprensión de cada User Persona, explorando lo que piensa, siente, ve, oye, dice y hace en su contexto diario. Estos mapas fueron construidos a partir de las observaciones y hallazgos de las entrevistas, y permiten identificar los principales pains y gains de cada segmento.
+
 * **Segmento 1: Agricultor**
+
+El siguiente Mapa de Empatía profundiza en la experiencia de Marcelino, el agricultor de Huánuco. Se identifican sus principales pensamientos y sentimientos (incertidumbre ante el clima, preocupación por la pérdida de cosechas), lo que ve en su entorno (campos extensos, cambios climáticos), lo que oye de otros agricultores (consejos tradicionales, temor a la tecnología), lo que dice y hace (inspección manual, decisión por intuición), así como sus principales pains (falta de información precisa, esfuerzo físico) y gains (deseo de certidumbre, mejora de la productividad).
 
 <img src="assets/images/cap2/empathy-map-1.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
-* **Segmento 2: Asesor**
+* **Segmento 2: Proveedor**
+
+El siguiente Mapa de Empatía analiza la experiencia de Karim, el asesor técnico. Se exploran sus pensamientos y sentimientos (frustración por recomendaciones erróneas, necesidad de credibilidad), lo que ve (agricultores con problemas de suelo, competencia), lo que oye (reclamos de agricultores, feedback de otros asesores), lo que dice y hace (visitas a campo, recomendaciones basadas en experiencia), y sus pains (falta de datos precisos, pérdida de clientes) y gains (deseo de fidelizar clientes, incrementar ventas con recomendaciones acertadas).
 
 <img src="assets/images/cap2/empathy-map-2.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
-* **Segmento 3: Usuario Final**
+* **Segmento 3: Cliente Final**
+
+El siguiente Mapa de Empatía se centra en la experiencia de Luis, la consumidora final. Se identifican sus pensamientos y sentimientos (deseo de transparencia, desconfianza por falta de información), lo que ve (etiquetas confusas, productos de origen desconocido), lo que oye (tendencias de alimentación saludable, testimonios de otros compradores), lo que dice y hace (búsqueda en Google, decisión por precio y apariencia), y sus pains (dificultad para verificar origen, falta de confianza) y gains (deseo de productos saludables, disposición a pagar premium por trazabilidad).
 
 <img src="assets/images/cap2/empathy-map-3.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
 
