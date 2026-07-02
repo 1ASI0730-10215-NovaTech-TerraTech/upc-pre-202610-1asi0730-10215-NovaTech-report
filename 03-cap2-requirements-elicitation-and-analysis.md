@@ -490,15 +490,25 @@ A continuación, se presentan las fichas de User Persona elaboradas en UXPressia
 
 ### 2.3.2. User Task Matrix
 
-En este cuadro tendremos a nuestros segmentos objetivos: Agricultor, Asesos y Usuario Final. Consideraremos tareas que haran para obtener un producto o hallar ofertas para planificar futuras compras.
+La User Task Matrix permite visualizar y comparar las tareas que cada segmento objetivo realiza para cumplir sus objetivos, independientemente de la existencia de la solución tecnológica. A continuación, se presentan las tareas identificadas a partir de las entrevistas, junto con su frecuencia e importancia para cada User Persona.
 
-<img src="assets/images/cap2/task-matrix.png" alt="User Persona" style="width: 90%; max-width: 1200px; height: 700px;">
+| Tarea | **Agricultor** (Frecuencia / Importancia) | **Asesor (Proveedor)** (Frecuencia / Importancia) | **Usuario Final (Comprador)** (Frecuencia / Importancia) |
+| :--- | :---: | :---: | :---: |
+| **Monitorear el estado del suelo (humedad, nutrientes)** | Alta / Alta | Media / Alta | Baja / Baja |
+| **Recibir alertas en tiempo real sobre condiciones críticas** | Alta / Alta | Media / Media | Baja / Media |
+| **Revisar datos históricos y tendencias del cultivo** | Media / Media | Alta / Alta | Baja / Baja |
+| **Generar reportes de rendimiento y sostenibilidad** | Baja / Media | Media / Media | Baja / Alta |
+| **Registrar y gestionar productos en inventario** | Baja / Media | Alta / Alta | Baja / Baja |
+| **Verificar trazabilidad y origen del producto** | Baja / Baja | Baja / Baja | Alta / Alta |
+| **Consultar pronóstico del clima para planificar riego** | Alta / Alta | Media / Alta | Baja / Media |
+| **Visualizar mapa de fertilidad del terreno** | Media / Alta | Media / Media | Baja / Baja |
+| **Configurar umbrales personalizados de alerta** | Media / Media | Baja / Media | Baja / Baja |
+| **Navegar en catálogo de productos y ofertas** | Baja / Baja | Alta / Alta | Alta / Alta |
+| **Leer y dejar comentarios y calificaciones** | Baja / Baja | Media / Media | Alta / Alta |
+| **Gestionar perfil público en la comunidad** | Baja / Baja | Media / Media | Media / Media |
 
-Los agricultores presentan una alta frecuencia e importancia en tareas operativas como el monitoreo del suelo y la recepción de alertas en tiempo real, ya que dependen directamente de esta información para tomar decisiones inmediatas en sus cultivos.
-
-Por su parte, los proveedores o asesores destacan en tareas de análisis, como la revisión de datos históricos, generación de reportes y planificación, lo que refleja un uso más técnico y estratégico de la plataforma.
-
-Finalmente, los clientes finales tienen una menor frecuencia de uso, pero otorgan alta importancia a funcionalidades relacionadas con la trazabilidad, el origen del producto y el impacto ambiental, buscando principalmente transparencia y confianza en su consumo.
+**Análisis de la User Task Matrix:**
+Los agricultores presentan una alta frecuencia e importancia en tareas operativas como el monitoreo del suelo y la recepción de alertas en tiempo real, ya que dependen directamente de esta información para tomar decisiones inmediatas en sus cultivos. Por su parte, los proveedores o asesores destacan en tareas de análisis, como la revisión de datos históricos, generación de reportes y planificación, lo que refleja un uso más técnico y estratégico de la plataforma. Finalmente, los clientes finales tienen una menor frecuencia de uso, pero otorgan alta importancia a funcionalidades relacionadas con la trazabilidad, el origen del producto y el impacto ambiental, buscando principalmente transparencia y confianza en su consumo.
 
 ### 2.3.3. User Journey Mapping
 
