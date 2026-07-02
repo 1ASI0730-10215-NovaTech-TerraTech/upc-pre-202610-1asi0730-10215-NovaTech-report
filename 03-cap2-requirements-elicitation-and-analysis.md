@@ -474,15 +474,17 @@ El proceso de Needfinding permitió transformar los hallazgos de las entrevistas
 
 ### 2.3.1. User Personas
 
+A continuación, se presentan las fichas de User Persona elaboradas en UXPressia para cada uno de los tres segmentos objetivo. Cada ficha integra los hallazgos de las entrevistas, incluyendo características demográficas, personalidad, habilidades, marcas e influencias, dispositivos de preferencia y canales de interacción.
+
 * **Segmento 1: Agricultor**
 
 <img src="assets/images/cap2/user-person-1.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
-* **Segmento 2: Asesor**
+* **Segmento 2: Asesor (Proveedor)**
 
 <img src="assets/images/cap2/user-person-2.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
-* **Segmento 3: Usuario Final**
+* **Segmento 3: Usuario Final (Comprador)**
 
 <img src="assets/images/cap2/user-person-3.png" alt="User Persona" style="width: 60%; max-width: 1200px; height: 700px;">
 
