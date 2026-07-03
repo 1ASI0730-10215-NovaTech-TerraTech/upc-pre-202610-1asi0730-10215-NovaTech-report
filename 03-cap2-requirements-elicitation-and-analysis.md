@@ -600,6 +600,8 @@ A continuación, se presentan los principales elementos identificados en el Big 
 
 ### 2.5. Ubiquitous Language
 
+El siguiente glosario define los términos y conceptos clave del dominio de negocio de TerraTech, asegurando una comunicación clara y sin ambigüedades entre todos los miembros del equipo y stakeholders. Los términos están presentados en inglés (con el equivalente en español entre paréntesis) y sus definiciones están redactadas en español.
+
 <table border="1">
     <thead>
         <tr>
