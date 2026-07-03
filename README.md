@@ -3,15 +3,21 @@
 <img src="assets/images/readme/upc-logo.png" style="width: 150px;"/>
 
 Universidad Peruana De Ciencias Aplicadas  
+
 Carrera de Ingeniería de Software  
 
 **1ASI030**  
+
 **Aplicaciones Web**  
+
 NRC  
 **10215**  
+
 **Informe del Trabajo Final**  
+
 Docente  
 **Velásquez Núñez, Ángel Augusto**  
+
 Equipo  
 **NovaTech**  
 
@@ -51,13 +57,12 @@ Proyecto
   </tbody>
 </table>
 
+
 **Período 202610**  
 
 **Julio 2026**
 
 </div>
-
----
 
 <div style="page-break-after: always;"></div>
 
@@ -142,7 +147,7 @@ La colaboración fue continua y estratégica, con aportes clave en aspectos crí
 ## TB2 – Integración final, autenticación y despliegue
 *Periodo:* 21 de junio – 06 de julio de 2026
 
----
+
 
 <div style="page-break-after: always;"></div>
 
