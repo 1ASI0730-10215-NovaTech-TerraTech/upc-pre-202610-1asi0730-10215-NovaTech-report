@@ -1909,8 +1909,10 @@ El video comunica de forma clara y dinámica el propósito del producto, mostran
 
 A continuación, se incluye un screenshot del video, junto con los enlaces de la versión publicada en Microsoft Stream y YouTube.
 
+Video en Stream: [https://tinyurl.com/m88tcphe](https://tinyurl.com/m88tcphe)
+
+Video en YouTube: [https://youtu.be/g50PX1_6f_M](https://youtu.be/g50PX1_6f_M)
+
+Duración: 00:00 - 07:57
+
 <img src="assets/images/cap5/about-the-product.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
-
-Video en Stream: https://tinyurl.com/m88tcphe 
-
-Video en YouTube: https://youtu.be/g50PX1_6f_M 
