@@ -4,15 +4,31 @@
 
 ***Conclusiones***
 
-Durante el desarrollo del proyecto, hemos logrado identificar y comprender las necesidades de los usuarios, lo que nos ha permitido diseñar una solución efectiva y adaptada a sus requerimientos.
+En relación a los **Problem Statements** establecidos al inicio del proyecto, se formularon dos problemas principales:
 
-Dado que los agricultores enfrentan desafíos significativos en la gestión de sus cultivos, como la falta de acceso a información precisa y oportuna, hemos desarrollado una aplicación que les proporciona herramientas para mejorar su productividad y eficiencia.
+1. *"Los agricultores no cuentan con acceso a información precisa y oportuna sobre el estado de sus cultivos, lo que limita su capacidad de toma de decisiones."*
+2. *"Los proveedores carecen de herramientas eficientes para gestionar la información de los cultivos que comercializan."*
 
-De este modo podemos gestionar de manera más eficiente la información de los cultivos para los proveedores, lo que les permitirá tomar decisiones informadas y optimizar sus recursos.
+Ambos problem statements fueron validados durante el proceso de investigación. A través de entrevistas con agricultores, proveedores y clientes finales, se confirmó que el **100% de los agricultores no utiliza tecnología para el monitoreo de sus cultivos**, lo que valida la necesidad de una solución como TerraTech. Asimismo, el **50% de los proveedores acude a los campos de manera directa** para informarse sobre las necesidades de los agricultores, mientras que el otro 50% se basa únicamente en su experiencia y conocimiento para hacer recomendaciones.
 
-De lo cual los usuarios finales pueden beneficiarse al tener acceso a información relevante sobre sus cultivos, como el estado de las plantas, recomendaciones de cuidado y alertas sobre posibles problemas. Esto les ayuda a conocer mejor las temporadas de mejor cultivo, y la calidad de los productos que pueden comprar.
+Respecto a los **Assumptions** realizados sobre el comportamiento de los segmentos:
 
-A su vez el proyecto ha sido una oportunidad para aplicar y fortalecer nuestras habilidades en el desarrollo de software, desde la planificación y diseño hasta la implementación y pruebas. Hemos aprendido a trabajar en equipo, a comunicarnos de manera efectiva y a utilizar diversas herramientas y tecnologías para llevar a cabo nuestro proyecto.
+| Assumption | Resultado de validación |
+|------------|--------------------------|
+| Los agricultores tienen acceso a dispositivos móviles | **Parcialmente validado**: El 100% de los agricultores no utiliza tecnología para monitoreo, aunque el 25% utiliza apps para banca móvil o billeteras digitales |
+| Los agricultores prefieren interfaces visuales con iconos grandes | **Pendiente de validación en siguiente sprint** (requiere pruebas de usabilidad con prototipos) |
+| Los proveedores requieren herramientas para recomendaciones precisas | **Validado**: El 75% de los proveedores considera que una aplicación móvil debería ayudarles a reducir tiempos y el 25% valora tener información actualizada de los cultivos |
+
+En cuanto a los **Hypothesis Statements**, se plantearon las siguientes:
+
+- **H1**: *"Si los agricultores reciben alertas tempranas sobre condiciones climáticas adversas, entonces reducirán sus pérdidas de cosecha."*
+    - **Resultado**: Validada parcialmente. El **50% de los agricultores depende de las lluvias** para el riego y son vulnerables a cambios climáticos, lo que confirma la necesidad de alertas climáticas.
+
+- **H2**: *"Si los proveedores cuentan con un sistema digital de registro de cultivos, entonces mejorarán su eficiencia operativa."*
+    - **Resultado**: Validada. El **75% de los proveedores utiliza WhatsApp** para comunicarse con agricultores y el 25% usa herramientas gráficas como Excel, evidenciando la oportunidad de una solución digital integrada.
+
+- **H3**: *"Si los clientes finales acceden a información de trazabilidad mediante códigos QR, entonces aumentará su confianza en el producto."*
+    - **Resultado**: Validada parcialmente. El **50% de los clientes finales ha visualizado información moderada** sobre el origen de los productos, el 25% solo ve información básica en etiquetas y el 25% no ha visto información del proceso de cultivo. Además, el **100% utiliza su teléfono** para buscar información en redes sociales sobre productos que va a comprar.
 
 Por el momento del desarrollo del sprint1, se ha logrado establecer las bases de la aplicación, definiendo su estructura y funcionalidades principales, como una página inicial estática. También empezando a utilizar herramientas importantes como GitHub para el contro de versiones y Figma para el modelado de prototipos, además de definir detalles ténicos como el diagrama de clases y prepara el entorno de desarrollo.
 
