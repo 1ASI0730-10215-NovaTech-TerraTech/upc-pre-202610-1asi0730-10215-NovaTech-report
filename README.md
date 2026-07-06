@@ -67,49 +67,53 @@ Proyecto
 
 ## Registro de Versiones del Informe
 
-| Versión |    Fecha    | Autor                                | Descripción de modificación                                                         |
-|:-------:|:-----------:|--------------------------------------|-------------------------------------------------------------------------------------|
-|   0.1   | 02/04/2026  | Retuerto Rodríguez, Jorge Manuel     | Creación de la organización en GitHub de 1ASI0730-10215-NovaTech-TerraTech          |
-|   0.2   | 02/04/2026  | Retuerto Rodríguez, Jorge Manuel     | Creación del repositorio upc-pre-202610-1asi0730-10215-NovaTech-report              |
-|   0.3   | 02/04/2026  | Retuerto Rodríguez, Jorge Manuel     | Creación de ramas para la división de los capítulos del reporte                     |
-|   0.4   | 09/04/2026  | Retuerto Rodríguez, Jorge Manuel     | Desarrollo del startup-profile                                                      |
-|   0.5   | 09/04/2026  | Retuerto Rodríguez, Jorge Manuel     | Desarrollo del solution-profile                                                     |
-|   0.6   | 09/04/2026  | Aguilar Untiveros, Rodrigo Fabrizio  | Desarrollo de los user stories y el product backlog                                 |
-|   0.7   | 10/04/2026  | Retuerto Rodríguez, Jorge Manuel     | Desarrollo del lean ux process                                                      |
-|   0.8   | 10/04/2026  | Perez Encarnacion, Breithner Rodolfo | Desarrollo del style guidelines y web style guidelines                              |
-|   0.9   | 10/04/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del análisis de competidores y needfinding                               |
-|  0.10   | 11/04/2026  | Howard Robles, Guillermo Arturo      | Desarrollo de los segmentos objetivos                                               |
-|  0.11   | 11/04/2026  | Howard Robles, Guillermo Arturo      | Desarrollo de los user persona y los task matrix                                    |
-|  0.12   | 11/04/2026  | Aguilar Untiveros, Rodrigo Fabrizio  | Desarrollo del impact mapping                                                       |
-|  0.13   | 12/04/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del empathy mapping                                                      |
-|   1.0   | 16/04/2026  | Acuña de la Cruz, Luis Alfredo       | Desarrollo del Sprint 1                                                             |
-|   1.1   | 24/04/2026  | Aguilar Untiveros, Rodrigo Fabrizio  | Desarrollo del Sprint 2                                                             |
-|   2.0   | 28/04/2026  | Retuerto Rodríguez, Jorge Manuel     | Corrección del Event Storming                                                       |
-|   2.1   | 22/05/2026  | Retuerto Rodríguez, Jorge Manuel     | Corrección en la estructura de orden del reporte                                    |
-|   2.2   | 11/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Sprint Backlog                                                       |
-|   2.3   | 14/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Sprint Planning 3                                                    |
-|   2.4   | 17/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Aspect Leaders and Collaborators                                     |
-|   2.5   | 17/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Sprint Backlog 3                                                     |
-|   2.6   | 17/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Development Evidence for Sprint Review                               |
-|   2.7   | 17/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Diseño de Entrevistas del Validation Interviews                      |
-|   2.8   | 17/06/2026  | Aguilar Untiveros, Rodrigo Fabrizio  | Adición de Commits en el Development Evidence for Sprint Review                     |
-|   2.9   | 18/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Execution Evidence for Sprint Review                                 |
-|  2.10   | 18/06/2026  | Howard Robles, Guillermo Arturo      | Desarrollo del Services Documentation Evidence for Sprint Review                    |
-|  2.11   | 18/06/2026  | Howard Robles, Guillermo Arturo      | Adición del video about the product                                                 |
-|  2.12   | 18/06/2026  | Howard Robles, Guillermo Arturo      | Adición de contenido adicional en la bibliografía                                   |
-|  2.13   | 18/06/2026  | Howard Robles, Guillermo Arturo      | Adición del Software Deployment Evidence for Sprint Review                          |
-|   3.0   | 19/06/2026  | Howard Robles, Guillermo Arturo      | Adición del outcome del av2                                                         |
-|   3.1   | 30/06/2026  | Howard Robles, Guillermo Arturo      | Corrección del outcome y recuperación del contenido del av1                         |
-|   3.2   | 30/06/2026  | Howard Robles, Guillermo Arturo      | Adición del Project Report Collaboration Insights del av2                           |
-|   3.3   | 01/07/2026  | Howard Robles, Guillermo Arturo      | Adición y organización de la Tabla de contenido del archivo README.md               |
-|   3.4   | 01/07/2026  | Howard Robles, Guillermo Arturo      | Ajuste del contenido del Student Outcome 5 y actualización de la tabla de versiones |
-|   3.5   | 04/07/2026  | Aguilar Untiveros, Rodrigo Fabrizio  | Ajuste del contenido de las conclusiones                                            |
-|   3.6   | 05/07/2026  | Perez Encarnacion, Breithner Rodolfo | Ajuste del big picture event storming                                               |
-|   3.7   | 05/07/2026  | Howard Robles, Guillermo Arturo      | Añadido de nuevas user stories.                                                     |
-|   3.8   | 05/07/2026  | Howard Robles, Guillermo Arturo      | Correción del tamaño de los textos en el readme                                     |
-|   3.9   | 06/07/2026  | Aguilar Untiveros, Rodrigo Fabrizio  | Actualización de Validation Interviews y evaluación heurística                      |
-|  3.10   | 06/07/2026  | Retuerto Rodriguez, Jorge Manuel     | Corrección de Lean Ux Process y Lean Ux Canvas                                      |
-|  3.11   | 06/07/2026  | Howard Robles, Guillermo Arturo      | Corrección de los user stories.                                                     |
+| Versión |    Fecha    | Autor                                   | Descripción de modificación                                                         |
+|:-------:|:-----------:|-----------------------------------------|-------------------------------------------------------------------------------------|
+|   0.1   | 02/04/2026  | Retuerto Rodríguez, Jorge Manuel        | Creación de la organización en GitHub de 1ASI0730-10215-NovaTech-TerraTech          |
+|   0.2   | 02/04/2026  | Retuerto Rodríguez, Jorge Manuel        | Creación del repositorio upc-pre-202610-1asi0730-10215-NovaTech-report              |
+|   0.3   | 02/04/2026  | Retuerto Rodríguez, Jorge Manuel        | Creación de ramas para la división de los capítulos del reporte                     |
+|   0.4   | 09/04/2026  | Retuerto Rodríguez, Jorge Manuel        | Desarrollo del startup-profile                                                      |
+|   0.5   | 09/04/2026  | Retuerto Rodríguez, Jorge Manuel        | Desarrollo del solution-profile                                                     |
+|   0.6   | 09/04/2026  | Aguilar Untiveros, Rodrigo Fabrizio     | Desarrollo de los user stories y el product backlog                                 |
+|   0.7   | 10/04/2026  | Retuerto Rodríguez, Jorge Manuel        | Desarrollo del lean ux process                                                      |
+|   0.8   | 10/04/2026  | Perez Encarnacion, Breithner Rodolfo    | Desarrollo del style guidelines y web style guidelines                              |
+|   0.9   | 10/04/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del análisis de competidores y needfinding                               |
+|  0.10   | 11/04/2026  | Howard Robles, Guillermo Arturo         | Desarrollo de los segmentos objetivos                                               |
+|  0.11   | 11/04/2026  | Howard Robles, Guillermo Arturo         | Desarrollo de los user persona y los task matrix                                    |
+|  0.12   | 11/04/2026  | Aguilar Untiveros, Rodrigo Fabrizio     | Desarrollo del impact mapping                                                       |
+|  0.13   | 12/04/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del empathy mapping                                                      |
+|   1.0   | 16/04/2026  | Acuña de la Cruz, Luis Alfredo          | Desarrollo del Sprint 1                                                             |
+|   1.1   | 24/04/2026  | Aguilar Untiveros, Rodrigo Fabrizio     | Desarrollo del Sprint 2                                                             |
+|   2.0   | 28/04/2026  | Retuerto Rodríguez, Jorge Manuel        | Corrección del Event Storming                                                       |
+|   2.1   | 22/05/2026  | Retuerto Rodríguez, Jorge Manuel        | Corrección en la estructura de orden del reporte                                    |
+|   2.2   | 11/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Sprint Backlog                                                       |
+|   2.3   | 14/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Sprint Planning 3                                                    |
+|   2.4   | 17/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Aspect Leaders and Collaborators                                     |
+|   2.5   | 17/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Sprint Backlog 3                                                     |
+|   2.6   | 17/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Development Evidence for Sprint Review                               |
+|   2.7   | 17/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Diseño de Entrevistas del Validation Interviews                      |
+|   2.8   | 17/06/2026  | Aguilar Untiveros, Rodrigo Fabrizio     | Adición de Commits en el Development Evidence for Sprint Review                     |
+|   2.9   | 18/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Execution Evidence for Sprint Review                                 |
+|  2.10   | 18/06/2026  | Howard Robles, Guillermo Arturo         | Desarrollo del Services Documentation Evidence for Sprint Review                    |
+|  2.11   | 18/06/2026  | Howard Robles, Guillermo Arturo         | Adición del video about the product                                                 |
+|  2.12   | 18/06/2026  | Howard Robles, Guillermo Arturo         | Adición de contenido adicional en la bibliografía                                   |
+|  2.13   | 18/06/2026  | Howard Robles, Guillermo Arturo         | Adición del Software Deployment Evidence for Sprint Review                          |
+|   3.0   | 19/06/2026  | Howard Robles, Guillermo Arturo         | Adición del outcome del av2                                                         |
+|   3.1   | 30/06/2026  | Howard Robles, Guillermo Arturo         | Corrección del outcome y recuperación del contenido del av1                         |
+|   3.2   | 30/06/2026  | Howard Robles, Guillermo Arturo         | Adición del Project Report Collaboration Insights del av2                           |
+|   3.3   | 01/07/2026  | Howard Robles, Guillermo Arturo         | Adición y organización de la Tabla de contenido del archivo README.md               |
+|   3.4   | 01/07/2026  | Howard Robles, Guillermo Arturo         | Ajuste del contenido del Student Outcome 5 y actualización de la tabla de versiones |
+|   3.5   | 04/07/2026  | Aguilar Untiveros, Rodrigo Fabrizio     | Ajuste del contenido de las conclusiones                                            |
+|   3.6   | 05/07/2026  | Perez Encarnacion, Breithner Rodolfo    | Ajuste del big picture event storming                                               |
+|   3.7   | 05/07/2026  | Howard Robles, Guillermo Arturo         | Añadido de nuevas user stories.                                                     |
+|   3.8   | 05/07/2026  | Howard Robles, Guillermo Arturo         | Correción del tamaño de los textos en el readme                                     |
+|   3.9   | 06/07/2026  | Aguilar Untiveros, Rodrigo Fabrizio     | Actualización de Validation Interviews y evaluación heurística                      |
+|  3.10   | 06/07/2026  | Retuerto Rodriguez, Jorge Manuel        | Corrección de Lean Ux Process y Lean Ux Canvas                                      |
+|  3.11   | 06/07/2026  | Howard Robles, Guillermo Arturo         | Corrección de los user stories.                                                     |
+|  3.12   | 06/07/2026  | Howard Robles, Guillermo Arturo         | Añadido del sprint planning 4                                                       |
+|  3.13   | 06/07/2026  | Aguilar Untiveros, Rodrigo Fabrizio     | Correción del event storming                                                        |
+|  3.14   | 06/07/2026  | Retuerto Rodríguez, Jorge Manuel        | Corrección de los collaboration insights                                            |
+|  3.15   | 06/07/2026  | Howard Robles, Guillermo Arturo         | Añadido del sprint backlog 4                                                        |
 
 ---
 
