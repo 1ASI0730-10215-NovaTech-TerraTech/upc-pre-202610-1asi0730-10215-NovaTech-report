@@ -1777,129 +1777,140 @@ Refleja el registro y la periodicidad de los commits realizados en el repositori
 
 ### 5.3.1. Diseño de Entrevistas.
 
-Para garantizar que la aplicación cumpla con las necesidades reales de los usuarios finales, se diseñó un proceso de entrevistas de validación centrado en tres segmentos objetivos clave: **Agricultores**, **Proveedores de insumos agrícolas** y **Clientes Finales (compradores)**. Cada sesión de validación incluirá interacción con el **Landing Page** y la **aplicación web** (desktop y mobile), siguiendo flujos de usuario específicos que cubren funcionalidades críticas del sistema.
+Con el propósito de validar la solución desarrollada, se diseñó un conjunto de entrevistas de validación dirigidas a los tres segmentos objetivo de TerraTech: **Agricultores**, **Proveedores de insumos agrícolas** y **Clientes Finales (compradores)**. Cada sesión de validación contempla la interacción de los participantes con el **Landing Page** y la **Web Application** (desktop y mobile), ejecutando escenarios de uso representativos de las funcionalidades implementadas.
+
+Siguiendo las indicaciones establecidas para el proceso de validación, cada entrevista define los elementos que serán evaluados durante la sesión y los **User Flows** que deberán ser recorridos por los participantes, con el fin de comprobar la facilidad de uso, comprensión de la interfaz y correcto funcionamiento de las funcionalidades más importantes del sistema.
 
 ***Objetivo General***
 
-Validar la usabilidad, comprensión y utilidad de las funcionalidades del sistema a través de sesiones controladas de interacción, aplicando principios de evaluación heurística y recogiendo observaciones cualitativas.
+Validar la experiencia de uso del Landing Page y la Web Application de TerraTech mediante sesiones de interacción con usuarios representativos de cada segmento objetivo, verificando la comprensión de la propuesta de valor, la ejecución de los principales flujos de usuario y la percepción general sobre la utilidad de la solución.
 
 ---
 
-***Segmento 1: Agricultores (dueños de cultivo)***
+### Segmento 1: Agricultores (dueños de cultivo)
+
+#### Landing Page
+Los participantes deberán explorar el Landing Page para verificar si la propuesta de valor es comprendida correctamente, identificar los beneficios ofrecidos por TerraTech y evaluar la facilidad para acceder a la aplicación.
+
+#### Web Application
 
 **Elementos a validar:**
-- Claridad del valor ofrecido en el Landing Page.
-- Flujo de registro y acceso a la plataforma.
+
+- Flujo de registro e inicio de sesión.
 - Registro y gestión de zonas de cultivo (Fields).
 - Asociación de sensores IoT a zonas de cultivo.
-- Visualización de indicadores en tiempo real (humedad, nutrientes, temperatura) en el dashboard de monitoreo.
-- Recepción y comprensión de alertas y notificaciones (umbrales, riego, fertilización).
-- Gestión de inventario de insumos (registro, edición, filtrado).
+- Visualización de indicadores en tiempo real (humedad, nutrientes y temperatura).
+- Recepción y comprensión de alertas y notificaciones.
+- Gestión de inventario de insumos.
 - Configuración de preferencias de notificaciones.
 
-**Flujos de Usuario a evaluar (Desktop & Mobile):**
-- **UF-A1:** Registro de cuenta y configuración inicial de perfil.
-- **UF-A2:** Registro de zona de cultivo con ubicación y tipo de suelo.
-- **UF-A3:** Registro de un sensor IoT y asignación a una zona.
-- **UF-A4:** Visualización del dashboard de monitoreo (indicadores clave, gráficos históricos, mapa de fertilidad).
-- **UF-A5:** Configuración de umbrales de alerta (humedad, nutrientes) y recepción de notificaciones.
-- **UF-A6:** Gestión de inventario de insumos (crear, editar, eliminar, filtrar por categoría).
-- **UF-A7:** Visualización y respuesta a notificaciones (alertas de riego, fertilización, stock bajo).
+#### User Flows a validar
 
-**Actividades durante la sesión:**
-1. Explorar el Landing Page y describir su comprensión de la pagina y sus beneficios.
-2. Simular el proceso de registro de cuenta y configuración de perfil (nombre, teléfono, tamaño de terreno).
-3. Registrar una nueva zona de cultivo (nombre, tamaño, tipo de suelo, ubicación).
-4. Asignar un sensor IoT a esa zona (ingresar código único).
-5. Ingresar al dashboard de monitoreo y explicar lo que ven en los indicadores (humedad, nutrientes, temperatura).
-6. Navegar por el mapa de fertilidad y describir la utilidad de la información visual.
-7. Configurar un umbral de alerta personalizado (ej. humedad mínima) y recibir una notificación simulada.
-8. Acceder al módulo de inventario, registrar un insumo (nombre, cantidad, unidad), editarlo y filtrarlo.
-9. Comentar sobre la utilidad de las notificaciones y la facilidad para gestionar el inventario.
+- **UF-A1:** Registro de cuenta y configuración inicial del perfil.
+- **UF-A2:** Registro de una zona de cultivo.
+- **UF-A3:** Asociación de un sensor IoT a una zona de cultivo.
+- **UF-A4:** Visualización del dashboard de monitoreo.
+- **UF-A5:** Configuración de umbrales de alerta.
+- **UF-A6:** Gestión del inventario de insumos.
+- **UF-A7:** Consulta y gestión de notificaciones.
 
 ---
 
-***Segmento 2: Proveedores de insumos agrícolas***
+### Segmento 2: Proveedores de insumos agrícolas
+
+#### Landing Page
+
+Los participantes deberán explorar el Landing Page para identificar la propuesta de valor dirigida a proveedores y evaluar la claridad de la información presentada.
+
+#### Web Application
 
 **Elementos a validar:**
-- Claridad del valor ofrecido en el Landing Page desde la perspectiva del proveedor.
-- Flujo de registro y acceso a la plataforma.
-- Visualización de tablas analíticas (datos agregados de demanda de nutrientes, zonas con mayor actividad, tendencias de compra).
-- Navegación en la comunidad: visualización de comentarios y calificaciones sobre productos.
-- Gestión de notificaciones relevantes para su negocio (alertas de demanda, cambios en patrones de compra).
-- (Opcional) Gestión de su catálogo de productos (si aplica).
 
-**Flujos de Usuario a evaluar (Desktop & Mobile):**
-- **UF-P1:** Registro y configuración de perfil de proveedor.
-- **UF-P2:** Visualización del dashboard de analytics (tablas y gráficos de demanda y tendencias).
-- **UF-P3:** Exploración de la comunidad: visualizar comentarios y calificaciones de productos específicos.
-- **UF-P4:** Configuración de notificaciones personalizadas (alertas por zona, tipo de insumo, variaciones de demanda).
-- **UF-P5:** (Opcional) Registro y gestión de productos en su catálogo (si se implementa).
+- Registro e inicio de sesión.
+- Dashboard analítico.
+- Consulta de demanda de insumos.
+- Visualización de tendencias.
+- Comunidad de agricultores.
+- Configuración de notificaciones.
 
-**Actividades durante la sesión:**
-1. Explorar el Landing Page y describir su comprensión de la pagina como proveedor.
-2. Simular el proceso de registro y configuración de perfil de proveedor.
-3. Acceder al módulo de analytics y explicar qué información visualizan (tablas de demanda, zonas con mayor actividad, insumos más solicitados).
-4. Identificar una oportunidad de negocio a partir de los datos mostrados (ej. qué producto vender en qué zona).
-5. Navegar por la comunidad y leer comentarios de agricultores sobre productos de la competencia.
-6. Configurar una alerta de notificación para ser informado cuando la demanda de un insumo supere cierto umbral.
-7. Comentar sobre la utilidad de la información analítica y las notificaciones para su negocio.
+#### User Flows a validar
+
+- **UF-P1:** Registro y configuración del perfil.
+- **UF-P2:** Consulta del dashboard analítico.
+- **UF-P3:** Navegación por la comunidad.
+- **UF-P4:** Configuración de notificaciones.
 
 ---
 
-***Segmento 3: Clientes Finales (compradores mayoristas y minoristas)***
+### Segmento 3: Clientes Finales (compradores mayoristas y minoristas)
+
+#### Landing Page
+
+Los participantes deberán navegar por el Landing Page para identificar la propuesta de valor del producto y comprender los beneficios que ofrece la plataforma para el proceso de compra.
+
+#### Web Application
 
 **Elementos a validar:**
-- Claridad del valor ofrecido en el Landing Page desde la perspectiva del comprador.
-- Flujo de navegación del catálogo de productos agrícolas.
-- Visualización de detalles del producto (origen, trazabilidad, prácticas de cultivo, certificaciones).
-- Interacción con la comunidad: lectura de opiniones y calificaciones de otros compradores.
-- Configuración de preferencias de notificaciones (nuevos productos, ofertas, cambios de stock).
-- (Opcional) Proceso de compra o cotización.
 
-**Flujos de Usuario a evaluar (Desktop & Mobile):**
-- **UF-C1:** Registro y configuración de perfil de cliente final.
-- **UF-C2:** Navegación y búsqueda en el catálogo de productos (por categoría, región, tipo).
-- **UF-C3:** Visualización detallada de un producto (información de origen, trazabilidad, fotos, certificaciones).
-- **UF-C4:** Lectura de comentarios y calificaciones de otros compradores.
-- **UF-C5:** Configuración de notificaciones preferidas (productos de interés, rebajas, disponibilidad).
+- Registro e inicio de sesión.
+- Visualización del catálogo de productos agrícolas.
+- Consulta de información detallada del producto.
+- Visualización de la trazabilidad.
+- Consulta de certificaciones.
+- Visualización de comentarios y calificaciones.
+- Configuración de notificaciones.
 
-**Actividades durante la sesión:**
-1. Explorar el Landing Page y describir su comprensión de la pagina como comprador.
-2. Simular el proceso de registro y configuración de perfil (intereses, región).
-3. Navegar por el catálogo y buscar productos por categoría (ej. "hortalizas", "frutas").
-4. Seleccionar un producto y revisar su ficha detallada (origen, prácticas de cultivo, trazabilidad).
-5. Leer comentarios de otros compradores sobre ese producto y calificaciones.
-6. Configurar notificaciones para recibir alertas cuando haya nuevos productos de una región específica.
-7. Comentar sobre la utilidad de la información de trazabilidad y la comunidad para tomar decisiones de compra.
+#### User Flows a validar
 
----
-
-***Herramientas y Recursos para Validación***
-
-- **Formato de Evaluación Heurística:** Se aplicarán los 10 principios heurísticos de Nielsen en cada sesión (visibilidad del estado del sistema, relación con el mundo real, control y libertad del usuario, consistencia y estándares, prevención de errores, reconocimiento antes que recuerdo, flexibilidad y eficiencia, diseño estético y minimalista, ayuda a reconocer y recuperarse de errores, ayuda y documentación). Cada principio se puntuará de 1 a 5 y se registrarán observaciones.
-- **Instrumento de observación:** Lista de verificación de tareas completadas (sin ayuda / con ayuda / no completadas) + sección de notas abiertas para incidentes, comentarios literales y sugerencias.
-- **Grabación de pantalla y voz:** previa autorización de los participantes, para análisis posterior de interacciones, tiempos y patrones de navegación.
+- **UF-C1:** Registro y configuración del perfil.
+- **UF-C2:** Visualización y navegación del catálogo de productos.
+- **UF-C3:** Consulta del detalle del producto.
+- **UF-C4:** Visualización de comentarios y calificaciones.
+- **UF-C5:** Configuración de notificaciones.
 
 ---
 
 ### 5.3.2. Registro de Entrevistas.
 
-***Segmento 2: Proveedores de insumos agrícolas***
+### Segmento 2: Proveedores de insumos agrícolas
 
-**ENTREVISTA 1:**
+**ENTREVISTA 1**
 
-**Nombre:** Anita Monago Cachay **Edad:** 35 años **Distrito:** Ica **Timing:** (00:00 - 4:48)
+**Nombre:** Anita Monago Cachay  
+**Edad:** 35 años  
+**Distrito:** Ica  
+**Timing:** (00:00 - 4:48)
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento2-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 Ver entrevista: https://tinyurl.com/may4652j
 
-**Resumen:** Anita Monago Cachay dice que le gustó la plataforma porque el Landing Page transmite con total claridad el valor que ofrece a los proveedores, el proceso de registro y configuración de perfil es sumamente intuitivo tanto en computadoras como en celulares, y el módulo de analítica junto al sistema de notificaciones personalizadas se presentan como herramientas comerciales muy potentes para identificar oportunidades de negocio en tiempo real (como los insumos más solicitados y las zonas con mayor demanda de nutrientes). Asimismo, valora positivamente el poder monitorear los comentarios y calificaciones de la comunidad para conocer las opiniones de los agricultores y analizar a la competencia; sin embargo, sugiere que le agregues una sección que pueda poner el precio de sus productos dentro de la gestión del catálogo, para que la visualización y cotización de los insumos sea mucho más directa y efectiva para los clientes. 
+**Resumen:**
+
+Anita Monago Cachay manifestó que el Landing Page comunica claramente la propuesta de valor dirigida a los proveedores de insumos agrícolas y que el proceso de registro resulta intuitivo tanto en computadoras como en dispositivos móviles. Asimismo, destacó que el módulo de analítica permite identificar oportunidades comerciales mediante la visualización de la demanda de insumos y las zonas con mayor actividad agrícola. También consideró útil el sistema de notificaciones y la posibilidad de consultar comentarios y calificaciones realizados por la comunidad de agricultores. Como sugerencia de mejora, propuso incorporar la opción de registrar el precio de los productos dentro del catálogo para facilitar la cotización y comparación por parte de los clientes.
+
+---
 
 ### 5.3.3. Evaluación según heurísticas.
 
+Con la finalidad de evaluar la usabilidad de TerraTech, las entrevistas de validación fueron analizadas utilizando los **10 principios heurísticos de Jakob Nielsen**. Durante las sesiones se observaron las interacciones de los participantes con el Landing Page y la Web Application, registrando los problemas de usabilidad identificados y las oportunidades de mejora.
 
+Las heurísticas consideradas durante la evaluación fueron las siguientes:
+
+1. Visibilidad del estado del sistema.
+2. Relación entre el sistema y el mundo real.
+3. Control y libertad del usuario.
+4. Consistencia y estándares.
+5. Prevención de errores.
+6. Reconocimiento antes que recuerdo.
+7. Flexibilidad y eficiencia de uso.
+8. Diseño estético y minimalista.
+9. Ayuda para reconocer, diagnosticar y recuperarse de errores.
+10. Ayuda y documentación.
+
+Durante las sesiones también se registró el grado de cumplimiento de las tareas ejecutadas por cada participante, distinguiendo si fueron completadas sin ayuda, con ayuda o si no pudieron completarse. Asimismo, se documentaron observaciones cualitativas, comentarios de los usuarios y sugerencias de mejora obtenidas durante la interacción con la plataforma.
+
+La información recopilada permitió identificar oportunidades de mejora relacionadas con la navegación, claridad de la información, organización de la interfaz y facilidad de uso de las funcionalidades implementadas. Estos hallazgos servirán como base para las siguientes iteraciones del producto y para fortalecer la experiencia de usuario en futuras versiones de TerraTech.
 
 ## 5.4. Video About-the-Product.
 
