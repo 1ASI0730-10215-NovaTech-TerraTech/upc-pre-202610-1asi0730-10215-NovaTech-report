@@ -105,6 +105,8 @@ Proyecto
 |   3.4   | 01/07/2026 | Howard Robles, Guillermo Arturo       | Ajuste del contenido del Student Outcome 5 y actualización de la tabla de versiones |
 |   3.5   | 04/07/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Ajuste del contenido de las conclusiones                                            |
 |   3.6   | 05/07/2026 | Perez Encarnacion, Breithner Rodolfo  | Ajuste del big picture event storming                                               |
+|   3.7   | 05/07/2026 | Howard Robles, Guillermo Arturo       | Añadido de nuevas user stories.                                                     |
+|   3.8   | 05/07/2026 | Howard Robles, Guillermo Arturo       | Correción del tamaño de los textos en el readme                                     |
 
 ---
 
