@@ -214,17 +214,14 @@ para baja alfabetización digital.
   agregados de la tierra de sus clientes.*
 
 - **Sobre la usabilidad**
+
   ***CREEMOS QUE LOGRAREMOS** una tasa de adopción del 90% en el piloto **SI** el agricultor con baja 
   alfabetización digital **LOGRA** operar el sistema sin asistencia técnica **CON** una interfaz móvil 
   basada en íconos, colores y alertas.*
 
 #### 1.2.2.4. Lean UX Canvas
 
-**Figura 1:**
-
-*Lean ux canvas*
-
-<img src="assets/images/cap2/lean-ux-canvas.png" alt="canvas" style="width: 90%; max-width: 800px; height: 650px;">
+<img src="assets/images/cap1/lean-ux-canvas.png" alt="canvas" style="width: 90%; max-width: 800px; height: 650px;">
 
 ## 1.3. Segmentos Objetivo
 
