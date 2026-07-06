@@ -109,6 +109,8 @@ Proyecto
 |   3.8   | 05/07/2026  | Howard Robles, Guillermo Arturo      | Correción del tamaño de los textos en el readme                                     |
 |   3.9   | 06/07/2026  | Aguilar Untiveros, Rodrigo Fabrizio  | Actualización de Validation Interviews y evaluación heurística                      |
 |  3.10   | 06/07/2026  | Retuerto Rodriguez, Jorge Manuel     | Corrección de Lean Ux Process y Lean Ux Canvas                                      |
+|  3.11   | 06/07/2026  | Howard Robles, Guillermo Arturo      | Corrección de los user stories.                                                     |
+
 ---
 
 <div style="page-break-after: always;"></div>
