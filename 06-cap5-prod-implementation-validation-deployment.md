@@ -1806,6 +1806,57 @@ Con el fin de mantener una coordinación efectiva y una comunicación fluida ent
 | Perez Encarnacion, Breithner Rodolfo | Breithner1         | C   | C          | C            | L       | C     | L         | C         | C          |
 | Aguilar Untiveros, Rodrigo Fabrizio  | Rodri2712          | C   | C          | L            | C       | L     | C         | C         | C          |
 
+#### 5.2.4.3. Sprint Backlog 4
+
+El objetivo principal de este Sprint es consolidar la experiencia de usuario en los módulos de visualización de datos, inventarios y catálogos, cerrando funcionalidades críticas para los perfiles de agricultor, proveedor y cliente final. Se prioriza la implementación de mejoras en la landing page, la corrección de errores en los ensambladores de campos y la integración de filtros avanzados, gráficos de tendencias y paginación. Además, se busca fortalecer la autenticación y el manejo de tokens de cancelación para garantizar la estabilidad y escalabilidad del sistema. Este Sprint permitirá a los agricultores gestionar sus zonas de cultivo y sensores de manera más precisa, a los proveedores acceder a datos analíticos más detallados y a los clientes finales disfrutar de un catálogo completo y funcional. Todo esto, en conjunto, facilitará la adopción de la plataforma y mejorará la experiencia general de los usuarios.
+
+<img src="assets/images/cap5/sprint-backlog-4.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+| Work-item / Task | Description                                                           | Estimation (hours) | Assigned To | Status  |
+|------------------|-----------------------------------------------------------------------|--------------------|-------------|---------|
+| US08-01          | Fix bad request 400 on profile creation                               | 1                  | JM          | To Do   |
+| US08-02          | Integrate profile context fixes                                       | 1                  | JM          | To Do   |
+| US08-03          | Display validation messages for fields like phone                     | 1                  | JM          | To Do   |
+| US10-01          | Add latitude and longitude in fields                                  | 1                  | GH          | To Do   |
+| US10-02          | Fix camelCase support in field assembler                              | 1                  | GH          | To Do   |
+| US10-03          | Fix camelCase support in device assembler                             | 1                  | GH          | To Do   |
+| US10-04          | Fix bad example                                                       | 1                  | GH          | To Do   |
+| US24-02          | Implement pagination and filtering                                    | 1                  | FF          | To Do   |
+| US25-01          | Fix inventory endpoint path variable                                  | 1                  | FF          | To Do   |
+| US25-02          | Improve placeholders for Product ID and Quantity fields               | 1                  | FF          | To Do   |
+| US25-03          | Assign profileId automatically from authenticated user                | 1                  | FF          | To Do   |
+| US29-01          | Integrate analytics fixes                                             | 1                  | JM          | To Do   |
+| US29-02          | Add demand trend charts                                               | 1                  | JM          | To Do   |
+| US29-03          | Connect region and crop type filters                                  | 1                  | JM          | To Do   |
+| US35-01          | Implement catalog view with product cards, images, prices and ratings | 1                  | BP          | To Do   |
+| US35-02          | Add filters by category                                               | 1                  | BP          | To Do   |
+| US35-03          | Add search bar by product name                                        | 1                  | BP          | To Do   |
+| US37-01          | Implement review form with star rating                                | 1                  | BP          | To Do   |
+| US37-02          | Add minimum content validation                                        | 1                  | BP          | To Do   |
+| US37-03          | Allow editing and deleting own reviews                                | 1                  | BP          | To Do   |
+| TS07-15          | Fix error 500 in monitoring                                           | 1                  | GH          | To Do   |
+
+Trello: [https://trello.com/b/sLQ8KGVG/aplicaciones-web](https://trello.com/b/sLQ8KGVG/aplicaciones-web)
+
+
+#### 5.2.4.4. Development Evidence for Sprint Review
+
+
+
+#### 5.2.4.5. Execution Evidence for Sprint Review
+
+
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review
+
+
+
+#### 5.2.4.8. Team Collaboration Insights during Sprint
+
 
 
 ## 5.3. Validation Interviews.
