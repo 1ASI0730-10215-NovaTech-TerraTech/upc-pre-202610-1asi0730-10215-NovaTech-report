@@ -2,29 +2,29 @@
 
 <img src="assets/images/readme/upc-logo.png" style="width: 150px;"/>
 
-Universidad Peruana De Ciencias Aplicadas  
+Universidad Peruana De Ciencias Aplicadas
 
-Carrera de Ingeniería de Software  
+Carrera de Ingeniería de Software
 
-**1ASI030**  
+**1ASI030**
 
-**Aplicaciones Web**  
+**Aplicaciones Web**
 
 NRC  
-**10215**  
+**10215**
 
-**Informe del Trabajo Final**  
+**Informe del Trabajo Final**
 
 Docente  
-**Velásquez Núñez, Ángel Augusto**  
+**Velásquez Núñez, Ángel Augusto**
 
 Equipo  
-**NovaTech**  
+**NovaTech**
 
 Proyecto  
-**TerraTech**  
+**TerraTech**
 
-**Integrantes**  
+**Integrantes**
 
 <table style="margin: 0 auto; border-collapse: collapse; text-align: left;">
   <thead>
@@ -57,8 +57,7 @@ Proyecto
   </tbody>
 </table>
 
-
-**Período 202610**  
+**Período 202610**
 
 **Julio 2026**
 
@@ -68,40 +67,47 @@ Proyecto
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                                 | Descripción de modificación                                                |
-|:-------:|------------|---------------------------------------|----------------------------------------------------------------------------|
-|   0.1   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de la organización en github de 1ASI0730-10215-NovaTech-TerraTech |
-|   0.2   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación del repositorio  upc-pre-202610-1asi0730-10215-NovaTech-report    |
-|   0.3   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de ramas para la división de los capítulos del report             |   
-|   0.4   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del startup-profile                                             |
-|   0.5   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del solution-profile                                            |
-|   0.6   | 09/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo de los user stories y el product backlog                        |
-|   0.7   | 10/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del lean ux process                                             |
-|   0.8   | 10/04/2026 | Perez Encarnacion, Breithner Rodolfo  | Desarrollo del style guidelines and web style guidelines                   |
-|   0.9   | 10/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del análisis de competidores y needfinding                      |
-|  0.10   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los segmentos objetivos                                      |
-|  0.11   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los user persona y los task matrix                           |
-|  0.12   | 11/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del impact mapping                                              |
-|  0.13   | 12/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del empathy mapping                                             |
-|   1.0   | 16/04/2026 | Acuña de la Cruz, Luis Alfredo        | Desarrollo del Sprint 1                                                    |
-|   1.1   | 24/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del Sprint 2                                                    |
-|   2.0   | 28/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección del Event Storming                                              |
-|   2.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                           |
-|   2.2   | 11/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint blacklog                                             |
-|   2.3   | 14/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo deL Sprint Planning 3                                           |
-|   2.4   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Aspect Leaders and Collaborators                            |
-|   2.5   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Backlog 3                                            |
-|   2.6   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Development Evidence for Sprint Review                      |
-|   2.7   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Diseño de Entrevistas del Validation Interviews.            |
-|   2.8   | 17/06/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Adición de Commits en el Development Evidence for Sprint Review.           |
-|   2.9   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Execution Evidence for Sprint Review.                       |
-|  2.10   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Services Documentation Evidence for Sprint Review.          |
-|  2.11   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del video about the product.                                       |
-|  2.12   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición de contenido adicional en la bibliografía.                         |
-|  2.13   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del Software Deployment Evidence for Sprint Review                 |
-|   3.0   | 19/06/2026 | Howard Robles, Guillermo Arturo       | Adición del outcome del av2.                                               |
-|   3.1   | 30/06/2026 | Howard Robles, Guillermo Arturo       | Correción del outcome y recuperación del contenido del av1.                |
-|   3.2   | 30/06/2026 | Howard Robles, Guillermo Arturo       | Adición del Project Report Collaboration Insights del av2.                 |
+| Versión |   Fecha    | Autor                                 | Descripción de modificación                                                         |
+|:-------:|:----------:|---------------------------------------|-------------------------------------------------------------------------------------|
+|   0.1   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de la organización en GitHub de 1ASI0730-10215-NovaTech-TerraTech          |
+|   0.2   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación del repositorio upc-pre-202610-1asi0730-10215-NovaTech-report              |
+|   0.3   | 02/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Creación de ramas para la división de los capítulos del reporte                     |
+|   0.4   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del startup-profile                                                      |
+|   0.5   | 09/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del solution-profile                                                     |
+|   0.6   | 09/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo de los user stories y el product backlog                                 |
+|   0.7   | 10/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Desarrollo del lean ux process                                                      |
+|   0.8   | 10/04/2026 | Perez Encarnacion, Breithner Rodolfo  | Desarrollo del style guidelines y web style guidelines                              |
+|   0.9   | 10/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del análisis de competidores y needfinding                               |
+|  0.10   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los segmentos objetivos                                               |
+|  0.11   | 11/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo de los user persona y los task matrix                                    |
+|  0.12   | 11/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del impact mapping                                                       |
+|  0.13   | 12/04/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del empathy mapping                                                      |
+|   1.0   | 16/04/2026 | Acuña de la Cruz, Luis Alfredo        | Desarrollo del Sprint 1                                                             |
+|   1.1   | 24/04/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Desarrollo del Sprint 2                                                             |
+|   2.0   | 28/04/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección del Event Storming                                                       |
+|   2.1   | 22/05/2026 | Retuerto Rodríguez, Jorge Manuel      | Corrección en la estructura de orden del reporte                                    |
+|   2.2   | 11/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Backlog                                                       |
+|   2.3   | 14/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Planning 3                                                    |
+|   2.4   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Aspect Leaders and Collaborators                                     |
+|   2.5   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Sprint Backlog 3                                                     |
+|   2.6   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Development Evidence for Sprint Review                               |
+|   2.7   | 17/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Diseño de Entrevistas del Validation Interviews                      |
+|   2.8   | 17/06/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Adición de Commits en el Development Evidence for Sprint Review                     |
+|   2.9   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Execution Evidence for Sprint Review                                 |
+|  2.10   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Desarrollo del Services Documentation Evidence for Sprint Review                    |
+|  2.11   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del video about the product                                                 |
+|  2.12   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición de contenido adicional en la bibliografía                                   |
+|  2.13   | 18/06/2026 | Howard Robles, Guillermo Arturo       | Adición del Software Deployment Evidence for Sprint Review                          |
+|   3.0   | 19/06/2026 | Howard Robles, Guillermo Arturo       | Adición del outcome del av2                                                         |
+|   3.1   | 30/06/2026 | Howard Robles, Guillermo Arturo       | Corrección del outcome y recuperación del contenido del av1                         |
+|   3.2   | 30/06/2026 | Howard Robles, Guillermo Arturo       | Adición del Project Report Collaboration Insights del av2                           |
+|   3.3   | 01/07/2026 | Howard Robles, Guillermo Arturo       | Adición y organización de la Tabla de contenido del archivo README.md               |
+|   3.4   | 01/07/2026 | Howard Robles, Guillermo Arturo       | Ajuste del contenido del Student Outcome 5 y actualización de la tabla de versiones |
+|   3.5   | 04/07/2026 | Aguilar Untiveros, Rodrigo Fabrizio   | Ajuste del contenido de las conclusiones                                            |
+|   3.6   | 05/07/2026 | Perez Encarnacion, Breithner Rodolfo  | Ajuste del big picture event storming                                               |
+|   3.7   | 05/07/2026 | Howard Robles, Guillermo Arturo       | Añadido de nuevas user stories.                                                     |
+|   3.8   | 05/07/2026 | Howard Robles, Guillermo Arturo       | Correción del tamaño de los textos en el readme                                     |
+|   3.9   | 06/07/2026 | Aguilar Untiveros, Rodrigo Fabrizio       | Actualización de Validation Interviews y evaluación heurística                                     |
 
 ---
 
@@ -114,7 +120,7 @@ Esta sección detalla cómo el equipo colaboró para construir el **Final Projec
 **Repositorio del informe del proyecto:**  
 https://github.com/1ASI0730-10215-NovaTech-TerraTech
 
-<img src="assets/images/readme/Report-Ins.png" alt=“Descargar” >
+<img src="assets/images/readme/Report-Ins.png" alt="Descargar" width="700" height="700">
 
 - **Total de commits:** 136
 - **Autores contribuyentes:**
@@ -131,7 +137,7 @@ https://github.com/1ASI0730-10215-NovaTech-TerraTech
 
 En el informe se documentó el trabajo realizado durante el **Sprint 3**, incluyendo el avance del *Product Backlog*, la implementación y despliegue de los primeros servicios del sistema.
 
-<img src="assets/images/readme/Report-Ins-AV2.png" alt=“Descargar” >
+<img src="assets/images/readme/Report-Ins-AV2.png" alt="Descargar" width="700" height="700">
 
 - **Contribuciones destacadas del informe:**
     - Correcciones de la carátula del informe.
@@ -140,14 +146,12 @@ En el informe se documentó el trabajo realizado durante el **Sprint 3**, incluy
 
 - **Guillermo Howard (`GuillermoPromac`)**: 28 commits, 1,339 adiciones, 1,444 eliminaciones
 - **Rodrigo Aguilar (`Rodri2712`)**: 2 commits, 152 adiciones
-- **Total de commits en AV2:** 
+- **Total de commits en AV2:** 30
 
 La colaboración fue continua y estratégica, con aportes clave en aspectos críticos del backend y del informe final.
 
 ## TB2 – Integración final, autenticación y despliegue
 *Periodo:* 21 de junio – 06 de julio de 2026
-
-
 
 <div style="page-break-after: always;"></div>
 
@@ -186,7 +190,7 @@ La colaboración fue continua y estratégica, con aportes clave en aspectos crí
     - [3.2. Impact Mapping](04-cap3-requirements-specification.md#32-impact-mapping)
     - [3.3. Product Backlog](04-cap3-requirements-specification.md#33-product-backlog)
 - [Chapter IV: Product Design](05-cap4-product-design.md#chapter-iv-product-design)
-    - [4.1. Style Guidelines](05-cap4-product-design.md41-style-guidelines)
+    - [4.1. Style Guidelines](05-cap4-product-design.md#41-style-guidelines)
         - [4.1.1. General Style Guidelines](05-cap4-product-design.md#411-general-style-guidelines)
         - [4.1.2. Web Style Guidelines](05-cap4-product-design.md#412-web-style-guidelines)
     - [4.2. Information Architecture](05-cap4-product-design.md#42-information-architecture)
@@ -209,8 +213,8 @@ La colaboración fue continua y estratégica, con aportes clave en aspectos crí
         - [4.6.2. Software Architecture Context Diagram](05-cap4-product-design.md#462-software-architecture-context-diagram)
         - [4.6.3. Software Architecture Container Diagrams](05-cap4-product-design.md#463-software-architecture-container-diagrams)
         - [4.6.4. Software Architecture Components Diagrams](05-cap4-product-design.md#464-software-architecture-components-diagrams)
-      - [4.6.4.1. Business Services](05-cap4-product-design.md#4641-business-services)
-      - [4.6.4.2. Support Services](05-cap4-product-design.md#4642-support-services)
+        - [4.6.4.1. Business Services](05-cap4-product-design.md#4641-business-services)
+        - [4.6.4.2. Support Services](05-cap4-product-design.md#4642-support-services)
     - [4.7. Software Object-Oriented Design](05-cap4-product-design.md#47-software-object-oriented-design)
         - [4.7.1. Class Diagrams](05-cap4-product-design.md#471-class-diagrams)
         - [4.7.2. Class Dictionary](05-cap4-product-design.md#472-class-dictionary)
@@ -264,78 +268,78 @@ La colaboración fue continua y estratégica, con aportes clave en aspectos crí
 
 ## Student Outcome 5
 
-**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos. En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
+**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
 <table border="1" style="width: 100%; border-collapse: collapse;">
 <thead>
     <tr>
-        <th style="padding: 30px; text-align: left;">Criterio específico</th>
-        <th style="padding: 60px; text-align: left;">Acciones realizadas</th>
-        <th style="padding: 30px; text-align: left;">Conclusiones</th>
+        <th style="padding: 20px; text-align: left; width: 18%;">Criterio específico</th>
+        <th style="padding: 20px; text-align: left; width: 50%;">Acciones realizadas</th>
+        <th style="padding: 20px; text-align: left; width: 32%;">Conclusiones</th>
     </tr>
 </thead>
 <tbody>
     <tr>
-        <th style="padding: 30px; text-align: left;">Trabaja en equipo para proporcionar liderazgo en forma conjunta</th>
-        <th style="padding: 60px; text-align: left;">
-            <strong>Retuerto Rodriguez, Jorge Manuel</strong><br>
-            <strong>AV1:</strong> Como Product Owner, lideró la definición de la visión del producto y los objetivos del proyecto, estableciendo la dirección estratégica de TerraTech. Participó en la elaboración de la descripción de la startup, la misión y visión, y aseguró que el equipo comprendiera el alcance del proyecto. Coordinó la estructuración del equipo y la asignación de roles iniciales, sentando las bases para el trabajo colaborativo.<br>
-            <strong>TB1:</strong> Lideró el desarrollo de los módulos de IAM y Commercial Management en el frontend, implementando las vistas de autenticación (login, registro, recuperación de contraseña), la gestión de productos y pedidos, y la integración con los endpoints del backend. Coordinó la estructura de rutas y la lógica de estado global para estos módulos, asegurando la consistencia de la navegación y la experiencia de usuario.<br>
-            <strong>AV2:</strong> Lideró la implementación de la capa de infraestructura para IAM y Commercial en el backend, desarrollando los agregados <code>User</code>, <code>Product</code> y <code>Order</code>, los comandos y consultas correspondientes, y los controladores REST. Configuró la autenticación JWT y la autorización basada en roles, y aseguró la correcta integración con la base de datos mediante Entity Framework Core. Además, supervisó la implementación de los endpoints de pedidos y productos, validando la lógica de negocio y las reglas de integridad.<br>
-            <strong>TB2:</strong> Lideró la integración final de los módulos IAM, Analytics y Commercial Management, asegurando la coherencia entre el frontend y el backend. Coordinó la implementación de los endpoints de Analytics para la generación de reportes y dashboards, y supervisó la correcta conexión con el módulo de monitoreo. Participó en la preparación de la sustentación final, explicando la arquitectura y el flujo de datos de los módulos a su cargo. Además, actualizó el Capítulo 1 (Lean UX Process) con los hallazgos de las validaciones realizadas durante el proyecto.<br><br>
+        <td style="padding: 15px; text-align: left; vertical-align: top; font-weight: bold;">Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
+        <td style="padding: 15px; text-align: left; vertical-align: top;">
+            <strong>Retuerto Rodríguez, Jorge Manuel</strong><br>
+            <strong>AV1:</strong> Lideró la definición de la visión del producto y los objetivos del proyecto. Participó en la elaboración de la descripción de la startup, misión y visión, y coordinó la asignación de roles iniciales.<br>
+            <strong>TB1:</strong> Lideró el desarrollo frontend de IAM y Commercial Management (autenticación, gestión de productos y pedidos).<br>
+            <strong>AV2:</strong> Lideró el backend de IAM y Commercial (agregados User, Product, Order; autenticación JWT y controladores REST).<br>
+            <strong>TB2:</strong> Lideró la integración final de IAM, Analytics y Commercial. Coordinó la implementación de endpoints de Analytics y preparó la sustentación final.<br><br>
             <strong>Howard Robles, Guillermo Arturo</strong><br>
-            <strong>AV1:</strong> Lideró el análisis de competidores y las actividades de needfinding, investigando las soluciones existentes en el mercado (CropX, Netafim) y las necesidades reales de los agricultores peruanos. Documentó los hallazgos y los presentó al equipo para orientar las decisiones de diseño y funcionalidades. Participó activamente en el event storming para estructurar el flujo del sistema.<br>
-            <strong>TB1:</strong> Lideró el desarrollo de los módulos de Monitoring y Analytics en el frontend, implementando el dashboard de monitoreo con indicadores en tiempo real, gráficos históricos, mapa de fertilidad y visualización de reportes analíticos. Integró las vistas de gestión de dispositivos y campos, y desarrolló los componentes para la selección de zonas y sensores, asegurando una experiencia fluida y responsiva.<br>
-            <strong>AV2:</strong> Lideró la implementación de los bounded contexts de Monitoring y Analytics en el backend, desarrollando los agregados <code>Field</code>, <code>Device</code> y <code>Report</code>, junto con sus value objects y comandos. Implementó los endpoints para la gestión de campos y dispositivos, y los filtros por tipo de suelo y estado. Además, desarrolló la lógica de generación de reportes estadísticos y aseguró la correcta persistencia de los datos en la base de datos, optimizando las consultas para el rendimiento.<br>
-            <strong>TB2:</strong> Lideró la integración final del módulo de Monitoring con el frontend, asegurando la correcta visualización de los datos en tiempo real y la actualización dinámica del dashboard. Se encargó de la gestión del tablero Trello, organizando las tareas pendientes y asegurando que el equipo cumpliera con los plazos establecidos. Además, actualizó el Capítulo 3 (Requirements Specification) con las correcciones y mejoras identificadas durante el desarrollo, y participó activamente en la preparación de la sustentación final.<br><br>
+            <strong>AV1:</strong> Lideró el análisis de competidores, needfinding y participó en el event storming.<br>
+            <strong>TB1:</strong> Lideró el frontend de Monitoring y Analytics (dashboard, gráficos, mapa de fertilidad).<br>
+            <strong>AV2:</strong> Lideró el backend de Monitoring y Analytics (agregados Field, Device, Report; endpoints y filtros).<br>
+            <strong>TB2:</strong> Lideró la integración final de Monitoring, gestionó el tablero Trello y actualizó el Capítulo 3.<br><br>
             <strong>Perez Encarnacion, Breithner Rodolfo</strong><br>
-            <strong>AV1:</strong> Lideró el diseño UX de la landing page y la aplicación web, creando los wireframes y mockups iniciales. Aplicó principios de diseño centrado en el usuario para garantizar una experiencia intuitiva para los agricultores, considerando bajos niveles de alfabetización digital. Colaboró en la definición de los segmentos objetivo y la propuesta de valor visual.<br>
-            <strong>TB1:</strong> Lideró el desarrollo de los módulos de Profile Management y Community Management en el frontend, implementando las vistas de gestión de perfiles agrícolas, la configuración de umbrales y la interacción con la comunidad (perfiles públicos, mural de comentarios y reseñas). Diseñó los componentes para la creación y edición de perfiles, y la visualización de calificaciones y comentarios de otros agricultores.<br>
-            <strong>AV2:</strong> Lideró la implementación de los bounded contexts de Profile y Community en el backend, desarrollando los agregados <code>Profile</code>, <code>CommunityProfile</code> y <code>Comment</code>, junto con sus value objects y comandos. Implementó los endpoints para la gestión de perfiles, comunidades y comentarios, incluyendo la lógica de reputación y visibilidad. Aseguró la integridad referencial entre los perfiles de usuario y los perfiles de comunidad, y validó las reglas de negocio para la publicación y moderación de comentarios.<br>
-            <strong>TB2:</strong> Lideró la integración final de los módulos de Profile y Community Management, asegurando la consistencia de los datos entre el frontend y el backend. Se encargó de la actualización del Capítulo 2 (Requirements Elicitation & Analysis), incluyendo las entrevistas de validación realizadas con los usuarios finales (Sección 5.3). Además, actualizó la sección 2.4 (Big Picture EventStorming) con el refinamiento del modelo de negocio basado en los hallazgos de las validaciones, y participó en la preparación de la sustentación final.<br><br>
+            <strong>AV1:</strong> Lideró el diseño UX de la landing page y aplicación web (wireframes, mockups).<br>
+            <strong>TB1:</strong> Lideró el frontend de Profile y Community (perfiles, configuración de umbrales, comunidad).<br>
+            <strong>AV2:</strong> Lideró el backend de Profile y Community (agregados Profile, CommunityProfile, Comment; lógica de reputación).<br>
+            <strong>TB2:</strong> Lideró la integración final de Profile y Community. Actualizó el Capítulo 2 y refinó el Big Picture EventStorming.<br><br>
             <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong><br>
-            <strong>AV1:</strong> Se encargó de la documentación de reuniones y acuerdos, asegurando que todas las decisiones y avances quedaran registrados para el seguimiento del equipo. Participó activamente en el event storming, aportando su visión sobre los flujos de notificaciones y gestión de inventario. Colaboró en la elaboración de las primeras historias de usuario relacionadas con la gestión de insumos.<br>
-            <strong>TB1:</strong> Lideró el desarrollo de los módulos de Notification Management y Stock Management en el frontend, implementando el sistema de notificaciones (lista de notificaciones, creación de alertas, marcado como leído) y la gestión de inventario de insumos (registro, edición, filtrado y descuento de productos). Desarrolló los componentes para la visualización de notificaciones en tiempo real y la integración con el panel de control.<br>
-            <strong>AV2:</strong> Lideró la implementación de los bounded contexts de Notification y Stock en el backend, desarrollando los agregados <code>Notification</code> e <code>Inventory</code>, junto con sus comandos y consultas. Implementó los endpoints para la creación, lectura y actualización de notificaciones, así como el marcado de leídas. También desarrolló la lógica de gestión de inventario, incluyendo la actualización de stock y la validación de cantidades. Aseguró la correcta persistencia de los datos y la integración con los módulos de perfil y monitoreo.<br>
-            <strong>TB2:</strong> Lideró la integración final de los módulos de Notification y Stock Management, asegurando la sincronización de datos en tiempo real. Se encargó de la actualización del Capítulo 4 (Product Design), incluyendo los diagramas C4, de clases y de base de datos con las versiones finales de la arquitectura. Participó en la preparación de la sustentación final, explicando la infraestructura técnica y las decisiones de diseño adoptadas.<br><br>
-        </th>
-        <th style="padding: 30px; text-align: left;">
-            <strong>AV1:</strong> Se definió la visión del producto y sus objetivos mediante la participación del Product Owner y el equipo de desarrollo. Se elaboraron historias de usuario y escenarios, permitiendo establecer metas claras para el desarrollo. Se realizó análisis de competidores y actividades de needfinding para comprender el problema y orientar las decisiones del equipo. Se aplicó event storming para estructurar el flujo del sistema y alinear el entendimiento entre los integrantes. Se diseñaron interfaces UX para la landing page y la aplicación, considerando la experiencia del usuario. Se documentaron reuniones y acuerdos para asegurar la comunicación y seguimiento del progreso.<br><br>
-            <strong>TB1:</strong> Durante el Sprint 2, el equipo consolidó un modelo de liderazgo compartido donde la toma de decisiones técnicas se realizó de forma conjunta. La capacidad de liderazgo se manifestó en la autogestión de los Bounded Contexts, asegurando que cada módulo funcional estuviera alineado con los objetivos del negocio y las metas del Sprint, garantizando una integración fluida entre los componentes.<br><br>
-            <strong>AV2:</strong> El equipo consolidó un modelo de liderazgo distribuido donde cada líder de Bounded Context asumió la responsabilidad de coordinar tanto el frontend como el backend de su módulo, asegurando la coherencia técnica y funcional de la solución. La capacidad de liderazgo se manifestó en la organización de sprints internos, la asignación de tareas específicas y la resolución de conflictos técnicos, garantizando que cada módulo funcional estuviera alineado con los objetivos del negocio y las metas del hito AV2. Además, se promovió la colaboración entre líderes de diferentes módulos para resolver dependencias cruzadas, lo que permitió una integración fluida entre los componentes desarrollados por cada miembro.<br><br>
-            <strong>TB2:</strong> Para la entrega final (TB2), el equipo consolidó el liderazgo conjunto a través de la integración de todos los módulos desarrollados en los sprints anteriores. Cada líder de Bounded Context asumió la responsabilidad de la integración final de su módulo, asegurando la coherencia del sistema completo. Se realizaron sesiones de coordinación para resolver dependencias entre módulos (ej. Profile con IAM, Monitoring con Analytics, Stock con Commercial). La capacidad de liderazgo se evidenció en la organización de la sustentación final, donde cada miembro explicó su módulo y cómo contribuye al ecosistema global de TerraTech. El equipo demostró su capacidad para trabajar de manera conjunta, tomando decisiones técnicas y de gestión que aseguraron la entrega de un producto funcional y bien documentado.
-        </th>
+            <strong>AV1:</strong> Documentó reuniones y acuerdos. Participó en event storming y colaboró en historias de usuario.<br>
+            <strong>TB1:</strong> Lideró el frontend de Notification y Stock (notificaciones, gestión de inventario).<br>
+            <strong>AV2:</strong> Lideró el backend de Notification y Stock (agregados Notification, Inventory; endpoints y lógica de stock).<br>
+            <strong>TB2:</strong> Lideró la integración final de Notification y Stock. Actualizó el Capítulo 4 y preparó la sustentación final.
+        </td>
+        <td style="padding: 15px; text-align: left; vertical-align: top;">
+            <strong>AV1:</strong> Se definió la visión del producto y objetivos mediante la participación del Product Owner y el equipo. Se elaboraron historias de usuario, análisis de competidores y needfinding. Se aplicó event storming y se diseñaron interfaces UX.<br><br>
+            <strong>TB1:</strong> El equipo consolidó un modelo de liderazgo compartido con autogestión de Bounded Contexts, asegurando la alineación con los objetivos del Sprint y la integración fluida entre componentes.<br><br>
+            <strong>AV2:</strong> Se consolidó un modelo de liderazgo distribuido donde cada líder coordinó frontend y backend de su módulo. Se organizaron sprints internos y se resolvieron dependencias cruzadas.<br><br>
+            <strong>TB2:</strong> El equipo demostró liderazgo conjunto en la integración final, organización de la sustentación y coordinación interdependiente de módulos. Cada miembro explicó su módulo y su contribución al ecosistema global.
+        </td>
     </tr>
     <tr>
-        <th style="padding: 30px; text-align: left;">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</th>
-        <th style="padding: 60px; text-align: left;">
-            <strong>Retuerto Rodriguez, Jorge Manuel</strong><br>
-            <strong>AV1:</strong> Estableció las metas semanales y los hitos del proyecto, definiendo los plazos para la entrega de la documentación y el diseño inicial. Promovió la participación equitativa en las reuniones de planificación, asegurando que todos los miembros expresaran sus ideas y opiniones.<br>
-            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, participando activamente en las revisiones de código y asegurando la calidad del software. Actuó como enlace entre el equipo de frontend y backend para garantizar la correcta integración de los módulos de IAM y Comercial.<br>
-            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de IAM y Comercial con el frontend, asegurando la coherencia de los datos y la seguridad de la autenticación.<br>
-            <strong>TB2:</strong> Finalizó la integración de los módulos IAM, Analytics y Commercial, asegurando que todos los endpoints estuvieran correctamente documentados y probados. Participó en la revisión final del informe, actualizando el Capítulo 1 con los resultados de las validaciones y las conclusiones del Lean UX Process. Colaboró en la preparación de la sustentación, coordinando la presentación de los módulos a su cargo y respondiendo preguntas técnicas sobre la implementación.<br><br>
+        <td style="padding: 15px; text-align: left; vertical-align: top; font-weight: bold;">Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos</td>
+        <td style="padding: 15px; text-align: left; vertical-align: top;">
+            <strong>Retuerto Rodríguez, Jorge Manuel</strong><br>
+            <strong>AV1:</strong> Estableció metas semanales y promovió la participación equitativa en reuniones de planificación.<br>
+            <strong>TB1:</strong> Aplicó conventional commits y gitflow. Actuó como enlace entre frontend y backend.<br>
+            <strong>AV2:</strong> Continuó con las prácticas de conventional commits y supervisó la integración de endpoints de IAM y Commercial.<br>
+            <strong>TB2:</strong> Finalizó la integración de IAM, Analytics y Commercial. Actualizó el Capítulo 1 y participó en la sustentación.<br><br>
             <strong>Howard Robles, Guillermo Arturo</strong><br>
-            <strong>AV1:</strong> Colaboró en la configuración inicial del repositorio en GitHub y en la definición de la estructura de carpetas del proyecto. Estableció las primeras convenciones de código y contribuyó a la definición del flujo de trabajo GitFlow que el equipo adoptaría en adelante.<br>
-            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, y colaboró en la documentación técnica y la integración continua. Fue responsable de la correcta conexión entre el dashboard de monitoreo y los endpoints de sensores y reportes, asegurando la coherencia de los datos mostrados en el frontend.<br>
-            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de monitoreo y analíticas con el frontend, asegurando la precisión de los datos mostrados en el dashboard.<br>
-            <strong>TB2:</strong> Finalizó la integración del módulo de Monitoring, asegurando que el dashboard mostrara datos en tiempo real de manera correcta. Gestionó el tablero Trello, actualizando el estado de las tareas y asegurando que el equipo cumpliera con los plazos establecidos para la entrega final. Actualizó el Capítulo 3 con las correcciones finales y participó activamente en la sustentación, demostrando el funcionamiento del sistema y respondiendo preguntas sobre el módulo de monitoreo.<br><br>
+            <strong>AV1:</strong> Configuró el repositorio en GitHub y definió la estructura del proyecto y el flujo GitFlow.<br>
+            <strong>TB1:</strong> Trabajó con conventional commits y colaboró en documentación técnica e integración continua.<br>
+            <strong>AV2:</strong> Continuó con las prácticas de conventional commits y supervisó la integración de endpoints de Monitoring y Analytics.<br>
+            <strong>TB2:</strong> Finalizó la integración de Monitoring, gestionó el tablero Trello, actualizó el Capítulo 3 y participó en la sustentación.<br><br>
             <strong>Perez Encarnacion, Breithner Rodolfo</strong><br>
-            <strong>AV1:</strong> Participó en la planificación de las tareas de diseño UX, coordinando con el equipo para alinear la propuesta visual con los objetivos del negocio. Fomentó un entorno inclusivo al recopilar y considerar las ideas de todos los miembros para el diseño de la landing page.<br>
-            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, y colaboró en la creación de los recursos y transformadores para la API. Garantizó que la información de perfiles y comunidad se reflejara correctamente en el frontend, facilitando la interacción de los agricultores.<br>
-            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de perfiles y comunidad con el frontend, asegurando la consistencia de los datos de los agricultores.<br>
-            <strong>TB2:</strong> Finalizó la integración de los módulos Profile y Community, asegurando que los perfiles públicos y los comentarios se mostraran correctamente. Actualizó el Capítulo 2 con los resultados de las entrevistas de validación (Sección 5.3) y refinó el Big Picture EventStorming (Sección 2.4) basado en los aprendizajes del proyecto. Participó en la sustentación, explicando la investigación de usuarios y las funcionalidades de comunidad y perfiles.<br><br>
+            <strong>AV1:</strong> Planificó tareas de diseño UX y fomentó un entorno inclusivo recopilando ideas de todos los miembros.<br>
+            <strong>TB1:</strong> Trabajó con conventional commits y colaboró en la creación de recursos y transformadores para la API.<br>
+            <strong>AV2:</strong> Continuó con las prácticas de conventional commits y supervisó la integración de endpoints de Profile y Community.<br>
+            <strong>TB2:</strong> Finalizó la integración de Profile y Community. Actualizó el Capítulo 2 y refinó el Big Picture EventStorming.<br><br>
             <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong><br>
-            <strong>AV1:</strong> Contribuyó a la planificación de tareas relacionadas con la gestión de inventario y notificaciones, asegurando que estas funcionalidades estuvieran consideradas desde las fases iniciales del proyecto. Participó en las reuniones de retrospectiva para identificar áreas de mejora.<br>
-            <strong>TB1:</strong> Trabajó siguiendo los 'conventional commits' y gitflow, y se encargó de la correcta integración de las notificaciones y el inventario en ambos lados, asegurando que los datos se sincronicen adecuadamente entre frontend y backend.<br>
-            <strong>AV2:</strong> Continuó aplicando las prácticas de conventional commits y gitflow, y supervisó la correcta integración de los endpoints de notificaciones e inventario con el frontend, asegurando la sincronización de datos en tiempo real.<br>
-            <strong>TB2:</strong> Finalizó la integración de los módulos Notification y Stock, asegurando que las notificaciones se generaran correctamente y que el inventario se actualizara en tiempo real. Actualizó el Capítulo 4 con los diagramas finales de arquitectura (C4, clases, base de datos), reflejando las decisiones técnicas adoptadas durante el desarrollo. Participó en la sustentación, explicando la arquitectura del sistema y las funcionalidades de notificaciones e inventario.<br><br>
-        </th>
-        <th style="padding: 30px; text-align: left;">
-            <strong>AV1:</strong> Se estableció un flujo de trabajo dentro de GitHub: una organización, para la creación de las ramas nos hemos basado en Gitflow, lo que permitió integrar cambios de forma ordenada y sin conflictos mayores. El uso de 'conventional commits' facilitó la trazabilidad de funcionalidades y la generación automática de changelogs. Se definieron metas semanales alcanzables mediante reuniones de planificación, respetando los roles y promoviendo la participación equitativa. Se fomentó un entorno inclusivo donde todos los miembros expresaron sus ideas durante las retrospectivas. El equipo cumplió con los objetivos del hito, entregando las funcionalidades acordadas dentro del plazo establecido.<br><br>
-            <strong>TB1:</strong> El equipo fomentó un entorno inclusivo mediante la rotación de responsabilidades técnicas y el apoyo mutuo en las fases de despliegue. Se establecieron metas específicas para el Sprint 2 mediante un Sprint Backlog detallado, lo que permitió una planificación rigurosa de las tareas de codificación y documentación. El cumplimiento de los objetivos se evidenció en la entrega de un producto funcional desplegado en múltiples plataformas y una documentación técnica que refleja fielmente la colaboración y el esfuerzo colectivo por alcanzar los estándares de calidad exigidos.<br><br>
-            <strong>AV2:</strong> El equipo fomentó un entorno colaborativo e inclusivo mediante la organización de reuniones diarias de sincronización y la rotación de responsabilidades en las revisiones de código. Se establecieron metas específicas para el hito AV2 mediante un Sprint Backlog detallado que priorizó las funcionalidades críticas del sistema (monitoreo, autenticación, comunidad, notificaciones, perfiles, inventario, analíticas y comercio). Se utilizaron herramientas como GitHub Projects para el seguimiento de tareas y se aplicaron prácticas de integración continua (CI) para validar los cambios de forma automática. El cumplimiento de los objetivos se evidenció en la entrega de un producto funcional con todos los bounded contexts implementados y desplegados en entornos de prueba, junto con una documentación técnica que refleja fielmente la colaboración y el esfuerzo colectivo por alcanzar los estándares de calidad exigidos.<br><br>
-            <strong>TB2:</strong> Para la entrega final (TB2), el equipo consolidó un entorno colaborativo e inclusivo mediante la organización de sesiones de integración conjunta y la revisión cruzada de código entre todos los miembros. Se establecieron metas claras para la finalización del proyecto, priorizando la estabilidad del sistema y la calidad de la documentación. Se utilizó el tablero Trello para el seguimiento de las tareas pendientes y se realizaron reuniones diarias de sincronización para resolver bloqueos y coordinar la integración de los módulos. El cumplimiento de los objetivos se evidenció en la entrega de un producto completo, con todos los bounded contexts integrados y desplegados en producción, una documentación técnica actualizada y un video About-the-Product que demuestra el funcionamiento del sistema. El equipo demostró su capacidad para planificar, ejecutar y entregar un proyecto complejo de manera colaborativa, cumpliendo con los plazos establecidos y los estándares de calidad exigidos por el curso.
-        </th>
+            <strong>AV1:</strong> Contribuyó a la planificación de tareas de inventario y notificaciones. Participó en retrospectivas.<br>
+            <strong>TB1:</strong> Trabajó con conventional commits y aseguró la sincronización de datos entre frontend y backend.<br>
+            <strong>AV2:</strong> Continuó con las prácticas de conventional commits y supervisó la integración de endpoints de Notification y Stock.<br>
+            <strong>TB2:</strong> Finalizó la integración de Notification y Stock. Actualizó el Capítulo 4 y participó en la sustentación.
+        </td>
+        <td style="padding: 15px; text-align: left; vertical-align: top;">
+            <strong>AV1:</strong> Se estableció un flujo de trabajo basado en Gitflow y conventional commits. Se definieron metas semanales y se promovió la participación equitativa. El equipo cumplió con los objetivos del hito.<br><br>
+            <strong>TB1:</strong> Se fomentó un entorno inclusivo mediante la rotación de responsabilidades. Se definieron metas con un Sprint Backlog detallado, entregando un producto funcional desplegado en múltiples plataformas.<br><br>
+            <strong>AV2:</strong> Se fomentó la colaboración con reuniones diarias, rotación en revisiones de código y un Sprint Backlog priorizado. Se utilizaron GitHub Projects y CI para validar cambios, entregando todos los bounded contexts implementados.<br><br>
+            <strong>TB2:</strong> Se consolidó la colaboración con sesiones de integración conjunta y revisión cruzada de código. Se utilizó Trello para seguimiento y se realizaron reuniones diarias de sincronización. El equipo entregó un producto completo, con todos los bounded contexts integrados, documentación actualizada y un video About-the-Product. Se cumplieron los plazos y estándares de calidad.
+        </td>
     </tr>
 </tbody>
 </table>
