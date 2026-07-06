@@ -137,9 +137,7 @@ https://github.com/1ASI0730-10215-NovaTech-TerraTech
 ## AV1 - Desarrollo de producto y Landing Page
 *Periodo:* 6 de abril – 24 de abril de 2026
 
-En el informe se documentó el trabajo realizado durante el **Sprint 1**. 
-La meta de este sprint es el desarrollo de conceptos del producto como 
-diagrama de clases, diagrama de base de datos, event storming, etc.  
+En el informe se documentó el trabajo realizado durante el **Sprint 1**. La meta de este sprint es el desarrollo de conceptos del producto como diagrama de clases, diagrama de base de datos, event storming, etc.  
 
 <img src="assets/images/readme/report-insight-av1.png" alt="Descargar" width="700" height="700">
 
@@ -160,9 +158,7 @@ diagrama de clases, diagrama de base de datos, event storming, etc.
 ## TB1 - Frontend, mejoras e integración 
 *Periodo:* 25 de abril – 13 de mayo de 2026
 
-En el informe se documentó el trabajo realizado durante el **Sprint 2**. 
-La meta de este sprint fue el desarrollo del frontend, usando una fake api,
-y correcciones de observaciones del docente: lean ux.
+En el informe se documentó el trabajo realizado durante el **Sprint 2**. La meta de este sprint fue el desarrollo del frontend, usando una fake api, y correcciones de observaciones del docente: lean ux.
 
 <img src="assets/images/readme/report-insight-tb1.png" alt="Descarga" width="700" height="700">
 
@@ -195,6 +191,20 @@ La colaboración fue continua y estratégica, con aportes clave en aspectos crí
 ## TB2 – Integración final, autenticación y despliegue
 *Periodo:* 21 de junio – 06 de julio de 2026
 
+En el informe se documentó el trabajo realizado durante el **Sprint 4** e incluyendo el avance del *Product Backlog*.
+
+<img src="assets/images/readme/report-insight-tb2.png" alt="Descargar" width="700" height="700">
+
+- **Contribuciones destacadas del informe:**
+    - Correcciones de la carátula y reporte del informe.
+    - Registro del trabajo realizado en el Sprint 4, incluyendo backlog, implementación de servicios y despliegue. 
+
+- **Rodrigo Aguilar (`Rodri2712`)**: 17 commits, 1354 adicciones, 721 eliminaciones
+- **Guillermo Howard (`GuillermoPromac`)**: 14 commits, 619 adicciones, 433 eliminaciones
+- **Breithner Pérez (`Breithner1`)**: 9 commits, 206 adicciones, 75 eliminaciones
+- **Jorge Retuerto (`Calin1407`)**: 3 commits, 103 adicciones, 108 eliminaciones
+- **Total de commits en AV1:** 43
+    
 <div style="page-break-after: always;"></div>
 
 ## Tabla de contenido
