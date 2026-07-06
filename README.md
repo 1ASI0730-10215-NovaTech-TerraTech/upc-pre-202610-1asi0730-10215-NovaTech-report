@@ -134,6 +134,42 @@ https://github.com/1ASI0730-10215-NovaTech-TerraTech
 - Actividad distribuida por ramas correspondientes a cada sección del informe.
 - Todos los miembros participaron activamente en la redacción y revisión del contenido.
 
+## AV1 - Desarrollo de producto y Landing Page
+*Periodo:* 6 de abril – 24 de abril de 2026
+
+En el informe se documentó el trabajo realizado durante el **Sprint 1**. La meta de este sprint es el desarrollo de conceptos del producto como diagrama de clases, diagrama de base de datos, event storming, etc.  
+
+<img src="assets/images/readme/report-insight-av1.png" alt="Descargar" width="700" height="700">
+
+- **Contribuciones destacadas del informe:**
+  - Definición de conceptos del proyecto usando Lean UX.
+  - Desarrollo de entrevistas y análisis de usuario, implementando los user persona para identificar necesidades del usuario.
+  - Desarrollo de requisitos del negocio y priorización.
+  - Desarrollo del diseño del producto: diagramas, wireframes y mockups.
+  - Validación e implementación del producto.
+    
+- **Luis Acuña (`L2006delacruz`)**: 5 commits, 595 adicciones, 5 eliminaciones 
+- **Rodrigo Aguilar (`Rodri2712`)**: 21 commits, 1155 adicciones, 80 eliminaciones
+- **Guillermo Howard (`GuillermoPromac`)**: 12 commits, 525 adicciones, 54 eliminaciones
+- **Breithner Pérez (`Breithner1`)**: 5 commits, 368 adicciones, 4 eliminaciones 
+- **Jorge Retuerto (`Calin1407`)**: 33 commits, 1244 adicciones, 537 eliminaciones
+- **Total de commits en AV1:** 76 
+
+## TB1 - Frontend, mejoras e integración 
+*Periodo:* 25 de abril – 13 de mayo de 2026
+
+En el informe se documentó el trabajo realizado durante el **Sprint 2**. La meta de este sprint fue el desarrollo del frontend, usando una fake api, y correcciones de observaciones del docente: lean ux.
+
+<img src="assets/images/readme/report-insight-tb1.png" alt="Descarga" width="700" height="700">
+
+- **Contribuciones destacadas del informe:**
+    - Corecciones del chapter 01 - lean ux.
+    - Descripción actualizada de la organización para el desarrollo del front end.
+    - Registro de trabajo realizado en el Sprint 2, incluyendo sprint planning y backlog.
+- **Guillermo Howard (`GuillermoPromac`)**: 1 commits, 1 adicción, 1 eliminación.
+- **Rodrigo Aguilar (`Rodri2712`)**: 11 commits, 1577 adicciones, 1007 eliminaciones
+- **Total de commits en AV2:** 30
+
 ## AV2 – Backend, mejoras e integración
 *Periodo:* 15 de mayo – 19 de junio de 2026
 
@@ -155,6 +191,20 @@ La colaboración fue continua y estratégica, con aportes clave en aspectos crí
 ## TB2 – Integración final, autenticación y despliegue
 *Periodo:* 21 de junio – 06 de julio de 2026
 
+En el informe se documentó el trabajo realizado durante el **Sprint 4** e incluyendo el avance del *Product Backlog*.
+
+<img src="assets/images/readme/report-insight-tb2.png" alt="Descargar" width="700" height="700">
+
+- **Contribuciones destacadas del informe:**
+    - Correcciones de la carátula y reporte del informe.
+    - Registro del trabajo realizado en el Sprint 4, incluyendo backlog, implementación de servicios y despliegue. 
+
+- **Rodrigo Aguilar (`Rodri2712`)**: 17 commits, 1354 adicciones, 721 eliminaciones
+- **Guillermo Howard (`GuillermoPromac`)**: 14 commits, 619 adicciones, 433 eliminaciones
+- **Breithner Pérez (`Breithner1`)**: 9 commits, 206 adicciones, 75 eliminaciones
+- **Jorge Retuerto (`Calin1407`)**: 3 commits, 103 adicciones, 108 eliminaciones
+- **Total de commits en AV1:** 43
+    
 <div style="page-break-after: always;"></div>
 
 ## Tabla de contenido
