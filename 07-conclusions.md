@@ -52,6 +52,8 @@ A continuación, encontrará una captura de pantalla del vídeo, junto con enlac
 
 ![About-The-Team](assets/images/annexes/about-the-team.png)
 
-Video en Stream: https://tinyurl.com/5e4k6vas
+Video en Stream: [https://tinyurl.com/5e4k6vas](https://tinyurl.com/5e4k6vas)
 
-Video en YouTube: https://youtu.be/YjfLNpPMLpg
+Video en YouTube: [https://youtu.be/YjfLNpPMLpg](https://youtu.be/YjfLNpPMLpg)
+
+Duración: 00:00 - 08:34 
