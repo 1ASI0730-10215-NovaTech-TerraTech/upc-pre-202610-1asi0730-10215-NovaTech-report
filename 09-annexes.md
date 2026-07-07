@@ -72,6 +72,30 @@ Duración: 00:00 - 07:57
 
 <div class="page"></div>
 
+***Anexo H. Deployment del BackEnd***
+
+- Link del deployment del BackEnd: [https://tinyurl.com/3sbw5e75](https://tinyurl.com/3sbw5e75)
+
+<img src="assets/images/annexes/AnexoH.png" alt=“Descargar” >
+
+<div class="page"></div>
+
+***Anexo I. Deployment del FrontEnd***
+
+- Link del deployment del FrontEnd: [https://tinyurl.com/4bkjtvza](https://tinyurl.com/4bkjtvza)
+
+<img src="assets/images/annexes/AnexoI.png" alt=“Descargar” >
+
+<div class="page"></div>
+
+***Anexo J. Deployment del LandingPage***
+
+- Link del deployment del FrontEnd: [https://tinyurl.com/3jf5uuxm](https://tinyurl.com/3jf5uuxm)
+
+<img src="assets/images/annexes/AnexoJ.png" alt=“Descargar” >
+
+<div class="page"></div>
+
 ## Videos de Exposición
 
 ***TB01***
