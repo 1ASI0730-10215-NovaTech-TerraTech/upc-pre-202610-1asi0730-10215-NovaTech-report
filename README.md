@@ -130,7 +130,7 @@ Esta sección detalla cómo el equipo colaboró para construir el **Final Projec
 
 <img src="assets/images/readme/Report-Ins.png" alt="Descargar" width="700" height="700">
 
-- **Total de commits:** 136
+- **Total de commits:** 191
 - **Autores contribuyentes:**
     - Luis Acuña (`L2006delacruz`)
     - Rodrigo Aguilar (`Rodri2712`)
@@ -205,10 +205,10 @@ En el informe se documentó el trabajo realizado durante el **Sprint 4** e inclu
     - Correcciones de la carátula y reporte del informe.
     - Registro del trabajo realizado en el Sprint 4, incluyendo backlog, implementación de servicios y despliegue. 
 
-- **Rodrigo Aguilar (`Rodri2712`)**: 17 commits, 1354 adicciones, 721 eliminaciones
-- **Guillermo Howard (`GuillermoPromac`)**: 14 commits, 619 adicciones, 433 eliminaciones
-- **Breithner Pérez (`Breithner1`)**: 9 commits, 206 adicciones, 75 eliminaciones
-- **Jorge Retuerto (`Calin1407`)**: 3 commits, 103 adicciones, 108 eliminaciones
+- **Rodrigo Aguilar (`Rodri2712`)**: 19 commits, 1506 adicciones, 721 eliminaciones
+- **Guillermo Howard (`GuillermoPromac`)**: 46 commits, 2339 adicciones, 1874 eliminaciones
+- **Breithner Pérez (`Breithner1`)**: 10 commits, 273 adicciones, 129 eliminaciones
+- **Jorge Retuerto (`Calin1407`)**: 5 commits, 159 adicciones, 114 eliminaciones
 - **Total de commits en AV1:** 43
     
 <div style="page-break-after: always;"></div>

@@ -92,3 +92,10 @@ Duración: 00:00 - 17:26
 
 <img src="assets/images/annexes/expo-av2.png" alt=“Descargar” >
 
+***TB02***
+
+Link del video del TB02: [https://tinyurl.com/ysrkfwrd](https://tinyurl.com/ysrkfwrd)
+
+Duración: 00:00 - 12:22
+
+<img src="assets/images/annexes/expo-tb2.png" alt=“Descargar” >
