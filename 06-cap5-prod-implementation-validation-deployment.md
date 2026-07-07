@@ -1841,18 +1841,228 @@ Trello: [https://trello.com/b/sLQ8KGVG/aplicaciones-web](https://trello.com/b/sL
 
 #### 5.2.4.4. Development Evidence for Sprint Review
 
+**Landing page:**
+
+Se ha actualizado el link del FrontEnd puesto en el Landing page por los cambios en el deployment del FrontEnd, ahora se encuentra desplegado en render.
+
+| Repository                                                          | Branch                   | Commit Id | Commit Message                       | Commit Message Body                                                         | Commited on (Date) |
+|---------------------------------------------------------------------|--------------------------|-----------|--------------------------------------|-----------------------------------------------------------------------------|--------------------|
+| GuillermoPomace/upc-pre-202610-1asio0730-10215-NovaTech-LandingPage | feature/change-link-page | f7daaae   | fix: update registration button link | Actualización del enlace del botón de registro a la nueva URL del FrontEnd. | 06/07              |
+
+---
+
+**FrontEnd:**
+
+En el frontend de TerraTech se han implementado mejoras sustanciales en la compatibilidad con los endpoints del backend, corrigiendo errores críticos en el mapeo de datos de analíticas y en la creación de perfiles (bad request 400). Se ha añadido soporte para camelCase en los ensambladores de monitoreo, integrando nuevas propiedades como latitud y longitud en los formularios y listas de campos, con sus respectivas validaciones y mensajes de internacionalización. Además, se ha mejorado la gestión de comentarios en la comunidad, permitiendo la edición y eliminación con ajustes dinámicos en la puntuación de reputación, y se ha incorporado soporte multilingüe para las acciones de la comunidad. Finalmente, se ha implementado el botón de cierre de sesión en el layout y se ha integrado la validación de perfiles en el módulo comercial antes de la confirmación de pedidos.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|-------------------|
+| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/analytics-api-compatibility | 1a5b30b | fix(analytics): fix report data mapping in bounded analytics. | Se arregló un error de mapeo de los datos de analytics, permitiendo la visualización completa de los datos. | 29/06 |
+| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/profile-api-compability | b6a92e2 | fix(profile): fixed bad request 400 on profile creation. | Se arregló el problema de bad request en la creación de un profile. | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 4f6b574 | feat(monitoring): update device and field entities with default values and new latitude/longitude properties. | Corrección de entities en monitoring. | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 67b086a | feat(monitoring): add latitude and longitude fields to field form and list with validation. | Añadido de los valores latitud y longitud en el Field. | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 6b71981 | feat(monitoring): enhance device and field classes with detailed jsdoc comments. | Añadido de documentación en los entities de monitoring. | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 057a5b4 | feat(monitoring): update device and field assemblers to improve resource mapping and add fallback handling. | Añadido de los handing a los assemblers field y device. | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | bfca455 | refactor(monitoring): device and field api interactions to ensure proper payload structure and improve data handling. | Cambios en la interacción del .store de monitoring. | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 2aee91a | feat(i18n): add localization for latitude and longitude fields with validation messages. | Añadido de internacionalización de los valores nuevos de latitud y longitud. | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 457b353 | fix(monitoring): add camelcase support to device assembler. | - | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c9a521c | refactor(monitoring): keep device form unchanged. | - | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | aeeffc2 | fix(monitoring): add camelcase support to field assembler. | - | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c255a03 | feat(monitoring): dynamically assign profileid from iam store. | - | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | a405053 | fix(monitoring): update payloads to match backend dtos. | - | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c096527 | fix(monitoring): update methods to use id parameter correctly. | - | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 7578401 | feat(community_management): update profile and comment payload structures for consistency. | Actualizar las estructuras de carga útil de perfil y comentario para mayor coherencia | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 8e82785 | feat(community_management): refactor comment assembler to improve entity mapping. | Refactorizar el ensamblador de comentarios para mejorar el mapeo de entidades. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | cf0e4dc | feat(community_management): update resource naming and enhance comment retrieval method. | Actualizar la nomenclatura de recursos y mejorar el método de recuperación de comentarios. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 24ba7ef | feat(community_management): enhance community profile entity mapping and simplify response handling. | mejora la asignación de entidades de perfil de comunidad y simplifica el manejo de respuestas. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 75a5873 | feat(community_management): update profile_id type and ensure correct parsing of route parameter. | actualiza el tipo profile_id y garantiza el análisis correcto del parámetro de ruta. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 329b2c3 | feat(community_management): ensure correct parsing of profile id and update author profile id type. | Garantiza el análisis correcto del ID de perfil y actualiza el tipo de ID de perfil de autor | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 02a7c32 | feat(community_management): add comment update and delete functionality, improve target profile ID handling. | Agrega funcionalidad para actualizar y eliminar comentarios, y mejora el manejo del ID de perfil de destino. | 05/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | bcad6a3 | feat(community_management): add update and delete functionality for comments. | Agrega funcionalidad para actualizar y eliminar comentarios. | 05/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | a5aa1cb | feat(community_management): enhance community profile form with profile ID handling and validation. | Mejora el formulario de perfil de comunidad con manejo y validación del ID de perfil. | 05/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 5634fe8 | feat(community_management): enhance community profile list with visibility filtering and profile ID checks. | Mejora la lista de perfiles de comunidad con filtrado de visibilidad y comprobaciones de ID de perfil. | 06/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 109adc6 | feat(community_management): implement comment editing and deletion with reputation score adjustments. | Implementa la edición y eliminación de comentarios con ajustes de puntuación de reputación. | 06/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 0394af1 | feat(community_management): add multilingual support for community actions and notifications. | Agrega soporte multilingüe para acciones y notificaciones de la comunidad. | 06/07 |
+| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/implements-log-out | 99dd0b6 | feature(layout): implements log out button into layout. | Implementación de botón para terminar la sesión del usuario. | 06/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/commercial-order-endpoint | 6b7a3fa | feat(commercial): integrate profile validation before order confirmation. | integrar la validación del perfil antes de la confirmación del pedido. | 06/07 |
+
+---
+
+**BackEnd:**
+
+Durante el desarrollo del backend, se ha estandarizado el uso de identificadores numéricos (int) en los bounded contexts de Commercial y Community Management, eliminando restricciones de longitud y mejorando la integridad referencial entre las entidades. Se ha añadido la puntuación de reputación en las actualizaciones de perfiles de comunidad y se ha creado la migración inicial de base de datos consolidando todas las tablas del sistema. Además, se ha corregido el error 500 en el módulo de monitoreo, mejorando los ensambladores con manejo de valores nulos y añadiendo propiedades como latitud y longitud en los recursos de campo, alineando el backend con las necesidades del frontend.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|----------------|---------------------|-------------------|
+| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/refactor-commercial-profileid-to-number | 0bf0791 | refactor: updated profile id from string to number in the bounded commercial. | Actualización de profile id de string a valores enteros en el bounded de commercial. | 28/06 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-migrations | 34c21fe | feat: create initial database migration with multiple tables. | Creación del migrations para el projecto | 01/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 4f967c2 | feat(community_management): add reputation score to profile update information. | agregar puntuación de reputación a la información de actualización del perfil | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 47a1162 | feat(comment_management): change AuthorProfileId and TargetProfileId types from string to int. | cambia los tipos de AuthorProfileId y TargetProfileId de string to int | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | dcb9267 | feat(community_management): change ProfileId type from string to int and update UpdateInformation method to accept reputation score. | Cambiar el tipo de ProfileId de cadena a entero y actualizar el método UpdateInformation para que acepte la puntuación de reputación. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 3c65838 | feat(comment_management): change AuthorProfileId and TargetProfileId types from string to int. | Cambiar los tipos de AuthorProfileId y TargetProfileId de string a int | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 81b4ec7 | feat(community_management): change ProfileId type from string to int in CreateCommunityProfileCommand. | Cambiar el tipo de ProfileId de string a int en CreateCommunityProfileCommand | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | e49f1fb | feat(community_management): add ReputationScore to UpdateCommunityProfileCommand. | Añadir ReputationScore a UpdateCommunityProfileCommand | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 8ca8405 | feat(community_management): change TargetProfileId type from string to int in GetCommentsByTargetProfileIdQuery. | Cambiar el tipo de TargetProfileId de string a int en GetCommentsByTargetProfileIdQuery | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 1ead45e | feat(community_management): change ProfileId type from string to int in GetCommunityProfileByProfileIdQuery. | cambia el tipo de ProfileId de cadena a entero en GetCommunityProfileByProfileIdQuery. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | a16afe2 | feat(comment_management): change TargetProfileId type from string to int in ICommentRepository. | cambia el tipo de TargetProfileId de string a int en ICommentRepository. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | d94cef6 | feat(community_management): change ProfileId type from string to int in ICommunityProfileRepository. | Cambiar el tipo de ProfileId de string a int en ICommunityProfileRepository | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | d42d5b5 | feat(community_management): remove maxLength constraint for ProfileId and TargetProfileId in CommunityProfile and Comment entities. | Eliminar la restricción maxLength para ProfileId y TargetProfileId en las entidades CommunityProfile y Comment. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 13bccda | feat(comment_management): change TargetProfileId type from string to int in CommentRepository. | Cambiar el tipo de TargetProfileId de string a int en CommentRepository. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 814a6a4 | feat(community_management): change ProfileId type from string to int in CommunityProfileRepository. | Cambiar el tipo de ProfileId de cadena a entero en CommunityProfileRepository. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | f2bb4d1 | feat(comment_management): change AuthorProfileId and TargetProfileId types from string to int in CommentResource and CreateCommentResource. | cambia los tipos AuthorProfileId y TargetProfileId de cadena a entero en CommentResource y CreateCommentResource. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | f717ab8 | feat(community_management): change ProfileId type from string to int in CommunityProfileResource, CreateCommunityProfileResource, and UpdateCommunityProfileResource. | cambia el tipo ProfileId de cadena a entero en CommunityProfileResource, CreateCommunityProfileResource y UpdateCommunityProfileResource. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | 34ee74d | feat(comment_management): change targetProfileId type from string to int in CommentsController. | Cambiar el tipo de targetProfileId de cadena a entero en CommentsController. | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/change-community-ids-to-number | e14f724 | feat(community_management): update CommunityProfilesController to use ProfileId as int and enhance method summaries. | Actualizar CommunityProfilesController para usar ProfileId como entero y mejorar los resúmenes de los métodos. | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/fix-error-500-monitoring | baf8086 | feat(monitoring): enhance fieldresource and assembler with additional properties and null safety. | Se amplió el DTO FieldResource para incluir las propiedades ProfileId, Latitude y Longitude, alineándolo con el nuevo esquema del frontend | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/fix-error-500-monitoring | 102e2d4 | feat(monitoring): enhance deviceresource assembler to handle null values gracefully. | Se actualizó el DeviceResourceFromEntityAssembler para gestionar de forma segura las propiedades que podrían ser nulas (FieldId, MacAddress, Status, LastSync) | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/fix-error-500-monitoring | 125751a | feat(monitoring): add methods to retrieve all device and field resources with error handling. | Se incorporaron los métodos GetAllFieldResourcesAsync y GetAllDeviceResourcesAsync en los servicios de consulta correspondientes | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-BackEnd | feature/fix-error-500-monitoring | c94a522 | feat(monitoring): update devicescontroller and fieldscontroller to retrieve resources directly from query services. | Se modificaron los controladores DevicesController y FieldsController para que los endpoints GET /devices y GET /fields utilicen ahora los nuevos métodos resistentes a errores | 02/07 |
+
+---
 
 
 #### 5.2.4.5. Execution Evidence for Sprint Review
 
+A continuación, se muestra un video con los avances realizados durante el Sprint 4, asi como el deployment del FrontEnd y la Landing Page en render.
+
+Video del sprint4:
+
+<img src="assets/images/cap5/Video-Sprint4.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Enlace del video:
+
+Duración:
 
 
 #### 5.2.4.6. Services Documentation Evidence for Sprint Review
 
+Durante este sprint se completó al 100% el desarrollo del FrontEnd junto a su conexión con el BackEnd, así como la integración de los servicios de monitoreo, notificaciones, comunidad, inventario y analítica. Se documentaron los endpoints de cada servicio, incluyendo sus rutas, métodos HTTP, parámetros de entrada y salida, así como ejemplos de uso. Esta documentación se encuentra disponible en el repositorio del proyecto y servirá como referencia para futuros desarrollos y para la integración con otros sistemas.
+
+A su vez se completó el deployment de los elementos del FrontEnd y la Landing Page en render, asegurando que los servicios estén accesibles y funcionando correctamente.
+
+Descripción del Logro:
+
+- Finalización del FrontEnd (100%).
+- Correcto despliegue de los elementos de la pagina estática.
+- Conexión exitosa del FrontEnd con el BackEnd.
+- Documentación completa de los servicios implementados.
+- Registro de zonas de cultivo y sensores IoT funcionando correctamente.
+- Visualización de catálogo de productos y reseñas de clientes finales.
+
+***Recursos del Sprint:***
+
+# TerraTech API Endpoints
+
+La siguiente tabla detalla todos los recursos expuestos por la API de TerraTech, organizados por bounded context. Cada fila indica el recurso, la acción implementada, el método HTTP, el endpoint correspondiente y un enlace a la documentación interactiva (Swagger).
+
+| Recurso            | Acción implementada                                                         | Método HTTP | Endpoint                                  | Repositorio Backend                                                                         |
+|--------------------|-----------------------------------------------------------------------------|-------------|-------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Autenticación**  | Registrar un nuevo usuario (email y contraseña)                             | POST        | `/api/v1/authentication/sign-up`          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Iniciar sesión y obtener token JWT                                          | POST        | `/api/v1/authentication/sign-in`          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Usuarios**       | Obtener un usuario por su ID                                                | GET         | `/api/v1/users/{id}`                      | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un usuario por su email                                             | GET         | `/api/v1/users/email/{email}`             | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Perfiles**       | Crear un perfil agrícola                                                    | POST        | `/api/v1/profiles`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los perfiles                                                  | GET         | `/api/v1/profiles`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un perfil por ID                                                    | GET         | `/api/v1/profiles/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un perfil                                                        | PUT         | `/api/v1/profiles/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un perfil                                                          | DELETE      | `/api/v1/profiles/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Monitoreo**      | Crear un campo (zona de cultivo)                                            | POST        | `/api/v1/fields`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los campos                                                    | GET         | `/api/v1/fields`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un campo por ID                                                     | GET         | `/api/v1/fields/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un campo                                                         | PUT         | `/api/v1/fields/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un campo                                                           | DELETE      | `/api/v1/fields/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener campos por tipo de suelo                                            | GET         | `/api/v1/fields/soiltype/{type}`          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Crear un dispositivo IoT                                                    | POST        | `/api/v1/devices`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los dispositivos                                              | GET         | `/api/v1/devices`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un dispositivo por ID                                               | GET         | `/api/v1/devices/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un dispositivo                                                   | PUT         | `/api/v1/devices/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un dispositivo                                                     | DELETE      | `/api/v1/devices/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener dispositivos por campo                                              | GET         | `/api/v1/devices/field/{fieldId}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener dispositivos por estado (`ONLINE`, `OFFLINE`, `LOW_BATTERY`)        | GET         | `/api/v1/devices/status/{status}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Analytics**      | Crear un reporte estadístico                                                | POST        | `/api/v1/reports`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los reportes                                                  | GET         | `/api/v1/reports`                         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un reporte por ID                                                   | GET         | `/api/v1/reports/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un reporte                                                       | PUT         | `/api/v1/reports/{id}`                    | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Comercial**      | Crear un pedido                                                             | POST        | `/api/v1/orders`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los pedidos                                                   | GET         | `/api/v1/orders`                          | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un pedido por ID                                                    | GET         | `/api/v1/orders/{id}`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener pedidos por perfil                                                  | GET         | `/api/v1/orders/profile/{id}`             | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Validar un pedido                                                           | PUT         | `/api/v1/orders/{id}/validate`            | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar estado de un pedido                                              | PUT         | `/api/v1/orders/{id}/status`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Crear un producto                                                           | POST        | `/api/v1/products`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los productos                                                 | GET         | `/api/v1/products`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un producto por ID                                                  | GET         | `/api/v1/products/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Inventarios**    | Crear un ítem de inventario                                                 | POST        | `/api/v1/inventories`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los ítems de inventario                                       | GET         | `/api/v1/inventories`                     | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un ítem de inventario por ID                                        | GET         | `/api/v1/inventories/{id}`                | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un ítem de inventario                                            | PUT         | `/api/v1/inventories/{id}`                | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Notificaciones** | Crear una notificación                                                      | POST        | `/api/v1/notifications`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener notificaciones por perfil                                           | GET         | `/api/v1/notifications`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener una notificación por ID                                             | GET         | `/api/v1/notifications/{id}`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Marcar una notificación como leída                                          | PUT         | `/api/v1/notifications/{id}/read`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+| **Comunidad**      | Crear un perfil de comunidad                                                | POST        | `/api/v1/community-profiles`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener todos los perfiles de comunidad                                     | GET         | `/api/v1/community-profiles`              | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un perfil de comunidad por ID                                       | GET         | `/api/v1/community-profiles/{id}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un perfil de comunidad por ID de perfil asociado                    | GET         | `/api/v1/community-profiles/profile/{id}` | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un perfil de comunidad                                           | PUT         | `/api/v1/community-profiles/{id}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un perfil de comunidad                                             | DELETE      | `/api/v1/community-profiles/{id}`         | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Crear un comentario                                                         | POST        | `/api/v1/comments`                        | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener comentarios por perfil destino                                      | GET         | `/api/v1/comments/target/{id}`            | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Obtener un comentario por ID                                                | GET         | `/api/v1/comments/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Actualizar un comentario                                                    | PUT         | `/api/v1/comments/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+|                    | Eliminar un comentario                                                      | DELETE      | `/api/v1/comments/{id}`                   | [Repo](https://upc-pre-202610-1asi0730-10215-novatech-p8mf.onrender.com/swagger/index.html) |
+
+---
+*Todos los endpoints requieren autenticación mediante token JWT, excepto los de registro e inicio de sesión. La documentación interactiva completa está disponible en el repositorio backend.*
 
 
 #### 5.2.4.7. Software Deployment Evidence for Sprint Review
 
+Durante este sprint, se realizó el correcto despliegue del FrontEnd y la Landing Page en render, asegurando que los servicios estén accesibles y funcionando correctamente.
+
+***FrontEnd***
+
+1. Se instaló el dist en el projecto usando el comando "npm run build" para generar la carpeta dist.
+
+<img src="assets/images/cap5/FrontEnd_Deployment_2.1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+2. Se usa el link del repositorio del github del FrontEnd.
+
+<img src="assets/images/cap5/FrontEnd_Deployment_2.2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+3. Se coloca el metodo dist para el Publish Directory.
+
+<img src="assets/images/cap5/FrontEnd_Deployment_2.3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+4. Se colocan las variables de entorno para el FrontEnd.
+
+<img src="assets/images/cap5/FrontEnd_Deployment_2.4.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+5. Se realiza el despliegue del FrontEnd en render.
+
+<img src="assets/images/cap5/FrontEnd_Deployment_2.5.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+***LandingPage***
+
+1. Se instaló el dist en el projecto usando el comando "npm run build" para generar la carpeta dist.
+
+<img src="assets/images/cap5/LandingPage_Deployment_2.1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+2. Se usa el link del repositorio del github del LandingPage.
+
+<img src="assets/images/cap5/LandingPage_Deployment_2.2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+3. Se coloca el metodo dist para el Publish Directory.
+
+<img src="assets/images/cap5/LandingPage_Deployment_2.3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+4. El LandingPage no requiere variables de entorno, por lo que se omite este paso.
+
+<img src="assets/images/cap5/LandingPage_Deployment_2.4.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+5. Se realiza el despliegue del LandingPage en render.
+
+<img src="assets/images/cap5/LandingPage_Deployment_2.5.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
 
 #### 5.2.4.8. Team Collaboration Insights during Sprint
@@ -1965,11 +2175,11 @@ Los participantes deberán navegar por el Landing Page para identificar la propu
 **Nombre:** Anita Monago Cachay  
 **Edad:** 35 años  
 **Distrito:** Ica  
-**Timing:** (00:00 - 4:48)
+**Timing:** 
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento2-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Ver entrevista: https://tinyurl.com/may4652j
+Ver entrevista: 
 
 **Resumen:**
 
@@ -1977,9 +2187,41 @@ Anita Monago Cachay manifestó que el Landing Page comunica claramente la propue
 
 ---
 
+**ENTREVISTA 2**
+
+**Nombre:** Alvaro Medina Huaqui
+**Edad:** 25 años  
+**Distrito:** Ica  
+**Timing:** 
+
+<img src="assets/images/cap5/Entrevista_Validacion_Segmento2-2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista: 
+
+**Resumen:**
+
+Alvaro Medina Huaqui indicó que la navegación por el Landing Page es clara y que la información sobre la propuesta de valor para proveedores es comprensible. Destacó que el dashboard analítico proporciona datos relevantes sobre la demanda de insumos y las tendencias del mercado, lo cual facilita la toma de decisiones comerciales. Sin embargo, sugirió mejorar la visualización de los gráficos y agregar filtros adicionales para segmentar la información según tipo de cultivo y región. Tambien le parece util la funcionalidad de la comunidad, ya que permite interactuar con otros agricultores y proveedores, fomentando la colaboración y el intercambio de experiencias.
+
+### Segmento 3: Clientes Finales
+
+**ENTREVISTA 1**
+
+**Nombre:** Myke Dylan Guillen Geraldo
+**Edad:** 22 años  
+**Distrito:** Huaraz  
+**Timing:**
+
+<img src="assets/images/cap5/Entrevista_Validacion_Segmento3-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+Ver entrevista:
+
+**Resumen:**
+
+Myke Dylan Guillen Geraldo expresó que la Landing Page comunica de manera efectiva la propuesta de valor para los clientes finales, destacando la claridad en la información sobre la trazabilidad y certificaciones de los productos. Consideró que la navegación por el catálogo es intuitiva y que la visualización de comentarios y calificaciones ayuda a tomar decisiones de compra informadas. Sin embargo, sugirió mejorar la búsqueda de productos mediante filtros más específicos y la posibilidad de comparar productos similares. Además, resaltó la importancia de recibir notificaciones sobre nuevas ofertas y promociones, lo cual podría incentivar la fidelización de los clientes.
+
 ### 5.3.3. Evaluación según heurísticas.
 
-Con la finalidad de evaluar la usabilidad de TerraTech, las entrevistas de validación fueron analizadas utilizando los **10 principios heurísticos de Jakob Nielsen**. Durante las sesiones se observaron las interacciones de los participantes con el Landing Page y la Web Application, registrando los problemas de usabilidad identificados y las oportunidades de mejora.
+Con la finalidad de evaluar la usabilidad de TerraTech, las entrevistas de validación fueron analizadas utilizando los **10 principios heurísticos de Jakob Nielsen**. Durante las sesiones se observaron las interacciones de los participantes con la Landing Page y la Web Application, registrando los problemas de usabilidad identificados y las oportunidades de mejora.
 
 Las heurísticas consideradas durante la evaluación fueron las siguientes:
 
