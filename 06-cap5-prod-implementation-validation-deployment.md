@@ -2286,11 +2286,11 @@ Los participantes deberán navegar por el Landing Page para identificar la propu
 **Nombre:** Yanderson Montenegro  
 **Edad:** 24 años  
 **Distrito:** Huancavelica  
-**Timing:**
+**Timing:** 00:00 - 14:00
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento1-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-ver entrevista:
+ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
 
 **resumen**
 
@@ -2303,11 +2303,11 @@ Yanderson Montenegro expresó que la sección de monitoreo de sensores presenta 
 **Nombre:** Anita Monago Cachay  
 **Edad:** 35 años  
 **Distrito:** Ica  
-**Timing:** 
+**Timing:** 14:01 - 18:49
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento2-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Ver entrevista: 
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
 
 **Resumen:**
 
@@ -2320,11 +2320,11 @@ Anita Monago Cachay manifestó que el Landing Page comunica claramente la propue
 **Nombre:** Alvaro Medina Huaqui
 **Edad:** 25 años  
 **Distrito:** Ica  
-**Timing:** 
+**Timing:** 18:50 - 26:13
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento2-2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Ver entrevista: 
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
 
 **Resumen:**
 
@@ -2337,11 +2337,11 @@ Alvaro Medina Huaqui indicó que la navegación por el Landing Page es clara y q
 **Nombre:** Myke Dylan Guillen Geraldo
 **Edad:** 22 años  
 **Distrito:** Huaraz  
-**Timing:** 
+**Timing:** 26:14 - 32:31
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento3-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Ver entrevista:
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
 
 **Resumen:**
 
