@@ -2279,6 +2279,23 @@ Los participantes deberán navegar por el Landing Page para identificar la propu
 
 ### 5.3.2. Registro de Entrevistas.
 
+### Segmento 1: Agricultores
+
+**Entrevista 1**
+
+**Nombre:** Yanderson Montenegro  
+**Edad:** 24 años  
+**Distrito:** Huancavelica  
+**Timing:**
+
+<img src="assets/images/cap5/Entrevista_Validacion_Segmento1-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+ver entrevista:
+
+**resumen**
+
+Yanderson Montenegro expresó que la sección de monitoreo de sensores presenta la información de manera directa y comprensible, destacando que no es necesario saturar al usuario con datos excesivos para que la herramienta sea efectiva en el campo. Consideró que la inclusión de un catálogo es un acierto importante para apoyar al agricultor en la visualización y comercialización de sus productos. Sin embargo, sugirió mejorar la claridad de los mensajes de error durante el registro, recomendando que el sistema sea más explícito para guiar al usuario hacia el inicio de sesión cuando una cuenta ya existe. Además, resaltó la importancia de validar las notificaciones de forma individual para evitar omitir alertas críticas por accidente y propuso ampliar las analíticas de los cultivos con parámetros nutricionales específicos del suelo, como los niveles de nitrógeno. Finalmente, sugirió integrar una funcionalidad para generar boletas o facturas virtuales en formato PDF, lo cual permitiría a los agricultores tener un mejor control documentario de las ventas realizadas a través de la plataforma
+
 ### Segmento 2: Proveedores de insumos agrícolas
 
 **ENTREVISTA 1**
