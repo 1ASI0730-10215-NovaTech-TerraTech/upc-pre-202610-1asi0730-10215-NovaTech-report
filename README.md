@@ -115,6 +115,7 @@ Proyecto
 |  3.14   | 06/07/2026  | Retuerto Rodríguez, Jorge Manuel        | Corrección de los collaboration insights                                            |
 |  3.15   | 06/07/2026  | Howard Robles, Guillermo Arturo         | Añadido del sprint backlog 4                                                        |
 |  3.16   | 06/07/2026  | Howard Robles, Guillermo Arturo         | Añadido del development evidence for sprint review 4                                |
+|  3.17   | 06/07/2026  | Howard Robles, Guillermo Arturo         | Añadido del execution evidence for sprint review 4                                  |
 
 ---
 
