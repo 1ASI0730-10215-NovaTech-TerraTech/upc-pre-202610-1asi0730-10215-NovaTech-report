@@ -4,21 +4,21 @@ Con el objetivo de garantizar un flujo de trabajo organizado, colaborativo y efi
 
 A continuación, se describen las herramientas utilizadas, su propósito dentro del proyecto y la ruta oficial de acceso o descarga correspondiente.
 
-| Categoría | Herramienta | Propósito dentro del proyecto | Ruta de referencia / descarga |
-|------------|-------------|-------------------------------|-------------------------------|
-| Diseño UX/UI | Figma | Diseño de interfaces, wireframes, mockups y prototipos interactivos de la Landing Page y la Web Application. | https://www.figma.com |
-| Diseño UX/UI | Miro | Elaboración del Big Picture Event Storming y Design-Level Event Storming. | https://miro.com |
-| Investigación UX | UXPressia | Desarrollo del Needfinding, User Personas, Empathy Maps, Journey Maps e Impact Maps. | https://uxpressia.com |
-| Diseño gráfico | Canva | Elaboración de material gráfico, diagramas y recursos visuales para la documentación del proyecto. | https://www.canva.com |
-| Editor de código | Visual Studio Code | Entorno principal para el desarrollo de la Landing Page utilizando HTML, CSS y JavaScript. | https://code.visualstudio.com |
-| Editor de código | WebStorm | IDE para el desarrollo de la aplicación Frontend basada en Vue Framework. | https://www.jetbrains.com/webstorm |
-| Editor de código | Rider | IDE utilizado para el desarrollo de los servicios RESTful implementados con ASP.NET Core y C#. | https://www.jetbrains.com/rider |
-| Control de versiones | Git | Sistema distribuido de control de versiones para el seguimiento de cambios y trabajo colaborativo. | https://git-scm.com |
-| Repositorio remoto | GitHub | Plataforma para almacenar los repositorios del proyecto, gestionar Pull Requests y facilitar la colaboración entre los integrantes del equipo. | https://github.com |
-| Framework Frontend | Vue.js | Framework JavaScript utilizado para desarrollar la interfaz de usuario de la aplicación web. | https://vuejs.org |
-| Biblioteca UI | PrimeVue | Biblioteca de componentes UI basada en Material Design utilizada junto con Vue.js. | https://primevue.org |
-| Gestión de dependencias | npm | Administrador de paquetes encargado de instalar y actualizar las dependencias del proyecto Frontend. | https://www.npmjs.com |
-| Hosting | GitHub Pages | Plataforma utilizada para el despliegue de la Landing Page mediante integración continua con GitHub. | https://pages.github.com |
+| Categoría | Herramienta | Propósito dentro del proyecto | Ruta de referencia / descarga                                            |
+|------------|-------------|-------------------------------|--------------------------------------------------------------------------|
+| Diseño UX/UI | Figma | Diseño de interfaces, wireframes, mockups y prototipos interactivos de la Landing Page y la Web Application. | [https://www.figma.com](https://www.figma.com)                           |
+| Diseño UX/UI | Miro | Elaboración del Big Picture Event Storming y Design-Level Event Storming. | [https://miro.com](https://miro.com)                                     |
+| Investigación UX | UXPressia | Desarrollo del Needfinding, User Personas, Empathy Maps, Journey Maps e Impact Maps. | [https://uxpressia.com](https://uxpressia.com)                           |
+| Diseño gráfico | Canva | Elaboración de material gráfico, diagramas y recursos visuales para la documentación del proyecto. | [https://www.canva.com](https://www.canva.com)                           |
+| Editor de código | Visual Studio Code | Entorno principal para el desarrollo de la Landing Page utilizando HTML, CSS y JavaScript. | [https://code.visualstudio.com](https://code.visualstudio.com)           |
+| Editor de código | WebStorm | IDE para el desarrollo de la aplicación Frontend basada en Vue Framework. | [https://www.jetbrains.com/webstorm](https://www.jetbrains.com/webstorm) |
+| Editor de código | Rider | IDE utilizado para el desarrollo de los servicios RESTful implementados con ASP.NET Core y C#. | [https://www.jetbrains.com/rider](https://www.jetbrains.com/rider)       |
+| Control de versiones | Git | Sistema distribuido de control de versiones para el seguimiento de cambios y trabajo colaborativo. | [https://git-scm.com](https://git-scm.com)                               |
+| Repositorio remoto | GitHub | Plataforma para almacenar los repositorios del proyecto, gestionar Pull Requests y facilitar la colaboración entre los integrantes del equipo. | [https://github.com](https://github.com)                                 |
+| Framework Frontend | Vue.js | Framework JavaScript utilizado para desarrollar la interfaz de usuario de la aplicación web. | [https://vuejs.org](https://vuejs.org)                                                   |
+| Biblioteca UI | PrimeVue | Biblioteca de componentes UI basada en Material Design utilizada junto con Vue.js. | [https://primevue.org](https://primevue.org)                                             |
+| Gestión de dependencias | npm | Administrador de paquetes encargado de instalar y actualizar las dependencias del proyecto Frontend. | [https://www.npmjs.com](https://www.npmjs.com)                                            |
+| Hosting | GitHub Pages | Plataforma utilizada para el despliegue de la Landing Page mediante integración continua con GitHub. | [https://pages.github.com](https://pages.github.com)                                     |
 
 Durante el desarrollo del proyecto también se emplean herramientas de apoyo que permiten mantener la calidad del código y facilitar el trabajo colaborativo:
 
@@ -50,23 +50,23 @@ A continuación, se presentan los usuarios de GitHub de cada integrante del equi
   <tbody>
     <tr>
       <td>Retuerto Rodriguez, Jorge Manuel</td>
-      <td><a href="https://github.com/Calin1407">Calin1407</a></td>
+      <td><a href="[https://github.com/Calin1407](https://github.com/Calin1407)">Calin1407</a></td>
     </tr>
     <tr>
       <td>Howard Robles, Guillermo Arturo</td>
-      <td><a href="https://github.com/GuillermoPromac">GuillermoPromac</a></td>
+      <td><a href="[https://github.com/GuillermoPromac](https://github.com/GuillermoPromac)">GuillermoPromac</a></td>
     </tr>
     <tr>
       <td>Acuña de la Cruz, Luis Alfredo</td>
-      <td><a href="https://github.com/L2006delacruz">L2006delacruz</a></td>
+      <td><a href="[https://github.com/L2006delacruz](https://github.com/L2006delacruz)">L2006delacruz</a></td>
     </tr>
     <tr>
       <td>Perez Encarnacion, Breithner Rodolfo</td>
-      <td><a href="https://github.com/Breithner1">Breithner1</a></td>
+      <td><a href="[https://github.com/Breithner1](https://github.com/Breithner1)">Breithner1</a></td>
     </tr>
     <tr>
       <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
-      <td><a href="https://github.com/Rodri2712">Rodri2712</a></td>
+      <td><a href="[https://github.com/Rodri2712](https://github.com/Rodri2712)">Rodri2712</a></td>
     </tr>
   </tbody>
 </table>
@@ -1283,7 +1283,7 @@ Además, se facilita al equipo frontend la construcción de las vistas requerida
 | TS12-010 - Implement DeleteCommunityProfile | Implementar comando DeleteCommunityProfileCommand | 1 | BP | Done |
 | TS12-011 - Implement DeleteComment | Implementar comando DeleteCommentCommand | 1 | BP | Done |
 
-Trello: https://trello.com/b/sLQ8KGVG/aplicaciones-web
+Trello: [https://trello.com/b/sLQ8KGVG/aplicaciones-web](https://trello.com/b/sLQ8KGVG/aplicaciones-web)
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -1627,7 +1627,9 @@ Video del sprint3:
 
 <img src="assets/images/cap5/Video-Sprtin3.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Enlace del video: https://tinyurl.com/mrxyzszz
+Enlace del video: [https://tinyurl.com/mrxyzszz](https://tinyurl.com/mrxyzszz)
+
+Duracion: 00:00 - 17:26
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 

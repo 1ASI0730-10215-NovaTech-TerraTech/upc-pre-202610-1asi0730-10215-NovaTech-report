@@ -23,9 +23,9 @@
 
 ## Desarrollo de Software Full-Stack (C#, ASP.NET Core y Vue.js)
 
- - Microsoft Learn. (2026). Creación de una aplicación ASP.NET Core con Vue. Recuperado de https://learn.microsoft.com/es-es/visualstudio/javascript/tutorial-asp-net-core-with-vue?view=visualstudio
- - Microsoft Learn. (2026). Entity Framework Core. Recuperado de https://learn.microsoft.com/es-es/ef/core/
- - Vue.js. (2026). Guía oficial de Vue.js. Recuperado de https://vuejs.org/guide/introduction
- - Pinia. (2026). Guía oficial de Pinia. Recuperado de https://pinia.vuejs.org/
- - PrimeTek. (2026). PrimeVue. Recuperado de https://primevue.org/
- - Axios. (2026). Axios: Promise based HTTP client for the browser and node.js. Recuperado de https://axios-http.com/
+ - Microsoft Learn. (2026). Creación de una aplicación ASP.NET Core con Vue. Recuperado de [https://learn.microsoft.com/es-es/visualstudio/javascript/tutorial-asp-net-core-with-vue?view=visualstudio](https://learn.microsoft.com/es-es/visualstudio/javascript/tutorial-asp-net-core-with-vue?view=visualstudio)
+ - Microsoft Learn. (2026). Entity Framework Core. Recuperado de [https://learn.microsoft.com/es-es/ef/core/](https://learn.microsoft.com/es-es/ef/core/)
+ - Vue.js. (2026). Guía oficial de Vue.js. Recuperado de [https://vuejs.org/guide/introduction](https://vuejs.org/guide/introduction)
+ - Pinia. (2026). Guía oficial de Pinia. Recuperado de [https://pinia.vuejs.org/](https://pinia.vuejs.org/)
+ - PrimeTek. (2026). PrimeVue. Recuperado de [https://primevue.org/](https://primevue.org/)
+ - Axios. (2026). Axios: Promise based HTTP client for the browser and node.js. Recuperado de [https://axios-http.com/](https://axios-http.com/)

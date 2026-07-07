@@ -126,7 +126,7 @@ Proyecto
 Esta sección detalla cómo el equipo colaboró para construir el **Final Project Documentation Report** del sistema TerraTech, mostrando evidencia de trabajo conjunto mediante commits, revisiones, herramientas de organización y resultados integrados en el informe final. Se refleja la contribución de cada integrante en la planificación, desarrollo, documentación y presentación de la solución.
 
 **Repositorio del informe del proyecto:**  
-https://github.com/1ASI0730-10215-NovaTech-TerraTech
+[https://github.com/1ASI0730-10215-NovaTech-TerraTech](https://github.com/1ASI0730-10215-NovaTech-TerraTech)
 
 <img src="assets/images/readme/Report-Ins.png" alt="Descargar" width="700" height="700">
 
