@@ -978,7 +978,7 @@ Enlace del video: [https://tinyurl.com/mrxyzszz](https://tinyurl.com/mrxyzszz)
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-La documentación de servicios se enfocó en la especificación de los endpoints de la API REST necesarios para la autenticación y la gestión de usuarios. Se utilizó Swagger/OpenAPI para generar documentación interactiva. Además, se actualizó el archivo `README.md` del repositorio backend con instrucciones para levantar el entorno local y ejecutar las migraciones de la base de datos.
+La documentación de servicios se enfocó en la especificación de los endpoints de la API REST necesarios para la autenticación y la gestión de usuarios. Se utilizó Swagger/OpenAPI para generar documentación interactiva. Además, se actualizó el archivo `README` del repositorio backend con instrucciones para levantar el entorno local y ejecutar las migraciones de la base de datos.
 
 ***Descripción del Logro:***
 
@@ -1436,7 +1436,7 @@ Monitoreo (Monitoring)
 Se añadieron consultas para obtener dispositivos por estado (ONLINE, OFFLINE, LOW_BATTERY) y campos por tipo de suelo, junto con sus respectivos endpoints en los controladores. Se actualizó el repositorio y los servicios de consulta para soportar estas nuevas funcionalidades.
 
 Documentación y configuración final
-Se actualizó el archivo README.md con una descripción general del proyecto, tecnologías, arquitectura e instrucciones de configuración.
+Se actualizó el archivo README con una descripción general del proyecto, tecnologías, arquitectura e instrucciones de configuración.
 
 | Repository                                                     | Branch                                          | Commit Id | Commit Message                                                                                                                                                                                | Commit Message Body                                                                                                                                                                                     | Commited on (Date) |
 |----------------------------------------------------------------|-------------------------------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
@@ -1921,36 +1921,36 @@ Se ha actualizado el link del FrontEnd puesto en el Landing page por los cambios
 
 En el frontend de TerraTech se han implementado mejoras sustanciales en la compatibilidad con los endpoints del backend, corrigiendo errores críticos en el mapeo de datos de analíticas y en la creación de perfiles (bad request 400). Se ha añadido soporte para camelCase en los ensambladores de monitoreo, integrando nuevas propiedades como latitud y longitud en los formularios y listas de campos, con sus respectivas validaciones y mensajes de internacionalización. Además, se ha mejorado la gestión de comentarios en la comunidad, permitiendo la edición y eliminación con ajustes dinámicos en la puntuación de reputación, y se ha incorporado soporte multilingüe para las acciones de la comunidad. Finalmente, se ha implementado el botón de cierre de sesión en el layout y se ha integrado la validación de perfiles en el módulo comercial antes de la confirmación de pedidos.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|------------|--------|-----------|----------------|---------------------|-------------------|
-| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/analytics-api-compatibility | 1a5b30b | fix(analytics): fix report data mapping in bounded analytics. | Se arregló un error de mapeo de los datos de analytics, permitiendo la visualización completa de los datos. | 29/06 |
-| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/profile-api-compability | b6a92e2 | fix(profile): fixed bad request 400 on profile creation. | Se arregló el problema de bad request en la creación de un profile. | 01/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 4f6b574 | feat(monitoring): update device and field entities with default values and new latitude/longitude properties. | Corrección de entities en monitoring. | 01/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 67b086a | feat(monitoring): add latitude and longitude fields to field form and list with validation. | Añadido de los valores latitud y longitud en el Field. | 01/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 6b71981 | feat(monitoring): enhance device and field classes with detailed jsdoc comments. | Añadido de documentación en los entities de monitoring. | 01/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 057a5b4 | feat(monitoring): update device and field assemblers to improve resource mapping and add fallback handling. | Añadido de los handing a los assemblers field y device. | 01/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | bfca455 | refactor(monitoring): device and field api interactions to ensure proper payload structure and improve data handling. | Cambios en la interacción del .store de monitoring. | 01/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 2aee91a | feat(i18n): add localization for latitude and longitude fields with validation messages. | Añadido de internacionalización de los valores nuevos de latitud y longitud. | 01/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 457b353 | fix(monitoring): add camelcase support to device assembler. | - | 02/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c9a521c | refactor(monitoring): keep device form unchanged. | - | 02/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | aeeffc2 | fix(monitoring): add camelcase support to field assembler. | - | 02/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c255a03 | feat(monitoring): dynamically assign profileid from iam store. | - | 02/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | a405053 | fix(monitoring): update payloads to match backend dtos. | - | 02/07 |
-| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c096527 | fix(monitoring): update methods to use id parameter correctly. | - | 02/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 7578401 | feat(community_management): update profile and comment payload structures for consistency. | Actualizar las estructuras de carga útil de perfil y comentario para mayor coherencia | 02/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 8e82785 | feat(community_management): refactor comment assembler to improve entity mapping. | Refactorizar el ensamblador de comentarios para mejorar el mapeo de entidades. | 02/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | cf0e4dc | feat(community_management): update resource naming and enhance comment retrieval method. | Actualizar la nomenclatura de recursos y mejorar el método de recuperación de comentarios. | 02/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 24ba7ef | feat(community_management): enhance community profile entity mapping and simplify response handling. | mejora la asignación de entidades de perfil de comunidad y simplifica el manejo de respuestas. | 02/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 75a5873 | feat(community_management): update profile_id type and ensure correct parsing of route parameter. | actualiza el tipo profile_id y garantiza el análisis correcto del parámetro de ruta. | 02/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 329b2c3 | feat(community_management): ensure correct parsing of profile id and update author profile id type. | Garantiza el análisis correcto del ID de perfil y actualiza el tipo de ID de perfil de autor | 02/07 |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body                                                                                          | Commited on (Date) |
+|------------|--------|-----------|----------------|--------------------------------------------------------------------------------------------------------------|-------------------|
+| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/analytics-api-compatibility | 1a5b30b | fix(analytics): fix report data mapping in bounded analytics. | Se arregló un error de mapeo de los datos de analytics, permitiendo la visualización completa de los datos.  | 29/06 |
+| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/profile-api-compability | b6a92e2 | fix(profile): fixed bad request 400 on profile creation. | Se arregló el problema de bad request en la creación de un profile.                                          | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 4f6b574 | feat(monitoring): update device and field entities with default values and new latitude/longitude properties. | Corrección de entities en monitoring.                                                                        | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 67b086a | feat(monitoring): add latitude and longitude fields to field form and list with validation. | Añadido de los valores latitud y longitud en el Field.                                                       | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 6b71981 | feat(monitoring): enhance device and field classes with detailed jsdoc comments. | Añadido de documentación en los entities de monitoring.                                                      | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 057a5b4 | feat(monitoring): update device and field assemblers to improve resource mapping and add fallback handling. | Añadido de los handing a los assemblers field y device.                                                      | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | bfca455 | refactor(monitoring): device and field api interactions to ensure proper payload structure and improve data handling. | Cambios en la interacción del .store de monitoring.                                                          | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 2aee91a | feat(i18n): add localization for latitude and longitude fields with validation messages. | Añadido de internacionalización de los valores nuevos de latitud y longitud.                                 | 01/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | 457b353 | fix(monitoring): add camelcase support to device assembler. | Agregar soporte para camel case al ensamblador del dispositivo.                                                                                                            | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c9a521c | refactor(monitoring): keep device form unchanged. | Mantener la forma del dispositivo sin cambios.                                                                                                            | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | aeeffc2 | fix(monitoring): add camelcase support to field assembler. | Agregar soporte para camel case al ensamblador de campo.                                                                                                            | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c255a03 | feat(monitoring): dynamically assign profileid from iam store. | Asignar dinámicamente el ID de perfil desde el almacén iam.                                                  | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | a405053 | fix(monitoring): update payloads to match backend dtos. | Actualizar las cargas útiles para que coincidan con los DTO del backend.                                     | 02/07 |
+| GuillermoPromac/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/monitoring-endpoint | c096527 | fix(monitoring): update methods to use id parameter correctly. | Actualizar el metodo de obtención de id                                                                      | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 7578401 | feat(community_management): update profile and comment payload structures for consistency. | Actualizar las estructuras de carga útil de perfil y comentario para mayor coherencia                        | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 8e82785 | feat(community_management): refactor comment assembler to improve entity mapping. | Refactorizar el ensamblador de comentarios para mejorar el mapeo de entidades.                               | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | cf0e4dc | feat(community_management): update resource naming and enhance comment retrieval method. | Actualizar la nomenclatura de recursos y mejorar el método de recuperación de comentarios.                   | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 24ba7ef | feat(community_management): enhance community profile entity mapping and simplify response handling. | mejora la asignación de entidades de perfil de comunidad y simplifica el manejo de respuestas.               | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 75a5873 | feat(community_management): update profile_id type and ensure correct parsing of route parameter. | actualiza el tipo profile_id y garantiza el análisis correcto del parámetro de ruta.                         | 02/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 329b2c3 | feat(community_management): ensure correct parsing of profile id and update author profile id type. | Garantiza el análisis correcto del ID de perfil y actualiza el tipo de ID de perfil de autor                 | 02/07 |
 | Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 02a7c32 | feat(community_management): add comment update and delete functionality, improve target profile ID handling. | Agrega funcionalidad para actualizar y eliminar comentarios, y mejora el manejo del ID de perfil de destino. | 05/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | bcad6a3 | feat(community_management): add update and delete functionality for comments. | Agrega funcionalidad para actualizar y eliminar comentarios. | 05/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | a5aa1cb | feat(community_management): enhance community profile form with profile ID handling and validation. | Mejora el formulario de perfil de comunidad con manejo y validación del ID de perfil. | 05/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 5634fe8 | feat(community_management): enhance community profile list with visibility filtering and profile ID checks. | Mejora la lista de perfiles de comunidad con filtrado de visibilidad y comprobaciones de ID de perfil. | 06/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 109adc6 | feat(community_management): implement comment editing and deletion with reputation score adjustments. | Implementa la edición y eliminación de comentarios con ajustes de puntuación de reputación. | 06/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 0394af1 | feat(community_management): add multilingual support for community actions and notifications. | Agrega soporte multilingüe para acciones y notificaciones de la comunidad. | 06/07 |
-| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/implements-log-out | 99dd0b6 | feature(layout): implements log out button into layout. | Implementación de botón para terminar la sesión del usuario. | 06/07 |
-| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/commercial-order-endpoint | 6b7a3fa | feat(commercial): integrate profile validation before order confirmation. | integrar la validación del perfil antes de la confirmación del pedido. | 06/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | bcad6a3 | feat(community_management): add update and delete functionality for comments. | Agrega funcionalidad para actualizar y eliminar comentarios.                                                 | 05/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | a5aa1cb | feat(community_management): enhance community profile form with profile ID handling and validation. | Mejora el formulario de perfil de comunidad con manejo y validación del ID de perfil.                        | 05/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 5634fe8 | feat(community_management): enhance community profile list with visibility filtering and profile ID checks. | Mejora la lista de perfiles de comunidad con filtrado de visibilidad y comprobaciones de ID de perfil.       | 06/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 109adc6 | feat(community_management): implement comment editing and deletion with reputation score adjustments. | Implementa la edición y eliminación de comentarios con ajustes de puntuación de reputación.                  | 06/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/community-endpoint | 0394af1 | feat(community_management): add multilingual support for community actions and notifications. | Agrega soporte multilingüe para acciones y notificaciones de la comunidad.                                   | 06/07 |
+| Calin1407/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/implements-log-out | 99dd0b6 | feature(layout): implements log out button into layout. | Implementación de botón para terminar la sesión del usuario.                                                 | 06/07 |
+| Breithner1/upc-pre-202610-1asi0730-10215-NovaTech-FrontEnd | feature/commercial-order-endpoint | 6b7a3fa | feat(commercial): integrate profile validation before order confirmation. | integrar la validación del perfil antes de la confirmación del pedido.                                       | 06/07 |
 
 ---
 
@@ -2190,7 +2190,7 @@ Siguiendo las indicaciones establecidas para el proceso de validación, cada ent
 
 ***Objetivo General***
 
-Validar la experiencia de uso del Landing Page y la Web Application de TerraTech mediante sesiones de interacción con usuarios representativos de cada segmento objetivo, verificando la comprensión de la propuesta de valor, la ejecución de los principales flujos de usuario y la percepción general sobre la utilidad de la solución.
+Validar la experiencia de uso de la Landing Page y la Web Application de TerraTech mediante sesiones de interacción con usuarios representativos de cada segmento objetivo, verificando la comprensión de la propuesta de valor, la ejecución de los principales flujos de usuario y la percepción general sobre la utilidad de la solución.
 
 ---
 
@@ -2279,6 +2279,23 @@ Los participantes deberán navegar por el Landing Page para identificar la propu
 
 ### 5.3.2. Registro de Entrevistas.
 
+### Segmento 1: Agricultores
+
+**Entrevista 1**
+
+**Nombre:** Yanderson Montenegro  
+**Edad:** 24 años  
+**Distrito:** Huancavelica  
+**Timing:** 00:00 - 14:00
+
+<img src="assets/images/cap5/Entrevista_Validacion_Segmento1-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
+
+ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
+
+**resumen**
+
+Yanderson Montenegro expresó que la sección de monitoreo de sensores presenta la información de manera directa y comprensible, destacando que no es necesario saturar al usuario con datos excesivos para que la herramienta sea efectiva en el campo. Consideró que la inclusión de un catálogo es un acierto importante para apoyar al agricultor en la visualización y comercialización de sus productos. Sin embargo, sugirió mejorar la claridad de los mensajes de error durante el registro, recomendando que el sistema sea más explícito para guiar al usuario hacia el inicio de sesión cuando una cuenta ya existe. Además, resaltó la importancia de validar las notificaciones de forma individual para evitar omitir alertas críticas por accidente y propuso ampliar las analíticas de los cultivos con parámetros nutricionales específicos del suelo, como los niveles de nitrógeno. Finalmente, sugirió integrar una funcionalidad para generar boletas o facturas virtuales en formato PDF, lo cual permitiría a los agricultores tener un mejor control documentario de las ventas realizadas a través de la plataforma
+
 ### Segmento 2: Proveedores de insumos agrícolas
 
 **ENTREVISTA 1**
@@ -2286,11 +2303,11 @@ Los participantes deberán navegar por el Landing Page para identificar la propu
 **Nombre:** Anita Monago Cachay  
 **Edad:** 35 años  
 **Distrito:** Ica  
-**Timing:** 
+**Timing:** 14:01 - 18:49
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento2-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Ver entrevista: 
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
 
 **Resumen:**
 
@@ -2303,11 +2320,11 @@ Anita Monago Cachay manifestó que el Landing Page comunica claramente la propue
 **Nombre:** Alvaro Medina Huaqui
 **Edad:** 25 años  
 **Distrito:** Ica  
-**Timing:** 
+**Timing:** 18:50 - 26:13
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento2-2.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Ver entrevista: 
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
 
 **Resumen:**
 
@@ -2320,11 +2337,11 @@ Alvaro Medina Huaqui indicó que la navegación por el Landing Page es clara y q
 **Nombre:** Myke Dylan Guillen Geraldo
 **Edad:** 22 años  
 **Distrito:** Huaraz  
-**Timing:**
+**Timing:** 26:14 - 32:31
 
 <img src="assets/images/cap5/Entrevista_Validacion_Segmento3-1.png" alt="cap5" style="height: 500px !important; width: 700px !important;">
 
-Ver entrevista:
+Ver entrevista: [https://tinyurl.com/4tz248fm](https://tinyurl.com/4tz248fm)
 
 **Resumen:**
 
